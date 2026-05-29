@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一集：需求分析">
-<title>Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</title>
+<title>Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</title>
 
 <link rel='canonical' href='https://retreatafter.github.io/p/blogbuildhgc01/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Hugo+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
 <meta property='og:description' content="第一集：需求分析">
 <meta property='og:url' content='https://retreatafter.github.io/p/blogbuildhgc01/'>
 <meta property='og:site_name' content='与其归隐'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2025-05-29T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2025-05-29T17:07:07&#43;08:00'/>
-<meta name="twitter:title" content="Hugo+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2026-05-29T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-29T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
 <meta name="twitter:description" content="第一集：需求分析">
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/myfavicon.ico" />
 
     </head>
     <body class="
@@ -115,7 +116,7 @@ unicode: "f6d2"
             
                 <li>
                     <a 
-                        href=''
+                        href='https://github.com/retreatafter/'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -135,9 +136,9 @@ unicode: "f6d2"
             
                 <li>
                     <a 
-                        href=''
+                        href='mailto:retreatafter@protonmail.com%22'
                         target="_blank"
-                        title="Mail"
+                        title="retreatafter@protonmail.com"
                         rel="me"
                     >
                         
@@ -324,15 +325,30 @@ unicode: "f93f"
                 
     <section class="widget archives">
         <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
 </svg>
-
-
 
         </div>
         <h2 class="widget-title section-title">目录</h2>
@@ -340,13 +356,20 @@ unicode: "f93f"
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#网址">网址</a></li>
-    <li><a href="#域名与ip">域名与ip</a></li>
-  </ol>
-
-  <ol>
-    <li><a href="#博客框架">博客框架</a></li>
-    <li><a href="#服务器">服务器</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#网站">网站</a>
+      <ol>
+        <li><a href="#网址">网址</a></li>
+        <li><a href="#域名与ip">域名与ip</a></li>
+      </ol>
+    </li>
+    <li><a href="#博客">博客</a>
+      <ol>
+        <li><a href="#博客框架">博客框架</a></li>
+        <li><a href="#服务器">服务器</a></li>
+      </ol>
+    </li>
+    <li><a href="#总结">总结</a></li>
   </ol>
 </nav>
         </div>
@@ -374,7 +397,7 @@ unicode: "f93f"
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/blogbuildhgc01/">Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</a>
+            <a href="/p/blogbuildhgc01/">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</a>
         </h2>
     
         
@@ -400,7 +423,7 @@ unicode: "f93f"
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025-05-29</time>
+                <time class="article-time--published">2026-05-29</time>
             </div>
         
 
@@ -415,6 +438,7 @@ unicode: "f93f"
 
 
                 <time class="article-time--reading">
+                    本文共 1104 字
                     阅读时长: 3 分钟
                 </time>
             </div>
@@ -427,47 +451,100 @@ unicode: "f93f"
 
 </header>
 
-    <section class="article-content">
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
     
     
     <blockquote>
 <p>本节目录</p>
 </blockquote>
 <ol>
-<li><a class="link" href="#%e5%89%8d%e8%a8%80" >前言</a></li>
-<li><a class="link" href="#%e7%bd%91%e7%ab%99" >网站</a>
+<li><a class="link" href="#%e5%89%8d%e8%a8%80"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        前言
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%bd%91%e7%ab%99"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        网站
+        
+    </span>
+</a>
 <ol>
-<li><a class="link" href="#%e7%bd%91%e5%9d%80" >网址</a></li>
-<li><a class="link" href="#%e5%9f%9f%e5%90%8d%e4%b8%8eip" >域名与ip</a></li>
+<li><a class="link" href="#%e7%bd%91%e5%9d%80"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        网址
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%9f%9f%e5%90%8d%e4%b8%8eip"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        域名与ip
+        
+    </span>
+</a></li>
 </ol>
 </li>
-<li><a class="link" href="#%e5%8d%9a%e5%ae%a2" >博客</a>
+<li><a class="link" href="#%e5%8d%9a%e5%ae%a2"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        博客
+        
+    </span>
+</a>
 <ol>
-<li><a class="link" href="#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6" >博客框架</a></li>
-<li><a class="link" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8" >服务器</a></li>
+<li><a class="link" href="#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        博客框架
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        服务器
+        
+    </span>
+</a></li>
 </ol>
 </li>
-<li><a class="link" href="#%e6%80%bb%e7%bb%93" >总结</a></li>
+<li><a class="link" href="#%e6%80%bb%e7%bb%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        总结
+        
+    </span>
+</a></li>
 </ol>
-<h1 id="前言">前言
-</h1><p>在互联网上，可以找到多种办法进行博客搭建，并且各平台也逐渐推出了一站式服务，即你不需要明白网站运作背后发生了什么，只需要<strong>专心创作内容</strong>，然后付费给网站，把维修的相关工作交给网站进行处理。</p>
+<h2 id="前言">前言
+</h2><p>在互联网上，可以找到多种办法进行博客搭建，并且各平台也逐渐推出了一站式服务，即你不需要明白网站运作背后发生了什么，只需要<strong>专心创作内容</strong>，然后付费给网站，把维修的相关工作交给网站进行处理。</p>
 <p>而本系列针对的是和小编一样无法忽视背后的十万个为什么，又不想进行过于深度底层原理研究的您，而进行的一些尽可能通俗易懂且必要的初级原理解释。</p>
-<h1 id="网站">网站
-</h1><h2 id="网址">网址
-</h2><p>我们访问网站时都需要解决一个问题，即我如何唯一确定、找到这个网站。例如现在我们需要进入leetcode网站刷题，当我们输入 【https://leetcode.cn】 网址时，才能导航进入到该网站，假设我们输入的是 【https://leetcode1.cn】 ，那么进入的就会是另一个网站——也可能不存在。</p>
+<h2 id="网站">网站
+</h2><h3 id="网址">网址
+</h3><p>我们访问网站时都需要解决一个问题，即我如何唯一确定、找到这个网站。例如现在我们需要进入leetcode网站刷题，当我们输入 【https://leetcode.cn】 网址时，才能导航进入到该网站，假设我们输入的是 【https://leetcode1.cn】 ，那么进入的就会是另一个网站——也可能不存在。</p>
 <p>博客也是如此，我们需要来解决获取网站的问题，简单来说，即：我家的门牌号是多少？</p>
-<h2 id="域名与ip">域名与ip
-</h2><p>ip是设备在网络中的地址，唯一定位一台网络上的计算机，用于实现设备之间的通信和数据传输。ip的格式为四个整数，例如127.0.0.1，在这里我们暂时不进行深一步的ip类型的讨论，只需要大概理解，每一个网页都对应有ip，且它是数字形式，不易于阅读。</p>
+<h3 id="域名与ip">域名与ip
+</h3><p>ip是设备在网络中的地址，唯一定位一台网络上的计算机，用于实现设备之间的通信和数据传输。ip的格式为四个整数，例如127.0.0.1，在这里我们暂时不进行深一步的ip类型的讨论，只需要大概理解，每一个网页都对应有ip，且它是数字形式，不易于阅读。</p>
 <p>正是因为不易于阅读，域名解决了这个问题，它是一串有规律的字符，这是人类更容易接受、更方便记忆和传播的形式，例如上述我们提到的 【https://leetcode.cn】。</p>
 <p>在知道这一点后，一个问题接踵而来，我要如何获得（喜欢的）域名？</p>
-<h1 id="博客">博客
-</h1><h2 id="博客框架">博客框架
-</h2><p>当我们访问别人的页面时，除了内容外，还可以看到有许多有用有趣的机制，例如搜索、评论、吉祥物互动，事实上这背后都包括了一系列的html、css、js等代码，而其中有些步骤其实是固定的，是重复性工作，因此随着市场需求出现，相应的也出现了各类框架，即模板，使用模板，我们一定程度上就无需面对繁琐的代码，这简化了我们搭建的工作。</p>
-<h2 id="服务器">服务器
-</h2><p>当我们创作内容后，显然我们需要一个储存我们的博客文件数据的地方，而我们又需要发布到网络上让别的用户也能访问，进行请求和服务响应，在这里我们不进行详细冗余的服务器类型介绍，只需要知道，我们需要服务器，才能实现和别的网络用户连接的效果。</p>
+<h2 id="博客">博客
+</h2><h3 id="博客框架">博客框架
+</h3><p>当我们访问别人的页面时，除了内容外，还可以看到有许多有用有趣的机制，例如搜索、评论、吉祥物互动，事实上这背后都包括了一系列的html、css、js等代码，而其中有些步骤其实是固定的，是重复性工作，因此随着市场需求出现，相应的也出现了各类框架，即模板，使用模板，我们一定程度上就无需面对繁琐的代码，这简化了我们搭建的工作。</p>
+<h3 id="服务器">服务器
+</h3><p>当我们创作内容后，显然我们需要一个储存我们的博客文件数据的地方，而我们又需要发布到网络上让别的用户也能访问，进行请求和服务响应，在这里我们不进行详细冗余的服务器类型介绍，只需要知道，我们需要服务器，才能实现和别的网络用户连接的效果。</p>
 <p>第二个问题，服务器从哪来？</p>
-<h1 id="总结">总结
-</h1><p>到这里，我们简单的了解了一个简单的博客背后的构成，及我们需要解决的几个问题：</p>
+<h2 id="总结">总结
+</h2><p>到这里，我们简单的了解了一个简单的博客背后的构成，及我们需要解决的几个问题：</p>
 <ul>
 <li>域名从哪来？</li>
 <li>博客框架从哪来？</li>
@@ -481,7 +558,6 @@ unicode: "f93f"
 </ul>
 
 </section>
-
 
     <footer class="article-footer">
     
@@ -523,12 +599,25 @@ unicode: "f93f"
             
                 
 <article class="">
+    <a href="/p/blogbuildhgc04/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其四 进一步优化与美化</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/p/blogbuildhgc03/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其三 三件套的下载与使用</h2>
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其三 三件套的下载与使用</h2>
         </div>
     </a>
 </article>
@@ -541,7 +630,7 @@ unicode: "f93f"
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其二 一个便于管理的写作习惯</h2>
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其二 一个便于管理的写作习惯</h2>
         </div>
     </a>
 </article>
@@ -556,10 +645,10 @@ unicode: "f93f"
         
     <script
     src="https://giscus.app/client.js"
-    data-repo=""
-    data-repo-id=""
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
     data-category="Announcements"
-    data-category-id="DIC_kwDON2wqvM4C98Xz"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
     data-mapping="title"
     data-strict="0"
     data-reactions-enabled="1"
@@ -567,7 +656,7 @@ unicode: "f93f"
     data-input-position="bottom"
     data-theme="light"
     data-lang="zh-CN"
-    data-loading=""
+    data-loading="lazy"
     crossorigin="anonymous"
     async
 ></script>
@@ -620,8 +709,46 @@ unicode: "f93f"
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
-</footer>
 
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了4篇文章 · 
+		总计24.17k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
 
     
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -707,7 +834,7 @@ unicode: "f93f"
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -718,6 +845,65 @@ unicode: "f93f"
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
     </body>

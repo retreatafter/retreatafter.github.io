@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第三集：从本地运行到联网">
-<title>Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其三 三件套的下载与使用</title>
+<title>Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其三 三件套的下载与使用</title>
 
 <link rel='canonical' href='https://retreatafter.github.io/p/blogbuildhgc03/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Hugo+GitHubPages+Cloudflare 博客搭建指南 | 其三 三件套的下载与使用">
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其三 三件套的下载与使用">
 <meta property='og:description' content="第三集：从本地运行到联网">
 <meta property='og:url' content='https://retreatafter.github.io/p/blogbuildhgc03/'>
 <meta property='og:site_name' content='与其归隐'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2025-05-29T17:27:07&#43;08:00'/><meta property='article:modified_time' content='2025-05-29T17:27:07&#43;08:00'/>
-<meta name="twitter:title" content="Hugo+GitHubPages+Cloudflare 博客搭建指南 | 其三 三件套的下载与使用">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2026-05-29T17:27:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-29T17:27:07&#43;08:00'/>
+<meta name="twitter:title" content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其三 三件套的下载与使用">
 <meta name="twitter:description" content="第三集：从本地运行到联网">
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/myfavicon.ico" />
 
     </head>
     <body class="
@@ -115,7 +116,7 @@ unicode: "f6d2"
             
                 <li>
                     <a 
-                        href=''
+                        href='https://github.com/retreatafter/'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -135,9 +136,9 @@ unicode: "f6d2"
             
                 <li>
                     <a 
-                        href=''
+                        href='mailto:retreatafter@protonmail.com%22'
                         target="_blank"
-                        title="Mail"
+                        title="retreatafter@protonmail.com"
                         rel="me"
                     >
                         
@@ -318,7 +319,73 @@ unicode: "f93f"
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#博客框架hugo">博客框架Hugo</a>
+      <ol>
+        <li><a href="#框架软件下载">框架软件下载</a></li>
+        <li><a href="#主题安装">主题安装</a></li>
+        <li><a href="#基本参数调试">基本参数调试</a></li>
+        <li><a href="#内容发布">内容发布</a></li>
+      </ol>
+    </li>
+    <li><a href="#项目部署">项目部署</a>
+      <ol>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#git与githubdesktop">Git与GitHubDesktop</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#自动化生成public文件">自动化生成Public文件</a></li>
+        <li><a href="#使用githubdesktop上传数据">使用GitHubDesktop上传数据</a></li>
+        <li><a href="#公开仓库检查">公开仓库检查</a></li>
+        <li><a href="#cloudflare">Cloudflare</a></li>
+      </ol>
+    </li>
+    <li><a href="#炸掉重来">炸掉重来</a></li>
+    <li><a href="#附录">附录</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -337,7 +404,7 @@ unicode: "f93f"
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/blogbuildhgc03/">Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其三 三件套的下载与使用</a>
+            <a href="/p/blogbuildhgc03/">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其三 三件套的下载与使用</a>
         </h2>
     
         
@@ -363,7 +430,7 @@ unicode: "f93f"
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2025-05-29</time>
+                <time class="article-time--published">2026-05-29</time>
             </div>
         
 
@@ -378,7 +445,8 @@ unicode: "f93f"
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    本文共 8259 字
+                    阅读时长: 17 分钟
                 </time>
             </div>
         
@@ -390,13 +458,856 @@ unicode: "f93f"
 
 </header>
 
-    <section class="article-content">
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
     
     
-    <p>测试文本</p>
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Hugo"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        博客框架Hugo
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%E6%A1%86%E6%9E%B6%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        框架软件下载
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        主题安装
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E5%9F%BA%E6%9C%AC%E5%8F%82%E6%95%B0%E8%B0%83%E8%AF%95"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        基本参数调试
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E5%86%85%E5%AE%B9%E5%8F%91%E5%B8%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        内容发布
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        项目部署
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%E5%89%8D%E8%A8%80"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        前言
+        
+    </span>
+</a></li>
+<li><a class="link" href="#Git%E4%B8%8EGitHubDesktop"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Git与GitHubDesktop
+        
+    </span>
+</a></li>
+<li><a class="link" href="#GitHub"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        GitHub
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%9F%E6%88%90Public%E6%96%87%E4%BB%B6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        自动化生成Public文件
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E4%BD%BF%E7%94%A8GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        使用GitHubDesktop上传数据
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E6%A3%80%E6%9F%A5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        公开仓库检查
+        
+    </span>
+</a></li>
+<li><a class="link" href="#Cloudflare"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Cloudflare
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%E7%82%B8%E6%8E%89%E9%87%8D%E6%9D%A5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        炸掉重来
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%E9%99%84%E5%BD%95"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        附录
+        
+    </span>
+</a></li>
+</ol>
+<h2 id="博客框架hugo">博客框架Hugo
+</h2><h3 id="框架软件下载">框架软件下载
+</h3><p>👉<a class="link" href="https://gohugo.io"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Hugo官网 https://gohugo.io
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></p>
+<p>进入官网后，我们需要进入其GitHub页面进行下载，如果您从未登陆使用过GitHub这个网站，可以参考下列图片步骤：</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85.png"
+	width="2404"
+	height="1289"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85_hu7588199297512107108.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85_hu16588397453158485012.png 1024w"
+	loading="lazy"
+	
+		alt="Hugo安装"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="447px"
+	
+></p>
+<p>您可能需要知晓的是，<strong>版本号并非越新越好</strong>，有时候版本不同可能会造成后续多个软件之间的冲突，以及更新的版本可能会有一些技术细节上的变动带来后续调试上的变动，本文以v0.131.0为例，适配系统环境的文件为【hugo_extended_v0.131.0_windows_amd64.zip】。</p>
+<p>建议养成良好的文件管理习惯，将Hugo解压缩到专门的文件夹，建议全英文，无特殊符号。</p>
+<h3 id="主题安装">主题安装
+</h3><p>到这里我们已经可以使用Hugo了，接下来，我们要使用命令让Hugo创建出一个博客文件夹并生成基本的博客框架数据。在Hugo所在的文件夹地址下使用cmd调出命令行（您也可以选择在搜索中打开命令行再使用cd命令进入到Hugo所在的文件夹地址），在命令行输入<code>hugo new site myblogname</code>，注意，myblogname将作为博客数据文件夹名称，您可以将其改为其它的名称，例如<code>hugo new site aaa</code>、<code>hugo new site bbb</code>，名称全英文，无特殊符号。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4.png"
+	width="1734"
+	height="1886"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4_hu3840415971499869300.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4_hu2796917402221261983.png 1024w"
+	loading="lazy"
+	
+		alt="Hugo基本框架命令"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="91"
+		data-flex-basis="220px"
+	
+></p>
+<p>与此同时，您可以看到多了一个叫做myblogname（或您给文件夹取的其它名字）的文件夹，且其中已经有很多数据——以及空文件夹。这就是我们博客的原型，毛胚房形态，具备核心的博客文件夹并且有基础配置，但除此之外空空如也，因此我们需要对此装修，也即<strong>主题</strong>。</p>
+<p>这可以说是Hugo的核心功能之一，它给出了一个目录文件模板，而那些主题们需要遵循Hugo给的规则来配置主题内参数，而作为使用者，我们可以相对方便、低成本的切换各个主题，并按照其规则进行主题装修。</p>
+<p>我们回到👉<a class="link" href="https://gohugo.io"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Hugo官网 https://gohugo.io 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a>，浏览并下载您喜欢的主题，在这里<strong>Stack主题v3.26.0</strong>为例。需要注意的是，不同的主题后续进行配置时可能会有些细节上的不同，如果您是第一次鼓捣安装博客，且希望花费较少的试错成本，您可以和本文一样，也使用Stack主题练手，等您能相对熟练进行相关配置时，再选择其它主题。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85.png"
+	width="2403"
+	height="1288"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85_hu10895204431187544833.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85_hu7240006308298793159.png 1024w"
+	loading="lazy"
+	
+		alt="Hugo主题安装"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="447px"
+	
+></p>
+<h3 id="基本参数调试">基本参数调试
+</h3><p>在这里，我们可以选择配置全局环境变量（简单来说即任何文件目录下我们都能使用hugo.exe软件），进入到高级系统设置&mdash;&gt;环境变量&mdash;&gt;在全局系统变量的Path变量中增添hugo.exe所在的路径；</p>
+<p>也可以选择一些偷懒的办法，将hugo.exe软件复制一份到对应的博客文件夹地址下，但并不推荐这种做法，hugo的启动软件hugo.exe本体有近100m大小，当后续我们需要管理的博客变多，或是涉及到自动部署时，可能需要进行一些额外的操作，依旧建议您配置全局环境变量。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE.png"
+	width="1727"
+	height="930"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE_hu16276511040009413024.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE_hu7531608789216491833.png 1024w"
+	loading="lazy"
+	
+		alt="Hugo环境变量设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="185"
+		data-flex-basis="445px"
+	
+></p>
+<p>在大多数主题中，作者都会给出exampleSite文件夹，即基本上已经配置好的样例，我们将核心配置config.yaml（后缀名也可能是.toml）——本文的主配置文件名为hugo.yaml，和content文件夹放到我们自己的博客文件夹主目录下，最基本的主题结构到这里就完成了。</p>
+<p>需要说明的是，Hugo的机制为：渲染博客主题时，会优先检查我们博客主文件夹下进行的配置，如果我们并未进行设置，则会采用<code>themes</code>下的配置，因此建议在后续修改对应文件时，将<code>themes</code>下模板文件复制到我们自己的博客主目录文件夹下进行修改。</p>
+<p>对核心配置hugo.yaml进行检查和调整，我们在调整的过程中可以随时通过<code>hugo server -D</code>命令进入对应网址实时预览调整后的结果。以下是一些基本属性，更详细的设置可以参考您所下载的主题的作者所提供的参考文档，如果您使用的是Stack主题，它的参考文档地址是 👉<a class="link" href="https://stack.cai.im/config/menu"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Stack主题参考文档 https://stack.cai.im/config/menu 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a> 。</p>
+<ul>
+<li>在第3行的<code>theme</code>属性可以看到名称为<code>hugo-theme-stack</code>，这对应了我们themes文件夹下主题文件夹的名字，themes文件夹可以下载多个主题，我们要应用什么主题只需在配置文件上进行修改，需要<strong>完全对应</strong>，因此我们需要将下载好的主题源代码安装包的名称进行修改或是修改配置文件中的名称。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">theme</span><span class="err">:</span> <span class="nx">hugo-theme-stack</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第1行的<code>baseurl</code>属性是访问地址，我们将在后续获取到域名后再来修改它。</li>
+<li>原第4行的<code>paginate</code>属性表示分页，即您希望每一页展示给用户多少篇文章。以下表示每页将展示5篇文章。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">paginate</span><span class="err">:</span> <span class="mi">5</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第6行的<code>copyright</code>属性表示您博客页面底部的个人信息，您可以将其改为您的博客名称或者其它您想展示的内容。</li>
+<li>原第10行的<code>DefaultContentLanguage</code>属性表示用户打开您博客页面后默认展示的文章语言界面，当您有多种语言文章时可能会需要它，如果您暂时无国际化需求，可以将其改为您使用的语言，例如以下表示默认展示中文文章语言界面：
+<ul>
+<li>与此同时，第14行根据提示建议我们将属性设置为true，会使数据统计更为准确。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">DefaultContentLanguage</span><span class="err">:</span> <span class="nx">zh-cn</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hasCJKLanguage</span><span class="err">:</span> <span class="kc">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第16行的<code>languages</code>属性下，为我们期望的多种文章语言界面，可根据需要进行配置。若只需要一种语言，将默认隐藏博客页面中的语言切换功能。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">languages</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">zh-cn</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">languageName</span><span class="err">:</span> <span class="err">简体中文</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">title</span><span class="err">:</span> <span class="err">博客作者名称</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">weight</span><span class="err">:</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">params</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">sidebar</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">subtitle</span><span class="err">:</span> <span class="err">简介和说明</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第47行的<code>params</code>属性下，表示博客网站的小图标，您可以将想要展示的图标文件放在<code>static</code>文件夹下，图片文件名默认为<code>favicon.ico</code>，这里需要的后缀为<code>.ico</code>文件，您可以下载喜欢的<code>.ico</code>文件，或是通过一些在线小工具对已有的其它格式图片进行转换。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">params</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mainSections</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">-</span> <span class="nx">post</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">featuredImageField</span><span class="err">:</span> <span class="nx">image</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">rssFullContent</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">favicon</span><span class="err">:</span> <span class="err">/</span><span class="nx">favicon</span><span class="p">.</span><span class="nx">ico</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第55行的<code>footer</code>属性表示页脚，即在页面底部展示博客创建的时间，并展示截至到现在的区间，例如以下设置将展示的格式为<code>2025-2026</code>。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">    <span class="nx">footer</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">since</span><span class="err">:</span> <span class="mi">2025</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">customText</span><span class="err">:</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第59行的<code>dateFormat</code>属性表示博文发布后遵循的时间格式，和博文最后更新后遵循的时间格式，需要遵循go语言的书写格式，以下写法表示所有博文时间格式为yyyy-MM-dd：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">    <span class="nx">dateFormat</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">published</span><span class="err">:</span> <span class="mi">2006-01-02</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">lastUpdated</span><span class="err">:</span> <span class="mi">2006-01-02</span> <span class="mi">15</span><span class="err">:</span><span class="mi">04</span> <span class="nx">MST</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第63行的<code>sidebar</code>属性是对侧边栏头像部分的设置，图片位置放在<code>myblogname（您的博客主目录）/assets/img</code>文件夹下，文件名默认为<code>avatar.png</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">    <span class="nx">sidebar</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">emoji</span><span class="err">:</span> <span class="err">🐾</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subtitle</span><span class="err">:</span> <span class="err">简介和说明</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">avatar</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">enabled</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">local</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">src</span><span class="err">:</span> <span class="nx">img</span><span class="err">/</span><span class="nx">avatar</span><span class="p">.</span><span class="nx">png</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第71行的<code>article</code>属性是对于文章属性展示的一些设置，其中<code>math</code>是对于数学公式的支持；<code>toc</code>表示目录；<code>readingTime</code>为阅读时长，开启后会根据您的博文内容量大致估算出阅读时长；<code>license</code>为在文章末尾展示对应的版权协议。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">    <span class="nx">article</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">math</span><span class="err">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">toc</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">readingTime</span><span class="err">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">license</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">enabled</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">default</span><span class="err">:</span> <span class="nx">Licensed</span> <span class="nx">under</span> <span class="nx">CC</span> <span class="nx">BY-NC-SA</span> <span class="mf">4.0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第79行的<code>comments</code>属性表示评论功能，您可以选择是否开启，以及设置由什么服务商来提供评论功能，例如utterances、GitHub Discussions、Waline等等。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">    <span class="nx">comments</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">enabled</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">provider</span><span class="err">:</span> <span class="nx">disqus</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>原第164行的<code>widgets</code>属性为侧边栏中关于归档、标签分类的显示。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl">    <span class="nx">widgets</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">homepage</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">-</span> <span class="nx">type</span><span class="err">:</span> <span class="nx">search</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">-</span> <span class="nx">type</span><span class="err">:</span> <span class="nx">archives</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">params</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">limit</span><span class="err">:</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">-</span> <span class="nx">type</span><span class="err">:</span> <span class="nx">categories</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">params</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">limit</span><span class="err">:</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">-</span> <span class="nx">type</span><span class="err">:</span> <span class="nx">tag-cloud</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">params</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">                  <span class="nx">limit</span><span class="err">:</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">page</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">-</span> <span class="nx">type</span><span class="err">:</span> <span class="nx">toc</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>原第193行的<code>colorScheme</code>属性为主题颜色，在Stack主题中默认存在亮色、暗色两种模式，我们可以在<code>/assets/scss/partials/highlight</code>文件夹下修改配置来修改我们想要的颜色配置。</p>
+</li>
+<li>
+<p>原第209行的<code>menu</code>属性下，指向的是侧边栏展示给用户的社交图标的超链接，例如您可以展示给用户您的其它平台如推特GitHub账号、发送邮箱等，图标文件的存放地址为<code>.\assets\icons</code>。<code>identifier</code>属性是Hugo区分不同图标的唯一标识，<code>name</code>属性代表鼠标悬停在图标上时显示的文字，<code>url</code>属性代表具体的链接。此外，您还可以添加<code>weight</code>属性来表示顺序，当有多个社交图标时，数字越小的越靠前，优先级会高于您在代码中按顺序编写的情况。</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">menu</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">main</span><span class="err">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">social</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">-</span> <span class="nx">identifier</span><span class="err">:</span> <span class="nx">github</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">name</span><span class="err">:</span> <span class="nx">GitHub</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">url</span><span class="err">:</span> <span class="nx">https</span><span class="err">://</span><span class="nx">github</span><span class="p">.</span><span class="nx">com</span><span class="err">/</span><span class="nx">CaiJimmy</span><span class="err">/</span><span class="nx">hugo-theme-stack</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">params</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">              <span class="nx">icon</span><span class="err">:</span> <span class="nx">brand-github</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>除了配置文档hugo.yaml外，我们还可以对一些文件夹中的文件属性进行修改，例如<code>.\content\page</code>文件夹下对应的是侧边栏功能，我们可以对它们的属性进行修改，来实现显示中文，像是修改archives文件夹下的index.md文件中title属性，对应的，界面将显示对应的文字。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">title</span><span class="err">:</span> <span class="s2">&#34;归档&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="内容发布">内容发布
+</h3><p>在简单的搭建完成后，您可以查看现在的博客数据结构，关于文章内容管理部分大致是如下结构：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">├──</span> <span class="nx">config</span><span class="p">.</span><span class="nx">yaml</span>  <span class="c"># 主配置文件，前面的名称可能会有些变化，关注后缀名为.yaml或.toml</span>
+</span></span><span class="line"><span class="cl"><span class="err">├──</span> <span class="nx">content</span>      <span class="c"># 网站内容根目录，我们的博客本质是由一个个页面组成的</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="nx">page</span>     <span class="c"># 侧边栏导航目录，本质也是页面，例如about、links、archives、search等</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="nx">categories</span> <span class="c"># 分类目录，可以进行自定义分类</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">├──</span> <span class="nx">post</span>     <span class="c"># 文章根目录</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="mi">20060101</span><span class="nx">-first-post</span> <span class="c"># 文章文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">│</span>        <span class="err">└──</span> <span class="nx">index</span><span class="p">.</span><span class="nx">md</span> <span class="c"># 文章文件</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">│</span>        <span class="err">└──</span> <span class="nx">image</span><span class="p">.</span><span class="nx">jpg</span> <span class="c"># 文章内的图片，包括头图</span>
+</span></span><span class="line"><span class="cl"><span class="err">│</span>   <span class="err">└──</span> <span class="nx">_index</span><span class="p">.</span><span class="nx">md</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们的博文内容通常都会放在<code>.\content\post</code>文件夹下，文本文件名格式为：<code>index.语言编码（如不需要多语言切换可省略）.md</code>，可简化为<code>index.md</code>，每一篇博文都属于一个单独的文件夹，您可以在其中放置文章需要的静态资源如图片视频等。</p>
+<p>您可以使用命令来创建一个文章项目结构，例如<code>hugo new content post/weekly/index.md</code>，您也可以选择参考已有的文章项目，手动进行调整。</p>
+<h2 id="项目部署">项目部署
+</h2><h3 id="前言">前言
+</h3><p>经过上述对Hugo框架的折腾，我们获得了一个本地的博客页面，接下来，我们需要将其部署到服务器上，并获取域名，实现联网效果，来让其它用户也能在线访问到我们的博客，本文采用GitHub进行一系列部署。</p>
+<h3 id="git与githubdesktop">Git与GitHubDesktop
+</h3><p>我们需要Git这个中介将我们的博客（本地版）上传到GitHub。</p>
+<p>👉<a class="link" href="https://git-scm.com"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Git官网 https://git-scm.com 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85.png"
+	width="2300"
+	height="1219"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85_hu6542000821456104471.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85_hu15420835585692862371.png 1024w"
+	loading="lazy"
+	
+		alt="Git安装"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="452px"
+	
+></p>
+<p>事实上，如果您是Windows或Mac系统，我会更推荐您下载GitHub Desktop，GitHub Desktop是图形用户界面，来简化使用 Git 和 GitHub 的过程，即您不需要直接面对全是命令行的界面，而是像我们如今所用的简单软件那样，通过图形按钮等来实现我们的需求。</p>
+<p>👉<a class="link" href="https://desktop.github.com/download/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        GitHub Desktop官网 https://desktop.github.com/download/ 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></p>
+<p>工具准备齐全，我们下列正式进入到GitHub的使用。</p>
+<h3 id="github">GitHub
+</h3><p>👉<a class="link" href="https://github.com"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        GitHub官网 https://github.com
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></p>
+<p>首先我们需要一个账号，建议用一个新账号来管理博客，推荐使用邮箱注册，不想与现实身份强联系的可以考虑海外邮箱，试手拿着玩的可以用临时邮箱。</p>
+<p>这里需要注意账号名的选取，采用该方案创建的博客，如果您对折腾域名的意愿不强，那么我们获取的域名将与你的账号名<strong>强联系</strong>，例如本博客GitHub账号名为aaa，那么最后域名会是https://aaa.github.io形式。</p>
+<p>账号注册成功后，我们注册一个新<strong>公开</strong>仓库repository，后续放博客的public文件夹，实际上整个<strong>public文件夹</strong>就是Hugo创建出来的静态页面。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93.png"
+	width="2234"
+	height="1208"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93_hu486248659556154574.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93_hu11910432460004848894.png 1024w"
+	loading="lazy"
+	
+		alt="GitHub仓库"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="184"
+		data-flex-basis="443px"
+	
+></p>
+<p>考虑到安全性，我们再建立一个<strong>私有</strong>仓库repository，只有我们自己能看见，用于放置博客的数据源文件（您可以理解为除了Pulic文件夹以外的其它文件夹），仓库的创建和上述基本相同，在Choose visibility选项选择Private即可，这里对于仓库名没有过多要求，以见名知意为佳，例如您的博客名为aaa，可以给该仓库取名为aaaHugoBlogSource。</p>
+<p>到这里，我们获取了域名，现在可以对应修改我们博客配置文件hugo.yaml中的访问地址了，修改<code>baseurl</code>属性：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">baseurl: https://您的用户名.github.io/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="自动化生成public文件">自动化生成Public文件
+</h3><p>在常规的操作中，我们需要使用hugo命令生成public静态页面文件夹，再将该public文件夹上传到GitHub的公开仓库。为简化这一过程，我们期望的是只需要管理文章内容以及一些博客装修后修正的部分，即<strong>仅管理源代码</strong>，而减少掉手动生成public静态页面文件夹的工作。</p>
+<p>因此我们将采取GitHub Action并使用一段自动代码，实现<strong>仅管理私有仓库</strong>，而动态生成public静态页面文件夹，并且能够自动的上传更新到对应的公开仓库，从而实现页面更新。</p>
+<p>我们的自动化依赖一段代码完成，而第一步是要给权限，书面说法为“GitHub 提供一个令牌Token，可用于代表 GitHub Actions 进行身份验证”。</p>
+<p><strong>设置Token</strong>具体操作：打开GitHub，点开个人界面的<strong>Settings</strong>，找到<strong>Developer Settings</strong>，有一个钥匙图标Personal access tokens (classic)，点进其中的Tokens (classic)，点击Generate new token (classic)，备注Note是给自己看的注释，到期时间Expiration选择<strong>No expiration</strong>（如设置有效期过了有效期需要重新给权限），并勾选<strong>repo</strong>和<strong>workflow</strong>这两部分。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken.png"
+	width="1788"
+	height="1023"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken_hu14843176191082482715.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken_hu12901398795140835685.png 1024w"
+	loading="lazy"
+	
+		alt="设置Token"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="419px"
+	
+></p>
+<p>请注意，生成的那串Token只会显示一次，所以您可以单独创建一个文本文档进行保存记录，否则就只能重新设置。</p>
+<p>因为这段Token会被我们写进接下来的自动化代码文件里，所以我们要在这里再进行一个操作，在我们放源代码的私有仓库设置一个Secrets：</p>
+<p>具体操作：点开我们刚刚创建的私有仓库，点开仓库的<strong>Settings</strong>，找到Security下的<strong>Secrets and variables</strong>，点进其中<strong>Actions</strong>，创建一个<strong>New repository secret</strong>，<strong>Secret</strong>那个框里粘贴进去刚刚你复制的那串Token，这里的<strong>Name</strong>建议符合全英文+简洁原则，例如小编这里写的是<strong>TOKEN</strong>。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets.png"
+	width="1725"
+	height="1401"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets_hu3825059229017150738.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets_hu10533206850374063814.png 1024w"
+	loading="lazy"
+	
+		alt="设置Secrets"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="123"
+		data-flex-basis="295px"
+	
+></p>
+<p>下面来到本部分真正的核心——<strong>自动化代码部分</strong>，我们回到电脑本地文件夹，存放博客所有文件的位置，新建一个文件夹”.github“，并在”.github“内创建一个子文件夹”workflows“，我们的自动化代码就放在”workflows“文件夹下，创建一个空白文档名为deploy.yml，粘贴以下代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">name</span><span class="err">:</span> <span class="nx">deploy</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">on</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">push</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">branches</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">-</span> <span class="nx">main</span> <span class="c"># 或者是你的源代码分支</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">jobs</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">deploy</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">runs-on</span><span class="err">:</span> <span class="nx">ubuntu-24</span><span class="p">.</span><span class="mi">04</span> <span class="c"># 之前用这段代码一直有问题，网友说可能是因为这个ubuntu的版本问题，于是改成了这个版本</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">steps</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">-</span> <span class="nx">name</span><span class="err">:</span> <span class="nx">Checkout</span> <span class="nx">repository</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">uses</span><span class="err">:</span> <span class="nx">actions</span><span class="err">/</span><span class="nx">checkout</span><span class="err">@</span><span class="nx">v2</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">with</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">submodules</span><span class="err">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">fetch-depth</span><span class="err">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="nx">-</span> <span class="nx">name</span><span class="err">:</span> <span class="nx">Set</span> <span class="nx">up</span> <span class="nx">Hugo</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">uses</span><span class="err">:</span> <span class="nx">peaceiris</span><span class="err">/</span><span class="nx">actions-hugo</span><span class="err">@</span><span class="nx">v2</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">with</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">hugo-version</span><span class="err">:</span> <span class="s2">&#34;latest&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="nx">-</span> <span class="nx">name</span><span class="err">:</span> <span class="nx">Build</span> <span class="nx">and</span> <span class="nx">Deploy</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">run</span><span class="err">:</span> <span class="err">|</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">hugo</span> <span class="nx">-D</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="nx">-</span> <span class="nx">name</span><span class="err">:</span> <span class="nx">Deploy</span> <span class="nx">to</span> <span class="nx">GitHub</span> <span class="nx">Pages</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">uses</span><span class="err">:</span> <span class="nx">peaceiris</span><span class="err">/</span><span class="nx">actions-gh-pages</span><span class="err">@</span><span class="nx">v3</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">with</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">PERSONAL_TOKEN</span><span class="err">:</span> <span class="err">$</span><span class="p">{{</span> <span class="nx">secrets</span><span class="p">.</span><span class="nx">TOKEN</span> <span class="p">}}</span> <span class="c"># 你的个人访问令牌，按照变量名来修改，上述用的是TOKEN就写TOKEN，如果在创建secrets名字叫做ccc，那么这里就写secrets.ccc</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">EXTERNAL_REPOSITORY</span><span class="err">:</span> <span class="nx">aaa</span><span class="err">/</span><span class="nx">aaa</span><span class="p">.</span><span class="nx">github</span><span class="p">.</span><span class="nx">io</span> <span class="c"># 你的GitHub Pages仓库地址，即公开的那个仓库</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">PUBLISH_BRANCH</span><span class="err">:</span> <span class="nx">main</span> <span class="c"># 或者是你的GitHub Pages分支</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">PUBLISH_DIR</span><span class="err">:</span> <span class="p">.</span><span class="err">/</span><span class="nx">public</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">commit_message</span><span class="err">:</span> <span class="err">$</span><span class="p">{{</span> <span class="nx">github</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">head_commit</span><span class="p">.</span><span class="nx">message</span> <span class="p">}}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Tips：源代码分支是指，点开您的仓库的<strong>Settings</strong>，General设置下有个Default branch，这里写了您的分支名，本质就是文件夹名，是可以修改的，小编习惯用main，也有些人或者创建时默认是master，如果您的显示是master而且不想改动，那么就把上面这串代码的main改成master。</p>
+<h3 id="使用githubdesktop上传数据">使用GitHubDesktop上传数据
+</h3><p>数据准备好了，仓库准备好了，并且到这里为止我们后续只需要管理<strong>私有仓库</strong>而不再用关心Hugo创建Public静态页面文件夹的工作，接下来我们只需要将大象放进冰箱里就好了。</p>
+<p>登录GitHub Desktop，如果您已经登录了GitHub账号会提示您进行关联登录，因为GitHub代码仓库管理的逻辑其实是：【线上仓库有文件——克隆（下载）文件到本地——本地文件有更新——确认提交更新后的代码】，因此我们需要准备一个文件夹先让GitHub Desktop把线上仓库克隆下来到本地，再更新这个文件夹，用GitHub Desktop提交更新，建议您将这个文件夹和我们先前创建的博客文件夹放在同一级目录，方便后续复制粘贴，您也可以选择将整个源文件都更新到由GitHub Desktop管理的文件夹，但更建议您留份原件。</p>
+<p>在正式上传前，我们先设置不需要上传到私有仓库中的文件，例如public文件、Hugo.exe文件，我们可以创建”.gitignore“文件，在上传的时候GitHub Desktop将自动忽略我们这个文件里写的内容，”.gitignore“文件位置写在博客文件夹根目录下。</p>
+<p>进行文件夹的内容更新后，打开GitHub Desktop会看到”Changes“那一块多出来很多东西，是GitHub Desktop对比比较出文件更新后的内容，我们在”Summary“部分可以写好本次改动的原因，<strong>commit to main</strong>，然后确认提交<strong>push origin</strong>，如果失败了大概率是网不行，建议换个节点。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE.png"
+	width="2955"
+	height="1024"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE_hu8078921267439039036.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE_hu253988658426426065.png 1024w"
+	loading="lazy"
+	
+		alt="GitHubDesktop上传数据"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="288"
+		data-flex-basis="692px"
+	
+></p>
+<p>稍等片刻，代码生效需要一些时间，可以点开GitHub仓库的Actions查看部署deploy情况。</p>
+<p>到这一步应该就能完成整个的自动化操作了，如果没有，请看下一步。</p>
+<h3 id="公开仓库检查">公开仓库检查
+</h3><p>如果上传出现了问题，可以检查一下GitHub中管理Public文件夹的<strong>公开仓库</strong>，在这里部署不成功可能是有两类问题：</p>
+<ul>
+<li>你的公开仓库其实还不算建立成功</li>
+<li>公开仓库里文件多了</li>
+</ul>
+<p>第一种情况，是创建仓库后需要有一个上传的操作，可以任意写入一点内容，这个时候仓库才是真正的创建成功，否则在变更私有仓库数据时，无法正确部署到公开仓库——因为它找不到。注意写入之后要<strong>对公开仓库内容进行清空</strong>，否则也可能出现博客页面出错等问题。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B.png"
+	width="1784"
+	height="1187"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B_hu9301728474733836910.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B_hu13140257343361881988.png 1024w"
+	loading="lazy"
+	
+		alt="公开仓库网页建立"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+></p>
+<p>第二种情况，大多发生在自行调试公开仓库过程中手动对公开仓库添加了数据，按照我们的流程，公开仓库中的所有数据都应该是由私有仓库通过自动部署上传到公开仓库的，不应该存在我们手动的部分，这个时候可以检查仓库内容，如果发现有除了跟私有仓库有联系的代码——Code页面每一行提交的文件中间有亮着蓝色的部分，例如小编这边显示是”用户名/xxxxxxx(私有仓库名)@xxxxxxxx(一串数字)“，还出现了部分没有联系的，就属于该种情况，如果您出现了这样的情况，恭喜你，现在打开GitHub Desktop，按照克隆操作把公开仓库拉到本地，然后把文件清空再上传，即<strong>把公开仓库清空</strong>。</p>
+<p>确认公开仓库没有问题（没有多余文件）后，使用GitHub Desktop对私有仓库数据进行更新，因为自动化代码触发貌似需要代码有变动，所以这里可以任意新增一个测试博文文件（\content\post部分添加新的文章），再再再更新上传，来触发代码生效。</p>
+<p>此时应该就能正常打开博客页面了。</p>
+<h3 id="cloudflare">Cloudflare
+</h3><p>选择GitHubPage搭建是很方便，不过github本身的网络访问问题可以进一步优化，这里涉及到简单的CDN(内容分发网络，Content Delivery Network)概念，简单来说CDN提供商们可以实现托管我们的博客地址，用它们自家的节点进行分发操作，优化用户的访问体验，并且允许给我们的博客添加域名——即多个域名均指向我们的博客，也可以实现隐藏我们服务器的真实地址的效果。而<a class="link" href="https://www.cloudflare.com"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        CloudFlare
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a>就是一家CDN提供商。</p>
+<p>进入官网注册账号后，在左侧导航栏找到【计算 Compute】分类下的【Workers &amp; Pages】，创建新的应用程序并选择导入现有 Git 存储库，将我们在GitHub放置博客页面的<strong>公共仓库</strong>进行授权，一步步点击最后部署等待完成。</p>
+<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2.png"
+	width="1965"
+	height="2074"
+	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2_hu1267785627265553268.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2_hu13360617748935901313.png 1024w"
+	loading="lazy"
+	
+		alt="Cloudflare优化部署"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="94"
+		data-flex-basis="227px"
+	
+></p>
+<p>这时CloudFlare会给我们一个<code>.works.dev</code>的域名（或是<code>.pages.dev</code>），和github给我们分配的域名等效。</p>
+<p>到这里最基础的优化就完成了，Cloudflare的功能当然远不止此，后续我们还可以购买域名，再在CloudFlare上进行绑定，在本篇内容中暂时不进行讨论。</p>
+<h2 id="炸掉重来">炸掉重来
+</h2><p>如果您在数据上传的部分卡住，或许是折腾GitHub的仓库时里面上传的数据出了些问题，如果怎么折腾都还是不对，您可以选择将仓库删除再重新创建。删除的步骤：点进对应仓库Repositories，仓库<strong>Settings</strong>，划到最下方<strong>Danger Zone</strong>，<strong>Delete this repository</strong>。</p>
+<p>在这个过程中，建议您始终备份您的本地博客文件夹——包括文章内容和装修数据。</p>
+<hr>
+<h2 id="附录">附录
+</h2><p>参考文档及视频资料：</p>
+<ul>
+<li>👉<a class="link" href="https://stack.cai.im/config/menu"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《Stack主题参考文档》 https://stack.cai.im/config/menu 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li>👉<a class="link" href="https://www.bilibili.com/video/BV1bovfeaEtQ/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《Hugo + GitHub免费搭建博客，并实现自动化部署 视频版》Letere-莱特雷
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li>👉<a class="link" href="https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《Hugo + GitHub免费搭建博客，并实现自动化部署 文档版》Letere-莱特雷
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li>👉<a class="link" href="https://liuhouliang.com/post/hugo_theme/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《使用hugo stack主题快速搭建博客》Liu Houliang
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li>👉<a class="link" href="https://smallstep.one/hugo-guide/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《Hugo 建站完全指南》小布分享站
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li>👉<a class="link" href="https://github.com/peaceiris/actions-hugo"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《actions-hugo自动化代码》 https://github.com/peaceiris/actions-hugo 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+</ul>
 
 </section>
-
 
     <footer class="article-footer">
     
@@ -438,12 +1349,25 @@ unicode: "f93f"
             
                 
 <article class="">
+    <a href="/p/blogbuildhgc04/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其四 进一步优化与美化</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
     <a href="/p/blogbuildhgc02/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其二 一个便于管理的写作习惯</h2>
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其二 一个便于管理的写作习惯</h2>
         </div>
     </a>
 </article>
@@ -456,7 +1380,7 @@ unicode: "f93f"
         
 
         <div class="article-details">
-            <h2 class="article-title">Hugo&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</h2>
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</h2>
         </div>
     </a>
 </article>
@@ -471,10 +1395,10 @@ unicode: "f93f"
         
     <script
     src="https://giscus.app/client.js"
-    data-repo=""
-    data-repo-id=""
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
     data-category="Announcements"
-    data-category-id="DIC_kwDON2wqvM4C98Xz"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
     data-mapping="title"
     data-strict="0"
     data-reactions-enabled="1"
@@ -482,7 +1406,7 @@ unicode: "f93f"
     data-input-position="bottom"
     data-theme="light"
     data-lang="zh-CN"
-    data-loading=""
+    data-loading="lazy"
     crossorigin="anonymous"
     async
 ></script>
@@ -535,8 +1459,46 @@ unicode: "f93f"
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
-</footer>
 
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了4篇文章 · 
+		总计24.17k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
 
     
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
@@ -622,7 +1584,7 @@ unicode: "f93f"
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -633,6 +1595,65 @@ unicode: "f93f"
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
     </body>
