@@ -2,18 +2,18 @@
 <html lang="zh-cn" dir="ltr">
     <head>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一集：需求分析">
-<title>Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一集：你们是双胞胎吗">
+<title>WordPress博客上线流程 | 其一 第一步就遇见新的问题</title>
 
-<link rel='canonical' href='https://retreatafter.github.io/p/blogbuildhgc01/'>
+<link rel='canonical' href='https://retreatafter.github.io/p/blogbuildwp01/'>
 
-<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
-<meta property='og:description' content="第一集：需求分析">
-<meta property='og:url' content='https://retreatafter.github.io/p/blogbuildhgc01/'>
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="WordPress博客上线流程 | 其一 第一步就遇见新的问题">
+<meta property='og:description' content="第一集：你们是双胞胎吗">
+<meta property='og:url' content='https://retreatafter.github.io/p/blogbuildwp01/'>
 <meta property='og:site_name' content='与其归隐'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2026-05-29T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-29T17:07:07&#43;08:00'/>
-<meta name="twitter:title" content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
-<meta name="twitter:description" content="第一集：需求分析">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='WordPress框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2026-05-30T07:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-30T07:07:07&#43;08:00'/>
+<meta name="twitter:title" content="WordPress博客上线流程 | 其一 第一步就遇见新的问题">
+<meta name="twitter:description" content="第一集：你们是双胞胎吗">
     <link rel="shortcut icon" href="/myfavicon.ico" />
 
     </head>
@@ -356,20 +356,9 @@ unicode: "f287"
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#前言">前言</a></li>
-    <li><a href="#网站">网站</a>
-      <ol>
-        <li><a href="#网址">网址</a></li>
-        <li><a href="#域名与ip">域名与ip</a></li>
-      </ol>
-    </li>
-    <li><a href="#博客">博客</a>
-      <ol>
-        <li><a href="#博客框架">博客框架</a></li>
-        <li><a href="#服务器">服务器</a></li>
-      </ol>
-    </li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#区分com与org">区分com与org</a></li>
+    <li><a href="#url">URL</a></li>
+    <li><a href="#附录">附录</a></li>
   </ol>
 </nav>
         </div>
@@ -397,12 +386,12 @@ unicode: "f287"
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/blogbuildhgc01/">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</a>
+            <a href="/p/blogbuildwp01/">WordPress博客上线流程 | 其一 第一步就遇见新的问题</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            第一集：需求分析
+            第一集：你们是双胞胎吗
         </h3>
         
     </div>
@@ -423,7 +412,7 @@ unicode: "f287"
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2026-05-29</time>
+                <time class="article-time--published">2026-05-30</time>
             </div>
         
 
@@ -438,8 +427,8 @@ unicode: "f287"
 
 
                 <time class="article-time--reading">
-                    本文共 1104 字
-                    阅读时长: 3 分钟
+                    本文共 915 字
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -471,90 +460,94 @@ unicode: "f287"
 <p>本节目录</p>
 </blockquote>
 <ol>
-<li><a class="link" href="#%e5%89%8d%e8%a8%80"  >
+<li><a class="link" href="#%E5%8C%BA%E5%88%86com%E4%B8%8Eorg"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        前言
+        区分com与org
         
     </span>
 </a></li>
-<li><a class="link" href="#%e7%bd%91%e7%ab%99"  >
+<li><a class="link" href="#URL"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        网站
-        
-    </span>
-</a>
-<ol>
-<li><a class="link" href="#%e7%bd%91%e5%9d%80"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        网址
+        URL
         
     </span>
 </a></li>
-<li><a class="link" href="#%e5%9f%9f%e5%90%8d%e4%b8%8eip"  >
+<li><a class="link" href="#%E9%99%84%E5%BD%95"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        域名与ip
+        附录
         
     </span>
 </a></li>
 </ol>
-</li>
-<li><a class="link" href="#%e5%8d%9a%e5%ae%a2"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        博客
-        
-    </span>
-</a>
-<ol>
-<li><a class="link" href="#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        博客框架
-        
-    </span>
-</a></li>
-<li><a class="link" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        服务器
-        
-    </span>
-</a></li>
-</ol>
-</li>
-<li><a class="link" href="#%e6%80%bb%e7%bb%93"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        总结
-        
-    </span>
-</a></li>
-</ol>
-<h2 id="前言">前言
-</h2><p>在互联网上，可以找到多种办法进行博客搭建，并且各平台也逐渐推出了一站式服务，即你不需要明白网站运作背后发生了什么，只需要<strong>专心创作内容</strong>，然后付费给网站，把维修的相关工作交给网站进行处理。</p>
-<p>而本系列针对的是和小编一样无法忽视背后的十万个为什么，又不想进行过于深度底层原理研究的您，而进行的一些尽可能通俗易懂且必要的初级原理解释。</p>
-<h2 id="网站">网站
-</h2><h3 id="网址">网址
-</h3><p>我们访问网站时都需要解决一个问题，即我如何唯一确定、找到这个网站。例如现在我们需要进入leetcode网站刷题，当我们输入 【https://leetcode.cn】 网址时，才能导航进入到该网站，假设我们输入的是 【https://leetcode1.cn】 ，那么进入的就会是另一个网站——也可能不存在。</p>
-<p>博客也是如此，我们需要来解决获取网站的问题，简单来说，即：我家的门牌号是多少？</p>
-<h3 id="域名与ip">域名与ip
-</h3><p>ip是设备在网络中的地址，唯一定位一台网络上的计算机，用于实现设备之间的通信和数据传输。ip的格式为四个整数，例如127.0.0.1，在这里我们暂时不进行深一步的ip类型的讨论，只需要大概理解，每一个网页都对应有ip，且它是数字形式，不易于阅读。</p>
-<p>正是因为不易于阅读，域名解决了这个问题，它是一串有规律的字符，这是人类更容易接受、更方便记忆和传播的形式，例如上述我们提到的 【https://leetcode.cn】。</p>
-<p>在知道这一点后，一个问题接踵而来，我要如何获得（喜欢的）域名？</p>
-<h2 id="博客">博客
-</h2><h3 id="博客框架">博客框架
-</h3><p>当我们访问别人的页面时，除了内容外，还可以看到有许多有用有趣的机制，例如搜索、评论、吉祥物互动，事实上这背后都包括了一系列的html、css、js等代码，而其中有些步骤其实是固定的，是重复性工作，因此随着市场需求出现，相应的也出现了各类框架，即模板，使用模板，我们一定程度上就无需面对繁琐的代码，这简化了我们搭建的工作。</p>
-<h3 id="服务器">服务器
-</h3><p>当我们创作内容后，显然我们需要一个储存我们的博客文件数据的地方，而我们又需要发布到网络上让别的用户也能访问，进行请求和服务响应，在这里我们不进行详细冗余的服务器类型介绍，只需要知道，我们需要服务器，才能实现和别的网络用户连接的效果。</p>
-<p>第二个问题，服务器从哪来？</p>
-<h2 id="总结">总结
-</h2><p>到这里，我们简单的了解了一个简单的博客背后的构成，及我们需要解决的几个问题：</p>
+<h2 id="区分com与org">区分com与org
+</h2><p>相较于上篇中框架+服务器的搭建方案，选用WordPress更吸引人的理由会是一站式服务更快捷，而这里经常需要解决的第一个问题是：</p>
+<blockquote>
+<p>怎么有WordPress.com又有WordPress.org，两个都是一样的吗？或者谁是盗版？</p>
+</blockquote>
+<p>其实<strong>都是官网</strong>。</p>
+<p>区别在于WordPress.org更早出现，根据官网信息，2003年WordPress.org出现，它是一款软件，更书面的称呼是<strong>内容管理系统</strong>，用它建站需要自行解决服务器、域名等问题，后续WordPress.com在2005年推出，它的底层依然由WordPress.org 软件软件实现，但由WordPress服务器进行托管和维护。</p>
+<p>可以看到WordPress.com是更便利且技术门槛更低的，当然，为此用户需要向WordPress支付一定金额才能使用其更便利的功能。</p>
+<p>本文所讨论的情况是WordPress.com上的一键搭建，即像如今的社交平台一样，登录即用。</p>
+<p><a id="URL"></a></p>
+<h2 id="url">URL
+</h2><p>这里将插入一点有关计算机网络的小知识，仅为更好的理解本文出现过的理论概念，并不做更深入讨论。</p>
+<p>URL(Uniform Resource Locator)统一资源定位符，它有固定的格式：<code>协议名://主机名.域名.域名后缀.域名分类/目录/网页文件</code>，例如<code>https://www.ruankao.org.cn/sign/welcome</code>，www是主机名，ruankao是域名，org是组织模式的域名后缀，cn是地理模式的域名分类，从域名后缀可以体现一个网站的性质。</p>
+<p>关于域名分类，常见的分类有根据【组织模式】分类和【地理模式】分类。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">-</span> <span class="nt">组织模式</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">com</span> <span class="nt">商业组织</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">edu</span> <span class="nt">教育机构</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">gov</span> <span class="nt">政府机构</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">mil</span> <span class="nt">军事部门</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">net</span> <span class="nt">主要网络支持中心</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">org</span> <span class="nt">各类组织机构</span><span class="o">/</span><span class="nt">非盈利组织</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">int</span> <span class="nt">国际组织</span>
+</span></span><span class="line"><span class="cl"><span class="nt">-</span> <span class="nt">地理模式</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">cn</span> <span class="nt">中国</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">-</span> <span class="nt">mo</span> <span class="nt">澳门</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在这里我们再回过头来看，WordPress.org的后缀是.org，说明它是属于组织机构且通常指向非营利组织——通过官方介绍我们也可以知道它确实是免费开源的软件，而WordPress.com的后缀是.com，表示它是商业组织，符合商业活动。</p>
+<hr>
+<h2 id="附录">附录
+</h2><p>参考文档及视频资料：</p>
 <ul>
-<li>域名从哪来？</li>
-<li>博客框架从哪来？</li>
-<li>服务器从哪来？</li>
-</ul>
-<p>这三个问题解决的办法均不唯一，本文将采取Hugo+GitHub+Cloudflare方案来解决上述问题，分别对应了：</p>
-<ul>
-<li>GitHub→域名+服务器</li>
-<li>Cloudflare→优化方案，非必要，关于这点我们将在接下来必要的时候简单提及</li>
-<li>Hugo→博客框架</li>
+<li>👉<a class="link" href="https://wordpress.ac.cn/about/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《WordPress关于我们》 https://wordpress.ac.cn/about/
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li>👉<a class="link" href="https://wordpress.com/zh-cn/support/getting-started-with-wordpress-com/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《WordPress.com入门指南》 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
 </ul>
 
 </section>
@@ -563,7 +556,7 @@ unicode: "f287"
     
     <section class="article-tags">
         
-            <a href="/tags/hugo%E6%A1%86%E6%9E%B6/">Hugo框架</a>
+            <a href="/tags/wordpress%E6%A1%86%E6%9E%B6/">WordPress框架</a>
         
             <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
         
@@ -596,6 +589,19 @@ unicode: "f287"
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/blogbuildwp02/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">WordPress博客上线流程 | 其二 有得有失的使用体验</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="">
@@ -638,25 +644,12 @@ unicode: "f287"
             
                 
 <article class="">
-    <a href="/p/blogbuildwp02/">
+    <a href="/p/blogbuildhgc01/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">WordPress博客上线流程 | 其二 有得有失的使用体验</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/blogbuildwp01/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">WordPress博客上线流程 | 其一 第一步就遇见新的问题</h2>
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</h2>
         </div>
     </a>
 </article>

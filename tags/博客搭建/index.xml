@@ -7,7 +7,224 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>与其归隐</copyright>
-        <lastBuildDate>Fri, 29 May 2026 17:37:07 +0800</lastBuildDate><atom:link href="https://retreatafter.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 30 May 2026 07:17:07 +0800</lastBuildDate><atom:link href="https://retreatafter.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>WordPress博客上线流程 | 其二 有得有失的使用体验</title>
+        <link>https://retreatafter.github.io/p/blogbuildwp02/</link>
+        <pubDate>Sat, 30 May 2026 07:17:07 +0800</pubDate>
+        
+        <guid>https://retreatafter.github.io/p/blogbuildwp02/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本节目录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        注册登录
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E9%99%84%E5%BD%95&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        附录
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;注册登录&#34;&gt;注册登录
+&lt;/h2&gt;&lt;p&gt;进入WordPress.com官网，常规的进行注册登录，接下来会进行到域名选择，我们输入想展示给用户的前缀，并使用WordPress提供的免费域名后缀&lt;code&gt;.wordpress.com&lt;/code&gt;，最终会进入到如下的工作面板，我们可以可视化地对WordPress博客进行装修。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95.png&#34;
+	width=&#34;2269&#34;
+	height=&#34;1025&#34;
+	srcset=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95_hu18088525332516761614.png 480w, https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95_hu3282026408244610341.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;WordPress.com注册登录&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;221&#34;
+		data-flex-basis=&#34;531px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%9F%9F%E5%90%8D%E9%80%89%E6%8B%A9.png&#34;
+	width=&#34;2245&#34;
+	height=&#34;1098&#34;
+	srcset=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%9F%9F%E5%90%8D%E9%80%89%E6%8B%A9_hu17778979640797537765.png 480w, https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%9F%9F%E5%90%8D%E9%80%89%E6%8B%A9_hu3846005311833486312.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;域名选择&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;490px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%9D%BF.png&#34;
+	width=&#34;1726&#34;
+	height=&#34;1305&#34;
+	srcset=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%9D%BF_hu4353476169839284490.png 480w, https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%9D%BF_hu17301799892362240411.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;工作面板&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;317px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;注意，此时其实还没有正式进入到博客装修阶段，需要选择站点发布再次确认域名套餐，才算网站建立。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%82%AC%E4%BF%83%E7%BC%B4%E8%B4%B9%E8%AD%A6%E5%91%8A%E4%B8%80%E6%AC%A1.png&#34;
+	width=&#34;804&#34;
+	height=&#34;294&#34;
+	srcset=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%82%AC%E4%BF%83%E7%BC%B4%E8%B4%B9%E8%AD%A6%E5%91%8A%E4%B8%80%E6%AC%A1_hu17233023243082313050.png 480w, https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%82%AC%E4%BF%83%E7%BC%B4%E8%B4%B9%E8%AD%A6%E5%91%8A%E4%B8%80%E6%AC%A1_hu12771474469523848083.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;催促缴费警告一次&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;656px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;三番五次确认之后再度回到主页小房子界面，这个时候才能修改主题，也正式进入到博客装修环节。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E4%BB%AA%E8%A1%A8%E7%9B%98.png&#34;
+	width=&#34;2458&#34;
+	height=&#34;1250&#34;
+	srcset=&#34;https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E4%BB%AA%E8%A1%A8%E7%9B%98_hu349619196137973066.png 480w, https://retreatafter.github.io/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E4%BB%AA%E8%A1%A8%E7%9B%98_hu16488409207058812441.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;仪表盘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;196&#34;
+		data-flex-basis=&#34;471px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然而WordPress.com商业版的博客装修其实没多少能说的，主要原因是免费版限制了尤其多的功能——高情商说法是“我们已经为您搭建了完整的博客您只需要将ABCDE几处修改文本就可以体验使用博客了”，几乎只能使用原原本本的主题模板，想要进一步修改都会被提示是收费功能，而插件功能也是都需要付费套餐才能使用否则只会默认安装几个安全性功能的插件，而博客搭建与装修有趣（和折磨）的基本上也是这两个部分，也就是说在WordPress.com免费套餐里你是几乎对所有事情都无能为力的，对于想免费体验搭建博客过程的用户来说或许也没有那么便利……但对于对博客装修无欲无求只是想快速有一个个人页面的用户来说，也不失一个选择吧。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;附录&#34;&gt;附录
+&lt;/h2&gt;&lt;p&gt;参考文档及视频资料：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;👉&lt;a class=&#34;link&#34; href=&#34;https://wordpress.com/zh-cn/support/getting-started-with-wordpress-com/&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        《WordPress.com入门指南》 
+        
+            &lt;svg width=&#34;.7em&#34; height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+                &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34; fill=&#34;currentColor&#34; /&gt;
+            &lt;/svg&gt;
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>WordPress博客上线流程 | 其一 第一步就遇见新的问题</title>
+        <link>https://retreatafter.github.io/p/blogbuildwp01/</link>
+        <pubDate>Sat, 30 May 2026 07:07:07 +0800</pubDate>
+        
+        <guid>https://retreatafter.github.io/p/blogbuildwp01/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本节目录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E5%8C%BA%E5%88%86com%E4%B8%8Eorg&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        区分com与org
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#URL&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        URL
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E9%99%84%E5%BD%95&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        附录
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;区分com与org&#34;&gt;区分com与org
+&lt;/h2&gt;&lt;p&gt;相较于上篇中框架+服务器的搭建方案，选用WordPress更吸引人的理由会是一站式服务更快捷，而这里经常需要解决的第一个问题是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;怎么有WordPress.com又有WordPress.org，两个都是一样的吗？或者谁是盗版？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实&lt;strong&gt;都是官网&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;区别在于WordPress.org更早出现，根据官网信息，2003年WordPress.org出现，它是一款软件，更书面的称呼是&lt;strong&gt;内容管理系统&lt;/strong&gt;，用它建站需要自行解决服务器、域名等问题，后续WordPress.com在2005年推出，它的底层依然由WordPress.org 软件软件实现，但由WordPress服务器进行托管和维护。&lt;/p&gt;
+&lt;p&gt;可以看到WordPress.com是更便利且技术门槛更低的，当然，为此用户需要向WordPress支付一定金额才能使用其更便利的功能。&lt;/p&gt;
+&lt;p&gt;本文所讨论的情况是WordPress.com上的一键搭建，即像如今的社交平台一样，登录即用。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;URL&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;url&#34;&gt;URL
+&lt;/h2&gt;&lt;p&gt;这里将插入一点有关计算机网络的小知识，仅为更好的理解本文出现过的理论概念，并不做更深入讨论。&lt;/p&gt;
+&lt;p&gt;URL(Uniform Resource Locator)统一资源定位符，它有固定的格式：&lt;code&gt;协议名://主机名.域名.域名后缀.域名分类/目录/网页文件&lt;/code&gt;，例如&lt;code&gt;https://www.ruankao.org.cn/sign/welcome&lt;/code&gt;，www是主机名，ruankao是域名，org是组织模式的域名后缀，cn是地理模式的域名分类，从域名后缀可以体现一个网站的性质。&lt;/p&gt;
+&lt;p&gt;关于域名分类，常见的分类有根据【组织模式】分类和【地理模式】分类。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;组织模式&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;com&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;商业组织&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;edu&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;教育机构&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;gov&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;政府机构&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;mil&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;军事部门&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;net&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;主要网络支持中心&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;org&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;各类组织机构&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;非盈利组织&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;国际组织&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;地理模式&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;cn&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;中国&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;mo&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;澳门&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在这里我们再回过头来看，WordPress.org的后缀是.org，说明它是属于组织机构且通常指向非营利组织——通过官方介绍我们也可以知道它确实是免费开源的软件，而WordPress.com的后缀是.com，表示它是商业组织，符合商业活动。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;附录&#34;&gt;附录
+&lt;/h2&gt;&lt;p&gt;参考文档及视频资料：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;👉&lt;a class=&#34;link&#34; href=&#34;https://wordpress.ac.cn/about/&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        《WordPress关于我们》 https://wordpress.ac.cn/about/
+        
+            &lt;svg width=&#34;.7em&#34; height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+                &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34; fill=&#34;currentColor&#34; /&gt;
+            &lt;/svg&gt;
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👉&lt;a class=&#34;link&#34; href=&#34;https://wordpress.com/zh-cn/support/getting-started-with-wordpress-com/&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        《WordPress.com入门指南》 
+        
+            &lt;svg width=&#34;.7em&#34; height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+                &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+                &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34; fill=&#34;currentColor&#34; /&gt;
+            &lt;/svg&gt;
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其四 进一步优化与美化</title>
         <link>https://retreatafter.github.io/p/blogbuildhgc04/</link>
         <pubDate>Fri, 29 May 2026 17:37:07 +0800</pubDate>
@@ -267,7 +484,7 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#RSS%E8%AE%A2%E9%98%85%E6%9C%8D%E5%8A%A1&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#RSS%e8%ae%a2%e9%98%85%e6%9c%8d%e5%8a%a1&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
         RSS订阅服务
         
@@ -282,7 +499,7 @@
     &lt;/span&gt;
 &lt;/a&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4&amp;#43;%E6%96%87%E7%AB%A0%E6%95%B0%E7%BB%9F%E8%AE%A1&amp;#43;%E8%AE%BF%E9%97%AE%E9%87%8F%EF%BC%88%E4%B8%89%E5%90%88%E4%B8%80%E7%89%88%EF%BC%89&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%bf%90%e8%a1%8c%e6%97%b6%e9%97%b4&amp;#43;%e6%96%87%e7%ab%a0%e6%95%b0%e7%bb%9f%e8%ae%a1&amp;#43;%e8%ae%bf%e9%97%ae%e9%87%8f%ef%bc%88%e4%b8%89%e5%90%88%e4%b8%80%e7%89%88%ef%bc%89&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
         运行时间+文章数统计+访问量（三合一版）
         
@@ -2963,18 +3180,14 @@
 &lt;ul&gt;
 &lt;li&gt;步骤1：在&lt;strong&gt;公开&lt;/strong&gt;的仓库中找到并开启discussion功能。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc04/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC4%E9%9B%86.giscus%E8%AF%84%E8%AE%BA%E5%8C%BA.GitHub%E8%AE%BE%E7%BD%AE.png&#34;
-	width=&#34;1710&#34;
-	height=&#34;1588&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc04/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC4%E9%9B%86.giscus%E8%AF%84%E8%AE%BA%E5%8C%BA.GitHub%E8%AE%BE%E7%BD%AE_hu2545840537277804205.png 480w, https://retreatafter.github.io/p/blogbuildhgc04/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC4%E9%9B%86.giscus%E8%AF%84%E8%AE%BA%E5%8C%BA.GitHub%E8%AE%BE%E7%BD%AE_hu12382883245636117105.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac4%e9%9b%86.giscus%e8%af%84%e8%ae%ba%e5%8c%ba.GitHub%e8%ae%be%e7%bd%ae.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;giscus评论区.GitHub设置&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;107&#34;
-		data-flex-basis=&#34;258px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -3005,18 +3218,14 @@
 &lt;/a&gt;，跟着配置步骤来完成它，最后您能得到一个具备相关属性的代码块，将这个代码块放在合适的位置，就能够启用评论区了。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc04/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC4%E9%9B%86.giscus%E8%AF%84%E8%AE%BA%E5%8C%BA.%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90.png&#34;
-	width=&#34;1212&#34;
-	height=&#34;2257&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc04/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC4%E9%9B%86.giscus%E8%AF%84%E8%AE%BA%E5%8C%BA.%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90_hu6465732472983655158.png 480w, https://retreatafter.github.io/p/blogbuildhgc04/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC4%E9%9B%86.giscus%E8%AF%84%E8%AE%BA%E5%8C%BA.%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90_hu1824916919557422507.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac4%e9%9b%86.giscus%e8%af%84%e8%ae%ba%e5%8c%ba.%e9%85%8d%e7%bd%ae%e4%bb%a3%e7%a0%81%e7%94%9f%e6%88%90.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;giscus评论区.配置代码生成&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;53&#34;
-		data-flex-basis=&#34;128px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -3176,7 +3385,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;```&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;rss订阅服务&#34;&gt;RSS订阅服务
+&lt;/div&gt;&lt;p&gt;&lt;a id=&#34;RSS订阅服务&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rss订阅服务&#34;&gt;RSS订阅服务
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;步骤1：每个主题通常都会给出RSS模板，位置通常在.\layouts_default\rss.xml文件中，本文查找到的RSS模板内容如下：&lt;/li&gt;
 &lt;li&gt;如果所下载的主题没给出RSS模板的，可以参考&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/rss.xml&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
@@ -3342,7 +3552,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;站点数据统计&#34;&gt;站点数据统计
-&lt;/h2&gt;&lt;h3 id=&#34;运行时间文章数统计访问量三合一版&#34;&gt;运行时间+文章数统计+访问量（三合一版）
+&lt;/h2&gt;&lt;p&gt;&lt;a id=&#34;运行时间+文章数统计+访问量（三合一版）&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;运行时间文章数统计访问量三合一版&#34;&gt;运行时间+文章数统计+访问量（三合一版）
 &lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;功能：在页脚显示博客运行时间、文章统计和访问量数据，支持多语言&lt;/li&gt;
 &lt;li&gt;步骤1：在.\layouts\partials\footer\footer.html文件中加入以下代码：&lt;/li&gt;
@@ -3824,7 +4035,7 @@
 &lt;p&gt;本节目录&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Hugo&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6Hugo&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
         博客框架Hugo
         
@@ -3870,7 +4081,7 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#Git%E4%B8%8EGitHubDesktop&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#Git%e4%b8%8eGitHubDesktop&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
         Git与GitHubDesktop
         
@@ -3882,13 +4093,13 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%9F%E6%88%90Public%E6%96%87%E4%BB%B6&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%87%aa%e5%8a%a8%e5%8c%96%e7%94%9f%e6%88%90Public%e6%96%87%e4%bb%b6&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
         自动化生成Public文件
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E4%BD%BF%E7%94%A8GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%bd%bf%e7%94%a8GitHubDesktop%e4%b8%8a%e4%bc%a0%e6%95%b0%e6%8d%ae&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
         使用GitHubDesktop上传数据
         
@@ -3921,6 +4132,7 @@
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;a id=&#34;博客框架Hugo&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;博客框架hugo&#34;&gt;博客框架Hugo
 &lt;/h2&gt;&lt;h3 id=&#34;框架软件下载&#34;&gt;框架软件下载
 &lt;/h3&gt;&lt;p&gt;👉&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
@@ -3935,36 +4147,28 @@
     &lt;/span&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;进入官网后，我们需要进入其GitHub页面进行下载，如果您从未登陆使用过GitHub这个网站，可以参考下列图片步骤：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85.png&#34;
-	width=&#34;2404&#34;
-	height=&#34;1289&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85_hu7588199297512107108.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85_hu16588397453158485012.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e5%ae%89%e8%a3%85.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Hugo安装&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;186&#34;
-		data-flex-basis=&#34;447px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;您可能需要知晓的是，&lt;strong&gt;版本号并非越新越好&lt;/strong&gt;，有时候版本不同可能会造成后续多个软件之间的冲突，以及更新的版本可能会有一些技术细节上的变动带来后续调试上的变动，本文以v0.131.0为例，适配系统环境的文件为【hugo_extended_v0.131.0_windows_amd64.zip】。&lt;/p&gt;
 &lt;p&gt;建议养成良好的文件管理习惯，将Hugo解压缩到专门的文件夹，建议全英文，无特殊符号。&lt;/p&gt;
 &lt;h3 id=&#34;主题安装&#34;&gt;主题安装
 &lt;/h3&gt;&lt;p&gt;到这里我们已经可以使用Hugo了，接下来，我们要使用命令让Hugo创建出一个博客文件夹并生成基本的博客框架数据。在Hugo所在的文件夹地址下使用cmd调出命令行（您也可以选择在搜索中打开命令行再使用cd命令进入到Hugo所在的文件夹地址），在命令行输入&lt;code&gt;hugo new site myblogname&lt;/code&gt;，注意，myblogname将作为博客数据文件夹名称，您可以将其改为其它的名称，例如&lt;code&gt;hugo new site aaa&lt;/code&gt;、&lt;code&gt;hugo new site bbb&lt;/code&gt;，名称全英文，无特殊符号。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4.png&#34;
-	width=&#34;1734&#34;
-	height=&#34;1886&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4_hu3840415971499869300.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4_hu2796917402221261983.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e5%9f%ba%e6%9c%ac%e6%a1%86%e6%9e%b6%e5%91%bd%e4%bb%a4.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Hugo基本框架命令&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;91&#34;
-		data-flex-basis=&#34;220px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;与此同时，您可以看到多了一个叫做myblogname（或您给文件夹取的其它名字）的文件夹，且其中已经有很多数据——以及空文件夹。这就是我们博客的原型，毛胚房形态，具备核心的博客文件夹并且有基础配置，但除此之外空空如也，因此我们需要对此装修，也即&lt;strong&gt;主题&lt;/strong&gt;。&lt;/p&gt;
@@ -3980,35 +4184,27 @@
         
     &lt;/span&gt;
 &lt;/a&gt;，浏览并下载您喜欢的主题，在这里&lt;strong&gt;Stack主题v3.26.0&lt;/strong&gt;为例。需要注意的是，不同的主题后续进行配置时可能会有些细节上的不同，如果您是第一次鼓捣安装博客，且希望花费较少的试错成本，您可以和本文一样，也使用Stack主题练手，等您能相对熟练进行相关配置时，再选择其它主题。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85.png&#34;
-	width=&#34;2403&#34;
-	height=&#34;1288&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85_hu10895204431187544833.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85_hu7240006308298793159.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e4%b8%bb%e9%a2%98%e5%ae%89%e8%a3%85.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Hugo主题安装&#34;
 	
 	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;186&#34;
-		data-flex-basis=&#34;447px&#34;
-	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;基本参数调试&#34;&gt;基本参数调试
 &lt;/h3&gt;&lt;p&gt;在这里，我们可以选择配置全局环境变量（简单来说即任何文件目录下我们都能使用hugo.exe软件），进入到高级系统设置&amp;mdash;&amp;gt;环境变量&amp;mdash;&amp;gt;在全局系统变量的Path变量中增添hugo.exe所在的路径；&lt;/p&gt;
 &lt;p&gt;也可以选择一些偷懒的办法，将hugo.exe软件复制一份到对应的博客文件夹地址下，但并不推荐这种做法，hugo的启动软件hugo.exe本体有近100m大小，当后续我们需要管理的博客变多，或是涉及到自动部署时，可能需要进行一些额外的操作，依旧建议您配置全局环境变量。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE.png&#34;
-	width=&#34;1727&#34;
-	height=&#34;930&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE_hu16276511040009413024.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE_hu7531608789216491833.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e8%ae%be%e7%bd%ae.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Hugo环境变量设置&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;185&#34;
-		data-flex-basis=&#34;445px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;在大多数主题中，作者都会给出exampleSite文件夹，即基本上已经配置好的样例，我们将核心配置config.yaml（后缀名也可能是.toml）——本文的主配置文件名为hugo.yaml，和content文件夹放到我们自己的博客文件夹主目录下，最基本的主题结构到这里就完成了。&lt;/p&gt;
@@ -4311,6 +4507,7 @@
 &lt;h2 id=&#34;项目部署&#34;&gt;项目部署
 &lt;/h2&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
 &lt;/h3&gt;&lt;p&gt;经过上述对Hugo框架的折腾，我们获得了一个本地的博客页面，接下来，我们需要将其部署到服务器上，并获取域名，实现联网效果，来让其它用户也能在线访问到我们的博客，本文采用GitHub进行一系列部署。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;Git与GitHubDesktop&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;git与githubdesktop&#34;&gt;Git与GitHubDesktop
 &lt;/h3&gt;&lt;p&gt;我们需要Git这个中介将我们的博客（本地版）上传到GitHub。&lt;/p&gt;
 &lt;p&gt;👉&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
@@ -4324,18 +4521,14 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85.png&#34;
-	width=&#34;2300&#34;
-	height=&#34;1219&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85_hu6542000821456104471.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85_hu15420835585692862371.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Git%e5%ae%89%e8%a3%85.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Git安装&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;188&#34;
-		data-flex-basis=&#34;452px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;事实上，如果您是Windows或Mac系统，我会更推荐您下载GitHub Desktop，GitHub Desktop是图形用户界面，来简化使用 Git 和 GitHub 的过程，即您不需要直接面对全是命令行的界面，而是像我们如今所用的简单软件那样，通过图形按钮等来实现我们的需求。&lt;/p&gt;
@@ -4351,6 +4544,7 @@
     &lt;/span&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;工具准备齐全，我们下列正式进入到GitHub的使用。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;GitHub&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;github&#34;&gt;GitHub
 &lt;/h3&gt;&lt;p&gt;👉&lt;a class=&#34;link&#34; href=&#34;https://github.com&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
@@ -4366,18 +4560,14 @@
 &lt;p&gt;首先我们需要一个账号，建议用一个新账号来管理博客，推荐使用邮箱注册，不想与现实身份强联系的可以考虑海外邮箱，试手拿着玩的可以用临时邮箱。&lt;/p&gt;
 &lt;p&gt;这里需要注意账号名的选取，采用该方案创建的博客，如果您对折腾域名的意愿不强，那么我们获取的域名将与你的账号名&lt;strong&gt;强联系&lt;/strong&gt;，例如本博客GitHub账号名为aaa，那么最后域名会是https://aaa.github.io形式。&lt;/p&gt;
 &lt;p&gt;账号注册成功后，我们注册一个新&lt;strong&gt;公开&lt;/strong&gt;仓库repository，后续放博客的public文件夹，实际上整个&lt;strong&gt;public文件夹&lt;/strong&gt;就是Hugo创建出来的静态页面。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93.png&#34;
-	width=&#34;2234&#34;
-	height=&#34;1208&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93_hu486248659556154574.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93_hu11910432460004848894.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.GitHub%e4%bb%93%e5%ba%93.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;GitHub仓库&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;184&#34;
-		data-flex-basis=&#34;443px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;考虑到安全性，我们再建立一个&lt;strong&gt;私有&lt;/strong&gt;仓库repository，只有我们自己能看见，用于放置博客的数据源文件（您可以理解为除了Pulic文件夹以外的其它文件夹），仓库的创建和上述基本相同，在Choose visibility选项选择Private即可，这里对于仓库名没有过多要求，以见名知意为佳，例如您的博客名为aaa，可以给该仓库取名为aaaHugoBlogSource。&lt;/p&gt;
@@ -4390,40 +4580,33 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseurl: https://您的用户名.github.io/
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;自动化生成public文件&#34;&gt;自动化生成Public文件
+&lt;/div&gt;&lt;p&gt;&lt;a id=&#34;自动化生成Public文件&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;自动化生成public文件&#34;&gt;自动化生成Public文件
 &lt;/h3&gt;&lt;p&gt;在常规的操作中，我们需要使用hugo命令生成public静态页面文件夹，再将该public文件夹上传到GitHub的公开仓库。为简化这一过程，我们期望的是只需要管理文章内容以及一些博客装修后修正的部分，即&lt;strong&gt;仅管理源代码&lt;/strong&gt;，而减少掉手动生成public静态页面文件夹的工作。&lt;/p&gt;
 &lt;p&gt;因此我们将采取GitHub Action并使用一段自动代码，实现&lt;strong&gt;仅管理私有仓库&lt;/strong&gt;，而动态生成public静态页面文件夹，并且能够自动的上传更新到对应的公开仓库，从而实现页面更新。&lt;/p&gt;
 &lt;p&gt;我们的自动化依赖一段代码完成，而第一步是要给权限，书面说法为“GitHub 提供一个令牌Token，可用于代表 GitHub Actions 进行身份验证”。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;设置Token&lt;/strong&gt;具体操作：打开GitHub，点开个人界面的&lt;strong&gt;Settings&lt;/strong&gt;，找到&lt;strong&gt;Developer Settings&lt;/strong&gt;，有一个钥匙图标Personal access tokens (classic)，点进其中的Tokens (classic)，点击Generate new token (classic)，备注Note是给自己看的注释，到期时间Expiration选择&lt;strong&gt;No expiration&lt;/strong&gt;（如设置有效期过了有效期需要重新给权限），并勾选&lt;strong&gt;repo&lt;/strong&gt;和&lt;strong&gt;workflow&lt;/strong&gt;这两部分。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken.png&#34;
-	width=&#34;1788&#34;
-	height=&#34;1023&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken_hu14843176191082482715.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken_hu12901398795140835685.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.%e8%ae%be%e7%bd%aeToken.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;设置Token&#34;
 	
 	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;174&#34;
-		data-flex-basis=&#34;419px&#34;
-	
 &gt;&lt;/p&gt;
 &lt;p&gt;请注意，生成的那串Token只会显示一次，所以您可以单独创建一个文本文档进行保存记录，否则就只能重新设置。&lt;/p&gt;
 &lt;p&gt;因为这段Token会被我们写进接下来的自动化代码文件里，所以我们要在这里再进行一个操作，在我们放源代码的私有仓库设置一个Secrets：&lt;/p&gt;
 &lt;p&gt;具体操作：点开我们刚刚创建的私有仓库，点开仓库的&lt;strong&gt;Settings&lt;/strong&gt;，找到Security下的&lt;strong&gt;Secrets and variables&lt;/strong&gt;，点进其中&lt;strong&gt;Actions&lt;/strong&gt;，创建一个&lt;strong&gt;New repository secret&lt;/strong&gt;，&lt;strong&gt;Secret&lt;/strong&gt;那个框里粘贴进去刚刚你复制的那串Token，这里的&lt;strong&gt;Name&lt;/strong&gt;建议符合全英文+简洁原则，例如小编这里写的是&lt;strong&gt;TOKEN&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets.png&#34;
-	width=&#34;1725&#34;
-	height=&#34;1401&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets_hu3825059229017150738.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets_hu10533206850374063814.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.%e8%ae%be%e7%bd%aeSecrets.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;设置Secrets&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;123&#34;
-		data-flex-basis=&#34;295px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;下面来到本部分真正的核心——&lt;strong&gt;自动化代码部分&lt;/strong&gt;，我们回到电脑本地文件夹，存放博客所有文件的位置，新建一个文件夹”.github“，并在”.github“内创建一个子文件夹”workflows“，我们的自动化代码就放在”workflows“文件夹下，创建一个空白文档名为deploy.yml，粘贴以下代码：&lt;/p&gt;
@@ -4504,23 +4687,20 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Tips：源代码分支是指，点开您的仓库的&lt;strong&gt;Settings&lt;/strong&gt;，General设置下有个Default branch，这里写了您的分支名，本质就是文件夹名，是可以修改的，小编习惯用main，也有些人或者创建时默认是master，如果您的显示是master而且不想改动，那么就把上面这串代码的main改成master。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;使用GitHubDesktop上传数据&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;使用githubdesktop上传数据&#34;&gt;使用GitHubDesktop上传数据
 &lt;/h3&gt;&lt;p&gt;数据准备好了，仓库准备好了，并且到这里为止我们后续只需要管理&lt;strong&gt;私有仓库&lt;/strong&gt;而不再用关心Hugo创建Public静态页面文件夹的工作，接下来我们只需要将大象放进冰箱里就好了。&lt;/p&gt;
 &lt;p&gt;登录GitHub Desktop，如果您已经登录了GitHub账号会提示您进行关联登录，因为GitHub代码仓库管理的逻辑其实是：【线上仓库有文件——克隆（下载）文件到本地——本地文件有更新——确认提交更新后的代码】，因此我们需要准备一个文件夹先让GitHub Desktop把线上仓库克隆下来到本地，再更新这个文件夹，用GitHub Desktop提交更新，建议您将这个文件夹和我们先前创建的博客文件夹放在同一级目录，方便后续复制粘贴，您也可以选择将整个源文件都更新到由GitHub Desktop管理的文件夹，但更建议您留份原件。&lt;/p&gt;
 &lt;p&gt;在正式上传前，我们先设置不需要上传到私有仓库中的文件，例如public文件、Hugo.exe文件，我们可以创建”.gitignore“文件，在上传的时候GitHub Desktop将自动忽略我们这个文件里写的内容，”.gitignore“文件位置写在博客文件夹根目录下。&lt;/p&gt;
 &lt;p&gt;进行文件夹的内容更新后，打开GitHub Desktop会看到”Changes“那一块多出来很多东西，是GitHub Desktop对比比较出文件更新后的内容，我们在”Summary“部分可以写好本次改动的原因，&lt;strong&gt;commit to main&lt;/strong&gt;，然后确认提交&lt;strong&gt;push origin&lt;/strong&gt;，如果失败了大概率是网不行，建议换个节点。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE.png&#34;
-	width=&#34;2955&#34;
-	height=&#34;1024&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE_hu8078921267439039036.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE_hu253988658426426065.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.GitHubDesktop%e4%b8%8a%e4%bc%a0%e6%95%b0%e6%8d%ae.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;GitHubDesktop上传数据&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;288&#34;
-		data-flex-basis=&#34;692px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;稍等片刻，代码生效需要一些时间，可以点开GitHub仓库的Actions查看部署deploy情况。&lt;/p&gt;
@@ -4532,23 +4712,20 @@
 &lt;li&gt;公开仓库里文件多了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;第一种情况，是创建仓库后需要有一个上传的操作，可以任意写入一点内容，这个时候仓库才是真正的创建成功，否则在变更私有仓库数据时，无法正确部署到公开仓库——因为它找不到。注意写入之后要&lt;strong&gt;对公开仓库内容进行清空&lt;/strong&gt;，否则也可能出现博客页面出错等问题。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B.png&#34;
-	width=&#34;1784&#34;
-	height=&#34;1187&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B_hu9301728474733836910.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B_hu13140257343361881988.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.%e5%85%ac%e5%bc%80%e4%bb%93%e5%ba%93%e7%bd%91%e9%a1%b5%e5%bb%ba%e7%ab%8b.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;公开仓库网页建立&#34;
 	
 	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;150&#34;
-		data-flex-basis=&#34;360px&#34;
-	
 &gt;&lt;/p&gt;
 &lt;p&gt;第二种情况，大多发生在自行调试公开仓库过程中手动对公开仓库添加了数据，按照我们的流程，公开仓库中的所有数据都应该是由私有仓库通过自动部署上传到公开仓库的，不应该存在我们手动的部分，这个时候可以检查仓库内容，如果发现有除了跟私有仓库有联系的代码——Code页面每一行提交的文件中间有亮着蓝色的部分，例如小编这边显示是”用户名/xxxxxxx(私有仓库名)@xxxxxxxx(一串数字)“，还出现了部分没有联系的，就属于该种情况，如果您出现了这样的情况，恭喜你，现在打开GitHub Desktop，按照克隆操作把公开仓库拉到本地，然后把文件清空再上传，即&lt;strong&gt;把公开仓库清空&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;确认公开仓库没有问题（没有多余文件）后，使用GitHub Desktop对私有仓库数据进行更新，因为自动化代码触发貌似需要代码有变动，所以这里可以任意新增一个测试博文文件（\content\post部分添加新的文章），再再再更新上传，来触发代码生效。&lt;/p&gt;
 &lt;p&gt;此时应该就能正常打开博客页面了。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;Cloudflare&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;cloudflare&#34;&gt;Cloudflare
 &lt;/h3&gt;&lt;p&gt;选择GitHubPage搭建是很方便，不过github本身的网络访问问题可以进一步优化，这里涉及到简单的CDN(内容分发网络，Content Delivery Network)概念，简单来说CDN提供商们可以实现托管我们的博客地址，用它们自家的节点进行分发操作，优化用户的访问体验，并且允许给我们的博客添加域名——即多个域名均指向我们的博客，也可以实现隐藏我们服务器的真实地址的效果。而&lt;a class=&#34;link&#34; href=&#34;https://www.cloudflare.com&#34;   target=&#34;_blank&#34; rel=&#34;noopener&#34; &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
@@ -4562,18 +4739,14 @@
     &lt;/span&gt;
 &lt;/a&gt;就是一家CDN提供商。&lt;/p&gt;
 &lt;p&gt;进入官网注册账号后，在左侧导航栏找到【计算 Compute】分类下的【Workers &amp;amp; Pages】，创建新的应用程序并选择导入现有 Git 存储库，将我们在GitHub放置博客页面的&lt;strong&gt;公共仓库&lt;/strong&gt;进行授权，一步步点击最后部署等待完成。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2.png&#34;
-	width=&#34;1965&#34;
-	height=&#34;2074&#34;
-	srcset=&#34;https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2_hu1267785627265553268.png 480w, https://retreatafter.github.io/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2_hu13360617748935901313.png 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;https://retreatafter.github.io/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Cloudflare%e4%bc%98%e5%8c%96%e9%83%a8%e7%bd%b2.png&#34;
+	
+	
+	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Cloudflare优化部署&#34;
 	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;94&#34;
-		data-flex-basis=&#34;227px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;这时CloudFlare会给我们一个&lt;code&gt;.works.dev&lt;/code&gt;的域名（或是&lt;code&gt;.pages.dev&lt;/code&gt;），和github给我们分配的域名等效。&lt;/p&gt;
@@ -4682,9 +4855,9 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%E5%89%8D%E7%BD%AE%E4%BF%A1%E6%81%AF%E5%8F%82%E6%95%B0&#34;  &gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#FrontMatter%e5%89%8d%e7%bd%ae%e4%bf%a1%e6%81%af%e5%8f%82%e6%95%b0&#34;  &gt;
     &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        前置信息参数
+        Front Matter前置信息参数
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
@@ -4737,9 +4910,10 @@
 &lt;li&gt;此编辑器是否支持多平台？&lt;/li&gt;
 &lt;li&gt;此编辑器的安全性如何？我的文档是否会丢失？我的文档是否会被窃取？&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;前置信息参数&#34;&gt;前置信息参数
+&lt;p&gt;&lt;a id=&#34;FrontMatter前置信息参数&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;frontmatter前置信息参数&#34;&gt;FrontMatter前置信息参数
 &lt;/h2&gt;&lt;p&gt;您可以在文章头部使用使用 YAML/JSON/TOML 格式配置该页面的基础参数，博客将识别markdown语法并将它们展示在博客中进行分类等操作，基本示例如下，这里使用的是TOML格式：&lt;/p&gt;
-&lt;p&gt;更多的语法内容，您可以通过参考Markdown的语法手册关于Front Matter的章节来进行学习。但更建议您优先专注于内容的创作，在需要用到特定语法时，再随搜随用。&lt;/p&gt;
+&lt;p&gt;更多的语法内容，您可以通过参考Markdown的语法手册相关章节来进行学习。但更建议您优先专注于内容的创作，在需要用到特定语法时，再随搜随用。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -4793,103 +4967,6 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</title>
-        <link>https://retreatafter.github.io/p/blogbuildhgc01/</link>
-        <pubDate>Fri, 29 May 2026 17:07:07 +0800</pubDate>
-        
-        <guid>https://retreatafter.github.io/p/blogbuildhgc01/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;本节目录&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%89%8d%e8%a8%80&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        前言
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%bd%91%e7%ab%99&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        网站
-        
-    &lt;/span&gt;
-&lt;/a&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%bd%91%e5%9d%80&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        网址
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%9f%9f%e5%90%8d%e4%b8%8eip&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        域名与ip
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8d%9a%e5%ae%a2&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        博客
-        
-    &lt;/span&gt;
-&lt;/a&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        博客框架
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%9c%8d%e5%8a%a1%e5%99%a8&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        服务器
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%80%bb%e7%bb%93&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        总结
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;在互联网上，可以找到多种办法进行博客搭建，并且各平台也逐渐推出了一站式服务，即你不需要明白网站运作背后发生了什么，只需要&lt;strong&gt;专心创作内容&lt;/strong&gt;，然后付费给网站，把维修的相关工作交给网站进行处理。&lt;/p&gt;
-&lt;p&gt;而本系列针对的是和小编一样无法忽视背后的十万个为什么，又不想进行过于深度底层原理研究的您，而进行的一些尽可能通俗易懂且必要的初级原理解释。&lt;/p&gt;
-&lt;h2 id=&#34;网站&#34;&gt;网站
-&lt;/h2&gt;&lt;h3 id=&#34;网址&#34;&gt;网址
-&lt;/h3&gt;&lt;p&gt;我们访问网站时都需要解决一个问题，即我如何唯一确定、找到这个网站。例如现在我们需要进入leetcode网站刷题，当我们输入 【https://leetcode.cn】 网址时，才能导航进入到该网站，假设我们输入的是 【https://leetcode1.cn】 ，那么进入的就会是另一个网站——也可能不存在。&lt;/p&gt;
-&lt;p&gt;博客也是如此，我们需要来解决获取网站的问题，简单来说，即：我家的门牌号是多少？&lt;/p&gt;
-&lt;h3 id=&#34;域名与ip&#34;&gt;域名与ip
-&lt;/h3&gt;&lt;p&gt;ip是设备在网络中的地址，唯一定位一台网络上的计算机，用于实现设备之间的通信和数据传输。ip的格式为四个整数，例如127.0.0.1，在这里我们暂时不进行深一步的ip类型的讨论，只需要大概理解，每一个网页都对应有ip，且它是数字形式，不易于阅读。&lt;/p&gt;
-&lt;p&gt;正是因为不易于阅读，域名解决了这个问题，它是一串有规律的字符，这是人类更容易接受、更方便记忆和传播的形式，例如上述我们提到的 【https://leetcode.cn】。&lt;/p&gt;
-&lt;p&gt;在知道这一点后，一个问题接踵而来，我要如何获得（喜欢的）域名？&lt;/p&gt;
-&lt;h2 id=&#34;博客&#34;&gt;博客
-&lt;/h2&gt;&lt;h3 id=&#34;博客框架&#34;&gt;博客框架
-&lt;/h3&gt;&lt;p&gt;当我们访问别人的页面时，除了内容外，还可以看到有许多有用有趣的机制，例如搜索、评论、吉祥物互动，事实上这背后都包括了一系列的html、css、js等代码，而其中有些步骤其实是固定的，是重复性工作，因此随着市场需求出现，相应的也出现了各类框架，即模板，使用模板，我们一定程度上就无需面对繁琐的代码，这简化了我们搭建的工作。&lt;/p&gt;
-&lt;h3 id=&#34;服务器&#34;&gt;服务器
-&lt;/h3&gt;&lt;p&gt;当我们创作内容后，显然我们需要一个储存我们的博客文件数据的地方，而我们又需要发布到网络上让别的用户也能访问，进行请求和服务响应，在这里我们不进行详细冗余的服务器类型介绍，只需要知道，我们需要服务器，才能实现和别的网络用户连接的效果。&lt;/p&gt;
-&lt;p&gt;第二个问题，服务器从哪来？&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结
-&lt;/h2&gt;&lt;p&gt;到这里，我们简单的了解了一个简单的博客背后的构成，及我们需要解决的几个问题：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;域名从哪来？&lt;/li&gt;
-&lt;li&gt;博客框架从哪来？&lt;/li&gt;
-&lt;li&gt;服务器从哪来？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这三个问题解决的办法均不唯一，本文将采取Hugo+GitHub+Cloudflare方案来解决上述问题，分别对应了：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;GitHub→域名+服务器&lt;/li&gt;
-&lt;li&gt;Cloudflare→优化方案，非必要，关于这点我们将在接下来必要的时候简单提及&lt;/li&gt;
-&lt;li&gt;Hugo→博客框架&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

@@ -478,7 +478,7 @@ unicode: "f287"
 <p>本节目录</p>
 </blockquote>
 <ol>
-<li><a class="link" href="#%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6Hugo"  >
+<li><a class="link" href="#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6Hugo"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
         博客框架Hugo
         
@@ -524,7 +524,7 @@ unicode: "f287"
         
     </span>
 </a></li>
-<li><a class="link" href="#Git%E4%B8%8EGitHubDesktop"  >
+<li><a class="link" href="#Git%e4%b8%8eGitHubDesktop"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
         Git与GitHubDesktop
         
@@ -536,13 +536,13 @@ unicode: "f287"
         
     </span>
 </a></li>
-<li><a class="link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%9F%E6%88%90Public%E6%96%87%E4%BB%B6"  >
+<li><a class="link" href="#%e8%87%aa%e5%8a%a8%e5%8c%96%e7%94%9f%e6%88%90Public%e6%96%87%e4%bb%b6"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
         自动化生成Public文件
         
     </span>
 </a></li>
-<li><a class="link" href="#%E4%BD%BF%E7%94%A8GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE"  >
+<li><a class="link" href="#%e4%bd%bf%e7%94%a8GitHubDesktop%e4%b8%8a%e4%bc%a0%e6%95%b0%e6%8d%ae"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
         使用GitHubDesktop上传数据
         
@@ -575,6 +575,7 @@ unicode: "f287"
     </span>
 </a></li>
 </ol>
+<p><a id="博客框架Hugo"></a></p>
 <h2 id="博客框架hugo">博客框架Hugo
 </h2><h3 id="框架软件下载">框架软件下载
 </h3><p>👉<a class="link" href="https://gohugo.io"   target="_blank" rel="noopener" >
@@ -589,36 +590,28 @@ unicode: "f287"
     </span>
 </a></p>
 <p>进入官网后，我们需要进入其GitHub页面进行下载，如果您从未登陆使用过GitHub这个网站，可以参考下列图片步骤：</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85.png"
-	width="2404"
-	height="1289"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85_hu7588199297512107108.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%AE%89%E8%A3%85_hu16588397453158485012.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e5%ae%89%e8%a3%85.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="Hugo安装"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="186"
-		data-flex-basis="447px"
 	
 ></p>
 <p>您可能需要知晓的是，<strong>版本号并非越新越好</strong>，有时候版本不同可能会造成后续多个软件之间的冲突，以及更新的版本可能会有一些技术细节上的变动带来后续调试上的变动，本文以v0.131.0为例，适配系统环境的文件为【hugo_extended_v0.131.0_windows_amd64.zip】。</p>
 <p>建议养成良好的文件管理习惯，将Hugo解压缩到专门的文件夹，建议全英文，无特殊符号。</p>
 <h3 id="主题安装">主题安装
 </h3><p>到这里我们已经可以使用Hugo了，接下来，我们要使用命令让Hugo创建出一个博客文件夹并生成基本的博客框架数据。在Hugo所在的文件夹地址下使用cmd调出命令行（您也可以选择在搜索中打开命令行再使用cd命令进入到Hugo所在的文件夹地址），在命令行输入<code>hugo new site myblogname</code>，注意，myblogname将作为博客数据文件夹名称，您可以将其改为其它的名称，例如<code>hugo new site aaa</code>、<code>hugo new site bbb</code>，名称全英文，无特殊符号。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4.png"
-	width="1734"
-	height="1886"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4_hu3840415971499869300.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E5%91%BD%E4%BB%A4_hu2796917402221261983.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e5%9f%ba%e6%9c%ac%e6%a1%86%e6%9e%b6%e5%91%bd%e4%bb%a4.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="Hugo基本框架命令"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="91"
-		data-flex-basis="220px"
 	
 ></p>
 <p>与此同时，您可以看到多了一个叫做myblogname（或您给文件夹取的其它名字）的文件夹，且其中已经有很多数据——以及空文件夹。这就是我们博客的原型，毛胚房形态，具备核心的博客文件夹并且有基础配置，但除此之外空空如也，因此我们需要对此装修，也即<strong>主题</strong>。</p>
@@ -634,35 +627,27 @@ unicode: "f287"
         
     </span>
 </a>，浏览并下载您喜欢的主题，在这里<strong>Stack主题v3.26.0</strong>为例。需要注意的是，不同的主题后续进行配置时可能会有些细节上的不同，如果您是第一次鼓捣安装博客，且希望花费较少的试错成本，您可以和本文一样，也使用Stack主题练手，等您能相对熟练进行相关配置时，再选择其它主题。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85.png"
-	width="2403"
-	height="1288"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85_hu10895204431187544833.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85_hu7240006308298793159.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e4%b8%bb%e9%a2%98%e5%ae%89%e8%a3%85.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="Hugo主题安装"
 	
 	
-		class="gallery-image" 
-		data-flex-grow="186"
-		data-flex-basis="447px"
-	
 ></p>
 <h3 id="基本参数调试">基本参数调试
 </h3><p>在这里，我们可以选择配置全局环境变量（简单来说即任何文件目录下我们都能使用hugo.exe软件），进入到高级系统设置&mdash;&gt;环境变量&mdash;&gt;在全局系统变量的Path变量中增添hugo.exe所在的路径；</p>
 <p>也可以选择一些偷懒的办法，将hugo.exe软件复制一份到对应的博客文件夹地址下，但并不推荐这种做法，hugo的启动软件hugo.exe本体有近100m大小，当后续我们需要管理的博客变多，或是涉及到自动部署时，可能需要进行一些额外的操作，依旧建议您配置全局环境变量。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE.png"
-	width="1727"
-	height="930"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE_hu16276511040009413024.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Hugo%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE_hu7531608789216491833.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Hugo%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e8%ae%be%e7%bd%ae.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="Hugo环境变量设置"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="185"
-		data-flex-basis="445px"
 	
 ></p>
 <p>在大多数主题中，作者都会给出exampleSite文件夹，即基本上已经配置好的样例，我们将核心配置config.yaml（后缀名也可能是.toml）——本文的主配置文件名为hugo.yaml，和content文件夹放到我们自己的博客文件夹主目录下，最基本的主题结构到这里就完成了。</p>
@@ -965,6 +950,7 @@ unicode: "f287"
 <h2 id="项目部署">项目部署
 </h2><h3 id="前言">前言
 </h3><p>经过上述对Hugo框架的折腾，我们获得了一个本地的博客页面，接下来，我们需要将其部署到服务器上，并获取域名，实现联网效果，来让其它用户也能在线访问到我们的博客，本文采用GitHub进行一系列部署。</p>
+<p><a id="Git与GitHubDesktop"></a></p>
 <h3 id="git与githubdesktop">Git与GitHubDesktop
 </h3><p>我们需要Git这个中介将我们的博客（本地版）上传到GitHub。</p>
 <p>👉<a class="link" href="https://git-scm.com"   target="_blank" rel="noopener" >
@@ -978,18 +964,14 @@ unicode: "f287"
         
     </span>
 </a></p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85.png"
-	width="2300"
-	height="1219"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85_hu6542000821456104471.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Git%E5%AE%89%E8%A3%85_hu15420835585692862371.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Git%e5%ae%89%e8%a3%85.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="Git安装"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="188"
-		data-flex-basis="452px"
 	
 ></p>
 <p>事实上，如果您是Windows或Mac系统，我会更推荐您下载GitHub Desktop，GitHub Desktop是图形用户界面，来简化使用 Git 和 GitHub 的过程，即您不需要直接面对全是命令行的界面，而是像我们如今所用的简单软件那样，通过图形按钮等来实现我们的需求。</p>
@@ -1005,6 +987,7 @@ unicode: "f287"
     </span>
 </a></p>
 <p>工具准备齐全，我们下列正式进入到GitHub的使用。</p>
+<p><a id="GitHub"></a></p>
 <h3 id="github">GitHub
 </h3><p>👉<a class="link" href="https://github.com"   target="_blank" rel="noopener" >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
@@ -1020,18 +1003,14 @@ unicode: "f287"
 <p>首先我们需要一个账号，建议用一个新账号来管理博客，推荐使用邮箱注册，不想与现实身份强联系的可以考虑海外邮箱，试手拿着玩的可以用临时邮箱。</p>
 <p>这里需要注意账号名的选取，采用该方案创建的博客，如果您对折腾域名的意愿不强，那么我们获取的域名将与你的账号名<strong>强联系</strong>，例如本博客GitHub账号名为aaa，那么最后域名会是https://aaa.github.io形式。</p>
 <p>账号注册成功后，我们注册一个新<strong>公开</strong>仓库repository，后续放博客的public文件夹，实际上整个<strong>public文件夹</strong>就是Hugo创建出来的静态页面。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93.png"
-	width="2234"
-	height="1208"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93_hu486248659556154574.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHub%E4%BB%93%E5%BA%93_hu11910432460004848894.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.GitHub%e4%bb%93%e5%ba%93.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="GitHub仓库"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="184"
-		data-flex-basis="443px"
 	
 ></p>
 <p>考虑到安全性，我们再建立一个<strong>私有</strong>仓库repository，只有我们自己能看见，用于放置博客的数据源文件（您可以理解为除了Pulic文件夹以外的其它文件夹），仓库的创建和上述基本相同，在Choose visibility选项选择Private即可，这里对于仓库名没有过多要求，以见名知意为佳，例如您的博客名为aaa，可以给该仓库取名为aaaHugoBlogSource。</p>
@@ -1044,40 +1023,33 @@ unicode: "f287"
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">baseurl: https://您的用户名.github.io/
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="自动化生成public文件">自动化生成Public文件
+</div><p><a id="自动化生成Public文件"></a></p>
+<h3 id="自动化生成public文件">自动化生成Public文件
 </h3><p>在常规的操作中，我们需要使用hugo命令生成public静态页面文件夹，再将该public文件夹上传到GitHub的公开仓库。为简化这一过程，我们期望的是只需要管理文章内容以及一些博客装修后修正的部分，即<strong>仅管理源代码</strong>，而减少掉手动生成public静态页面文件夹的工作。</p>
 <p>因此我们将采取GitHub Action并使用一段自动代码，实现<strong>仅管理私有仓库</strong>，而动态生成public静态页面文件夹，并且能够自动的上传更新到对应的公开仓库，从而实现页面更新。</p>
 <p>我们的自动化依赖一段代码完成，而第一步是要给权限，书面说法为“GitHub 提供一个令牌Token，可用于代表 GitHub Actions 进行身份验证”。</p>
 <p><strong>设置Token</strong>具体操作：打开GitHub，点开个人界面的<strong>Settings</strong>，找到<strong>Developer Settings</strong>，有一个钥匙图标Personal access tokens (classic)，点进其中的Tokens (classic)，点击Generate new token (classic)，备注Note是给自己看的注释，到期时间Expiration选择<strong>No expiration</strong>（如设置有效期过了有效期需要重新给权限），并勾选<strong>repo</strong>和<strong>workflow</strong>这两部分。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken.png"
-	width="1788"
-	height="1023"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken_hu14843176191082482715.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AEToken_hu12901398795140835685.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.%e8%ae%be%e7%bd%aeToken.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="设置Token"
 	
 	
-		class="gallery-image" 
-		data-flex-grow="174"
-		data-flex-basis="419px"
-	
 ></p>
 <p>请注意，生成的那串Token只会显示一次，所以您可以单独创建一个文本文档进行保存记录，否则就只能重新设置。</p>
 <p>因为这段Token会被我们写进接下来的自动化代码文件里，所以我们要在这里再进行一个操作，在我们放源代码的私有仓库设置一个Secrets：</p>
 <p>具体操作：点开我们刚刚创建的私有仓库，点开仓库的<strong>Settings</strong>，找到Security下的<strong>Secrets and variables</strong>，点进其中<strong>Actions</strong>，创建一个<strong>New repository secret</strong>，<strong>Secret</strong>那个框里粘贴进去刚刚你复制的那串Token，这里的<strong>Name</strong>建议符合全英文+简洁原则，例如小编这里写的是<strong>TOKEN</strong>。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets.png"
-	width="1725"
-	height="1401"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets_hu3825059229017150738.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E8%AE%BE%E7%BD%AESecrets_hu10533206850374063814.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.%e8%ae%be%e7%bd%aeSecrets.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="设置Secrets"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="123"
-		data-flex-basis="295px"
 	
 ></p>
 <p>下面来到本部分真正的核心——<strong>自动化代码部分</strong>，我们回到电脑本地文件夹，存放博客所有文件的位置，新建一个文件夹”.github“，并在”.github“内创建一个子文件夹”workflows“，我们的自动化代码就放在”workflows“文件夹下，创建一个空白文档名为deploy.yml，粘贴以下代码：</p>
@@ -1158,23 +1130,20 @@ unicode: "f287"
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Tips：源代码分支是指，点开您的仓库的<strong>Settings</strong>，General设置下有个Default branch，这里写了您的分支名，本质就是文件夹名，是可以修改的，小编习惯用main，也有些人或者创建时默认是master，如果您的显示是master而且不想改动，那么就把上面这串代码的main改成master。</p>
+<p><a id="使用GitHubDesktop上传数据"></a></p>
 <h3 id="使用githubdesktop上传数据">使用GitHubDesktop上传数据
 </h3><p>数据准备好了，仓库准备好了，并且到这里为止我们后续只需要管理<strong>私有仓库</strong>而不再用关心Hugo创建Public静态页面文件夹的工作，接下来我们只需要将大象放进冰箱里就好了。</p>
 <p>登录GitHub Desktop，如果您已经登录了GitHub账号会提示您进行关联登录，因为GitHub代码仓库管理的逻辑其实是：【线上仓库有文件——克隆（下载）文件到本地——本地文件有更新——确认提交更新后的代码】，因此我们需要准备一个文件夹先让GitHub Desktop把线上仓库克隆下来到本地，再更新这个文件夹，用GitHub Desktop提交更新，建议您将这个文件夹和我们先前创建的博客文件夹放在同一级目录，方便后续复制粘贴，您也可以选择将整个源文件都更新到由GitHub Desktop管理的文件夹，但更建议您留份原件。</p>
 <p>在正式上传前，我们先设置不需要上传到私有仓库中的文件，例如public文件、Hugo.exe文件，我们可以创建”.gitignore“文件，在上传的时候GitHub Desktop将自动忽略我们这个文件里写的内容，”.gitignore“文件位置写在博客文件夹根目录下。</p>
 <p>进行文件夹的内容更新后，打开GitHub Desktop会看到”Changes“那一块多出来很多东西，是GitHub Desktop对比比较出文件更新后的内容，我们在”Summary“部分可以写好本次改动的原因，<strong>commit to main</strong>，然后确认提交<strong>push origin</strong>，如果失败了大概率是网不行，建议换个节点。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE.png"
-	width="2955"
-	height="1024"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE_hu8078921267439039036.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.GitHubDesktop%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE_hu253988658426426065.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.GitHubDesktop%e4%b8%8a%e4%bc%a0%e6%95%b0%e6%8d%ae.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="GitHubDesktop上传数据"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="288"
-		data-flex-basis="692px"
 	
 ></p>
 <p>稍等片刻，代码生效需要一些时间，可以点开GitHub仓库的Actions查看部署deploy情况。</p>
@@ -1186,23 +1155,20 @@ unicode: "f287"
 <li>公开仓库里文件多了</li>
 </ul>
 <p>第一种情况，是创建仓库后需要有一个上传的操作，可以任意写入一点内容，这个时候仓库才是真正的创建成功，否则在变更私有仓库数据时，无法正确部署到公开仓库——因为它找不到。注意写入之后要<strong>对公开仓库内容进行清空</strong>，否则也可能出现博客页面出错等问题。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B.png"
-	width="1784"
-	height="1187"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B_hu9301728474733836910.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.%E5%85%AC%E5%BC%80%E4%BB%93%E5%BA%93%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%8B_hu13140257343361881988.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.%e5%85%ac%e5%bc%80%e4%bb%93%e5%ba%93%e7%bd%91%e9%a1%b5%e5%bb%ba%e7%ab%8b.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="公开仓库网页建立"
 	
 	
-		class="gallery-image" 
-		data-flex-grow="150"
-		data-flex-basis="360px"
-	
 ></p>
 <p>第二种情况，大多发生在自行调试公开仓库过程中手动对公开仓库添加了数据，按照我们的流程，公开仓库中的所有数据都应该是由私有仓库通过自动部署上传到公开仓库的，不应该存在我们手动的部分，这个时候可以检查仓库内容，如果发现有除了跟私有仓库有联系的代码——Code页面每一行提交的文件中间有亮着蓝色的部分，例如小编这边显示是”用户名/xxxxxxx(私有仓库名)@xxxxxxxx(一串数字)“，还出现了部分没有联系的，就属于该种情况，如果您出现了这样的情况，恭喜你，现在打开GitHub Desktop，按照克隆操作把公开仓库拉到本地，然后把文件清空再上传，即<strong>把公开仓库清空</strong>。</p>
 <p>确认公开仓库没有问题（没有多余文件）后，使用GitHub Desktop对私有仓库数据进行更新，因为自动化代码触发貌似需要代码有变动，所以这里可以任意新增一个测试博文文件（\content\post部分添加新的文章），再再再更新上传，来触发代码生效。</p>
 <p>此时应该就能正常打开博客页面了。</p>
+<p><a id="Cloudflare"></a></p>
 <h3 id="cloudflare">Cloudflare
 </h3><p>选择GitHubPage搭建是很方便，不过github本身的网络访问问题可以进一步优化，这里涉及到简单的CDN(内容分发网络，Content Delivery Network)概念，简单来说CDN提供商们可以实现托管我们的博客地址，用它们自家的节点进行分发操作，优化用户的访问体验，并且允许给我们的博客添加域名——即多个域名均指向我们的博客，也可以实现隐藏我们服务器的真实地址的效果。而<a class="link" href="https://www.cloudflare.com"   target="_blank" rel="noopener" >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
@@ -1216,18 +1182,14 @@ unicode: "f287"
     </span>
 </a>就是一家CDN提供商。</p>
 <p>进入官网注册账号后，在左侧导航栏找到【计算 Compute】分类下的【Workers &amp; Pages】，创建新的应用程序并选择导入现有 Git 存储库，将我们在GitHub放置博客页面的<strong>公共仓库</strong>进行授权，一步步点击最后部署等待完成。</p>
-<p><img src="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2.png"
-	width="1965"
-	height="2074"
-	srcset="/p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2_hu1267785627265553268.png 480w, /p/blogbuildhgc03/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC3%E9%9B%86.Cloudflare%E4%BC%98%E5%8C%96%E9%83%A8%E7%BD%B2_hu13360617748935901313.png 1024w"
+<p><img src="/2026__%e5%8d%9a%e5%ae%a2__%e6%8a%80%e6%9c%af%e7%9f%a5%e8%af%86__Hugo%e5%8d%9a%e5%ae%a2%e6%90%ad%e5%bb%ba.%e7%ac%ac3%e9%9b%86.Cloudflare%e4%bc%98%e5%8c%96%e9%83%a8%e7%bd%b2.png"
+	
+	
+	
 	loading="lazy"
 	
 		alt="Cloudflare优化部署"
 	
-	
-		class="gallery-image" 
-		data-flex-grow="94"
-		data-flex-basis="227px"
 	
 ></p>
 <p>这时CloudFlare会给我们一个<code>.works.dev</code>的域名（或是<code>.pages.dev</code>），和github给我们分配的域名等效。</p>
@@ -1386,6 +1348,32 @@ unicode: "f287"
 </article>
 
             
+                
+<article class="">
+    <a href="/p/blogbuildwp02/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">WordPress博客上线流程 | 其二 有得有失的使用体验</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/blogbuildwp01/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">WordPress博客上线流程 | 其一 第一步就遇见新的问题</h2>
+        </div>
+    </a>
+</article>
+
+            
         </div>
     </div>
 </aside>
@@ -1480,8 +1468,12 @@ unicode: "f287"
 		
 			
 		
-		发表了4篇文章 · 
-		总计24.17k字
+			
+		
+			
+		
+		发表了6篇文章 · 
+		总计25.66k字
 	</section>
 
 	<div class="article-time">

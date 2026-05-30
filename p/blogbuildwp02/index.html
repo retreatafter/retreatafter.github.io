@@ -2,18 +2,18 @@
 <html lang="zh-cn" dir="ltr">
     <head>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一集：需求分析">
-<title>Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第二集：开箱即用">
+<title>WordPress博客上线流程 | 其二 有得有失的使用体验</title>
 
-<link rel='canonical' href='https://retreatafter.github.io/p/blogbuildhgc01/'>
+<link rel='canonical' href='https://retreatafter.github.io/p/blogbuildwp02/'>
 
-<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
-<meta property='og:description' content="第一集：需求分析">
-<meta property='og:url' content='https://retreatafter.github.io/p/blogbuildhgc01/'>
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="WordPress博客上线流程 | 其二 有得有失的使用体验">
+<meta property='og:description' content="第二集：开箱即用">
+<meta property='og:url' content='https://retreatafter.github.io/p/blogbuildwp02/'>
 <meta property='og:site_name' content='与其归隐'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2026-05-29T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-29T17:07:07&#43;08:00'/>
-<meta name="twitter:title" content="Hugo+Stack+GitHubPages+Cloudflare 博客搭建指南 | 其一 What is 『博客』">
-<meta name="twitter:description" content="第一集：需求分析">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='WordPress框架' /><meta property='article:tag' content='博客搭建' /><meta property='article:published_time' content='2026-05-30T07:17:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-30T07:17:07&#43;08:00'/>
+<meta name="twitter:title" content="WordPress博客上线流程 | 其二 有得有失的使用体验">
+<meta name="twitter:description" content="第二集：开箱即用">
     <link rel="shortcut icon" href="/myfavicon.ico" />
 
     </head>
@@ -356,20 +356,8 @@ unicode: "f287"
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#前言">前言</a></li>
-    <li><a href="#网站">网站</a>
-      <ol>
-        <li><a href="#网址">网址</a></li>
-        <li><a href="#域名与ip">域名与ip</a></li>
-      </ol>
-    </li>
-    <li><a href="#博客">博客</a>
-      <ol>
-        <li><a href="#博客框架">博客框架</a></li>
-        <li><a href="#服务器">服务器</a></li>
-      </ol>
-    </li>
-    <li><a href="#总结">总结</a></li>
+    <li><a href="#注册登录">注册登录</a></li>
+    <li><a href="#附录">附录</a></li>
   </ol>
 </nav>
         </div>
@@ -397,12 +385,12 @@ unicode: "f287"
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/blogbuildhgc01/">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</a>
+            <a href="/p/blogbuildwp02/">WordPress博客上线流程 | 其二 有得有失的使用体验</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            第一集：需求分析
+            第二集：开箱即用
         </h3>
         
     </div>
@@ -423,7 +411,7 @@ unicode: "f287"
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2026-05-29</time>
+                <time class="article-time--published">2026-05-30</time>
             </div>
         
 
@@ -438,8 +426,8 @@ unicode: "f287"
 
 
                 <time class="article-time--reading">
-                    本文共 1104 字
-                    阅读时长: 3 分钟
+                    本文共 570 字
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -471,90 +459,109 @@ unicode: "f287"
 <p>本节目录</p>
 </blockquote>
 <ol>
-<li><a class="link" href="#%e5%89%8d%e8%a8%80"  >
+<li><a class="link" href="#%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        前言
+        注册登录
         
     </span>
 </a></li>
-<li><a class="link" href="#%e7%bd%91%e7%ab%99"  >
+<li><a class="link" href="#%E9%99%84%E5%BD%95"  >
     <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        网站
-        
-    </span>
-</a>
-<ol>
-<li><a class="link" href="#%e7%bd%91%e5%9d%80"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        网址
-        
-    </span>
-</a></li>
-<li><a class="link" href="#%e5%9f%9f%e5%90%8d%e4%b8%8eip"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        域名与ip
+        附录
         
     </span>
 </a></li>
 </ol>
-</li>
-<li><a class="link" href="#%e5%8d%9a%e5%ae%a2"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        博客
-        
-    </span>
-</a>
-<ol>
-<li><a class="link" href="#%e5%8d%9a%e5%ae%a2%e6%a1%86%e6%9e%b6"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        博客框架
-        
-    </span>
-</a></li>
-<li><a class="link" href="#%e6%9c%8d%e5%8a%a1%e5%99%a8"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        服务器
-        
-    </span>
-</a></li>
-</ol>
-</li>
-<li><a class="link" href="#%e6%80%bb%e7%bb%93"  >
-    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
-        总结
-        
-    </span>
-</a></li>
-</ol>
-<h2 id="前言">前言
-</h2><p>在互联网上，可以找到多种办法进行博客搭建，并且各平台也逐渐推出了一站式服务，即你不需要明白网站运作背后发生了什么，只需要<strong>专心创作内容</strong>，然后付费给网站，把维修的相关工作交给网站进行处理。</p>
-<p>而本系列针对的是和小编一样无法忽视背后的十万个为什么，又不想进行过于深度底层原理研究的您，而进行的一些尽可能通俗易懂且必要的初级原理解释。</p>
-<h2 id="网站">网站
-</h2><h3 id="网址">网址
-</h3><p>我们访问网站时都需要解决一个问题，即我如何唯一确定、找到这个网站。例如现在我们需要进入leetcode网站刷题，当我们输入 【https://leetcode.cn】 网址时，才能导航进入到该网站，假设我们输入的是 【https://leetcode1.cn】 ，那么进入的就会是另一个网站——也可能不存在。</p>
-<p>博客也是如此，我们需要来解决获取网站的问题，简单来说，即：我家的门牌号是多少？</p>
-<h3 id="域名与ip">域名与ip
-</h3><p>ip是设备在网络中的地址，唯一定位一台网络上的计算机，用于实现设备之间的通信和数据传输。ip的格式为四个整数，例如127.0.0.1，在这里我们暂时不进行深一步的ip类型的讨论，只需要大概理解，每一个网页都对应有ip，且它是数字形式，不易于阅读。</p>
-<p>正是因为不易于阅读，域名解决了这个问题，它是一串有规律的字符，这是人类更容易接受、更方便记忆和传播的形式，例如上述我们提到的 【https://leetcode.cn】。</p>
-<p>在知道这一点后，一个问题接踵而来，我要如何获得（喜欢的）域名？</p>
-<h2 id="博客">博客
-</h2><h3 id="博客框架">博客框架
-</h3><p>当我们访问别人的页面时，除了内容外，还可以看到有许多有用有趣的机制，例如搜索、评论、吉祥物互动，事实上这背后都包括了一系列的html、css、js等代码，而其中有些步骤其实是固定的，是重复性工作，因此随着市场需求出现，相应的也出现了各类框架，即模板，使用模板，我们一定程度上就无需面对繁琐的代码，这简化了我们搭建的工作。</p>
-<h3 id="服务器">服务器
-</h3><p>当我们创作内容后，显然我们需要一个储存我们的博客文件数据的地方，而我们又需要发布到网络上让别的用户也能访问，进行请求和服务响应，在这里我们不进行详细冗余的服务器类型介绍，只需要知道，我们需要服务器，才能实现和别的网络用户连接的效果。</p>
-<p>第二个问题，服务器从哪来？</p>
-<h2 id="总结">总结
-</h2><p>到这里，我们简单的了解了一个简单的博客背后的构成，及我们需要解决的几个问题：</p>
+<h2 id="注册登录">注册登录
+</h2><p>进入WordPress.com官网，常规的进行注册登录，接下来会进行到域名选择，我们输入想展示给用户的前缀，并使用WordPress提供的免费域名后缀<code>.wordpress.com</code>，最终会进入到如下的工作面板，我们可以可视化地对WordPress博客进行装修。</p>
+<p><img src="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95.png"
+	width="2269"
+	height="1025"
+	srcset="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95_hu18088525332516761614.png 480w, /p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95_hu3282026408244610341.png 1024w"
+	loading="lazy"
+	
+		alt="WordPress.com注册登录"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="221"
+		data-flex-basis="531px"
+	
+></p>
+<p><img src="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%9F%9F%E5%90%8D%E9%80%89%E6%8B%A9.png"
+	width="2245"
+	height="1098"
+	srcset="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%9F%9F%E5%90%8D%E9%80%89%E6%8B%A9_hu17778979640797537765.png 480w, /p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%9F%9F%E5%90%8D%E9%80%89%E6%8B%A9_hu3846005311833486312.png 1024w"
+	loading="lazy"
+	
+		alt="域名选择"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="204"
+		data-flex-basis="490px"
+	
+></p>
+<p><img src="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%9D%BF.png"
+	width="1726"
+	height="1305"
+	srcset="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%9D%BF_hu4353476169839284490.png 480w, /p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%B7%A5%E4%BD%9C%E9%9D%A2%E6%9D%BF_hu17301799892362240411.png 1024w"
+	loading="lazy"
+	
+		alt="工作面板"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="132"
+		data-flex-basis="317px"
+	
+></p>
+<p>注意，此时其实还没有正式进入到博客装修阶段，需要选择站点发布再次确认域名套餐，才算网站建立。</p>
+<p><img src="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%82%AC%E4%BF%83%E7%BC%B4%E8%B4%B9%E8%AD%A6%E5%91%8A%E4%B8%80%E6%AC%A1.png"
+	width="804"
+	height="294"
+	srcset="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%82%AC%E4%BF%83%E7%BC%B4%E8%B4%B9%E8%AD%A6%E5%91%8A%E4%B8%80%E6%AC%A1_hu17233023243082313050.png 480w, /p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E5%82%AC%E4%BF%83%E7%BC%B4%E8%B4%B9%E8%AD%A6%E5%91%8A%E4%B8%80%E6%AC%A1_hu12771474469523848083.png 1024w"
+	loading="lazy"
+	
+		alt="催促缴费警告一次"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="273"
+		data-flex-basis="656px"
+	
+></p>
+<p>三番五次确认之后再度回到主页小房子界面，这个时候才能修改主题，也正式进入到博客装修环节。</p>
+<p><img src="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E4%BB%AA%E8%A1%A8%E7%9B%98.png"
+	width="2458"
+	height="1250"
+	srcset="/p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E4%BB%AA%E8%A1%A8%E7%9B%98_hu349619196137973066.png 480w, /p/blogbuildwp02/2026__%E5%8D%9A%E5%AE%A2__%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86__WordPress%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.%E7%AC%AC2%E9%9B%86.%E4%BB%AA%E8%A1%A8%E7%9B%98_hu16488409207058812441.png 1024w"
+	loading="lazy"
+	
+		alt="仪表盘"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="196"
+		data-flex-basis="471px"
+	
+></p>
+<p>然而WordPress.com商业版的博客装修其实没多少能说的，主要原因是免费版限制了尤其多的功能——高情商说法是“我们已经为您搭建了完整的博客您只需要将ABCDE几处修改文本就可以体验使用博客了”，几乎只能使用原原本本的主题模板，想要进一步修改都会被提示是收费功能，而插件功能也是都需要付费套餐才能使用否则只会默认安装几个安全性功能的插件，而博客搭建与装修有趣（和折磨）的基本上也是这两个部分，也就是说在WordPress.com免费套餐里你是几乎对所有事情都无能为力的，对于想免费体验搭建博客过程的用户来说或许也没有那么便利……但对于对博客装修无欲无求只是想快速有一个个人页面的用户来说，也不失一个选择吧。</p>
+<hr>
+<h2 id="附录">附录
+</h2><p>参考文档及视频资料：</p>
 <ul>
-<li>域名从哪来？</li>
-<li>博客框架从哪来？</li>
-<li>服务器从哪来？</li>
-</ul>
-<p>这三个问题解决的办法均不唯一，本文将采取Hugo+GitHub+Cloudflare方案来解决上述问题，分别对应了：</p>
-<ul>
-<li>GitHub→域名+服务器</li>
-<li>Cloudflare→优化方案，非必要，关于这点我们将在接下来必要的时候简单提及</li>
-<li>Hugo→博客框架</li>
+<li>👉<a class="link" href="https://wordpress.com/zh-cn/support/getting-started-with-wordpress-com/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        《WordPress.com入门指南》 
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
 </ul>
 
 </section>
@@ -563,7 +570,7 @@ unicode: "f287"
     
     <section class="article-tags">
         
-            <a href="/tags/hugo%E6%A1%86%E6%9E%B6/">Hugo框架</a>
+            <a href="/tags/wordpress%E6%A1%86%E6%9E%B6/">WordPress框架</a>
         
             <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
         
@@ -596,6 +603,19 @@ unicode: "f287"
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/blogbuildwp01/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">WordPress博客上线流程 | 其一 第一步就遇见新的问题</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="">
@@ -638,25 +658,12 @@ unicode: "f287"
             
                 
 <article class="">
-    <a href="/p/blogbuildwp02/">
+    <a href="/p/blogbuildhgc01/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">WordPress博客上线流程 | 其二 有得有失的使用体验</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/blogbuildwp01/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">WordPress博客上线流程 | 其一 第一步就遇见新的问题</h2>
+            <h2 class="article-title">Hugo&#43;Stack&#43;GitHubPages&#43;Cloudflare 博客搭建指南 | 其一 What is 『博客』</h2>
         </div>
     </a>
 </article>
