@@ -7,7 +7,1097 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>与其归隐</copyright>
-        <lastBuildDate>Fri, 31 Jan 2025 17:07:07 +0800</lastBuildDate><atom:link href="https://retreatafter.github.io/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 02 Oct 2025 17:07:07 +0800</lastBuildDate><atom:link href="https://retreatafter.github.io/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>小小小编程 | Web软件开发 | 理论篇：软设-程序设计语言</title>
+        <link>https://retreatafter.github.io/p/programming-webdeveloper-b2-programminglanguage/</link>
+        <pubDate>Thu, 02 Oct 2025 17:07:07 +0800</pubDate>
+        
+        <guid>https://retreatafter.github.io/p/programming-webdeveloper-b2-programminglanguage/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本节目录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#1.%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        1.计算机语言
+        
+    &lt;/span&gt;
+&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%281%29%E7%B1%BB%E5%9E%8B&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        (1)类型
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%282%29%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        (2)脚本语言
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%283%29%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        (3)编程语言
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2.%E8%A7%A3%E9%87%8A%E5%99%A8%E5%92%8C%E7%BC%96%E8%AF%91%E5%99%A8&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        2.解释器和编译器
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#3.%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%88%90%E5%88%86&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        3.程序设计语言基本成分
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#4.%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        4.逻辑运算符
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#5.%E4%BC%A0%E5%80%BC%E8%B0%83%E7%94%A8%E5%92%8C%E5%BC%95%E7%94%A8/%E5%9C%B0%E5%9D%80%E8%B0%83%E7%94%A8&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        5.传值调用和引用/地址调用
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6.%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        6.编译过程
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#7.%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E5%8F%8A%E5%B7%A5%E5%85%B7&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        7.分析方法及工具
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#8.%E6%96%87%E6%B3%95%E5%AE%9A%E4%B9%89&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        8.文法定义
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#9.%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        9.程序运行
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#10.%E7%BC%96%E8%AF%91%E5%99%A8%E4%BC%98%E5%8C%96&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        10.编译器优化
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1计算机语言&#34;&gt;1.计算机语言
+&lt;/h2&gt;&lt;h3 id=&#34;1类型&#34;&gt;(1)类型
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;类型：&lt;strong&gt;机器&lt;/strong&gt;语言、&lt;strong&gt;汇编&lt;/strong&gt;语言、&lt;strong&gt;高级&lt;/strong&gt;语言。
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;计算机硬件只“认识”机器语言&lt;/strong&gt;，能直接执行的只有机器语言，即0和1。&lt;/li&gt;
+&lt;li&gt;汇编语言是一种&lt;strong&gt;低级&lt;/strong&gt;语言，直接面向机器硬件。汇编语言需要通过汇编器翻译成机器语言后才能被计算机执行。例如ARM汇编语言。&lt;/li&gt;
+&lt;li&gt;C/C++、JAVA、Python都属于高级语言。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2脚本语言&#34;&gt;(2)脚本语言
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;(1)概念：脚本语言/弱类型语言属于&lt;strong&gt;动态&lt;/strong&gt;语言，不需要进行变量/对象声明的语言，在程序运行时可以改变其结构例如可以引进新的函数，属于&lt;strong&gt;解释型&lt;/strong&gt;语言，不产生独立保存的目标程序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3编程语言&#34;&gt;(3)编程语言
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;(1)C/C++，C语言常用于&lt;strong&gt;开发操作系统或是进行软件开发&lt;/strong&gt;，属于&lt;strong&gt;编译型&lt;/strong&gt;语言。&lt;/li&gt;
+&lt;li&gt;(2)Python。Python为解释型语言，可用于编写独立程序和快速脚本。&lt;/li&gt;
+&lt;li&gt;(3)JAVA。特点为即时编译、对象在&lt;strong&gt;堆空间&lt;/strong&gt;分配，有自动的垃圾回收处理。&lt;/li&gt;
+&lt;li&gt;(4)PHP，PHP更适合用来进行动态网页处理。&lt;/li&gt;
+&lt;li&gt;(5)函数式编程语言：Lisp。&lt;/li&gt;
+&lt;li&gt;(6)逻辑式程序语言：Prolog。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2解释器和编译器&#34;&gt;2.解释器和编译器
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)解释器
+&lt;ul&gt;
+&lt;li&gt;定义：翻译源程序时&lt;strong&gt;不生成&lt;/strong&gt;独立的目标程序。&lt;/li&gt;
+&lt;li&gt;特点：解释程序和源程序要参与到程序的运行过程中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)编译器
+&lt;ul&gt;
+&lt;li&gt;定义：翻译时将源程序翻译成独立保存的目标程序。&lt;/li&gt;
+&lt;li&gt;特点：机器上&lt;strong&gt;运行的是与源程序等价的目标程序&lt;/strong&gt;，源程序和编译程序都不再参与目标程序的运行过程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3程序设计语言基本成分&#34;&gt;3.程序设计语言基本成分
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)程序设计语言中，可计算问题的程序都可以用&lt;strong&gt;顺序、选择、循环&lt;/strong&gt;这3种控制结构来描述。&lt;/li&gt;
+&lt;li&gt;(2)程序设计语言规定其程序中的数据必须有类型，这时的类型是&lt;strong&gt;静态&lt;/strong&gt;数据结构。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4逻辑运算符&#34;&gt;4.逻辑运算符
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;基础定义：1为真，0为假&lt;/li&gt;
+&lt;li&gt;“与”：同时为1时（都为真）结果为1（真）。&lt;/li&gt;
+&lt;li&gt;“或”：存在1时结果为1（真）。&lt;/li&gt;
+&lt;li&gt;“同或”：相同时为1（真）。&lt;/li&gt;
+&lt;li&gt;“异或”：不同时为1（真）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;问题：对于逻辑表达式 x and y or not z，优先级从高到低为not、and、or，若进行短路运算，表达式的值的真假由什么决定？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：首先，短路运算是指：无须对表达式中所有操作数或运算符进行计算就可确定表达式的值。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可得x &amp;amp; y || !z，可以看到若x &amp;amp; y为真或!z为真，只要两种情况之一成立，这个表达式则为真，而x &amp;amp; y为真需要x和y均为真
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;同样的，无论是x为真或假，都无法单一决定整个表达式为真或假。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;5传值调用和引用地址调用&#34;&gt;5.传值调用和引用/地址调用
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)传值调用：&lt;strong&gt;实参的值传递给形参&lt;/strong&gt;，实参可以是变量、常量、表达式。&lt;strong&gt;不可以&lt;/strong&gt;实现形参和实参间&lt;strong&gt;双向传递数据&lt;/strong&gt;的效果。&lt;/li&gt;
+&lt;li&gt;(2)传引用/地址调用：可以实现形参和实参间&lt;strong&gt;双向传递数据&lt;/strong&gt;的效果，即&lt;strong&gt;改变形参的值的同时也会改变实参的值&lt;/strong&gt;。由于需要存在地址，实参不可以是常量和表达式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;问题：函数t()、f()的定义如下所示，若调用函数t时传递给x的值为5，并且调用函数f()时，第一个参数x采用传值方式，第二个参数a采用传引用方式，则函数t的返回值为？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t(int x)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;int a;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a = 3*x+1;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;f(x,a);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return a-x;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;f(int r, int&amp;amp;s)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;int x;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;x=2*s+1;s=x+r;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;r=x-1;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：首先，从函数t(int x)开始看起，得到x=5 a=16，这时调用函数f()并且传入参数情况为f(x,a)，根据题意知当传引用方式时双方指向地址一致值会同时的发生变动，即a和s指向相同地址，值发生改变时会同时影响。这时看到函数f(int r, int&amp;amp;s)，得到x=33 s=38，这个时候a=38。r=32但是对于t()的x是没有影响的，函数f()里的运算结束，回到函数t()，这时a-x=38-5=33。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;6编译过程&#34;&gt;6.编译过程
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)流程
+&lt;ul&gt;
+&lt;li&gt;起点：源程序（&lt;strong&gt;下述1-3步骤不可省略，顺序不可调换&lt;/strong&gt;；编译方式中中间代码生成和代码优化不是必要的，可省略。）
+&lt;ul&gt;
+&lt;li&gt;(1)词法分析&lt;/li&gt;
+&lt;li&gt;(2)语法分析&lt;/li&gt;
+&lt;li&gt;(3)语义分析&lt;/li&gt;
+&lt;li&gt;(4)中间代码生成&lt;/li&gt;
+&lt;li&gt;(5)代码优化&lt;/li&gt;
+&lt;li&gt;(6)目标代码生成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;终点：目标代码&lt;/li&gt;
+&lt;li&gt;注：从源程序到目标程序，&lt;strong&gt;编译&lt;/strong&gt;方式包括以上所有6个步骤，&lt;strong&gt;解释&lt;/strong&gt;方式只包括词法分析、语法分析、语义分析这前3步。&lt;/li&gt;
+&lt;li&gt;![[2025__软设__程序设计语言.编译过程.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)符号表
+&lt;ul&gt;
+&lt;li&gt;1)定义：不断收集、记录、使用源程序中一些相关&lt;strong&gt;符号&lt;/strong&gt;的类型和特征等信息，并将其存入符号表中。记录源程序中各个字符的必要信息，以辅助&lt;strong&gt;语义的正确性检查&lt;/strong&gt;和代码生成。&lt;strong&gt;在编译过程中每一步都有符号表参与。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;2)编译过程中，对高级语言程序语句的翻译主要考虑声明语句和可执行语句。对声明语句，主要是将所需要的信息正确地填入合理组织的&lt;strong&gt;符号表&lt;/strong&gt;中；对可执行语句，则&lt;strong&gt;翻译成中间代码或目标代码&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)&lt;strong&gt;词法&lt;/strong&gt;分析：
+&lt;ul&gt;
+&lt;li&gt;过程：【输入：源程序】，【输出：&lt;strong&gt;记号流&lt;/strong&gt;】&lt;/li&gt;
+&lt;li&gt;作用：分析构成程序的一个个&lt;strong&gt;字符&lt;/strong&gt;，及由字符按照构造规则^1构成的符号是否符合程序语言规定。逐个字符进行扫描从而识别单词符号，例如输入int会识别i然后识别n再识别t，最终识别出输入了一个单词int。注意此处构造规则与结构区分。&lt;/li&gt;
+&lt;li&gt;相关工具：正规式、自动机。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)&lt;strong&gt;语法&lt;/strong&gt;分析
+&lt;ul&gt;
+&lt;li&gt;过程：【输入：记号流】，【输出：语法树/分析树】&lt;/li&gt;
+&lt;li&gt;特点：语法分析阶段可以发现程序中所有的语法错误。语法分析的任务是在词法分析的基础上，根据语言的语法规则将单词符号序列分解成各类语法单位，如“表达式”“语句”和“程序”等。例如Java语法中，输入&lt;code&gt;int a=2&lt;/code&gt;会识别出没有分号。&lt;/li&gt;
+&lt;li&gt;作用：1)对各条语句的结构进行合法性分析，例如变量是否定义；2)分析程序中的句子结构是否正确。即判断&lt;strong&gt;程序语句的形式/结构&lt;/strong&gt;是否正确。例如检查程序中的括号是否配对。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)&lt;strong&gt;语义&lt;/strong&gt;分析
+&lt;ul&gt;
+&lt;li&gt;过程：【输入：语法树/分析树】，&lt;strong&gt;【输出：中间代码】&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;特点：语义分析阶段&lt;strong&gt;不能&lt;/strong&gt;发现程序中的所有语义错误，能发现的是&lt;strong&gt;静态&lt;/strong&gt;语义错误而&lt;strong&gt;无法发现动态&lt;/strong&gt;语义错误，动态语义错误是指类似除0、可能导致无限循环的情况，动态语义错误只有在程序运行时才能发现。又例如未赋初值的变量，也可能会造成动态语义错误。（但我们未赋初值，有些变量是默认有初值的，例如int a; 默认初值为0）&lt;/li&gt;
+&lt;li&gt;作用：进行&lt;strong&gt;类型分析和检查&lt;/strong&gt;，类型分析是指int型、boolean型……不能把boolean赋值给int类型，假如这样操作就会在语义分析阶段检查出来，例如&lt;code&gt;int a = true;&lt;/code&gt;这样的错误就会在语义分析阶段被检查出来。&lt;/li&gt;
+&lt;li&gt;相关工具：语法指导翻译。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(6)中间代码
+&lt;ul&gt;
+&lt;li&gt;1)常见的中间代码：后缀式、三地址码式、三元式、四元式、树（图）……（&lt;strong&gt;不包括正则式、栈、队列（这两个是线性结构）&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;2)特点：&lt;strong&gt;中间代码不依赖具体的机器&lt;/strong&gt;，可以将不同的高级程序语言翻译成同一种中间代码，且中间代码可以跨平台。&lt;/li&gt;
+&lt;li&gt;3)作用：有利于进行与机器无关的优化处理，提高编译程序的可移植性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(7)目标代码生成
+&lt;ul&gt;
+&lt;li&gt;1)过程：&lt;strong&gt;目标代码生成阶段的工作与具体的机器密切相关&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;2)&lt;strong&gt;寄存器的分配工作&lt;/strong&gt;就处于目标代码生成阶段。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(8)源程序：在源程序中，可以为变量、函数、数据类型等进行&lt;strong&gt;命名&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;(9)编译过程中的地址分配
+&lt;ul&gt;
+&lt;li&gt;编译过程中为变量分配存储单元所用的地址是&lt;strong&gt;逻辑地址&lt;/strong&gt;，程序运行时&lt;strong&gt;映射为物理地址&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7分析方法及工具&#34;&gt;7.分析方法及工具
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)词法分析的工具——正规式（正规集）。&lt;code&gt;|&lt;/code&gt;表示或，&lt;code&gt;*&lt;/code&gt;表示0次到n次。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在仅由字符a、b构成的所有字符串中，其中以b结尾的字符串集合可用下述哪一正规式表示？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A.(b|ab)*b B.(ab*)b C.a*b*b D.(a|b)*b
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：可以举特例进行排除，由于所有选项都有b结尾，因此看到题中另一个条件【仅由字符a、b构成的所有字符串】，也就是说bab理应也可以取到，而这个情况仅有(a|b)*b可以达到要求。（其实从正规式的定义中也可得(a|b)*就代表了字符a、b构成的所有字符串）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;(2)词法分析的工具——有限自动机。可以正确地识别正规集
+&lt;ul&gt;
+&lt;li&gt;计算机控制系统的控制程序具有有限状态(FA)的特征，可以用有限状态机理论来描述。
+&lt;ul&gt;
+&lt;li&gt;(1)非确定有限自动机NFA(Determinstic Finite Automata)：对每一个状态来说识别字符后转移的状态是不唯一的。即每个状态下选择1/0的途径是唯一的。&lt;/li&gt;
+&lt;li&gt;(2)确定有限自动机DFA(Nondeterminstic Finite Automata)：对每一个状态来说识别字符后转移的状态是唯一的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;判断方式：输入一个字符，看是否能得出&lt;strong&gt;唯一的后继&lt;/strong&gt;，若能，则是确定的，否则，若得出多个后继，则是不确定的。&lt;/li&gt;
+&lt;li&gt;![[2025__软设__程序设计语言.自动机例题.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;某非确定的有限自动机（NFA）的状态转换图如图所示（q0既是初态也是终态），与该NFA等价的确定的有限自动机（DFA）是？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：先看NFC的特点（例如是否初始或结尾必须为0/1），没有特别明显的特征时取特值，且从最短字节一个个尝试，可以看到题中的NFA可以取到a，也可以取到ba（a,b的意思即a和b中任取一个），只有A选项能同样实现。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;(3)语法分析方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)自上而下
+&lt;ul&gt;
+&lt;li&gt;递归下降思想：原理是利用函数之间的递归调用模拟&lt;strong&gt;语法树&lt;/strong&gt;自上而下的构造过程，是一种自上而下的&lt;strong&gt;语法&lt;/strong&gt;分析方法。&lt;/li&gt;
+&lt;li&gt;预测分析法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)自下而上
+&lt;ul&gt;
+&lt;li&gt;移进-规约思想：设置一个&lt;strong&gt;栈&lt;/strong&gt;，将输入符号逐个移进栈中，栈顶形成某产生式的右部时，就用左部去代替，称为归约。很明显，这个思想是通过右部来推导出左部，因此是自下而上语法分析的核心思想。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(4)语义分析方法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(1)语法指导翻译。是一种静态语义分析方法。（编译过程中的语义分析都是静态语义，运行时才有动态语义。）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;8文法定义&#34;&gt;8.文法定义
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)大多数程序设计的语法规则用&lt;strong&gt;上下文无关文法&lt;/strong&gt;描述。&lt;/li&gt;
+&lt;li&gt;(2)开始符号→产生式集合→非终结符号的集合→终结符号的集合。&lt;/li&gt;
+&lt;li&gt;(3)优先级：
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;括号 &lt;code&gt;()&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;乘除 &lt;code&gt;×&lt;/code&gt; &lt;code&gt;÷&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;加减 &lt;code&gt;+&lt;/code&gt; &lt;code&gt;-&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)二叉树读取方式（以“根”的位置命名）：
+&lt;ul&gt;
+&lt;li&gt;1)后缀式/逆波兰式：左右根&lt;/li&gt;
+&lt;li&gt;2)中缀式：左根右。一个小技巧是如果题目给的是后缀式需要找对应的二叉树，可以先转换为中缀式再进行对应。&lt;/li&gt;
+&lt;li&gt;![[2025__软设__程序设计语言.二叉树读值.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)特点：后缀式/逆波兰式可以利用&lt;strong&gt;栈&lt;/strong&gt;求值。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 例题1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;简单算术表达式的结构可以用下面的上下文无关文法进行描述（E为开始符号），以下选项中符合该文法的是？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;E → T | E+T
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;T → F | T*F
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;F → -F | N
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;N → 0 | 1 | 2 | 3 | 4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A.2--3*4 B.2+-3*4 C.(2+3)*4 D.2*4-3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：由以下推导可以推导出B。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;![[2025__软设__程序设计语言.上下无关文法例题.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;// 例题2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;后缀表达式abc-+d*的中缀表达式为？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：首先从左往右找到第一个符号，又因为是后缀表达式形式为AB?，再找到其左侧的两个符号，可以将bc-还原为b-c，这时把b-c看作一个整体，a(b-c)+还原为(a+(b-c))，这时把(a+(b-c))看作一个整体，(a+(b-c))d*还原为(a+(b-c)) *d，即为原本的中缀表达式。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;9程序运行&#34;&gt;9.程序运行
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)C/C++语言编写的程序形成可执行程序的步骤为&lt;strong&gt;预处理、编译、汇编、链接&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10编译器优化&#34;&gt;10.编译器优化
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)寄存器直接集成在CPU中，无需通过内存总线访问，其访问速度远高于内存。寄存器分配是编译器优化中的一个重要环节，由于寄存器数量有限，编译器必须决定哪些变量应该存储在寄存器中，哪些变量可以存储在内存中。寄存器分配的目标是最大限度地减少内存访问次数，从而提高程序的执行速度。&lt;/li&gt;
+&lt;li&gt;(2)内存分配：
+&lt;ul&gt;
+&lt;li&gt;栈区：用于存储函数的局部变量、函数参数等。这部分内存由编译器自动分配和释放，其生命周期与所在的函数或代码块相关。即计算机执行程序时，&lt;strong&gt;栈&lt;/strong&gt;是&lt;strong&gt;局部变量&lt;/strong&gt;以及&lt;strong&gt;每次函数调用&lt;/strong&gt;时所需保存的信息的存储区域。&lt;strong&gt;堆&lt;/strong&gt;是一块动态存储区域，由程序员在程序中进行分配和释放。（&lt;strong&gt;栈帧不包括全局变量&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;自由堆区：用于动态分配内存，如通过malloc、new等函数分配的内存。这部分内存需要程序员手动管理（分配和释放）。&lt;/li&gt;
+&lt;li&gt;静态数据区：包括全局变量和静态变量的存储空间。这部分内存在程序启动时分配，在程序结束时释放。&lt;/li&gt;
+&lt;li&gt;文本区：存放程序的机器指令代码，通常是只读的。&lt;/li&gt;
+&lt;li&gt;![[2025__软设__程序设计语言.编译器优化.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>小小小编程 | Web软件开发 | 理论篇：软设-计算机系统</title>
+        <link>https://retreatafter.github.io/p/programming-webdeveloper-b1-computersystem/</link>
+        <pubDate>Wed, 01 Oct 2025 17:07:07 +0800</pubDate>
+        
+        <guid>https://retreatafter.github.io/p/programming-webdeveloper-b1-computersystem/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本节目录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#1.%E7%A1%AC%E4%BB%B6&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        1.硬件
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2.%E8%BF%90%E7%AE%97%E5%99%A8&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        2.运算器
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#3.%E6%8C%87%E4%BB%A4&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        3.指令
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#4.%E6%8E%A7%E5%88%B6%E5%99%A8&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        4.控制器
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#5.%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        5.寻址方式
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6.%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%A4%BA&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        6.数据表示
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#7.%E6%9C%BA%E5%99%A8%E6%95%B0&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        7.机器数
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#8.%E6%B5%AE%E7%82%B9%E6%95%B0%E8%A1%A8%E7%A4%BA&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        8.浮点数表示
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#9.%E6%A0%A1%E9%AA%8C&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        9.校验
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#10.%E6%8C%87%E4%BB%A4%E9%9B%86%E7%B3%BB%E7%BB%9F%E8%AE%A1%E7%AE%97%E6%9C%BA&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        10.指令集系统计算机
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#11.%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        11.指令流水线
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#12.%E5%AD%98%E5%82%A8%E5%99%A8&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        12.存储器
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#13.%E4%B8%AD%E6%96%AD&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        13.中断
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#14.%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%28I/O%29%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        14.输入输出(I/O)控制方式
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#15.%E6%80%BB%E7%BA%BF%E7%BB%93%E6%9E%84&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        15.总线结构
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#16.%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        16.计算机安全
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#17.%E5%8F%AF%E9%9D%A0%E5%BA%A6R&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        17.可靠度R
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1硬件&#34;&gt;1.硬件
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)中央处理器CPU
+&lt;ul&gt;
+&lt;li&gt;1)定义：CPU：Central Processing Unit 中央处理单元，负责获取程序指令，对指令进行译码并加以执行。CPU主要由运算器、控制器、寄存器组、&lt;strong&gt;内部总线&lt;/strong&gt;等部件组成。&lt;/li&gt;
+&lt;li&gt;2)结构：
+&lt;ul&gt;
+&lt;li&gt;控制器，作用：控制整个CPU工作，包括运算器。&lt;/li&gt;
+&lt;li&gt;运算器，作用：算数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3)双核处理器中所指的双核是指在&lt;strong&gt;一个 CPU 中集成两个运算核心&lt;/strong&gt;以提高运算能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)存储器&lt;/li&gt;
+&lt;li&gt;(3)外设&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CPU只负责运算，内存只负责数据临时存储，硬盘只负责数据存储。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2运算器&#34;&gt;2.运算器
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)功能：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;执行&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;算术运算（+、-、×、÷）&lt;/li&gt;
+&lt;li&gt;逻辑运算（与、或、非）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)类型：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;算术逻辑单元ALU&lt;/strong&gt;：Arithmetic and logical Unit，作用：运算，实现对数据的算术运算和逻辑运算。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;累加寄存器AC&lt;/strong&gt;：Accumulator Register，作用：&lt;strong&gt;工作区&lt;/strong&gt;，暂存算术运算或逻辑运算的中间运算结果。运算器中至少要有1个累加寄存器AC。&lt;/li&gt;
+&lt;li&gt;数据缓冲寄存器DR，作用：暂存指令或数据字或操作数。&lt;/li&gt;
+&lt;li&gt;状态条件寄存器PSW，作用：保存指令执行后的状态。主要是标志作用，像是标志进位、溢出等情况。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)流程：
+&lt;ul&gt;
+&lt;li&gt;例如需要运算&lt;code&gt;3-2&lt;/code&gt;，&lt;code&gt;2``3&lt;/code&gt;是地址，存储在内存中，需要计算时，累加寄存器AC提供工作区，会将被减数&lt;code&gt;3&lt;/code&gt;取出，再从内存储器中取出减数&lt;code&gt;2&lt;/code&gt;，得到的结果送回到累加寄存器AC中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3指令&#34;&gt;3.指令
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)指令=操作码+地址码
+&lt;ul&gt;
+&lt;li&gt;地址码：例如&lt;code&gt;2+3&lt;/code&gt;，其中数字&lt;code&gt;2&lt;/code&gt;和&lt;code&gt;3&lt;/code&gt;为地址，因实际上数据会以地址形式保存，因此这里的数字被称为地址码。&lt;/li&gt;
+&lt;li&gt;操作码：例如&lt;code&gt;2+3&lt;/code&gt;，&lt;code&gt;+&lt;/code&gt;为操作码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4控制器&#34;&gt;4.控制器
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)功能：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;控制&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;运算器只能完成运算，控制器用于控制整个CPU的工作。不仅要&lt;strong&gt;保证程序的正确执行，而且能够处理异常事件&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)类型：
+&lt;ul&gt;
+&lt;li&gt;（可访问）指令寄存器IR：Instruction Register，作用：存放当前&lt;strong&gt;操作码和地址码&lt;/strong&gt;。存放的是从内存中取的&lt;strong&gt;指令&lt;/strong&gt;。特点：&lt;strong&gt;IR对用户完全透明，即一般用户无法访问&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;程序计数器/指令计数器PC&lt;/strong&gt;：Program Counter，作用：存放/跟踪指令的地址，存放的是指令的地址，还有计数的功能。由于流水线架构的存在，执行指令时，CPU会自动修改PC的内容，&lt;strong&gt;使之保持的总是将要执行的下一条指令的地址&lt;/strong&gt;。注意，是指令的地址而不是指令的地址码，也就是说，PC相当于在判定要走的下一条指令。&lt;/li&gt;
+&lt;li&gt;地址寄存器AR：Address Register，作用：存放的是cpu访问内存单元的地址。是考虑到内存和CPU之间存在着操作速度上的差异。&lt;/li&gt;
+&lt;li&gt;指令译码器ID：Instruction Decoder，作用：识别操作码是什么，来判断接下来需要做什么（例如运算，需要判断是+-×/||!中的哪一种），把操作码解析成对应的指令操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)运算顺序：&lt;strong&gt;数据缓冲寄存器DR→（可访问）指令寄存器IR→指令译码器ID→运算&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5寻址方式&#34;&gt;5.寻址方式
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)立即寻址：&lt;strong&gt;操作数&lt;/strong&gt;就包含在指令中。&lt;/li&gt;
+&lt;li&gt;(2)寄存器寻址：操作数存放在某一寄存器中，指令中给出&lt;strong&gt;存放操作数的寄存器&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;(3)直接寻址：操作数存放在内存单元中，指令中直接给出&lt;strong&gt;操作数所在的存储单元的地址&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;(4)寄存器间接寻址：操作数存放在内存单元中，操作数所在存储单元的地址在某个寄存器中。&lt;/li&gt;
+&lt;li&gt;(5)间接寻址：指令中给出&lt;strong&gt;操作数地址的地址&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;(6)相对寻址：指令地址码给出的是一个偏移量（可正可负)，操作数地址等于本条指令的地址加上该偏移量。&lt;/li&gt;
+&lt;li&gt;(7)变址寻址：操作数地址等于变址寄存器的内容加偏移量。&lt;/li&gt;
+&lt;li&gt;(8)&lt;strong&gt;寻址效率：立即寻址＞寄存器寻址＞直接寻址&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6数据表示&#34;&gt;6.数据表示
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)基本单位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;单位&lt;/th&gt;
+          &lt;th&gt;符号&lt;/th&gt;
+          &lt;th&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;位(比特)&lt;/td&gt;
+          &lt;td&gt;bit （b）&lt;/td&gt;
+          &lt;td&gt;计算机最小的单位&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;字节&lt;/td&gt;
+          &lt;td&gt;byte （B）&lt;/td&gt;
+          &lt;td&gt;1B = 8bit&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;千字节&lt;/td&gt;
+          &lt;td&gt;KB&lt;/td&gt;
+          &lt;td&gt;1KB = 1024B&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;兆字节&lt;/td&gt;
+          &lt;td&gt;MB&lt;/td&gt;
+          &lt;td&gt;1MB = 1024KB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;吉字节&lt;/td&gt;
+          &lt;td&gt;GB&lt;/td&gt;
+          &lt;td&gt;1GB = 1024 MB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;太字节&lt;/td&gt;
+          &lt;td&gt;TB&lt;/td&gt;
+          &lt;td&gt;1TB = 1024GB&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;最小的数据单位：b 位/比特；最小的储存单位：byte（B） 字节&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(2)进制
+&lt;ul&gt;
+&lt;li&gt;当没有下标或后缀时默认为十进制数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;进制&lt;/th&gt;
+          &lt;th&gt;标识符&lt;/th&gt;
+          &lt;th&gt;备注&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;二进制&lt;/td&gt;
+          &lt;td&gt;B binary&lt;/td&gt;
+          &lt;td&gt;逢二进一： 基数为2，数值部分用两个不同的数字0、1来表示&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;八进制&lt;/td&gt;
+          &lt;td&gt;O octal&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;十进制&lt;/td&gt;
+          &lt;td&gt;D decimal&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;十六进制&lt;/td&gt;
+          &lt;td&gt;H hex&lt;/td&gt;
+          &lt;td&gt;逢十六进一：基数为16，除了在十进制中的0至9外，还另外用字母A、B、C、D、E、F来表示十进制数的10至15&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;(3)进制转换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;![[2025__软设__计算机系统.进制转换.png]]&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//例题1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;问题：字节编址(单位b)区域B3000H到DABFFH的存储容量kb？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：首先，结尾的H表明是16进制，其次，这个区间是个闭区间，因此相减后应+1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;即DABFF-B3000+1=27BFF+1=27C00(H)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;再将其转换为10进制数，并将单位转换为kb（1KB = 1024B）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;(2×16^4+7×16^3+12×16^2+0×16^1+0×16^0)/(2^10)=2×2^6+7×2^2+12×2^(-2)=159kb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//例题2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;问题：存储容量为32K×8bit的芯片构成地址从A0000H到DFFFFH的字节编址(单位b)的内存，至少需要多少块芯片？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：首先，地址结尾的H表明是16进制
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;DFFFF-A0000+1=40000(H)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;转换为10进制，再与芯片单位统一，将单位转换为kb（1KB = 1024B）（1B = 8bit）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;(4×16^4)/(2^10)=2^8kb=2^8K × 8bit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;需要的芯片数=(2^8K × 8bit)/(32K × 8bit) = 8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;7机器数&#34;&gt;7.机器数
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)来源：我们需要得到二进制机器数中&lt;strong&gt;负数&lt;/strong&gt;的相反数来便于计算。存入负数时计算机将存入其补码。&lt;/li&gt;
+&lt;li&gt;(2)原码：8位数，最高位0表示正，1表示负。&lt;/li&gt;
+&lt;li&gt;(3)反码：正数的反码等于原码。负数的反码除符号位（最高位）以外，其余位按位取反。反码出现是为了解决原码不能计算负数的问题，相当于将数轴反向。然而反码存在弊端，负数运算的时候，一旦结果跨0，跟实际结果会有1的偏差。&lt;/li&gt;
+&lt;li&gt;(4)补码：补码出现是为了解决负数计算时跨0的问题，会出现1的偏差是因为在二进制中0 0000000和1 0000000都表示了0，相当于一个数占据了两个位置，解决这个问题，在其反码1 1111111 之上+1，1 1111111 溢出而变成0 0000000，来解决这个问题。
+&lt;ul&gt;
+&lt;li&gt;正数（最高位0）的补码与原码和反码相同。&lt;/li&gt;
+&lt;li&gt;负数补码等于其反码的末尾加1。&lt;/li&gt;
+&lt;li&gt;[ ±0 ]补 = 0 0000000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)移码：
+&lt;ul&gt;
+&lt;li&gt;补码的符号位（最高位）取反。&lt;/li&gt;
+&lt;li&gt;[ ±0 ]移 = 1 0000000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(6)&lt;strong&gt;特点：补码的补码等于其本身：[ (x)补 ]补=(x)原。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;(7)二进制 n=8，原码和反码的取值范围为[-127, +127]，也即[-2^(n-1) -1, 2^(n-1) -1];补码和移码的取值范围为[-128, +127]，也即[-2^(n-1) , 2^(n-1) -1]。&lt;/li&gt;
+&lt;li&gt;(1)运算小技巧：&lt;strong&gt;十六进制=4位二进制，如 F= 1 1 1 1&lt;/strong&gt;，其原理是转换成10进制F为15，而二进制每一位代表的分别是 _(8) _(4) _(2) _(1)，也即1+2+4+8=15。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注：有关原反补码的推理.https://blog.csdn.net/MrYushiwen/article/details/108064781
+注：有关原反补码的来源p38.https://www.bilibili.com/video/BV17F411T7Ao/&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;求某整数16位补码为FFFH，其十进制数为？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：首先，正数的原反补相同，负数不相同，所以要先判断该整数是正数还是负数
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;先将这个十六进制转换为二进制来看，FFFF → 1111 1111 1111 1111，最高位为1，表示这是一个负数
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;根据特性[ (x)补 ]补=(x)原，1111 1111 1111 1111的反码即除符号位（最高位）以外，其余位按位取反 1000 0000 0000 0000，负数补码等于其反码的末尾加1，因此1000 0000 0000 0001就是原码，其十进制为-2^0=-1（注意，最高位的1表示负，不参与表示的数值）
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;8浮点数表示&#34;&gt;8.浮点数表示
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)对阶
+&lt;ul&gt;
+&lt;li&gt;二进制数N=2^E×F，E称之为“阶”级，F称为“尾数”且是纯小数，如11=0.11×2^2&lt;/li&gt;
+&lt;li&gt;对阶是&lt;strong&gt;小阶向大阶对齐，同时将尾数右移n位&lt;/strong&gt;。本质是数值小的向数值大的对阶，例0.11×2^2和0.11×2^3对阶时是0.11×2^2转化为0.011×2^3再和0.11×2^3对阶，这样可以降低精度损失。而尾数右移实际上是对应着小数点左移，同样的，0.11×2^2和0.11×2^3对阶，转化为0.011×2^3和0.11×2^3对阶，从0.11×2^2到0.011×2^3是尾数右移了1位（右移的是数），从小数点的角度看是左移。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)特点：
+&lt;ul&gt;
+&lt;li&gt;浮点数的阶码用R位的移码表示，尾数用M位的补码表示，（包括1位阶符和数符），能表示的数值范围为[-1×2^(2(R-1)-1), +(1-2^(-M+1))×2^(2(R-1)-1)]。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;阶码E的位数决定数的表示范围，位数越多范围越大；尾数F的位数决定数的有效精度，位数越多精度越高。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)浮点数的加减法运算顺序：
+&lt;ul&gt;
+&lt;li&gt;零操作数检查：当加减0时就无需再进行下述操作，因此是第一步&lt;/li&gt;
+&lt;li&gt;对阶操作&lt;/li&gt;
+&lt;li&gt;尾数加减法运算（在这一步中会可能出现阶码溢出）&lt;/li&gt;
+&lt;li&gt;规格化及舍入处理：使用浮点数时指数经常是负数，后续增加了偏移bias&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)常见的浮点数表示例如1.0001，这个&lt;code&gt;.&lt;/code&gt;其实没有任何数学上的含义，仅作为一个视觉上提升观感的标识符，意味着在这之前的数表示正负。&lt;/li&gt;
+&lt;li&gt;(5)规格化：数符与尾数小数点后第一位数字相异为规格化数。数符为0，这个数就是正数，正数补码就是其本身，其最高有效位(阶码使用标准移码的话规格化后尾数最高有效位就是小数点后第一位)必定为1，数符0和最高有效位的1相异。数符为1，这个数就是个负数，求负数的补码有一步叫按位取反(一般来说浮点数可以存储的有效位不会小于6位)，原本最高有效位的1变成了0，所以数符1和最高有效位的0相异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;若阶码以补码表示，尾数以原码表示，那么1 0001 0 0000000001表示的浮点数是？（1位阶符 4位阶码 1位数符 10位尾数）
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：N=2^E×F，阶符和数符表示其正负
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1 0001是阶码的补码，这是一个负数，先求其补码，补码的补码为其原码，得到1 1111 = -15，因此2^E=2^(-15)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;而0 0000000001表示的是2^(-10)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;9校验&#34;&gt;9.校验
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)码距
+&lt;ul&gt;
+&lt;li&gt;码距=2，有检验能力。&lt;/li&gt;
+&lt;li&gt;码距≥3，才可能有纠错能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)奇偶校验码：在编码中增加一位校验位来使编码中1的个数为奇数（奇校验）或者为偶数（偶校验），目的是使码距变为2。
+&lt;ul&gt;
+&lt;li&gt;奇校验：增加一个校验位使1的个数为奇。&lt;/li&gt;
+&lt;li&gt;偶校验：增加一个校验位使1的个数为偶。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;奇偶校验只能检错不能纠错。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;若有奇数个数据位出错，能检测出该错误但无法纠正；若有偶数个数据位出错，则无法检验出该错误。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)海明码：利用多组数位的奇偶性来检错和纠错，既可以检测也可以纠正错误。数据位n，校验位k，公式&lt;strong&gt;2^k-1 ＞= n+k&lt;/strong&gt;成立时说明即可校验。
+&lt;ul&gt;
+&lt;li&gt;原理：n数据位数，k校验位数，n+k整个编码长度，k个校验位最多能表示2^k种状态，除去全零状态，实际可用状态为2^k-1。 因此，只有当2^k-1≥n+k时，才能确保每个数据位和校验位在出现错误时都有唯一对应的位置标识。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)循环冗余校验码CRC：
+&lt;ul&gt;
+&lt;li&gt;原理：模2运算，k个数据位后跟r个校验位。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;码距必定为2，可检错但但不能纠错。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;10指令集系统计算机&#34;&gt;10.指令集系统计算机
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)精简RISC(Reduce)
+&lt;ul&gt;
+&lt;li&gt;研制周期：短&lt;/li&gt;
+&lt;li&gt;指令种类：少，精简&lt;/li&gt;
+&lt;li&gt;指令复杂度：低（简单）&lt;/li&gt;
+&lt;li&gt;指令长度：固定&lt;/li&gt;
+&lt;li&gt;寻址方式：少&lt;/li&gt;
+&lt;li&gt;实现（译码）方式：硬布线控制逻辑（组合逻辑控制器）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通用寄存器数量：多，大量（&amp;mdash;→是精简RISC的特色，引入了寄存器）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;流水线技术：支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)复杂CISC(Complex)
+&lt;ul&gt;
+&lt;li&gt;研制周期：长&lt;/li&gt;
+&lt;li&gt;指令种类：多，复杂&lt;/li&gt;
+&lt;li&gt;指令复杂度：高（复杂）&lt;/li&gt;
+&lt;li&gt;指令长度：变化&lt;/li&gt;
+&lt;li&gt;寻址方式：复杂多样&lt;/li&gt;
+&lt;li&gt;实现（译码）方式：微程序控制技术&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;通用寄存器数量：一般&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;流水线技术：支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)CISC出现得更早，而后大量发生指令浪费的现象，RISC则在此期间崭露头角，尤其是它的硬布线控制逻辑大幅提高了计算机性能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;11指令流水线&#34;&gt;11.指令流水线
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)定义：I为输入(Input)，C为计算，O为输出(Output)&lt;/li&gt;
+&lt;li&gt;(2)&lt;strong&gt;流水线状态下&lt;/strong&gt;公式：
+&lt;ul&gt;
+&lt;li&gt;流水线时间=第1条的执行时间 + (n-1)×(最长时间段)&lt;/li&gt;
+&lt;li&gt;加速比=不采用流水线/采用流水线&lt;/li&gt;
+&lt;li&gt;操作周期，一个完整的指令运行过程。操作周期=最长时间段&lt;/li&gt;
+&lt;li&gt;吞吐率，单位时间内系统处理的请求数或数据量。&lt;strong&gt;吞吐率=1/最长时段&lt;/strong&gt;，也可以看出，最大吞吐率取决于流水线中最慢一段所需的时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;执行n条指令的吞吐率=n/(第1条的执行时间 + (n-1)×(最长时间段))&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)&lt;strong&gt;指令周期&lt;/strong&gt;：计算机&lt;strong&gt;取出并执行&lt;/strong&gt;完一条指令所需的全部时间。&lt;/li&gt;
+&lt;li&gt;(4)相似概念-&lt;strong&gt;机器周期&lt;/strong&gt;：指&lt;strong&gt;CPU完成某一个规定操作&lt;/strong&gt;所需的时间。&lt;/li&gt;
+&lt;li&gt;(5)相似概念-&lt;strong&gt;时钟周期&lt;/strong&gt;：定义为主频的倒数，也称&lt;strong&gt;节拍&lt;/strong&gt;，是计算机中最基本的、最小的&lt;strong&gt;时间单位&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;//例题
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;某指令流水线由5段组成，第1、3、5段所需时间为Δt，第2、4段所需时间分别为3Δt、2Δt。那么连续输入n条指令时的吞吐率（单位时间内执行的指令个数）TP为？
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;解答：根据公式，执行n条指令的吞吐率=n/(第1条的执行时间 + (n-1)×(最长时间段))=n/((3Δt+3Δt+2Δt)+(n-1)3Δt)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;12存储器&#34;&gt;12.存储器
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)电脑对于数据的存储有短期的存储数据也有长期的固定存储器保存。&lt;/li&gt;
+&lt;li&gt;(2)存储器包括主存、辅存、闪存、缓存。
+&lt;ul&gt;
+&lt;li&gt;![[2025__软设__计算机系统.存储器.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)注意区分：常用的虚拟存储器由 &lt;strong&gt;“主存-辅存”&lt;/strong&gt; 两级存储器组成。&lt;/li&gt;
+&lt;li&gt;(4)随机存储器RAM：由于程序指令必须处理迅速且不断进行，短期记忆区的所有定位点以任意顺序被访问，又名随机访问存储器。它们都只能用来存短期数据。
+&lt;ul&gt;
+&lt;li&gt;主存：由动态随机存储器&lt;strong&gt;DRAM&lt;/strong&gt;(Dynamic)构成，&lt;strong&gt;需要周期刷新&lt;/strong&gt;。称之为动态正是因为它只能在没电断电之前短暂保留数据。虽然需要周期刷新，但&lt;strong&gt;DRAM的功耗较小&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;由于存在充电这一“延迟”，静态随机存储器SRAM(Static)应运而生，而它常用于缓存Cache。静态随机存储器是计算机系统中最快的存储器。&lt;strong&gt;SRAM的功耗较大&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)按存储器工作方式区分：
+&lt;ul&gt;
+&lt;li&gt;读/写存储器(RAM)(Random Access Memory)：既能读取数据也能存入数据。内存=主存，外存=辅存。硬盘是常见的外存储器，存储类别即辅存。&lt;/li&gt;
+&lt;li&gt;固定只读存储器(ROM)(Read-Only Memory)：内容只能读出，不能改变。&lt;/li&gt;
+&lt;li&gt;可编程的只读存储器(PROM)：其中的内容可以由用户一次性地写入，写入后不能改变。&lt;/li&gt;
+&lt;li&gt;可擦除可编程的只读存储器(EPROM)：其中的内容既可以读出，也可以由用户写入，写入后还可以修改。&lt;/li&gt;
+&lt;li&gt;电擦除可编程的只读存储器(EEPROM)：与EPROM相似，既可以读出，也可以写入，只不过这种存储器采用电擦除的方式进行数据的改写。&lt;/li&gt;
+&lt;li&gt;闪速存储器(FM)(Flash Memory)：简称闪存，其特性介于EPROM和EEPROM之间，类似于EEPROM。最常见的例子是U盘。&lt;strong&gt;掉电后信息不会丢失，属于非易失性存储器。以块为单位进行删除操作。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(6)高速缓冲存储器Cache：链接在主机（主存）和CPU之间的缓冲地带，部分用来存放主存的部分拷贝信息，CPU需要信息时会询问是否存在缓冲中，如果存在则对Cache进行寻址。&lt;strong&gt;Cache设计思想是在合理成本下提高命中率&lt;/strong&gt;，但需要注意的是命中率并不随其容量增大线性地提高。由静态随机存储器SRAM(Static)构成。&lt;strong&gt;因Cache是对于程序员透明的，Cache与主存地址的映射/转换是由硬件自动完成&lt;/strong&gt;。
+&lt;ul&gt;
+&lt;li&gt;Cache地址映像方式包括全相联、组相联、直接映像，其中全相联映像发生块冲突次数最小。且全相联方式可以实现主存任意一块装入Cache中任意位置，只有装满才需要替换。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(7)&lt;strong&gt;相联&lt;/strong&gt;存储器CAM按&lt;strong&gt;访问方式&lt;/strong&gt;分类，是按&lt;strong&gt;内容&lt;/strong&gt;访问的存储器。&lt;/li&gt;
+&lt;li&gt;(8)CPU访问速度从快到慢：CPU内部通用寄存器＞缓存Cache＞主存储器（主存）＞联机磁盘存储器＞脱机光盘、磁盘存储器。简单来说，寄存器直接在CPU内部所以读取最快，IO设备是“外来”的因此慢，所以&lt;strong&gt;CPU与I/O接口交换信息采用异步传输方式&lt;/strong&gt;。
+&lt;ul&gt;
+&lt;li&gt;![[2025__软设__计算机系统.存储系统的层次结构.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;13中断&#34;&gt;13.中断
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)计算机在执行程序过程中，当遇到急需处理的事件时，暂停当前正在运行的程序，转去执行有关服务程序，处理完后自动返回源程序，这个过程称为中断。
+&lt;ul&gt;
+&lt;li&gt;![[2025__软设__计算机系统.中断.png]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)特点：
+&lt;ul&gt;
+&lt;li&gt;中断向量提供&lt;strong&gt;中断服务程序的入口地址&lt;/strong&gt;。这些中断向量最终会汇集为中断向量表。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中断响应时间是指发出中断请求开始，到进入中断服务程序。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;对于主程序，会有一个保存现场的行为，处理完中断事务后，&lt;strong&gt;返回执行的源程序&lt;/strong&gt;。这也是中断的目的。&lt;/li&gt;
+&lt;li&gt;实现多级中断嵌套，使用&lt;strong&gt;堆栈&lt;/strong&gt;保护断点和现场最有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)中断分类
+&lt;ul&gt;
+&lt;li&gt;1)软中断和硬中断
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;硬中断&lt;/strong&gt;是由外部硬件设备生成的信号，如&lt;strong&gt;键盘、鼠标、网络适配器、磁盘驱动器&lt;/strong&gt;，主要用于处理实时事件，具有较高的优先级。同样的，&lt;strong&gt;寄存器溢出、电源故障&lt;/strong&gt;也属于硬中断。也有将硬中断默认为&lt;strong&gt;中断&lt;/strong&gt;的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;软中断&lt;/strong&gt;是由正在运行的程序或操作系统内部生成的特殊事件，（与CPU有关），通常用于请求操作系统的服务和功能。如&lt;strong&gt;除零异常、INT指令&lt;/strong&gt;便是软中断。也有将软中断称为&lt;strong&gt;异常&lt;/strong&gt;的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2)可屏蔽中断和不可屏蔽中断
+&lt;ul&gt;
+&lt;li&gt;不可屏蔽中断源一旦提出请求，cpu必须无条件响应。电源掉电是不可屏蔽中断。&lt;/li&gt;
+&lt;li&gt;可屏蔽中断源的请求，cpu可以响应，也可以不响应。由I/O设备提出的中断请求是可屏蔽中断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)可剥夺方式与中断方式的区分：在计算机系统中，若 P1 进程正在运行，操作系统&lt;strong&gt;强行撤下&lt;/strong&gt; P1 进程所占用的 CPU，让具有更高优先级的进程 P2 运行，这种调度方式称为可剥夺方式。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;14输入输出io控制方式&#34;&gt;14.输入输出(I/O)控制方式
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)定义：此处所指I/O即外设与主机的交互方式。&lt;/li&gt;
+&lt;li&gt;(2)程序查询方式
+&lt;ul&gt;
+&lt;li&gt;1)&lt;strong&gt;CPU和I/O（外设）只能串行工作&lt;/strong&gt;，CPU需要&lt;strong&gt;一直输询检查&lt;/strong&gt;，长期处于忙等状态，CPU利用率低。&lt;/li&gt;
+&lt;li&gt;2)一次只能读/写一个字。&lt;/li&gt;
+&lt;li&gt;3)由CPU将数放入内存。&lt;/li&gt;
+&lt;li&gt;4)例子：会使用while循环一直查询，即便设备未在使用也在工作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)中断驱动方式
+&lt;ul&gt;
+&lt;li&gt;1)I/O设备通过&lt;strong&gt;中断信号&lt;/strong&gt;主动向CPU报告I/O操作已完成。&lt;/li&gt;
+&lt;li&gt;2)CPU和I/O可并行工作。&lt;/li&gt;
+&lt;li&gt;3)CPU利用率得到提升。&lt;/li&gt;
+&lt;li&gt;4)一次只能读/写一个字。&lt;/li&gt;
+&lt;li&gt;5)&lt;strong&gt;CPU每次会检查数据&lt;/strong&gt;，&lt;strong&gt;CPU参与&lt;/strong&gt;数据传输过程，由CPU将数据放入内存。&lt;/li&gt;
+&lt;li&gt;6)例子：键盘，当每一次输入完成后会发出中断信号。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)&lt;strong&gt;直接存储器存取方式DMA&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;1)CPU和I/O可并行工作。&lt;/li&gt;
+&lt;li&gt;2)仅在传送数据块的开始和结束时才需CPU干预，其余过程CPU&lt;strong&gt;不参与&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;3)由I/O（外设）直接将数据放入内存（主存）或者相反。&lt;strong&gt;DMA在主存和外设之间建立了直接的数据通路。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;4)&lt;strong&gt;一次读写的单位为“块”。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;5)发出的数据地址是主存物理地址。&lt;/li&gt;
+&lt;li&gt;6)CPU是在一个总线周期结束时响应DMA请求的。采用DMA方式传送数据时，每传送一个数据都需要占用一个存储周期。&lt;/li&gt;
+&lt;li&gt;7)例子：磁盘。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;15总线结构&#34;&gt;15.总线结构
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)定义：用于CPU、主存、&lt;strong&gt;外设部件（类似u盘硬盘）&lt;/strong&gt; 的连接。一般来说，任何连接两个以上电子元器件的导线都可以称为总线。总线结构便于实现系统的积木化构造，同时可以减少信息传输线的数量。&lt;/li&gt;
+&lt;li&gt;(2)类型：&lt;strong&gt;数据&lt;/strong&gt;总线、&lt;strong&gt;地址&lt;/strong&gt;总线、&lt;strong&gt;控制&lt;/strong&gt;总线。
+&lt;ul&gt;
+&lt;li&gt;数据总线（DB）：用来传送数据信息，是双向的。&lt;/li&gt;
+&lt;li&gt;地址总线（AB）：用于传送CPU发出的地址信息，是单向的。&lt;/li&gt;
+&lt;li&gt;控制总线（CB）：用来传送控制信号、时序信号和状态信息等，双向线表示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)并行总线与串行总线
+&lt;ul&gt;
+&lt;li&gt;并行总线——多车道，并行总线适合近距离高速数据传输：PCI（Peripheral Component Interconnect 允许在计算机中安装多个扩展卡）、SCSI（Small Computer System Interface 通用的I/O总线标准）&lt;/li&gt;
+&lt;li&gt;串行总线——单车道，串行总线适合长距离数据传输：USB、以太网、SATA（Serial Advanced Technology Attachment 主要用于硬盘和固态硬盘）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)单总线和专用总线
+&lt;ul&gt;
+&lt;li&gt;单总线结构在一个总线上适应不同种类的设备，设计简单但性能低。&lt;/li&gt;
+&lt;li&gt;专用总线在设计上可以与连接设备实现最佳匹配。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;16计算机安全&#34;&gt;16.计算机安全
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)安全威胁：
+&lt;ul&gt;
+&lt;li&gt;拒绝服务：对信息或其它资源的合法访问被无条件地拒绝，或者推迟与时间密切相关的操作。&lt;/li&gt;
+&lt;li&gt;授权侵犯：为某一特权使用一个系统，却将该系统用作其它未授权的目的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(2)加密技术
+&lt;ul&gt;
+&lt;li&gt;1)对称加密/私有/共享密钥加密：（因为是同一把钥匙所以这把钥匙算是私有的）
+&lt;ul&gt;
+&lt;li&gt;特点：适合对大量明文消息加密传输，加密和解密是&lt;strong&gt;同一把&lt;/strong&gt;密钥。速度快。&lt;/li&gt;
+&lt;li&gt;加密算法：DES（数据加密标准，异或轮函数，置换块加密分组加密，主要采用替换和移位的方法加密）、AES（高级加密标准，升级版DES，基于排列和置换运算。排列是对数据重新进行安排，置换是将一个数据单元替换为另一个数据单元）、3DES（又称TDEA，3轮DES，效果相当于将密钥的长度加倍）、IDEA（国际加密算法，在DES算法的基础上发展起来的，类似于3重DES）、RC4（流密码，字节加密，S表非线性变换）、RC-5（RC-5是在RCF2040中定义的，RSA数据安全公司的很多产品都在使用RC-5）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2)非对称加密/公开密钥加密：（从行为上来说是公钥加密后私钥才解密，也是为了和对称加密区分，因此叫做公开密钥加密）
+&lt;ul&gt;
+&lt;li&gt;特点：有公钥和私钥&lt;strong&gt;两把&lt;/strong&gt;密钥。用公钥加密只能私钥解密，私钥加密公钥解密。速度慢。两者是一对，如果公开密钥对数据进行加密，只有用对应的私有密钥才能解密；如果用私有密钥对数据进行加密，只有用对应的公开密钥才能解密。&lt;/li&gt;
+&lt;li&gt;加密算法（RED）：RSA（质数）、ECC（椭圆曲线）、DSA（digital数字签名，离散对数）&lt;/li&gt;
+&lt;li&gt;公钥体系中，私钥用于解密和签名，公钥用于加密和认证。简单来说谁需要“证明”自己就用私钥，因为公钥所有人都有，私钥则只有己方有。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3)其它重要加密算法
+&lt;ul&gt;
+&lt;li&gt;摘要算法MD5：128位散列值。&lt;/li&gt;
+&lt;li&gt;安全散列算法&lt;strong&gt;SHA-1&lt;/strong&gt;，属于&lt;strong&gt;哈希算法&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;![[2025__软设__计算机系统.加密认证模型.png]]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;(3)认证技术
+&lt;ul&gt;
+&lt;li&gt;报文&lt;strong&gt;摘要&lt;/strong&gt;，将发送的明文进行Hash算法后得到摘要放在密文后一起发送过去，与接收方解密后的明文进行相同的Hash算法得到的摘要进行对比。作用：&lt;strong&gt;防止内容的篡改&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;数字&lt;strong&gt;签名&lt;/strong&gt;，数字签名是用私钥签名，公钥验证，&lt;strong&gt;一般是对信息摘要进行签名&lt;/strong&gt;。发送方用自己的私钥对摘要进行签名（加密）得到数字签名放在密文后一起发送过去，接收方用发送方的公钥对数字签名进行验证（解密）。作用：&lt;strong&gt;防止对象的假冒&lt;/strong&gt;。保护了对象的真实性。&lt;/li&gt;
+&lt;li&gt;数字&lt;strong&gt;证书&lt;/strong&gt;，可以视作数字签名多出一个中间方负责监管。用户向CA机构（权威机构）申请数字证书将个人信息和公钥发给CA机构，CA机构颁给用户数字证书，&lt;strong&gt;数字证书用CA的私钥进行签名（加密），用CA的公钥验证（解密）数字证书得到用户的公钥&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;数字证书主要是用来对用户身份进行认证，而数字签名主要用于确保消息不可被否认。&lt;/li&gt;
+&lt;li&gt;加密技术，公钥可用于加密和认证，私钥可用于解密和签名。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;17可靠度r&#34;&gt;17.可靠度R
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;串联系统R = R1·R2· &amp;hellip; Rn&lt;/li&gt;
+&lt;li&gt;并联系统R = 1-(1-R1)(1-R2) &amp;hellip; (1-Rn)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>小小小编程 | Web软件开发 | JAVA学习地图</title>
         <link>https://retreatafter.github.io/p/programming-webdeveloper-z1-learningmapjava/</link>
         <pubDate>Fri, 31 Jan 2025 17:07:07 +0800</pubDate>
