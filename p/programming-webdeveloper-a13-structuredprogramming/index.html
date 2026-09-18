@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="理论篇：软设-结构化开发">
+<title>小小小编程 | Web软件开发 | 理论篇：软设-结构化开发</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-a13-structuredprogramming/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 理论篇：软设-结构化开发">
+<meta property='og:description' content="理论篇：软设-结构化开发">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-a13-structuredprogramming/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2025-10-13T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-13T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 理论篇：软设-结构化开发">
+<meta name="twitter:description" content="理论篇：软设-结构化开发">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1系统设计">1.系统设计</a></li>
+    <li><a href="#2耦合">2.耦合</a></li>
+    <li><a href="#3内聚">3.内聚</a></li>
+    <li><a href="#4系统结构设计原则">4.系统结构设计原则</a></li>
+    <li><a href="#5系统文档">5.系统文档</a></li>
+    <li><a href="#6数据流图">6.数据流图</a></li>
+    <li><a href="#7数据字典">7.数据字典</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/poreover/" >
+                Poreover
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-a13-structuredprogramming/">小小小编程 | Web软件开发 | 理论篇：软设-结构化开发</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            理论篇：软设-结构化开发
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-10-13</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 2751 字
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e7%b3%bb%e7%bb%9f%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.系统设计
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e8%80%a6%e5%90%88"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.耦合
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e5%86%85%e8%81%9a"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.内聚
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e7%b3%bb%e7%bb%9f%e7%bb%93%e6%9e%84%e8%ae%be%e8%ae%a1%e5%8e%9f%e5%88%99"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.系统结构设计原则
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e7%b3%bb%e7%bb%9f%e6%96%87%e6%a1%a3"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.系统文档
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6.%e6%95%b0%e6%8d%ae%e6%b5%81%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.数据流图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#7.%e6%95%b0%e6%8d%ae%e5%ad%97%e5%85%b8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.数据字典
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.系统设计"></a></p>
+<h2 id="1系统设计">1.系统设计
+</h2><ul>
+<li>(1)基本原理：
+<ul>
+<li>1)抽象：重点说明本质方面，忽略非本质方面。</li>
+<li>2)模块化：模块化是指将一个待开发的软件分解成若干个小的简单部分即模块，每个模块可独立地开发、测试，最后组装成完整的程序。</li>
+<li>3)信息隐蔽：将每个程序的成分隐蔽或封装在一个单一的设计模块中。</li>
+<li>4)模块独立：每个模块完成一个相对独立的特定子功能，且与其它模块之间的联系简单。衡量模块独立程度的标准有两个：耦合性和内聚性。模块的设计要求独立性高，就必须高内聚，低耦合。内聚是指<strong>一个模块</strong>内部功能之间的相关性，耦合是指<strong>多个模块之间</strong>的联系。</li>
+</ul>
+</li>
+<li>(2)结构化设计
+<ul>
+<li>1)体系结构设计：定义软件的主要结构元素及其关系。</li>
+<li>2)<strong>数据</strong>设计：基于实体联系图确定软件涉及的文件系统的结构及<strong>数据库</strong>的表结构。</li>
+<li>3)<strong>接口</strong>设计：描述<strong>外部接口以及内部接口</strong>。描述<strong>软件与外部环境之间的交互</strong>关系，软件内模块之间的调用关系。</li>
+<li>4)<strong>过程</strong>设计：确定软件各个组成部分内的<strong>算法及内部数据结构</strong>。</li>
+</ul>
+</li>
+<li>(3)结构化方法的分析结果：数据流图、数据字典、一组小说明（也称加工逻辑说明）、补充材料（实体联系图）。</li>
+</ul>
+<p><a id="2.耦合"></a></p>
+<h2 id="2耦合">2.耦合
+</h2><ul>
+<li>耦合程度取决于<strong>各个模块间接口的复杂程度</strong>、<strong>调用模块的方式</strong>、<strong>通过接口的信息类型</strong>等。（模块提供了多少功能和耦合无关，更重要的是关注模块间调用）<strong>模块之间</strong>的耦合方式耦合性<strong>由低至高</strong>：</li>
+<li>(1)无直接耦合：两模块间<strong>没有直接的关系</strong>。</li>
+<li>(2)数据耦合：传递的是<strong>简单的数据值</strong>。只传递信息，不会涉及到内部逻辑。数据耦合是一般写模块代码的目标。</li>
+<li>(3)标记耦合：传递的是<strong>数据结构</strong>。</li>
+<li>(4)控制耦合：传递的是<strong>控制变量</strong>。例如可以通过一个参数来控制另一个模块。</li>
+<li>(5)外部耦合：模块间通过<strong>软件之外的环境联合</strong>，如I/O。</li>
+<li>(6)公共耦合：模块间通过一个<strong>公共数据环境</strong>（例如存在一个中央数据存储）相互作用，访问<strong>相同全局变量</strong>数据结构。例如各个模块都依赖同一个全局变量。</li>
+<li>(7)内容耦合：模块<strong>直接使用另一个模块</strong>的内部数据，或是通过非正常入口转入另一个模块内部。例如直接修改对方私有变量。</li>
+<li><img src="/p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E8%80%A6%E5%90%88.png"
+	width="1336"
+	height="286"
+	srcset="/p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E8%80%A6%E5%90%88_hu9497169626445782160.png 480w, /p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E8%80%A6%E5%90%88_hu7698183617195702885.png 1024w"
+	loading="lazy"
+	
+		alt="耦合"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="467"
+		data-flex-basis="1121px"
+	
+></li>
+</ul>
+<p><a id="3.内聚"></a></p>
+<h2 id="3内聚">3.内聚
+</h2><ul>
+<li><strong>一个模块</strong>的<strong>作用范围应在其控制范围之内</strong>。模块之间的内聚程度<strong>由低至高</strong>：</li>
+<li>(1)偶然内聚/巧合：模块内各处理元素<strong>没有任何联系</strong>。这里的联系是指逻辑功能上的联系，假设两个模块使用了相同的语句但它们间本质没有联系，那么依旧属于偶然内聚/巧合内聚。</li>
+<li>(2)逻辑内聚：模块内执行若干个<strong>逻辑上相似的功能</strong>，通过<strong>参数</strong>确定该模块完成哪一个功能。例如订单数据和库存数据虽然都叫数据但其实处理方式并不相同。</li>
+<li>(3)时间内聚：把<strong>需要同时执行的动作</strong>组合在一起而形成的模块。例如加载配置文件、网络连接、初始化界面，但这些操作只是同时发生，并不互相依赖。</li>
+<li>(4)过程内聚：模块中的任务<strong>必须按特定的次序执行</strong>。有对应步骤，例如检查库存、扣除余额、生成订单，但每个步骤又是独立的，即也可以先扣除余额再检查库存再生成订单。</li>
+<li>(5)通信内聚：模块内的所有处理元素都在同一个<strong>数据结构</strong>上操作。即数据共享，例如处理用户信息时无论是读取、修改、删除，都是围绕用户信息展开。</li>
+<li>(6)顺序内聚：模块中各个处理元素都<strong>密切相关于同一功能且必须顺序执行</strong>。一个模块的输出是另一个模块的输入，例如生成报表模块时先读取后加工最后生成，数据间紧密衔接。</li>
+<li>(7)功能内聚：模块内<strong>所有元素</strong>共同作用完成<strong>一个功能（单一功能）</strong>，<strong>缺一不可</strong>。例如一个模块只用来计算用户订单总价，没有多余功能。</li>
+<li><img src="/p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E5%86%85%E8%81%9A.png"
+	width="1290"
+	height="316"
+	srcset="/p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E5%86%85%E8%81%9A_hu13916370568447178514.png 480w, /p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E5%86%85%E8%81%9A_hu3442065410390697970.png 1024w"
+	loading="lazy"
+	
+		alt="内聚"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="408"
+		data-flex-basis="979px"
+	
+></li>
+</ul>
+<p><a id="4.系统结构设计原则"></a></p>
+<h2 id="4系统结构设计原则">4.系统结构设计原则
+</h2><ul>
+<li>(1)分解-协调。解决复杂问题要分解成多个小问题分别处理，在处理过程中根据系统总体要求协调各部门的关系。</li>
+<li>(2)自顶向下。先确定上层模块的功能，再确定下层模块的功能。</li>
+<li>(3)信息隐蔽、抽象。上层模块只规定下层模块做什么和所属模块间的协调关系，但不规定怎么做，以保证各模块的相对独立性和内部结构的合理性。</li>
+<li>(4)一致性。要保证整个软件设计过程中具有统一的规范、统一的标准和统一的文件模式等。</li>
+<li>(5)明确性。每个模块必须功能明确、接口明确，消除多重功能和无用接口。</li>
+<li>(6)高内聚低耦合。模块之间的耦合尽可能小，模块的内聚度尽可能高。</li>
+<li>(7)模块的扇入系数和扇出系数要合理。一个模块直接调用其它模块的个数称为模块的扇出系数；反之，一个模块被其它模块调用时，直接调用它的模块个数称为模块的扇入系数。</li>
+<li>(8)模块的规模适当。</li>
+<li>(9)模块的作用范围应在其控制范围之内。</li>
+<li>(10)<strong>将功能相似的模块合并并不能改进设计质量</strong>。（反而可能导致内聚降低，例如将加功能和减功能合并，数学意义上两者功能相似但代码逻辑上两个模块并没有联系，合并后反而内聚是降低的）</li>
+</ul>
+<p><a id="5.系统文档"></a></p>
+<h2 id="5系统文档">5.系统文档
+</h2><ul>
+<li>(1)文档
+<ul>
+<li>1)开发文档：软件<strong>开发过程</strong>中产生的与技术相关的文档，描述了开发过程本身。常见的有：
+<ul>
+<li>可行性研究报告：在项目初期，评估项目可行性，包括技术、经济和法律可行性。</li>
+<li>项目任务书：明确项目目标、范围、交付物和资源分配。</li>
+<li>需求规格说明书：详细描述系统需求，包括功能需求和非功能需求。</li>
+<li>功能规格说明书：描述系统功能的详细设计。</li>
+<li>设计规格说明书：描述系统架构和设计细节。</li>
+<li>开发计划：制定开发阶段的时间表和资源分配。</li>
+<li>软件集成和测试计划：描述集成和测试的流程和标准。</li>
+<li>质量保证计划：通过质量技术手段保证开发文档的完整性和可用性。</li>
+<li>安全和测试信息：记录系统安全性和测试结果。</li>
+</ul>
+</li>
+<li>2)产品文档：项目的<strong>结果</strong>，即开发过程的产物。常见的有：
+<ul>
+<li>培训手册：帮助用户学习如何使用系统。</li>
+<li>参考手册：提供系统功能的详细说明。</li>
+<li>产品手册和指南：描述产品的功能和使用方法。</li>
+<li>软件支持手册：提供技术支持和故障排除指南。</li>
+<li>信息广告：宣传产品的功能和优势。</li>
+</ul>
+</li>
+<li>3)管理文档：<strong>项目管理</strong>的信息，侧重于管理过程。常见的有：
+<ul>
+<li>进度和进度变更记录：记录项目进度和变更情况。</li>
+<li>软件变更情况记录：记录软件变更的详细信息。</li>
+<li>开发团队职责定义：明确开发团队的职责和分工。</li>
+<li>项目计划：制定项目的时间表和资源分配。</li>
+<li>项目结算报告：记录项目的成本和收益。</li>
+<li>配置管理计划：描述配置管理的流程和标准。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(2)文档在系统分析人员（分析师）、用户、系统开发人员、项目管理人员、系统测试人员、系统维护人员之间的作用：
+<ul>
+<li><img src="/p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E7%B3%BB%E7%BB%9F%E6%96%87%E6%A1%A3%E6%B6%89%E5%8F%8A%E4%BA%BA%E5%91%98.png"
+	width="1988"
+	height="980"
+	srcset="/p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E7%B3%BB%E7%BB%9F%E6%96%87%E6%A1%A3%E6%B6%89%E5%8F%8A%E4%BA%BA%E5%91%98_hu7933200083340327046.png 480w, /p/programming-webdeveloper-a13-structuredprogramming/2025__%E8%BD%AF%E8%AE%BE__%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91.%E7%B3%BB%E7%BB%9F%E6%96%87%E6%A1%A3%E6%B6%89%E5%8F%8A%E4%BA%BA%E5%91%98_hu2337559671587911735.png 1024w"
+	loading="lazy"
+	
+		alt="系统文档涉及人员"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="202"
+		data-flex-basis="486px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p>注：https://edu.51cto.com/article/note/23221.html</p>
+<p><a id="6.数据流图"></a></p>
+<h2 id="6数据流图">6.数据流图
+</h2><ul>
+<li>（此部分见数据流图部分知识。）</li>
+</ul>
+<p><a id="7.数据字典"></a></p>
+<h2 id="7数据字典">7.数据字典
+</h2><ul>
+<li>(1)数据流图描述了系统的分解，但没有对图中各成分进行说明。数据字典就是为数据流图中的每个数据流、文件、加工，以及组成数据流或文件的数据项做出<strong>说明</strong>。数据字典中基图和子图之间这些名称要相同。数据字典包括4类条目：<strong>数据流</strong>、<strong>数据项</strong>、<strong>数据存储</strong>、<strong>基本加工</strong>。（不包括外部实体）</li>
+<li>(2)常用的加工逻辑描述方法有<strong>结构化语言</strong>、<strong>判定表/决策表</strong>、<strong>判定树</strong>。
+<ul>
+<li>不描述实现具体流程也不实现结构和算法而是描述加工<strong>规则</strong>。</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a16-computernetwork/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-计算机网络</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a15-softwareengineering/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-信息安全</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a14-softwareengineering/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-软件工程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a12-operatingsystem/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-操作系统</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a11-code/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-设计模式代码</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了23篇文章 · 
+		总计140.46k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="理论篇：软设-信息安全">
+<title>小小小编程 | Web软件开发 | 理论篇：软设-信息安全</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-a15-softwareengineering/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 理论篇：软设-信息安全">
+<meta property='og:description' content="理论篇：软设-信息安全">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-a15-softwareengineering/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2025-10-15T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-15T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 理论篇：软设-信息安全">
+<meta name="twitter:description" content="理论篇：软设-信息安全">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1防火墙">1.防火墙</a></li>
+    <li><a href="#2病毒木马">2.病毒木马</a></li>
+    <li><a href="#3网络攻击">3.网络攻击</a></li>
+    <li><a href="#4网络安全协议">4.网络安全协议</a></li>
+    <li><a href="#5网络安全">5.网络安全</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/poreover/" >
+                Poreover
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-a15-softwareengineering/">小小小编程 | Web软件开发 | 理论篇：软设-信息安全</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            理论篇：软设-信息安全
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-10-15</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 3515 字
+                    阅读时长: 8 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e9%98%b2%e7%81%ab%e5%a2%99"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.防火墙
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e7%97%85%e6%af%92%e6%9c%a8%e9%a9%ac"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.病毒木马
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e7%bd%91%e7%bb%9c%e6%94%bb%e5%87%bb"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.网络攻击
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e7%bd%91%e7%bb%9c%e5%ae%89%e5%85%a8%e5%8d%8f%e8%ae%ae"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.网络安全协议
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e7%bd%91%e7%bb%9c%e5%ae%89%e5%85%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.网络安全
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.防火墙"></a></p>
+<h2 id="1防火墙">1.防火墙
+</h2><ul>
+<li>(1)概念：防火墙(Firewall)是在内部网络和外部因特网之间增加的一道安全防护措施，它认为内部网络是安全的，外部网络是不安全的。分为网络级防火墙和应用级防火墙。核心功能是网络安全防护（如访问控制、入侵防御）、安全过滤（如ACL、状态检测）。
+<ul>
+<li>工作层次、工作效率、安全性之间的关系：工作层次越低，需要处理的工作越简单，工作效率会越高，但安全性越低。</li>
+<li>网络级防火墙，层次低，但是效率高，因为其使用包过滤和状态监测手段，一般只检验网络包外在（起始地址、状态）属性是否异常，若异常，则过滤掉，不与内网通信，因此对应用和用户是透明的。但是这样的问题是，如果遇到伪装的危险数据包就没办法过滤。</li>
+<li>应用级防火墙，层次高，效率低，因为应用级防火墙会将网络包拆开，具体检查里面的数据是否有问题，会消耗大量时间，造成效率低下，但是安全强度高。包括双宿主主机、屏蔽主机网关、被屏蔽子网等方法。保护程度由低至高：<strong>内网、DMZ（非军事区，通常放置公用服务器）、外网</strong>。</li>
+</ul>
+</li>
+<li>(2)防火墙技术三个发展阶段：包过滤、应用代理网关、状态检测技术。
+<ul>
+<li>1)包过滤防火墙
+<ul>
+<li>对数据包的过滤依据：源IP地址、目的IP地址、协议、源端口号。</li>
+<li>特点：安全性<strong>低</strong>、成本<strong>低</strong>；对应用和用户透明；内容是网络层的数据报文。</li>
+</ul>
+</li>
+<li>2)应用代理网关防火墙
+<ul>
+<li>所有通信都必须经应用层代理软件转发，是<strong>内部网和外部网的隔离点</strong>。</li>
+<li>特点：安全性<strong>高</strong>，难以配置，处理速度<strong>慢</strong>（即网络整体性能会受到影响）。</li>
+</ul>
+</li>
+<li>3)状态检测技术防火墙
+<ul>
+<li>结合了代理防火墙的安全性和包过滤防火墙的高速度等优点。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(3)防火墙特点：
+<ul>
+<li>通过在出口防火墙上配置访问控制列表<strong>ACL</strong>功能可以阻止外部未授权用户访问内部网络。</li>
+<li><strong>防火墙无法查毒杀毒、漏洞扫描</strong>。</li>
+</ul>
+</li>
+<li>(4)易混淆的：
+<ul>
+<li>IDS（Intrusion Detection System，入侵检测系统）：专用于安全监控，如威胁检测。<strong>IDS攻击</strong>包括端口扫描、广播风暴、系统漏洞攻击。
+<ul>
+<li>端口扫描即攻击者通过扫描目标系统的开放端口来寻找潜在的安全漏洞。IDS可以通过监控网络流量来检测端口扫描行为。</li>
+<li>广播风暴是指网络中大量的广播数据包导致网络拥堵甚至瘫痪的现象。攻击者可能会利用广播风暴来干扰IDS的正常运行。</li>
+<li>系统漏洞攻击是攻击者通过利用系统中的已知漏洞来发起攻击。IDS可以通过分析网络流量和系统日志来检测潜在的系统漏洞攻击。</li>
+</ul>
+</li>
+<li>网闸：用于物理隔离网络，如涉密网络。</li>
+<li>QoS（Quality of Service）即服务质量，是一种网络流量管理机制，通过优先级调度、带宽保障和拥塞控制等技术，确保关键业务流量（如语音、视频）低延迟、低丢包。核心部署位置是路由器。</li>
+</ul>
+</li>
+</ul>
+<p><a id="2.病毒木马"></a></p>
+<h2 id="2病毒木马">2.病毒木马
+</h2><ul>
+<li>(1)概念：
+<ul>
+<li>病毒：编制或者在计算机程序中插入的破坏计算机功能或者破坏数据，影响计算机使用并且能够自我复制的一组计算机指令或者程序代码。
+<ul>
+<li>宏病毒Macro：感染的对象为<strong>文本文档Word、电子表格Excel</strong>等。</li>
+<li>蠕虫病毒：计算机端虫病毒是一种会自我复制并主动散播到网络系统上的其它计算机里面，就像虫子一样在网络系统里面到处爬蹿，所以称为“蠕虫”。特点为<strong>人为的</strong>、<strong>可自我复制的</strong>。例如<strong>熊猫烧香</strong>、<strong>欢乐时光</strong>、<strong>红色代码</strong>、<strong>爱虫病毒</strong>、<strong>震网Stuxnet</strong>。</li>
+</ul>
+</li>
+<li>木马：典型特征是有未知程序试图建立网络连接。客户端是攻击者，服务器端是用户。伪装成程序或游戏，当用户下载了带有木马的软件或附件时，这个程序就会向黑客发起连接请求，建立连接后黑客就实施攻击活动，<strong>盗取</strong>信息。
+<ul>
+<li>木马软件Trojan：获取未授权的访问权限、窃取敏感信息、远程控制受感染系统、进行非法操作或者作为其它攻击的入口。伪装为”系统服务“的方式，建立网络连接。恶意<strong>软件</strong>。例如<strong>冰河</strong>、<strong>X卧底</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(2)病毒特征：传播性、隐蔽性、感染性、潜伏性、触发性、破坏性。</li>
+</ul>
+<p><a id="3.网络攻击"></a></p>
+<h2 id="3网络攻击">3.网络攻击
+</h2><ul>
+<li>(1)主动攻击与被动攻击
+<ul>
+<li>主动攻击：攻击者试图改变、破坏系统或网络的正常运行，包括<strong>中断</strong>、<strong>伪造</strong>等行为。如：<strong>篡改</strong>信息、<strong>欺骗</strong>攻击、<strong>拒绝服务</strong>攻击、<strong>重放</strong>攻击。</li>
+<li>被动攻击：攻击者获取/<strong>截获</strong>机密信息，但<strong>不更改</strong>或破坏数据。如：<strong>嗅探</strong>信息、数据流分析、流量分析、会话拦截。</li>
+</ul>
+</li>
+<li>(2)检测远程主机状态
+<ul>
+<li>端口扫描技术检测远程主机状态是攻击远程主机的手段。</li>
+</ul>
+</li>
+<li>(3)拒绝服务攻击/DoS攻击
+<ul>
+<li>特点：<strong>不断</strong>向计算机发起请求，使得所有可用的系统资源都被消耗殆尽，最终计算机无法再处理合法用户的请求。</li>
+<li>目的：使计算机或网络无法提供正常服务。</li>
+<li>常见的拒绝服务攻击有SYN Flodding攻击。</li>
+</ul>
+</li>
+<li>(4)重放攻击
+<ul>
+<li>特点：攻击者发送一个<strong>目的主机已经接受过的报文</strong>来达到攻击目的。主要用于身份认证过程。</li>
+<li>目的：破坏认证的正确性。</li>
+<li>避免手段：在报文中加入<strong>时间戳</strong>。</li>
+</ul>
+</li>
+<li>(5)SQL注入攻击：是黑客对<strong>数据库</strong>进行攻击的常用手段之一。目标是<strong>获得数据库的权限</strong>。没有对用户输入数据的合法性进行判断，使应用程序存在安全隐患。攻击者可以提交一段数据库查询代码，根据程序返回的结果，获得某些它想得知的数据，首先获取数据库的权限，就可获取用户账号和口令信息，以及对某些数据修改等。</li>
+<li>(6)欺骗攻击
+<ul>
+<li>端口欺骗攻击：采用端口扫描找到系统漏洞从而实施攻击。</li>
+<li>IP欺骗攻击：产生的IP数据包为伪造的源IP地址，以便冒充其它系统或发件人的身份。</li>
+</ul>
+</li>
+<li>(7)口令入侵攻击：使用某些合法用户的账号和口令登录到目的主机，然后再实施攻击活动。</li>
+<li>(8)网络监听
+<ul>
+<li>攻击者可以接收某一网段在同一条物理通道上传输的所有信息，使用网络监听可以轻松截取包括账号和口令在内的信息资料。</li>
+<li>防范手段：数据加密。</li>
+</ul>
+</li>
+<li>(9)入侵检测技术包括专家系统、模型检测、简单匹配。</li>
+<li>(10)零日漏洞攻击：指利用尚未被公开披露或厂商未修复的软件漏洞（即“零日漏洞”）实施的网络攻击。例如震网Stuxnet病毒，利用Windows系统的零日漏洞入侵伊朗核设施，破坏离心机控制系统。</li>
+<li>(11)供应链投毒：指攻击者在软件的开发、构建、分发等合法流程中植入恶意代码，例如在第三方库中注入恶意模块；使用代码混淆技术隐藏恶意行为；利用伪造或盗用的数字证书签名恶意组件，绕过审查机制。</li>
+<li>(12)社工库
+<ul>
+<li>拖库：黑客入侵有价值的网络站点，把注册用户的资料数据库全部盗走的行为。</li>
+<li>洗库：在取得大量的用户数据之后，黑客会通过一系列的技术手段和黑色产业链将有价值的用户数据变现。</li>
+<li>撞库：黑客将得到的数据在其它网站上进行尝试登陆。是指黑客使用在其它服务中已经泄露的用户名和密码组合，尝试登录另一个网站或服务。这是因为很多用户在不同网站上使用相同的用户名和密码。</li>
+</ul>
+</li>
+<li>(13)AI赋能攻击：通过使用AI技术改进或自动化各种类型的网络攻击，使攻击更加高效、难以检测和防御。其特点有：
+<ul>
+<li>自动识别漏洞：利用机器学习算法自动扫描软件和服务中的潜在安全漏洞，甚至预测未来可能出现的新漏洞。</li>
+<li>自动生成恶意代码：基于生成对抗网络（GANs）等技术，Al可以创建高度复杂且难以检测的恶意软件。</li>
+<li>社会工程学攻击：通过分析社交媒体和其它公开来源的数据，AI可以帮助攻击者定制更具针对性的社会工程学攻击，如钓鱼邮件。</li>
+</ul>
+</li>
+</ul>
+<p><a id="4.网络安全协议"></a></p>
+<h2 id="4网络安全协议">4.网络安全协议
+</h2><ul>
+<li>(1)物理层主要使用物理手段，隔离、屏蔽物理设备等，其它层都是靠协议来保证传输的安全。</li>
+<li>(2)网络层的手段中，IPSec为IP数据报文进行加密。</li>
+<li>(3)SSL协议(Secure Socket Layer)，安全套接层，<strong>安全加密</strong>协议，用于在网络通信中提供加密和身份验证的协议，常用于保护网站的安全通信，可用于网银交易。注意与SSH协议区分，SSH(Secure Shell)协议，安全连接，在终端设备与远程站点之间建立安全连接。</li>
+<li>(4)TLS(Transport Layer Security)，传输层安全协议，其<strong>前身是SSL</strong>，用于在两个通信应用程序之间提供保密性和数据完整性。</li>
+<li>(5)Https(Hyper Text Transfer Protocol over Secure Socket Layer)，是<strong>使用SSL加密算法的HTTP</strong>。默认端口443。</li>
+<li>(6)PGP(Pretty Good Privacy)，优良加密通信协议，基于RSA公匙加密体系的<strong>邮件</strong>加密软件，常用于加密和签名电子邮件。</li>
+<li>(7)SFTP(Secure File Transfer Protocol)，一种基于SSH（Secureshell）协议的安全<strong>文件传输</strong>协议，数据经过加密传输，确保传输的安全性。</li>
+<li>(8)网关协议
+<ul>
+<li>内部：RIP、OSPF、IS-IS、IGRP、EIGRP</li>
+<li>外部：BGP</li>
+</ul>
+</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a15-softwareengineering/2025__%E8%BD%AF%E8%AE%BE__%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8.%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE.png"
+	width="770"
+	height="637"
+	srcset="/p/programming-webdeveloper-a15-softwareengineering/2025__%E8%BD%AF%E8%AE%BE__%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8.%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE_hu10227491293542347991.png 480w, /p/programming-webdeveloper-a15-softwareengineering/2025__%E8%BD%AF%E8%AE%BE__%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8.%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE_hu11527448982205960573.png 1024w"
+	loading="lazy"
+	
+		alt="网络安全协议"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="120"
+		data-flex-basis="290px"
+	
+></p>
+<p><a id="5.网络安全"></a></p>
+<h2 id="5网络安全">5.网络安全
+</h2><ul>
+<li>(1)信息安全基本要素：<strong>机密性</strong>、<strong>完整性</strong>、<strong>可用性</strong>、<strong>可控性</strong>、<strong>可审查性</strong>。</li>
+<li>(2)安全需求可划分为物理线路安全、网络安全、系统安全和应用安全，其中机房安全属于物理线路安全，（物理）入侵检测、流量控制属于网络安全，漏洞补丁管理属于系统安全，数据库安全属于应用安全。数据库容灾属于<strong>系统安全</strong>和<strong>应用安全</strong>。（数据恢复、备份）</li>
+<li>(3)防范网络监听的对策是<strong>数据加密</strong>。例如http（默认端口80）升级为https（默认端口443）。</li>
+<li>(6)端口1至1023为公共端口。</li>
+</ul>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a16-computernetwork/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-计算机网络</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a14-softwareengineering/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-软件工程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a13-structuredprogramming/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-结构化开发</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a12-operatingsystem/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-操作系统</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a11-code/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-设计模式代码</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了23篇文章 · 
+		总计140.46k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="理论篇：软设-操作系统">
+<title>小小小编程 | Web软件开发 | 理论篇：软设-操作系统</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-a12-operatingsystem/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 理论篇：软设-操作系统">
+<meta property='og:description' content="理论篇：软设-操作系统">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-a12-operatingsystem/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2025-10-12T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-12T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 理论篇：软设-操作系统">
+<meta name="twitter:description" content="理论篇：软设-操作系统">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1操作系统">1.操作系统</a></li>
+    <li><a href="#2进程管理">2.进程管理</a></li>
+    <li><a href="#3进程间通信">3.进程间通信</a></li>
+    <li><a href="#4线程">4.线程</a></li>
+    <li><a href="#5存储管理">5.存储管理</a></li>
+    <li><a href="#6设备管理">6.设备管理</a></li>
+    <li><a href="#7文件管理">7.文件管理</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/poreover/" >
+                Poreover
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-a12-operatingsystem/">小小小编程 | Web软件开发 | 理论篇：软设-操作系统</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            理论篇：软设-操作系统
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-10-12</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 5341 字
+                    阅读时长: 11 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.操作系统
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e8%bf%9b%e7%a8%8b%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.进程管理
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e8%bf%9b%e7%a8%8b%e9%97%b4%e9%80%9a%e4%bf%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.进程间通信
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e7%ba%bf%e7%a8%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.线程
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e5%ad%98%e5%82%a8%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.存储管理
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6.%e8%ae%be%e5%a4%87%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.设备管理
+        
+    </span>
+</a></li>
+<li><a class="link" href="#7.%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.文件管理
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.操作系统"></a></p>
+<h2 id="1操作系统">1.操作系统
+</h2><ul>
+<li>(1)未配置软件的计算机称为裸机。</li>
+<li>(2)操作系统是裸机上的第一层软件，像汇编、编译、解释器软件都是建立在操作系统之上的。作用：通过资源管理提高计算机系统的效率，改善人机界面向用户提供友好的工作环境。
+<ul>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1.png"
+	width="841"
+	height="367"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1_hu1621514901173150474.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1_hu10343712885765378148.png 1024w"
+	loading="lazy"
+	
+		alt="计算机系统层次"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="229"
+		data-flex-basis="549px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="2.进程管理"></a></p>
+<h2 id="2进程管理">2.进程管理
+</h2><ul>
+<li>(1)前趋图：用来表示哪些任务可以并行执行，哪些任务之间有顺序关系。</li>
+<li>(2)程序顺序执行
+<ul>
+<li>PV操作[→P：P(S)]、[V→：V(S)]</li>
+</ul>
+</li>
+<li>(3)程序并发执行
+<ul>
+<li>输入I，计算C，输出P</li>
+</ul>
+</li>
+<li>进程的状态及切换
+<ul>
+<li>1)进程三状态（四条件转换）：运行、就绪、阻塞。
+<ul>
+<li>运行：占有CPU。</li>
+<li>就绪：已经获得所需资源，等待CPU中。</li>
+<li>阻塞：在等待某一事件发生（例如请求I/O）直到该事件发生前即便分配CPU也不会运行。</li>
+<li>注：关于“时间片到”断为“时间片/到”，可以理解为CPU分配给各个程序有限的时间，到点就会收回。</li>
+</ul>
+</li>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%A8%8B%E4%B8%89%E6%80%81%E6%A8%A1%E5%9E%8B.png"
+	width="547"
+	height="470"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%A8%8B%E4%B8%89%E6%80%81%E6%A8%A1%E5%9E%8B_hu14929772556230990024.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%A8%8B%E4%B8%89%E6%80%81%E6%A8%A1%E5%9E%8B_hu10299796962182175813.png 1024w"
+	loading="lazy"
+	
+		alt="进程三态模型"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="116"
+		data-flex-basis="279px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题1
+</span></span><span class="line"><span class="cl">若用PV操作控制进程P1～P5并发执行的过程，则需要设置6个信号量S1、S2、S3、S4、S5和S6，且信号量S1～S6的初值都等于零。下图中a、b、c、d、e、f处应分别填写？
+</span></span><span class="line"><span class="cl">解答：如图，先标注出信号量（按照P编号顺序，找到P1所有执行的信号并按先后顺序编号，再找P2，以此类推）
+</span></span><span class="line"><span class="cl">可得a：V(S1)V(S2)、b：V(S3)V(S4)、c：P(S1)P(S3)、d：V(S5)V(S6)、e：P(S2)P(S5)、f：P(S4)P(S6)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E4%BE%8B%E9%A2%98.png"
+	width="1234"
+	height="854"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E4%BE%8B%E9%A2%98_hu411360698352461902.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E9%A1%BA%E5%BA%8F%E6%89%A7%E8%A1%8C%E4%BE%8B%E9%A2%98_hu7108782654952324786.png 1024w"
+	loading="lazy"
+	
+		alt="进程管理.顺序执行例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="144"
+		data-flex-basis="346px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题2
+</span></span><span class="line"><span class="cl">某计算机系统中有一个CPU、一台输入设备和一台输出设备，假设系统中有三个作业T1、T2和T3，系统采用优先级调度，且T1的优先级&gt;T2的优先级&gt;T3的优先级。若每个作业具有三个程序段：输入Ii；、计算Ci；和输出Pi（i=1,2,3），执行顺序为Ii、Ci、Pi，则这三个作业各程序段并发执行的前驱图如下所示。图中①~⑥分别为？
+</span></span><span class="line"><span class="cl">解答：根据已知推未知，根据并发执行的定义，当I1执行之后，可以执行C1也可以同时开始执行I2，而左下角P1位置由于要输出之前必须有计算C，因此可以推导出③为C1，再观察图中规律，不难得出，①为I2，②I3，④为C2，⑤为P2，⑥为P3。其实本图也是程序并发执行的示例图。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E5%B9%B6%E5%8F%91%E6%89%A7%E8%A1%8C%E4%BE%8B%E9%A2%98.png"
+	width="1247"
+	height="558"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E5%B9%B6%E5%8F%91%E6%89%A7%E8%A1%8C%E4%BE%8B%E9%A2%98_hu1522079594490969226.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E5%B9%B6%E5%8F%91%E6%89%A7%E8%A1%8C%E4%BE%8B%E9%A2%98_hu13433829045031592878.png 1024w"
+	loading="lazy"
+	
+		alt="进程管理.并发执行例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="223"
+		data-flex-basis="536px"
+	
+></p>
+<p><a id="3.进程间通信"></a></p>
+<h2 id="3进程间通信">3.进程间通信
+</h2><ul>
+<li>(1)概念：在多道程序环境的系统中存在多个可以并发执行的进程，故进程间必然存在<strong>资源共享和相互合作</strong>的问题。</li>
+<li>(2)同步与互斥
+<ul>
+<li>互斥：某资源（即临界资源）在同一时间内只能由一个任务单独使用，使用时需要加锁，使用完后解锁才能被其它任务使用，如打印机。</li>
+<li>同步：多个任务可以并发执行，只不过有速度上的差异，在一定情况下停下等待，不存在资源是否单独或共享的问题，如自行车和汽车。</li>
+<li>临界资源：各进程间需要以互斥方式对其进行访问的资源。</li>
+</ul>
+</li>
+<li>(3)信号量操作
+<ul>
+<li>1)用<strong>信号量</strong>机制实现进程互斥、同步、前驱关系。信号量S的物理意义：S≥0表示某资源的可用数，若S&lt;0，则其绝对值表示阻塞队列中等待该资源的进程数。PV操作可实现资源的<strong>互斥</strong>使用。<strong>P操作：申请资源，S=S-1。V操作：释放资源，S=S+1</strong>。例如n个进程共享一台扫描仪S=-3代表有3个进程等待使用扫描仪。</li>
+<li>2)PV操作程序设计：
+<ul>
+<li>进入区：申请临界资源。P操作，wait()</li>
+<li>临界区：访问临界资源。</li>
+<li>退出区：释放临界资源。V操作，signal()</li>
+<li>剩余区</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(4)死锁
+<ul>
+<li>1)判断公式：当有n个进程，m个资源，每个进程需要的资源数为k，若<strong>m＞=n×(k-1)+1</strong>为真则不会发生死锁，反之发生死锁。</li>
+<li>2)公式来源：当每个进程都申请k-1个资源（这样都没有达到运行状态），这个时候如果系统没有资源了，它们中任何一个进程如果再提出申请1个资源的要求，就会死锁。</li>
+<li>3)死锁避免：</li>
+</ul>
+</li>
+<li>(5)进程资源图：用来表示进程和资源之间的分配和请求关系。当一个进程资源图中所有进程都是阻塞节点时，即陷入死锁状态。
+<ul>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E5%9B%BE.png"
+	width="1183"
+	height="806"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E5%9B%BE_hu15313856268558158651.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E5%9B%BE_hu12682197091952833336.png 1024w"
+	loading="lazy"
+	
+		alt="进程资源图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="146"
+		data-flex-basis="352px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题
+</span></span><span class="line"><span class="cl">假设系统中有进程P1、P2、P3，两种资源R1、R2。如果进程资源图如图①和图②和图③所示，那么以下进程资源图中的阻塞节点和非阻塞节点分别是？又是否可以化简？
+</span></span><span class="line"><span class="cl">解答：先分配再申请（或先申请再分配）。
+</span></span><span class="line"><span class="cl">可以看到图①的资源都分配完毕无法再满足P1、P2申请资源的需求，因此P1、P2都是阻塞节点，发生了死锁，该图也不可以化简。
+</span></span><span class="line"><span class="cl">图②资源分配完毕后P1的所有资源需求达成，因此P1运行完后释放所需的资源，接下来既可以运行P2也可以运行P3，所以该图可以化简。
+</span></span><span class="line"><span class="cl">图③资源分配完毕后无法再满足申请资源的需求，因此P1、P2、P3都是阻塞节点，发生了死锁，该图也不可以化简。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BE%8B%E9%A2%98.png"
+	width="2191"
+	height="401"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BE%8B%E9%A2%98_hu16082163196890263619.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%BF%9B%E7%A8%8B%E8%B5%84%E6%BA%90%E4%BE%8B%E9%A2%98_hu9730572168188241089.png 1024w"
+	loading="lazy"
+	
+		alt="进程资源例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="546"
+		data-flex-basis="1311px"
+	
+></p>
+<p><a id="4.线程"></a></p>
+<h2 id="4线程">4.线程
+</h2><ul>
+<li>(1)定义：线程是<strong>独立调度</strong>的最小单位，进程是<strong>拥有资源</strong>的最小单位。</li>
+<li>(2)特点：线程A与线程B<strong>共享进程所拥有的全部资源</strong>，但<strong>线程A内的资源</strong>（如指针）不能为线程B所用。（可以向上共享进程，线程间不能分享）
+<ul>
+<li><img src="/2025__%e8%bd%af%e8%ae%be__%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f.%e7%ba%bf%e7%a8%8b%e7%a4%ba%e4%be%8b%e5%9b%be.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="线程示例图"
+	
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="5.存储管理"></a></p>
+<h2 id="5存储管理">5.存储管理
+</h2><ul>
+<li>(1)程序局部性原理：程序在执行时呈现出时间局限性和空间局限性规律，即在一段时间内，程序的执行仅局限于某个部分。相应地，所访问的存储空间也局限于某个区域内。进程的页面变换表包括：状态位、访问位、修改位。状态位=0表明不在内存中。
+<ul>
+<li>如果要删除内存中的页，首先要确定页号是否存在在内存中（删除本就不在内存中的页没有意义），再关注访问位，未访问过（访问位=0）的页号优先淘汰，在都访问过的情况下关注修改位，未修改过（修改位=0）的页号优先淘汰。</li>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86.%E9%A1%B5%E9%9D%A2%E5%8F%98%E6%8D%A2%E8%A1%A8.png"
+	width="1190"
+	height="338"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86.%E9%A1%B5%E9%9D%A2%E5%8F%98%E6%8D%A2%E8%A1%A8_hu7642041170400900987.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86.%E9%A1%B5%E9%9D%A2%E5%8F%98%E6%8D%A2%E8%A1%A8_hu2246264739482484838.png 1024w"
+	loading="lazy"
+	
+		alt="存储管理.页面变换表"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="352"
+		data-flex-basis="844px"
+	
+></li>
+</ul>
+</li>
+<li>(2)FAT文件系统使用了<strong>基于文件的簇状链式结构文件管理结构</strong>。</li>
+<li>(3)分页存储管理技术：是一种虚拟存储技术。是将逻辑地址空间划分成固定大小的块，称为页(page)，并将物理地址空间划分成同样大小的块，称为页框(pageframe)或物理块(physical block)。核心思想是不在内存中一次性装入整个程序，而是根据程序的需要，按页加载到内存中。
+<ul>
+<li>1)纯分页存储管理
+<ul>
+<li>逻辑地址(LogicalAddress)：也称虚拟地址。由<strong>页号+页内偏移量/页内地址</strong>组成，页号(PageNumber)指示程序的哪一页，<strong>所有的页号代表总页数</strong>。页内偏移量(PageOffset)指示该页内的具体位置，<strong>页内偏移量/页内地址代表页面大小</strong>。（注意，序号从0开始，但0也算进容量）</li>
+<li>物理地址(PhysicalAddress)：内存中实际的地址，也称实地址。由页框号和页内偏移量组成，页帧号/页框号(PageFrameNumber)指示该页装入的页框，页内偏移量(PageOffset)与逻辑地址的页内偏移量相同。</li>
+<li>页表（可以视作关联起逻辑地址和物理地址的表）：是一个数据结构，用于将逻辑地址映射到物理地址。</li>
+</ul>
+</li>
+<li>2)段页式存储管理：由<strong>段号+（段内）页号+页内偏移量</strong>组成。页号代表的是每个段最大允许的页数，并不代表一定有那么多页。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题1
+</span></span><span class="line"><span class="cl">分页管理中逻辑地址由页面编号和偏移值构成，下图所示逻辑地址，其页面大小和页数为？
+</span></span><span class="line"><span class="cl">31          12 11      0
+</span></span><span class="line"><span class="cl">⌜——————————-—----———————⌝
+</span></span><span class="line"><span class="cl">| Page number  | Offset |
+</span></span><span class="line"><span class="cl">⌞-------------------——--⌟
+</span></span><span class="line"><span class="cl">解答：页号Page number的大小为2^(31-12+1)=2^20字节=1M，因此页数为1M；偏移量Offset的的大小为2^(11-0+1)=2^12=4096字节=4K，因此页面大小为4K。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题2
+</span></span><span class="line"><span class="cl">某计算机系统页面大小为4K，若进程的页面变换表如下所示，逻辑地址为十六进制1D16H。该地址经过变换后，其物理地址应为十六进制的？
+</span></span><span class="line"><span class="cl">页号 物理块号
+</span></span><span class="line"><span class="cl">0     1
+</span></span><span class="line"><span class="cl">1     3
+</span></span><span class="line"><span class="cl">2     4
+</span></span><span class="line"><span class="cl">3     6
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">解答：逻辑地址由页号和页内偏移量组成，页面大小为4K，即占据2^12字节，而十六进制可以表示为四位二进制，因此1D16H中[D16]这部分表示的是页面大小[1]表示页数也即表示页号，再根据变换表可知物理地址应为3D16H。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="6.设备管理"></a></p>
+<h2 id="6设备管理">6.设备管理
+</h2><ul>
+<li>(1)缓冲区
+<ul>
+<li>T 盘块读入缓冲区时间，M 缓冲区送入用户区时间，n 磁盘块数量，C 在用户区内系统对每块数据处理时间。</li>
+<li>单缓冲区的时间消耗：(T+M)×n+C</li>
+<li><strong>双缓冲区的时间消耗：T×n+M+C （节省了(n-1)M的时间）</strong></li>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.%E5%8D%95%E5%8F%8C%E7%BC%93%E5%86%B2%E5%8C%BA.jpg"
+	width="1660"
+	height="891"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.%E5%8D%95%E5%8F%8C%E7%BC%93%E5%86%B2%E5%8C%BA_hu2084010850952627785.jpg 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.%E5%8D%95%E5%8F%8C%E7%BC%93%E5%86%B2%E5%8C%BA_hu11958657791564535857.jpg 1024w"
+	loading="lazy"
+	
+		alt="单双缓冲区"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="447px"
+	
+></li>
+</ul>
+</li>
+<li>(2)磁盘驱动调度算法
+<ul>
+<li>在磁盘调度管理中通常<strong>先进行移臂再进行旋转调度</strong>，访问<strong>同一磁道的信息时，只需要进行旋转调度</strong>。</li>
+<li>读取数据时，磁头首先要寻找到对应的磁道，然后等待磁盘进行周期旋转，旋转到指定的扇区，才能读取到对应的数据，因此，会产生寻道时间和等待时间，就是磁头移动到磁道所需的时间和等待读写的扇区转到磁头的下方所用的时间。其中寻道时间耗时最长，寻道时间的调度算法如下：
+<ul>
+<li>先来先服务FCFS：按请求访问者的先后次序启动磁盘驱动器，而不考虑它们要访问的物理位置。可能会随时改变移动臂/磁头的运动方向。</li>
+<li>最短寻道时间优先SSTF：查找时间最短的作业先执行，使得每次的寻道时间最短。可能会随时改变移动臂/磁头的运动方向。会产生“饥饿”现象，即远处进程可能永远无法访问。</li>
+<li>电梯调度算法/扫描算法SCAN：沿着一个方向处理完再转向。</li>
+<li>单向扫描调度算法CSCAN：与SCAN不同的是，其只做单向移动，即只能从里向外或者从外向里。沿着一个方向处理完后，<strong>调转方向到最里端</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(3)旋转调度算法
+<ul>
+<li>优化前：[dt×(c-2)+dt+d]×(n-1)+dt+d，即<strong>耗时=旋转一周的时间×总块数+处理时间</strong>（建议画图理解）</li>
+<li>优化后：(dt+d)×n，即 <strong>耗时=（旋转一周其中每一块所需时间+处理时间）×总块数</strong>（建议画图理解）</li>
+</ul>
+</li>
+<li>(4)I/O系统的层次结构
+<ul>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.IO%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84.jpg"
+	width="1176"
+	height="493"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.IO%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84_hu9226838295815518309.jpg 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.IO%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84_hu12940952586880221990.jpg 1024w"
+	loading="lazy"
+	
+		alt="IO系统的层次结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="238"
+		data-flex-basis="572px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题
+</span></span><span class="line"><span class="cl">假设每个磁道被划分成10个物理块，每个物理块存放1个逻辑记录。逻辑记录R1，R2，...，R10存放在同一个磁道上，假定磁盘的旋转速度为10ms/周，磁头当前在R1的开始处，若系统顺序处理这些记录，使用单缓冲区，每个记录处理时间为2ms，则处理这10个记录的最长时间为？若对存储数据的排列顺序进行优化，处理10个记录的最少时间为？
+</span></span><span class="line"><span class="cl">解答：磁盘的旋转速度（读取）为10ms/周，共有10个物理块，因此每个物理块读取时间为1ms
+</span></span><span class="line"><span class="cl">优化前，处理R1共需要读取时间1ms+处理时间为2ms=3ms，而处理时磁头依旧在旋转，此时磁头位置来到R4，而下一个处理的记录是R2，因此要等待磁头旋转一周到R2的位置，需要8ms再进行处理，R2~R10都需要这样等待，因此R2~R10的处理时间均为8ms+2ms=11ms，加总，处理10个数据需要3ms+11ms×9=102ms。
+</span></span><span class="line"><span class="cl">优化后·处理R1共需要读取时间1ms+处理时间为2ms=3ms，而处理时磁头依旧在旋转，但已优化了记录R2位置，因此10条记录的处理时间均为3ms，处理10个数据需要3ms×10=30ms。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.%E6%97%8B%E8%BD%AC%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E4%BE%8B%E9%A2%98.png"
+	width="1325"
+	height="723"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.%E6%97%8B%E8%BD%AC%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E4%BE%8B%E9%A2%98_hu12260503341984713277.png 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86.%E6%97%8B%E8%BD%AC%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E4%BE%8B%E9%A2%98_hu15142687987764965810.png 1024w"
+	loading="lazy"
+	
+		alt="旋转调度算法例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="183"
+		data-flex-basis="439px"
+	
+></p>
+<p><a id="7.文件管理"></a></p>
+<h2 id="7文件管理">7.文件管理
+</h2><ul>
+<li>(1)多级索引结构
+<ul>
+<li>文件最大长度（1块磁盘地址项数量）=索引数据（磁盘块大小）/地址项（块号大小）</li>
+<li>编号（逻辑块号）从0开始。</li>
+<li>二级索引，意味在一级索引基础上每一块中再建立索引，例如一级索引中1块磁盘块能放入256个物理块地址，那么采用二级索引能放入256×256=65536个物理块。</li>
+<li><img src="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.%E5%A4%9A%E7%BA%A7%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84.jpg"
+	width="954"
+	height="574"
+	srcset="/p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.%E5%A4%9A%E7%BA%A7%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84_hu12053503254209408444.jpg 480w, /p/programming-webdeveloper-a12-operatingsystem/2025__%E8%BD%AF%E8%AE%BE__%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.%E5%A4%9A%E7%BA%A7%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84_hu1952878019255891885.jpg 1024w"
+	loading="lazy"
+	
+		alt="多级索引结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="398px"
+	
+></li>
+</ul>
+</li>
+<li>(2)文件目录
+<ul>
+<li>1)特点：若系统在将<strong>目录</strong>文件修改的结果写回磁盘时发生崩溃，会对系统的影响相对较大。</li>
+<li>2)目录结构 /
+<ul>
+<li>全文件名 → 全写</li>
+<li>绝对路径 → 以<strong>盘符</strong>标识开始</li>
+<li>相对路径 → <strong>目标文件相对于当前文件的路径</strong>，即“相对”是相对于当前文件目录，从下一级写起。
+<ul>
+<li><code>./</code>表示当前所在的目录。也可以加上下层目录名称和文件名称，<code>./目录名称/文件名称含后缀名</code>。也可以省去 <code>./</code>直接写明文件名称，但如果省略也同时要省略分隔符变成<code>目录名称/文件名称含后缀名</code>，否则将引起歧义<code>/</code>也代表根目录。也可以省略文件名但如果文件在目录下的不该省略分隔符<code>./目录名称/</code>。</li>
+<li><code>..</code>表示当前文件所在的上层目录。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(3)位示图bitmap
+<ul>
+<li>简单来说是文件系统对于空闲文件的管理办法。用0/1表示物理块使用情况，0表示未使用，1表示已使用。</li>
+<li>注意<strong>边界值</strong>，如果计算出来有余数可以向下取整。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题1
+</span></span><span class="line"><span class="cl">某文件系统采用多级索引结构，若磁盘块的大小为512B，每个块号需占3B，那么采用一级索引时的文件最大长度为？KB，采用二级索引时的文件最大长度为？KB
+</span></span><span class="line"><span class="cl">解答：有512/3=170（取整）个磁盘块/地址项，一级索引时文件最大长度=170×512/1024=85KB；二级索引时文件最大长度=170×170×512/1024=14450KB。
+</span></span><span class="line"><span class="cl">注意是乘以磁盘块的大小。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题
+</span></span><span class="line"><span class="cl">某文件管理系统在磁盘上建立了位示图(bitmap)，记录磁盘的使用情况。若系统的字长为32位，磁盘上的物理块依次编号为0、1、2、……，那么4096号物理块的使用情况在位示图中的第多少个字中描述？若磁盘的容量为200GB，物理块的大小为1MB，那么位示图的大小为多少个字？
+</span></span><span class="line"><span class="cl">解答：4096/32=128，但这是边界值，位示图的记录是从0开始，即0~31，32~63，64~92……因此第128个字对应的物理块应当是4064~4095，4096号物理块应该在第129个字上。
+</span></span><span class="line"><span class="cl">单位统一，磁盘容量200GB=200×1024MB，位示图的大小=(磁盘容量/物理块大小)/字长=(200×1024/1)/32=6400个字
+</span></span><span class="line"><span class="cl">注，在计算位示图大小时，除32是为算出长度，不需要再进行单位换算。
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a16-computernetwork/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-计算机网络</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a15-softwareengineering/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-信息安全</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a14-softwareengineering/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-软件工程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a13-structuredprogramming/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-结构化开发</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a11-code/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-设计模式代码</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了23篇文章 · 
+		总计140.46k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>
