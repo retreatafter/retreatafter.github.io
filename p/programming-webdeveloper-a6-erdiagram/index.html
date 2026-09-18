@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="理论篇：软设-数据库设计E-R实体联系图">
+<title>小小小编程 | Web软件开发 | 理论篇：软设-数据库设计E-R实体联系图</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-a6-erdiagram/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 理论篇：软设-数据库设计E-R实体联系图">
+<meta property='og:description' content="理论篇：软设-数据库设计E-R实体联系图">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-a6-erdiagram/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2025-10-06T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-06T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 理论篇：软设-数据库设计E-R实体联系图">
+<meta name="twitter:description" content="理论篇：软设-数据库设计E-R实体联系图">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1数据模型">1.数据模型</a></li>
+    <li><a href="#2e-r模型">2.E-R模型</a></li>
+    <li><a href="#3键与码">3.键与码</a></li>
+    <li><a href="#4完整性约束">4.完整性约束</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/poreover/" >
+                Poreover
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-a6-erdiagram/">小小小编程 | Web软件开发 | 理论篇：软设-数据库设计E-R实体联系图</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            理论篇：软设-数据库设计E-R实体联系图
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-10-06</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 2234 字
+                    阅读时长: 5 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e6%95%b0%e6%8d%ae%e6%a8%a1%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.数据模型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.E-R%e6%a8%a1%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.E-R模型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e9%94%ae%e4%b8%8e%e7%a0%81"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.键与码
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e5%ae%8c%e6%95%b4%e6%80%a7%e7%ba%a6%e6%9d%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.完整性约束
+        
+    </span>
+</a>数据库设计E-R</li>
+</ol>
+<p><a id="1.数据模型"></a></p>
+<h2 id="1数据模型">1.数据模型
+</h2><ul>
+<li>1)概念数据模型也称信息模型，是用户和数据库设计人员交流的语言，<strong>主要用于数据库设计</strong>。这类模型中最著名的是实体联系（<strong>实体-关系</strong>）模型，简称E-R(Entity-Relationship Approach)模型。</li>
+</ul>
+<p><a id="2.E-R模型"></a></p>
+<h2 id="2e-r模型">2.E-R模型
+</h2><ul>
+<li>(1)实体：在E-R模型中，实体用矩形表示，通常矩形框内写明实体名。每个实体由一组特性(属性)来表示，其中的某一部分属性可以唯一表示实体。实体集是具有相同属性的实体集合。实体向关系模式的转换格式为：关系名（属性名1，属性名2，……）
+<ul>
+<li>1)弱实体：一个实体的存在必须以另一个实体为前提，例如家属实体必须以职工实体的存在为前提。</li>
+<li>2)子实体：基类和子类之间具有继承关系，例如职员实体是管理员实体的基类。子实体转换为关系模式时，还需要将基类实体的主码加进子类实体中。例如基类关系职员（<strong>职员号</strong>，姓名，性别，参加工作时间），子类飞行员拥有的属性有飞行小时，飞行型号，那么子类关系飞行员（<strong>职员号</strong>，飞行小时，飞行型号），这个时候职员号也是飞行员的主键。</li>
+<li><img src="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E5%BC%B1%E5%AE%9E%E4%BD%93%E4%B8%8E%E5%AD%90%E5%AE%9E%E4%BD%93.png"
+	width="1094"
+	height="840"
+	srcset="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E5%BC%B1%E5%AE%9E%E4%BD%93%E4%B8%8E%E5%AD%90%E5%AE%9E%E4%BD%93_hu12332893042692854286.png 480w, /p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E5%BC%B1%E5%AE%9E%E4%BD%93%E4%B8%8E%E5%AD%90%E5%AE%9E%E4%BD%93_hu17531483003031150604.png 1024w"
+	loading="lazy"
+	
+		alt="弱实体与子实体"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="130"
+		data-flex-basis="312px"
+	
+></li>
+</ul>
+</li>
+<li>(2)联系：在E-R模型中，联系用菱形表示，通常菱形框内写明联系名。关系模式就是以名称和属性名表示一个联系。
+<ul>
+<li>1)两个实体集之间的对应关系，包括一对一联系（1:1）、一对多联系（1:n）、多对多联系（m:n）。图中的1表示1个学生属于1个班，n表示1个班有n个学生。那么班和学生属于1:n联系，注意<strong>说明的顺序会影响描述</strong>，例如学生和班则属于n:1联系。
+<ul>
+<li>一对一联系的转换，常见做法为将联系归并到实体中去。若A实体与B实体联系，将B实体的码加入到A实体（也可以将A实体的码加入到B实体）</li>
+<li>一对多联系的转换，常见做法为将联系归并到<strong>多方</strong>实体中去。若A实体与B实体联系且为1:n关系，将A实体的码加入到B实体。</li>
+<li>多对多联系的转换，只能将联系转换为一个独立的关系模式。例如，维修人员（<strong>职工号</strong>，姓名，部门），设备（<strong>设备号</strong>，设备名，日期），那么关系 维修（职工号，设备号）。</li>
+</ul>
+</li>
+<li>2)多个（≥3）实体之间的对应关系，类似的，包括一对一对一联系（1:1:1）、一对一对多联系（1:1:n）、一对多对多联系（1:m:n）、多对多对多联系（r:m:n）。三个实体的联系描述可拆分为多个两个实体间的联系后合并。
+<ul>
+<li>多对多对多联系的转换，只能将联系转换为一个独立的关系模式。具体的与两个实体的多对多联系的转换类似。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(3)属性：实体某方面的特性。</li>
+<li><img src="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E6%9E%84%E4%BB%B6.png"
+	width="1574"
+	height="646"
+	srcset="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E6%9E%84%E4%BB%B6_hu11852288630206657656.png 480w, /p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E6%9E%84%E4%BB%B6_hu5643498058499208060.png 1024w"
+	loading="lazy"
+	
+		alt="构件"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="243"
+		data-flex-basis="584px"
+	
+></li>
+<li><img src="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E5%AE%9E%E4%BD%93%E4%B8%8E%E8%81%94%E7%B3%BB%E8%A1%A8%E7%A4%BA.png"
+	width="694"
+	height="679"
+	srcset="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E5%AE%9E%E4%BD%93%E4%B8%8E%E8%81%94%E7%B3%BB%E8%A1%A8%E7%A4%BA_hu16338335264406903177.png 480w, /p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E5%AE%9E%E4%BD%93%E4%B8%8E%E8%81%94%E7%B3%BB%E8%A1%A8%E7%A4%BA_hu8170612835064473762.png 1024w"
+	loading="lazy"
+	
+		alt="实体与联系表示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="102"
+		data-flex-basis="245px"
+	
+></li>
+</ul>
+<p><a id="3.键与码"></a></p>
+<h2 id="3键与码">3.键与码
+</h2><ul>
+<li>(1)主键/主码：标识<strong>当前表</strong>唯一元组，属于<strong>唯一对应</strong>。不能为空。在一个关系中或许有多个候选码，从中选择一个作为主码。</li>
+<li>(2)外键/外码：A表B表两个表，B表中有一元组在A表中是主键，该元组在B表中称为外键。<strong>外键的存在是为了联系两个表</strong>。外键可以有多个。注意，若A表的主键为单个属性a，那么a充当了A表的主键，就不可能同时成为外键；若A表的主键为属性组如（a,b,c），而b是B的主键，那么在A表中，b是可以被称为外键的。</li>
+<li>(3)全码(All-Key)：关系模型的<strong>所有属性组</strong>是这个关系模式的候选码。</li>
+</ul>
+<p><a id="4.完整性约束"></a></p>
+<h2 id="4完整性约束">4.完整性约束
+</h2><ul>
+<li>(1)数据完整性是对关系的某种约束条件。</li>
+<li>(2)关系模型中的<strong>实体</strong>完整性：<strong>主码</strong>取值唯一且非空。</li>
+<li>(3)关系模型中的<strong>参照</strong>完整性，表中的<strong>外码</strong>要么为空，要么取它的参照关系中的主码的值。</li>
+<li>(4)关系模型中的<strong>用户定义</strong>的完整性，取值范围或非空限制，例如：性别（男，女）。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题2016上
+</span></span><span class="line"><span class="cl">【说明】某销售公司当前的销售业务为商城实体店销售。现该公司拟开展网络销售业务，需要开发一个信息化管理系统。请根据公司现有业务及需求完成该系统的数据库设计。
+</span></span><span class="line"><span class="cl">【需求分析结果】
+</span></span><span class="line"><span class="cl">（1）记录公司所有员工的信息。员工信息包括工号、身份证号、姓名、性别、出生日期和电话，并只登记一部电话。
+</span></span><span class="line"><span class="cl">（2）记录所有商品的信息。商品信息包括商品名称、生产厂家、销售价格和商品介绍。系统内部用商品条码唯一区别每种商品。
+</span></span><span class="line"><span class="cl">（3）记录所有顾客的信息。顾客信息包括顾客姓名、身份证号、登录名、登录密码和电话号码。一位顾客只能提供一个电话号码。系统自动生成唯一的顾客编号。
+</span></span><span class="line"><span class="cl">（4）顾客登录系统之后，在网上商城购买商品。顾客可将选购的商品置入虚拟的购物车内，购物车可长期存放顾客选购的所有商品。顾客可在购物车内选择商品、修改商品数量后生成网购订单。订单生成后，由顾客选择系统提供的备选第三方支付平台进行电子支付，支付成功后系统需要记录唯一的支付凭证编号，然后由商城根据订单进行线下配送。
+</span></span><span class="line"><span class="cl">（5）所有的配送商品均由仓库统一出库。为方便顾客，允许每位顾客在系统中提供多组收货地址、收货人及联系电话。一份订单所含的多个商品可能由多名分拣员根据商品所在仓库信息从仓库中进行分拣操作，分拣后的商品交由配送员根据配送单上的收货地址进行配送。
+</span></span><span class="line"><span class="cl">（6）新设计的系统要求记录实体店的每笔销售信息，包括营业员、顾客、所售商品及其数量。
+</span></span><span class="line"><span class="cl">【概念模型设计】【逻辑结构设计】如图
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">【问题 1】补充图 2-1 中的“配送”联系所关联的对象及联系类型。
+</span></span><span class="line"><span class="cl">解答：如图。
+</span></span><span class="line"><span class="cl">【问题 2】补充逻辑结构设计中的（a）、（b）和（c）三处空缺。
+</span></span><span class="line"><span class="cl">解答：
+</span></span><span class="line"><span class="cl">（a）所在仓库
+</span></span><span class="line"><span class="cl">（b）支付凭证编号
+</span></span><span class="line"><span class="cl">（c）订单ID
+</span></span><span class="line"><span class="cl">【问题 3】对于实体店销售，若要增加送货上门服务，由营业员在系统中下订单，与网购的订单进行后续的统一管理。请根据该需求，对图 2-1 进行补充，并修改订单关系模式。
+</span></span><span class="line"><span class="cl">解答：如图。
+</span></span><span class="line"><span class="cl">订单（订单ID，顾客编号、商品条码，商品数量，销售ID）
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E4%BE%8B%E9%A2%982016%E4%B8%8A.png"
+	width="886"
+	height="1197"
+	srcset="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E4%BE%8B%E9%A2%982016%E4%B8%8A_hu14170689565541800408.png 480w, /p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E4%BE%8B%E9%A2%982016%E4%B8%8A_hu8433360417924295651.png 1024w"
+	loading="lazy"
+	
+		alt="E-R模型例题2016上"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="177px"
+	
+></p>
+<p><img src="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E4%BE%8B%E9%A2%982016%E4%B8%8A%E8%A1%A5%E5%85%85%E5%90%8E.png"
+	width="1165"
+	height="1608"
+	srcset="/p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E4%BE%8B%E9%A2%982016%E4%B8%8A%E8%A1%A5%E5%85%85%E5%90%8E_hu17362531729480653684.png 480w, /p/programming-webdeveloper-a6-erdiagram/2025__%E8%BD%AF%E8%AE%BE__%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1E-R.%E4%BE%8B%E9%A2%982016%E4%B8%8A%E8%A1%A5%E5%85%85%E5%90%8E_hu986683607788937534.png 1024w"
+	loading="lazy"
+	
+		alt="E-R模型.例题2016上补充"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="72"
+		data-flex-basis="173px"
+	
+></p>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a10-designpatterns/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-设计模式</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a9-umlanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-UML大题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a8-uml/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-UML</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a7-ood/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-面向对象</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a5-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-数据库</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了17篇文章 · 
+		总计91.16k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

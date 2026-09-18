@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="理论篇：软设-UML">
+<title>小小小编程 | Web软件开发 | 理论篇：软设-UML</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-a8-uml/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 理论篇：软设-UML">
+<meta property='og:description' content="理论篇：软设-UML">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-a8-uml/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2025-10-08T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2025-10-08T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 理论篇：软设-UML">
+<meta name="twitter:description" content="理论篇：软设-UML">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1uml">1.UML</a></li>
+    <li><a href="#2事务">2.事务</a></li>
+    <li><a href="#3关系">3.关系</a></li>
+    <li><a href="#4uml图分类">4.UML图分类</a></li>
+    <li><a href="#5类图">5.类图</a></li>
+    <li><a href="#6对象图">6.对象图</a></li>
+    <li><a href="#7用例图">7.用例图</a></li>
+    <li><a href="#8时序顺序序列图">8.时序/顺序/序列图</a></li>
+    <li><a href="#9通信图">9.通信图</a></li>
+    <li><a href="#10状态图">10.状态图</a></li>
+    <li><a href="#11活动图">11.活动图</a></li>
+    <li><a href="#12构件组件图">12.构件/组件图</a></li>
+    <li><a href="#13部署图">13.部署图</a></li>
+    <li><a href="#14包图">14.包图</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/poreover/" >
+                Poreover
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-a8-uml/">小小小编程 | Web软件开发 | 理论篇：软设-UML</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            理论篇：软设-UML
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2025-10-08</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 4081 字
+                    阅读时长: 9 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.UML"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.UML
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e4%ba%8b%e5%8a%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.事务
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e5%85%b3%e7%b3%bb"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.关系
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.UML%e5%9b%be%e5%88%86%e7%b1%bb"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.UML图分类
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e7%b1%bb%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.类图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6.%e5%af%b9%e8%b1%a1%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.对象图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#7.%e7%94%a8%e4%be%8b%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.用例图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#8.%e6%97%b6%e5%ba%8f/%e9%a1%ba%e5%ba%8f/%e5%ba%8f%e5%88%97%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        8.时序/顺序/序列图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#9.%e9%80%9a%e4%bf%a1%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        9.通信图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#10.%e7%8a%b6%e6%80%81%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        10.状态图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#11.%e6%b4%bb%e5%8a%a8%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        11.活动图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#12.%e6%9e%84%e4%bb%b6/%e7%bb%84%e4%bb%b6%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        12.构件/组件图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#13.%e9%83%a8%e7%bd%b2%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        13.部署图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#14.%e5%8c%85%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        14.包图
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.UML"></a></p>
+<h2 id="1uml">1.UML
+</h2><ul>
+<li>(1)定义：UML(Unified Modeling Language)全名叫统一建模语言，又称为标准建模语言，是为面向对象软件设计提供统一的、标准的、可视化的建模语言。</li>
+<li>(2)UML的词汇表包含3种构造块：事务、关系、图。事物是对模型中最具有代表性的成分的抽象；关系把事物结合在一起；图聚集了相关的事物。</li>
+</ul>
+<p><a id="2.事务"></a></p>
+<h2 id="2事务">2.事务
+</h2><ul>
+<li>(1)结构事物：静态，名词。结构事物包括类（Class）、接口（Interface）、协作（Collaboration）、用例（UseCase）、主动类（ActiveClass）、构件（Component）、制品（Artifact）、结点（Node）。</li>
+<li>(2)行为事物：动态，行为。行为事物包括交互/消息（Interaction）、状态机（StateMachine）、活动（Activity）。</li>
+<li>(3)分组事物：分组事务是UML模型的组织部分。例如包（Package），结构事物、行为事物甚至其它分组事物都可以放进包内。包与构件（仅在运行时存在）不同，它纯粹是概念上的（即它仅在开发时存在）。</li>
+<li>(4)注释事物：是UML模型的解释部分。注解（Note）是一种主要的注释事物。</li>
+</ul>
+<p><a id="3.关系"></a></p>
+<h2 id="3关系">3.关系
+</h2><ul>
+<li>(1)关联关系(Association)：关联关系是一种结构关系，描述了<strong>一组链</strong>，链是对象之间的连接。<strong>关联用实线（和箭头）表示</strong>，可以是单向的也可以是双向的，双向的可以没有箭头（无向边）。关联的多重度是指一个类的实例能够与另一个类的多少个实例相关联。关联类出现在多对多即A的实例可以重复对应B的实例情况，此情况需要创建一个新类关联类来更好的表示AB间的关系。
+<ul>
+<li>聚合(Aggregation)：整体和部分生命周期不一致，整体消失，<strong>部分仍存在</strong>，如班级（整体）与学生（部分）。从代码角度来说，聚合对象是指一个对象包含了其它对象。</li>
+<li>组合(Composition)：整体和部分生命周期一致，整体消失，<strong>部分也消失</strong>，如人（整体）与大脑（部分）。</li>
+</ul>
+</li>
+<li>(2)泛化(Generalization)：<strong>一般与特殊</strong>的关系。在面向对象中称之为<strong>继承</strong>。<strong>泛化用实线和空心箭头表示</strong>，例如<code>A-▷B</code>意思为A是B的子类，也可以说基类B泛化出子类A。
+<ul>
+<li>单重继承、多重继承（有多个基类）、层级继承（一个基类有多个子类）</li>
+</ul>
+</li>
+<li>(3)依赖(Dependency)：依赖是两个事物间的语义关系，其中一个事物（独立事物）发生变化会影响另一个事物（依赖事物）的语义。<strong>依赖用虚线箭头表示</strong>，例如<code>A-----&gt;B</code>意思为独立事务B被依赖事务A依赖，也可以表述为A依赖于B。</li>
+<li>(4)实现(Realization)：在两种情况下会使用实现关系：一种是在接口和实现它们的类或构件之间；另一种是在用例和实现它们的协作之间。<strong>实现用虚线和空心箭头表示</strong>，例如<code>A-----▷B</code>，假设此处的B为接口，那么意思为实现类A实现了接口B。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题1
+</span></span><span class="line"><span class="cl">若类A仅在其方法Method1中定义并使用了类B的一个对象，类A其它部分的代码都不涉及类B，那么类A与类B的关系应为？
+</span></span><span class="line"><span class="cl">解答：为依赖关系。注意，题意可得知AB之间的关系仅在A需要调用方法Method1时才体现，说明这种关系并不算持久，因此不属于关联关系。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="4.UML图分类"></a></p>
+<h2 id="4uml图分类">4.UML图分类
+</h2><ul>
+<li>(1)图的类型：类图、对象图、时序图（序列图/顺序图）、用例图、活动图、状态图、构件图（组件图）、部署图、通信图。</li>
+<li>(2)静态建模：类图，对象图，用例图。</li>
+<li>(3)动态建模：序列/时序/顺序图，通信/协作图，状态图，活动图。</li>
+<li>(4)物理建模：构件/组件图，部署图。</li>
+<li>(5)交互图：序列/时序/顺序图，通信/协作图。</li>
+</ul>
+<p><a id="5.类图"></a></p>
+<h2 id="5类图">5.类图
+</h2><ul>
+<li>(1)定义：类图描述一组对象、<strong>接口</strong>、协作和它们之间的关系。<strong>静态</strong>图，为系统的静态设计视图。</li>
+<li>(2)UML类图建模的对象有：<strong>系统的词汇、简单的协作、逻辑数据库模式</strong>。</li>
+<li>(3)注释：<code>+ public</code> <code>- private</code> <code># protected</code> <code>~ package</code></li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%B1%BB%E5%9B%BE.png"
+	width="1430"
+	height="1047"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%B1%BB%E5%9B%BE_hu8065234031641522614.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%B1%BB%E5%9B%BE_hu15619330549690579006.png 1024w"
+	loading="lazy"
+	
+		alt="类图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="136"
+		data-flex-basis="327px"
+	
+></p>
+<p>注. <a class="link" href="https://www.processon.com/view/6502a7869722a31b82da0e21"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        https://www.processon.com/view/6502a7869722a31b82da0e21
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></p>
+<p><a id="6.对象图"></a></p>
+<h2 id="6对象图">6.对象图
+</h2><ul>
+<li>(1)定义：对象图描述<strong>某一时刻</strong>一组对象以及它们之间的关系。<strong>静态</strong>图，在没有类图的前提下，对象图就是静态设计视图。</li>
+<li>(2)特点：对象图和类图有类似之处，而对象图的特点是表示对象的方式为<code>对象名:类名</code>。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E5%AF%B9%E8%B1%A1%E5%9B%BE.png"
+	width="695"
+	height="316"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E5%AF%B9%E8%B1%A1%E5%9B%BE_hu17357851277860410050.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E5%AF%B9%E8%B1%A1%E5%9B%BE_hu15524930693155147514.png 1024w"
+	loading="lazy"
+	
+		alt="对象图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="219"
+		data-flex-basis="527px"
+	
+></p>
+<p><a id="7.用例图"></a></p>
+<h2 id="7用例图">7.用例图
+</h2><ul>
+<li>(1)定义：用例图描述<strong>一组用例、参与者</strong>以及它们之间的关系。<strong>静态</strong>图。
+<ul>
+<li>参与者是指人、硬件或其它系统可以扮演的角色。</li>
+</ul>
+</li>
+<li>(2)用例间关系：（注意，用例图的包含和拓展关系相当于在关联关系上又做了细分，而包含关系中箭头的指向含义和类图相反）
+<ul>
+<li>包含include：一个用例包含另一个用例，当基本用例执行时，被包含用例一定会执行。包含关系由基本用例指向被包含用例。关系是一条带箭头的虚线，虚线上标注<code>&lt;&lt;include&gt;&gt;</code>，<strong>例如<code>A---&lt;&lt;include&gt;&gt;--&gt;B</code>就表示A包含B</strong>。</li>
+<li>拓展extend：当一个用例执行时，可能会出现特殊情况和可选情况，这个时候就会执行拓展用例。拓展关系由拓展用例指向基本用例，关系是一条带箭头的虚线，虚线上标注<code>&lt;&lt;extend&gt;&gt;</code>，例如<code>A---&lt;&lt;extend&gt;&gt;--&gt;B</code>就表示B是基本用例，A是拓展用例。</li>
+<li>泛化generalize：基用例泛化子用例，子用例继承基用例的所有属性和行为，并且基用例可以出现的地方子用例都可以将其替换。和类图的表现一致，<code>A-----▷B</code>，表示B泛化出A。</li>
+</ul>
+</li>
+<li>(3)参与者与用例，就类似对象和对象的行为。关联是参与者和用例之间的关系；包含是用例和用例之间的关系；拓展是用例和用例之间的关系；泛化是参与者和参与者之间的关系也是用例和用例之间的关系。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%94%A8%E4%BE%8B%E5%9B%BE.png"
+	width="1308"
+	height="550"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%94%A8%E4%BE%8B%E5%9B%BE_hu9713565876816208951.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%94%A8%E4%BE%8B%E5%9B%BE_hu8403209655685419498.png 1024w"
+	loading="lazy"
+	
+		alt="用例图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="237"
+		data-flex-basis="570px"
+	
+></p>
+<p><a id="8.时序/顺序/序列图"></a></p>
+<h2 id="8时序顺序序列图">8.时序/顺序/序列图
+</h2><ul>
+<li>(1)定义：时序图描述了对象消息发送的先后顺序，强调<strong>时间顺序</strong>。</li>
+<li>(2)同步消息：进行阻塞调用，调用者中止执行，等待控制权返回。需要等待返回消息，用实心三角箭头表示。<code>-----▶</code></li>
+<li>(3)异步消息：发出消息后继续执行，不引起调用者阻塞，也不等待返回消息，由空心箭头表示。<code>-----▷</code></li>
+<li>(4)返回消息：是同步消息的响应。由从右到左的虚线箭头表示。<code>&lt;-----</code></li>
+<li>(5)指向对象的如果是方法，那么同时也是这个对象应该实现的方法。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%97%B6%E5%BA%8F%E5%9B%BE.png"
+	width="631"
+	height="1178"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%97%B6%E5%BA%8F%E5%9B%BE_hu3102756172908377282.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%97%B6%E5%BA%8F%E5%9B%BE_hu15636376016351201191.png 1024w"
+	loading="lazy"
+	
+		alt="时序图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="53"
+		data-flex-basis="128px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题
+</span></span><span class="line"><span class="cl">图中Account应该实现的方法有？
+</span></span><span class="line"><span class="cl">解答：看图可以知道a1,a2都是Account的对象，而指向a1,a2的方法（方法的格式为‘方法名()’）有xfer()、plus()、minus()。注意，图中的evaluation并不是一个方法。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%97%B6%E5%BA%8F%E5%9B%BE%E4%BE%8B%E9%A2%98.png"
+	width="1073"
+	height="640"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%97%B6%E5%BA%8F%E5%9B%BE%E4%BE%8B%E9%A2%98_hu14838699483021522163.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%97%B6%E5%BA%8F%E5%9B%BE%E4%BE%8B%E9%A2%98_hu4730277232386583647.png 1024w"
+	loading="lazy"
+	
+		alt="时序图例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+<p><a id="9.通信图"></a></p>
+<h2 id="9通信图">9.通信图
+</h2><ul>
+<li>(1)定义：通信图展示了对象之间的<strong>消息流</strong>及其顺序。也是由对象和消息组成的图，只不过不强调时间顺序，只强调事件之间的通信，而且也没有固定的画法规则，和顺序图统称为交互图。</li>
+<li>(2)更新迭代：自UML 2.0 之后，不再使用协作图，都统一使用通信图。</li>
+<li>(3)通信图的特点之一是消息具有<strong>编号</strong>和方向，按照编号来执行。</li>
+<li>(4)通信图中是用<strong>对象</strong>表示，<code>:类名</code>不写明对象名说明这是个匿名对象。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E9%80%9A%E4%BF%A1%E5%9B%BE.png"
+	width="1001"
+	height="847"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E9%80%9A%E4%BF%A1%E5%9B%BE_hu5014881694281509485.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E9%80%9A%E4%BF%A1%E5%9B%BE_hu7601422178480624403.png 1024w"
+	loading="lazy"
+	
+		alt="通信图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="118"
+		data-flex-basis="283px"
+	
+></p>
+<p><a id="10.状态图"></a></p>
+<h2 id="10状态图">10.状态图
+</h2><ul>
+<li>(1)定义：描述对象在不同状态下的行为与<strong>状态转换</strong>过程及其事件顺序。转换由<strong>事件</strong>触发。状态图包括状态、转换、事件、活动。
+<ul>
+<li>状态：初态用一个实心黑圆点表示，终态用黑圆点外加一个圆表示。状态图中的状态用一个圆角四边形表示。状态图可以有多个终态，也可以没有终态。</li>
+<li>活动：状态图中的状态通常还包括了活动表，也就是活动。在活动表中经常使用下述3种标准事件：entry、exit和do。entry事件指定进入该状态的动作，exit事件指定退出该状态的动作，do事件指定在该状态下的动作。</li>
+<li>转换/迁移：带箭头的线。转换包括<strong>两个</strong>状态。</li>
+<li>事件：<strong>事件触发转换/迁移</strong>，源状态转换到目标状态。语法为<code>事件说明[守卫监护条件]/动作表达式</code>。监护条件只有在相应的事件发生时才进行检查。</li>
+</ul>
+</li>
+<li>(2)区别：状态图的箭头会附上监护条件(guard)，而活动图可以带上** “泳道” ** ，因此箭头上没有文字。</li>
+<li>(3)特点：状态图用于描述<strong>一个对象</strong>在多个用例中的行为，用于某些具有多个状态的对象而不是系统中大多数或全部对象，可以用于用户界面或控制对象。</li>
+<li>(4)一个状态中还包含着状态，那么这种状态被称为组合状态/超状态。（图中的ON本身就是一个状态，而在它内部还存在着一系列状态）
+<ul>
+<li><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.%E7%BB%84%E5%90%88%E7%8A%B6%E6%80%81.png"
+	width="767"
+	height="462"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.%E7%BB%84%E5%90%88%E7%8A%B6%E6%80%81_hu386126856328262612.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.%E7%BB%84%E5%90%88%E7%8A%B6%E6%80%81_hu1368875825557566529.png 1024w"
+	loading="lazy"
+	
+		alt="组合状态"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="398px"
+	
+></li>
+</ul>
+</li>
+<li>(5)一个状态转移到多个状态，被称为并发状态。
+<ul>
+<li><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.%E5%B9%B6%E5%8F%91%E7%8A%B6%E6%80%81.png"
+	width="995"
+	height="387"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.%E5%B9%B6%E5%8F%91%E7%8A%B6%E6%80%81_hu14326834789064899106.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.%E5%B9%B6%E5%8F%91%E7%8A%B6%E6%80%81_hu1544426988686214920.png 1024w"
+	loading="lazy"
+	
+		alt="并发状态"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="257"
+		data-flex-basis="617px"
+	
+></li>
+</ul>
+</li>
+<li>(6)状态图用于对系统、类或用例的动态方面建模时，通常是对<strong>反应型对象</strong>建模。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE.png"
+	width="942"
+	height="481"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE_hu11162588987435349875.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE_hu15796727165820633701.png 1024w"
+	loading="lazy"
+	
+		alt="状态图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="195"
+		data-flex-basis="470px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题
+</span></span><span class="line"><span class="cl">以下UML状态图中，假设活动的状态是A，事件b=0发生并且a&gt;5，发生条件是C状态到D状态的转换条件的是？
+</span></span><span class="line"><span class="cl">解答：状态C内部还有一系列状态，当状态C内部的子状态完成后会查询监护条件，如果满足条件就会转移到D状态，因此一旦状态A和B的所有动作完成，C状态将会转移到D状态。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE%E4%BE%8B%E9%A2%98.png"
+	width="1422"
+	height="382"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE%E4%BE%8B%E9%A2%98_hu411996424196684531.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E7%8A%B6%E6%80%81%E5%9B%BE%E4%BE%8B%E9%A2%98_hu11106021039998234774.png 1024w"
+	loading="lazy"
+	
+		alt="状态图例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="372"
+		data-flex-basis="893px"
+	
+></p>
+<p><a id="11.活动图"></a></p>
+<h2 id="11活动图">11.活动图
+</h2><ul>
+<li>(1)定义：活动图是<strong>一种特殊的状态图</strong>，描述了<strong>完成任务所进行的活动流</strong>，也即系统内从一个活动到另一个活动的流程。活动图适合对一个复杂用例中的业务处理<strong>流程</strong>进行进一步建模。</li>
+<li>(2)活动图可以带有泳道，但不是必须的。活动图和状态图最大的区别是分支，即图中的菱形。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%B4%BB%E5%8A%A8%E5%9B%BE.png"
+	width="1695"
+	height="945"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%B4%BB%E5%8A%A8%E5%9B%BE_hu1668699763171149729.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%B4%BB%E5%8A%A8%E5%9B%BE_hu13636833075763522959.png 1024w"
+	loading="lazy"
+	
+		alt="活动图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="430px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">//例题
+</span></span><span class="line"><span class="cl">如下UML活动图中，能同时运行的最大线程数为？
+</span></span><span class="line"><span class="cl">解答：同时运行的线程数需要看并发分岔下的活动数，因此该图能同时运行的最大线程数为2。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%B4%BB%E5%8A%A8%E5%9B%BE%E4%BE%8B%E9%A2%98.png"
+	width="894"
+	height="878"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%B4%BB%E5%8A%A8%E5%9B%BE%E4%BE%8B%E9%A2%98_hu3719940277410778903.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%B4%BB%E5%8A%A8%E5%9B%BE%E4%BE%8B%E9%A2%98_hu9414166860912323197.png 1024w"
+	loading="lazy"
+	
+		alt="活动图例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="101"
+		data-flex-basis="244px"
+	
+></p>
+<p><a id="12.构件/组件图"></a></p>
+<h2 id="12构件组件图">12.构件/组件图
+</h2><ul>
+<li>(1)定义：构件图描述了一组构件/组件之间的组织和依赖。<strong>静态</strong>图，为系统静态<strong>实现</strong>视图。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%9E%84%E4%BB%B6%E5%9B%BE.png"
+	width="816"
+	height="475"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%9E%84%E4%BB%B6%E5%9B%BE_hu9130912442048694248.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E6%9E%84%E4%BB%B6%E5%9B%BE_hu13978080254470904724.png 1024w"
+	loading="lazy"
+	
+		alt="构件图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="171"
+		data-flex-basis="412px"
+	
+></p>
+<p><a id="13.部署图"></a></p>
+<h2 id="13部署图">13.部署图
+</h2><ul>
+<li>(1)定义：部署图表示待开发软件系统中软件组件和硬件之间的<strong>物理</strong>关系。<strong>静态</strong>图，为系统静态部署视图。它与构件图相关，通常一个结点包含一个或多个构件。其依赖关系类似于包依赖，因此部署组件之间的依赖是单向的类似于包含关系。</li>
+<li>(2)部署图通常在<strong>实施</strong>阶段使用。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E9%83%A8%E7%BD%B2%E5%9B%BE.png"
+	width="1788"
+	height="1014"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E9%83%A8%E7%BD%B2%E5%9B%BE_hu6151041931097165357.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E9%83%A8%E7%BD%B2%E5%9B%BE_hu16780766748334086240.png 1024w"
+	loading="lazy"
+	
+		alt="部署图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="423px"
+	
+></p>
+<p>通信图参考. <a class="link" href="https://zhuanlan.zhihu.com/p/77813139"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        https://zhuanlan.zhihu.com/p/77813139
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></p>
+<p><a id="14.包图"></a></p>
+<h2 id="14包图">14.包图
+</h2><ul>
+<li>(1)包图（Package Diagram）展现由模型本身分解而成的组织单元以及其间的依赖关系。包可以拥有其它元素，可以是类、接口、构件、结点、协作、用例和图，甚至是嵌套的其它包。<strong>一个元素只能被一个包所有</strong>，<strong>一个包内的元素不能重名</strong>。</li>
+</ul>
+<p><img src="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E5%8C%85%E5%9B%BE.png"
+	width="538"
+	height="357"
+	srcset="/p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E5%8C%85%E5%9B%BE_hu7725276696183349810.png 480w, /p/programming-webdeveloper-a8-uml/2025__%E8%BD%AF%E8%AE%BE__UML.%E5%8C%85%E5%9B%BE_hu6708729599702699621.png 1024w"
+	loading="lazy"
+	
+		alt="包图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="361px"
+	
+></p>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a10-designpatterns/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-设计模式</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a9-umlanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-UML大题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a7-ood/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-面向对象</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a6-erdiagram/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-数据库设计E-R实体联系图</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-a5-database/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 理论篇：软设-数据库</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了17篇文章 · 
+		总计91.16k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>
