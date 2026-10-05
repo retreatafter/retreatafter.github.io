@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="策划案-系统模块拆解：地牢肉鸽卡牌-杀戮尖塔2">
+<title>小小小游戏开发 | 策划案-系统模块拆解 | 地牢肉鸽卡牌-杀戮尖塔2</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-gamedevelop-y1-slay-the-spire-2/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小游戏开发 | 策划案-系统模块拆解 | 地牢肉鸽卡牌-杀戮尖塔2">
+<meta property='og:description' content="策划案-系统模块拆解：地牢肉鸽卡牌-杀戮尖塔2">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-gamedevelop-y1-slay-the-spire-2/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='游戏开发' /><meta property='article:tag' content='游戏策划案' /><meta property='article:published_time' content='2026-09-01T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-09-01T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小游戏开发 | 策划案-系统模块拆解 | 地牢肉鸽卡牌-杀戮尖塔2">
+<meta name="twitter:description" content="策划案-系统模块拆解：地牢肉鸽卡牌-杀戮尖塔2">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一游戏概述">一、游戏概述</a>
+      <ol>
+        <li><a href="#一核心玩法">（一）核心玩法</a></li>
+        <li><a href="#二游戏题材">（二）游戏题材</a></li>
+        <li><a href="#三美术风格">（三）美术风格</a></li>
+        <li><a href="#四游戏亮点">（四）游戏亮点</a></li>
+        <li><a href="#五玩家行为核心体验">（五）玩家行为核心体验</a></li>
+      </ol>
+    </li>
+    <li><a href="#二战斗系统">二、战斗系统</a>
+      <ol>
+        <li><a href="#一系统定位">（一）系统定位</a></li>
+        <li><a href="#二设计目的">（二）设计目的</a></li>
+        <li><a href="#三战斗流程图">（三）战斗流程图</a></li>
+        <li><a href="#四战斗画面">（四）战斗画面</a>
+          <ol>
+            <li><a href="#布局">布局</a></li>
+            <li><a href="#工具区表现细节">工具区表现细节</a></li>
+            <li><a href="#战场区表现细节">战场区表现细节</a></li>
+            <li><a href="#卡牌区表现细节">卡牌区表现细节</a></li>
+            <li><a href="#总结">总结</a></li>
+          </ol>
+        </li>
+        <li><a href="#五战斗机制">（五）战斗机制</a>
+          <ol>
+            <li><a href="#回合制">回合制</a></li>
+            <li><a href="#玩家方">玩家方</a></li>
+            <li><a href="#敌人方">敌人方</a></li>
+          </ol>
+        </li>
+        <li><a href="#六怪物设计">（六）怪物设计</a>
+          <ol>
+            <li><a href="#概述">概述</a></li>
+            <li><a href="#普通敌人">普通敌人</a></li>
+            <li><a href="#精英敌人">精英敌人</a></li>
+            <li><a href="#关卡boss">关卡BOSS</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#三卡牌系统">三、卡牌系统</a>
+      <ol>
+        <li><a href="#一系统定位-1">（一）系统定位</a></li>
+        <li><a href="#二设计目的-1">（二）设计目的</a></li>
+        <li><a href="#三卡面设计">（三）卡面设计</a></li>
+        <li><a href="#四卡组设计">（四）卡组设计</a>
+          <ol>
+            <li><a href="#概述-1">概述</a></li>
+            <li><a href="#类型设计">类型设计</a></li>
+            <li><a href="#流派设计">流派设计</a></li>
+            <li><a href="#连携设计">连携设计</a></li>
+            <li><a href="#数值框架">数值框架</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#四关卡系统">四、关卡系统</a>
+      <ol>
+        <li><a href="#一系统定位-2">（一）系统定位</a></li>
+        <li><a href="#二设计目的-2">（二）设计目的</a></li>
+        <li><a href="#三关卡画面">（三）关卡画面</a></li>
+        <li><a href="#四房间种类">（四）房间种类</a>
+          <ol>
+            <li><a href="#战斗类房间">战斗类房间</a></li>
+            <li><a href="#安全类房间">安全类房间</a></li>
+            <li><a href="#随机类房间">随机类房间</a></li>
+          </ol>
+        </li>
+        <li><a href="#五房间分布">（五）房间分布</a></li>
+        <li><a href="#六房间设计">（六）房间设计</a>
+          <ol>
+            <li><a href="#硬性规则">硬性规则</a></li>
+            <li><a href="#房间分布的数学期望分析">房间分布的数学期望分析</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#五总结">五、总结</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/gamedevelop/" >
+                Gamedevelop
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-gamedevelop-y1-slay-the-spire-2/">小小小游戏开发 | 策划案-系统模块拆解 | 地牢肉鸽卡牌-杀戮尖塔2</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            策划案-系统模块拆解：地牢肉鸽卡牌-杀戮尖塔2
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-09-01</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 16400 字
+                    阅读时长: 33 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#%e4%b8%80%e3%80%81%e6%b8%b8%e6%88%8f%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        一、游戏概述
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e6%a0%b8%e5%bf%83%e7%8e%a9%e6%b3%95"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）核心玩法
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e6%b8%b8%e6%88%8f%e9%a2%98%e6%9d%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）游戏题材
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e7%be%8e%e6%9c%af%e9%a3%8e%e6%a0%bc"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）美术风格
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e6%b8%b8%e6%88%8f%e4%ba%ae%e7%82%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）游戏亮点
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e7%8e%a9%e5%ae%b6%e8%a1%8c%e4%b8%ba%e6%a0%b8%e5%bf%83%e4%bd%93%e9%aa%8c"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）玩家行为核心体验
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%e4%ba%8c%e3%80%81%e6%88%98%e6%96%97%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        二、战斗系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e6%88%98%e6%96%97%e6%b5%81%e7%a8%8b%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）战斗流程图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e6%88%98%e6%96%97%e7%94%bb%e9%9d%a2"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）战斗画面
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e5%b8%83%e5%b1%80"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        布局
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%b7%a5%e5%85%b7%e5%8c%ba%e8%a1%a8%e7%8e%b0%e7%bb%86%e8%8a%82"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        工具区表现细节
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%88%98%e5%9c%ba%e5%8c%ba%e8%a1%a8%e7%8e%b0%e7%bb%86%e8%8a%82"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        战场区表现细节
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%8d%a1%e7%89%8c%e5%8c%ba%e8%a1%a8%e7%8e%b0%e7%bb%86%e8%8a%82"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        卡牌区表现细节
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%80%bb%e7%bb%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        总结
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e6%88%98%e6%96%97%e6%9c%ba%e5%88%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）战斗机制
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e5%9b%9e%e5%90%88%e5%88%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        回合制
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%8e%a9%e5%ae%b6%e6%96%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        玩家方
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%95%8c%e4%ba%ba%e6%96%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        敌人方
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e5%85%ad%ef%bc%89%e6%80%aa%e7%89%a9%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （六）怪物设计
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        概述
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%99%ae%e9%80%9a%e6%95%8c%e4%ba%ba"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        普通敌人
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%b2%be%e8%8b%b1%e6%95%8c%e4%ba%ba"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        精英敌人
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%85%b3%e5%8d%a1BOSS"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        关卡BOSS
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a class="link" href="#%e4%b8%89%e3%80%81%e5%8d%a1%e7%89%8c%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        三、卡牌系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e5%8d%a1%e9%9d%a2%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）卡面设计
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e5%8d%a1%e7%bb%84%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）卡组设计
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        概述
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%b1%bb%e5%9e%8b%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        类型设计
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%b5%81%e6%b4%be%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        流派设计
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e8%bf%9e%e6%90%ba%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        连携设计
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%95%b0%e5%80%bc%e6%a1%86%e6%9e%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        数值框架
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a class="link" href="#%e5%9b%9b%e3%80%81%e5%85%b3%e5%8d%a1%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        四、关卡系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e5%85%b3%e5%8d%a1%e7%94%bb%e9%9d%a2"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）关卡画面
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e6%88%bf%e9%97%b4%e7%a7%8d%e7%b1%bb"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）房间种类
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%88%98%e6%96%97%e7%b1%bb%e6%88%bf%e9%97%b4"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        战斗类房间
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%ae%89%e5%85%a8%e7%b1%bb%e6%88%bf%e9%97%b4"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        安全类房间
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e9%9a%8f%e6%9c%ba%e7%b1%bb%e6%88%bf%e9%97%b4"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        随机类房间
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e6%88%bf%e9%97%b4%e5%88%86%e5%b8%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）房间分布
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%85%ad%ef%bc%89%e6%88%bf%e9%97%b4%e8%ae%be%e8%ae%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （六）房间设计
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e7%a1%ac%e6%80%a7%e8%a7%84%e5%88%99"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        硬性规则
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%88%bf%e9%97%b4%e5%88%86%e5%b8%83%e7%9a%84%e6%95%b0%e5%ad%a6%e6%9c%9f%e6%9c%9b%e5%88%86%e6%9e%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        房间分布的数学期望分析
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a class="link" href="#%e4%ba%94%e3%80%81%e6%80%bb%e7%bb%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        五、总结
+        
+    </span>
+</a></li>
+</ol>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.png"
+	width="1501"
+	height="5288"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84_hu3921416742471746822.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84_hu8329796501939646785.png 1024w"
+	loading="lazy"
+	
+		alt="系统结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="28"
+		data-flex-basis="68px"
+	
+></p>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E5%85%B3%E7%B3%BB%E5%9B%BE.png"
+	width="1600"
+	height="876"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E5%85%B3%E7%B3%BB%E5%9B%BE_hu6702272711079649748.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E5%85%B3%E7%B3%BB%E5%9B%BE_hu8695247636339475510.png 1024w"
+	loading="lazy"
+	
+		alt="系统关系图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="182"
+		data-flex-basis="438px"
+	
+></p>
+<p><a id="一、游戏概述"></a></p>
+<h2 id="一游戏概述">一、游戏概述
+</h2><p><a id="（一）核心玩法"></a></p>
+<h3 id="一核心玩法">（一）核心玩法
+</h3><p>《杀戮尖塔2（Slay the Spire 2）》的品类为：Roguelike + Deckbuilding动态牌组构筑（DBG）+ Turn-Based Strategy回合制策略生存。</p>
+<p>“<strong>每一局游戏都是一次完整体验</strong>”是这类游戏的设计理念，在游戏中，玩家都将从零开始构筑牌组，并且在随机生成的地图中通过战斗、事件、商店和宝箱不断获取新卡牌、遗物与药水，逐步搭建独属于本局游戏的策略体系。同时，游戏保留了长期成长内容，包括反复挑战开启更高难度等级、获取分数逐步解锁各角色背景故事。</p>
+<p>随机性是Roguelike游戏的卖点，而《杀戮尖塔2（Slay the Spire 2）》在<strong>随机性</strong>与<strong>策略性</strong>的平衡上进行了平衡：</p>
+<p>随机性体现在地图路径、遭遇敌人、卡牌奖励、遗物掉落等各个环节，玩家在每一局游戏都将有新鲜感，并且这种体验不可重复；但过多的随机性会让玩家失去掌控感一切变得不可预测，玩家会逐渐失去耐心，而一定的随机性下，玩家既可以感受到随机的乐趣，又可以掌控一局游戏中的关键环节，因此策略性才是玩家真正享受游戏愿意反复尝试游戏之处。游戏通过展示本层BOSS、敌人意图可视化（敌人头顶图标预告下回合行动）、伤害数值显性展示等机制，将关键信息充分提供给玩家，从而，玩家可以在随机生成的条件中做出有意义的决策。</p>
+<p><a id="（二）游戏题材"></a></p>
+<h3 id="二游戏题材">（二）游戏题材
+</h3><p>玩家将从五名不同的角色中选择一位爬塔者，挑战一座不断变化的高塔，在每局游戏中，玩家将在随机配置的树状路径中前进，遭遇“未知”、“商人”、“宝箱”、“休息”、“敌人”、“精英”六种功能各异的节点。游戏现分为三大章节，每一章进入时地图与路线均随机刷新，玩家将面对不同的敌人、选择不同的卡牌、发现不同的遗物、甚至挑战不同的Boss。玩家在攀爬高塔的过程中收集与构筑卡牌，挑战登顶并发现藏在它顶峰的真相。</p>
+<p><a id="（三）美术风格"></a></p>
+<h3 id="三美术风格">（三）美术风格
+</h3><p>《杀戮尖塔2（Slay the Spire 2）》采用了<strong>美式卡通</strong>风格，手绘线条 + 卡通渲染的美术方案，特征可概括为“化繁为简，强调轮廓”，角色与怪物的轮廓清晰且高度概括，辨识度极强。色彩运用上，这种美术风格画面饱和度高，光影对比浓厚，画面色彩丰富而明快，使扁平化的画面呈现出更强的层次感与立体感。</p>
+<p><a id="（四）游戏亮点"></a></p>
+<h3 id="四游戏亮点">（四）游戏亮点
+</h3><p>1.<strong>挑战性</strong>：每局游戏都存在一定的随机性要素，玩家无法完全预测将遇到的情况，给玩家新鲜感给予可重复游玩体验的同时，也要求玩家加强策略深度，在信息不完全的条件下做出最优决策，来应对游戏中出现的各种情况。并且，游戏通过“进阶模式”（共10个等级）逐级提升难度，让挑战性伴随玩家成长曲线稳步上升，玩家更有成长感与成就感。</p>
+<p>2.<strong>策略性</strong>：游戏内存在超过500张可用的卡牌，卡牌间存在丰富的搭配组合，构建出游戏策略广度与深度。游戏中包含80多场完全不同的战斗和50多个神秘的事件，敌人拥有多样化的行为模式与意图系统，玩家需要及时调整自己的战斗策略来应对不同的敌人。</p>
+<p>3.<strong>线性性</strong>：游戏操作不复杂，行为逻辑鲜明，每局游戏中核心的战斗系统，敌人意图通过头顶图标清晰预告其下回合行动，攻击数值显性展示，无需玩家额外记忆。整局游戏流程与游戏目标线性清晰，实现游戏易上手的设计目标。</p>
+<p>4.<strong>可玩性</strong>：游戏中存在五名角色，各自拥有独特的初始牌组与核心机制，共计500多张可用的卡牌，不同的卡牌间能够产生不同的效果，并且，游戏内存在300多种可被找到的物品与道具，能够起到构筑、强化卡组的效果。丰富的角色、事件、遗物、药水共同构建了游戏丰富性，提升游戏可玩性，增强策略深度，平衡游戏难度曲线。且经典模式外，游戏还提供了每日挑战与自定义模式，在每日挑战模式中，玩家在完全一致的种子条件下进行竞技，分数上传至全球排行榜；在自定模式中，玩家可以自由混合各种疯狂的特殊效果，获得截然不同的游戏体验。游戏还首次引入了最多4人联机模式，玩家可共同面对高塔挑战，体验多人模式专属卡牌与团队连携。</p>
+<p><a id="（五）玩家行为核心体验"></a></p>
+<h3 id="五玩家行为核心体验">（五）玩家行为核心体验
+</h3><p>在《杀戮尖塔2（Slay the Spire 2）》中，玩家的核心体验围绕着随机性和策略性的动态博弈展开，并体现在战斗系统、卡牌系统、关卡系统中，最终形成一个闭环的体验循环。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>游戏系统</th>
+          <th>随机性</th>
+          <th>策略性</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>战斗系统</td>
+          <td>卡牌使用</td>
+          <td>敌人意图</td>
+      </tr>
+      <tr>
+          <td>卡牌系统</td>
+          <td>卡牌获取</td>
+          <td>牌组构筑</td>
+      </tr>
+      <tr>
+          <td>关卡系统</td>
+          <td>房间分布、随机房间</td>
+          <td>路线规划</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%8E%A9%E5%AE%B6%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B%E5%9B%BE.png"
+	width="538"
+	height="233"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%8E%A9%E5%AE%B6%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B%E5%9B%BE_hu717874528690820339.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%8E%A9%E5%AE%B6%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B%E5%9B%BE_hu4633521030821468589.png 1024w"
+	loading="lazy"
+	
+		alt="玩家体验流程图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="230"
+		data-flex-basis="554px"
+	
+></p>
+<p><a id="二、战斗系统"></a></p>
+<h2 id="二战斗系统">二、战斗系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位">（一）系统定位
+</h3><p>战斗系统是构成玩家核心体验循环的<strong>关键验证节点</strong>，也是玩家单局游戏中投入时间最长的的核心模块，每一次战斗都是对玩家当前牌组构筑质量的实战检验，也是获取新卡牌、遗物与资源的核心途径。</p>
+<p>游戏中包括48-49个回合，战斗环节约占据一半，过度重复的内容会让损耗玩家的耐心，游戏中设置了两重机制：玩家面对的是超过80种拥有不同攻击模式、意图组合与特殊机制的敌人，确保每场战斗的解法存在差异；玩家自身的卡组随随机发育，同样的敌人在不同对局中带给玩家的挑战与应对策略截然不同。可以看到，随机性要素的加入加强了游戏性上的动态组合变化，相较于单纯数值增长重复性体验，能更有效地降低玩家新鲜感损耗，玩家无法依靠背板使用重复性动作通关游戏，而必须基于每局游戏的具体条件进行即时策略推演。</p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的">（二）设计目的
+</h3><p>1.<strong>反馈层</strong>：给予玩家挑战目标与阶段性成就感，反馈玩家当前卡组强度，给玩家下一阶段卡牌构筑的目标。当玩家战胜强敌时，系统通过战利品奖励（卡牌、遗物、金币）和视觉反馈（击败特效、分数结算）给予正向强化；当玩家遭遇失败时，系统并不单一地判定玩家失败，而是激励玩家，并根据整局表现给予分数开启新内容，让玩家更好地投入到下一局游戏中去。</p>
+<p>2.<strong>策略层</strong>：在一局游戏，玩家要面对各种特性的敌人，单一类型的卡组构建几乎必然会遇上克制卡牌类型的敌人组合，因此玩家必须要在卡牌选择与遗物获取过程中，兼顾输出效率、防御能力、牌库循环多个维度。与此同时，卡牌掉落、商店刷新、事件触发和敌人遭遇的随机性，确保了每一局的不可复刻，玩家无法照抄上一局的成功路径，必须在新的约束条件下重新寻找最优解，这也是玩家重复游玩的驱动力。</p>
+<p><a id="（三）战斗流程图"></a></p>
+<h3 id="三战斗流程图">（三）战斗流程图
+</h3><p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E6%96%97%E6%B5%81%E7%A8%8B%E5%9B%BE.png"
+	width="1200"
+	height="2044"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E6%96%97%E6%B5%81%E7%A8%8B%E5%9B%BE_hu12341709880575004741.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E6%96%97%E6%B5%81%E7%A8%8B%E5%9B%BE_hu6368243442221347845.png 1024w"
+	loading="lazy"
+	
+		alt="战斗流程图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="58"
+		data-flex-basis="140px"
+	
+></p>
+<p><a id="（四）战斗画面"></a></p>
+<h3 id="四战斗画面">（四）战斗画面
+</h3><p><a id="布局"></a></p>
+<h4 id="布局">布局
+</h4><p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E6%96%97%E7%94%BB%E9%9D%A2%E5%B8%83%E5%B1%80.%E5%88%86%E5%B8%83.png"
+	width="1600"
+	height="896"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E6%96%97%E7%94%BB%E9%9D%A2%E5%B8%83%E5%B1%80.%E5%88%86%E5%B8%83_hu13937250967221266697.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E6%96%97%E7%94%BB%E9%9D%A2%E5%B8%83%E5%B1%80.%E5%88%86%E5%B8%83_hu12945623039695362325.png 1024w"
+	loading="lazy"
+	
+		alt="战斗画面布局"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
+></p>
+<p>《杀戮尖塔2（Slay the Spire 2）》采用了由上至下的三分区纵向布局的战斗界面，自上而下依次为工具区、战场区、卡牌区：</p>
+<p>1.<strong>工具区</strong>为顶部常驻信息栏，主要包括基础信息，包括玩家可主动使用的药水资源、玩家可随时查看待触发的遗物特性；</p>
+<p>2.<strong>战场区</strong>可视化展示敌我双方战斗信息，是敌我交互核心区域；</p>
+<p>3.<strong>卡牌区</strong>是玩家执行策略、打出卡牌的操作与决策区域。</p>
+<p><a id="工具区表现细节"></a></p>
+<h4 id="工具区表现细节">工具区表现细节
+</h4><p>工具区涵盖了整局游戏的基础信息，为游戏的常驻全局信息面板，在战斗、商店、事件等所有场景中保持位置与内容的一致显示，可分为左-中-右三块分区：</p>
+<p>(1)左侧区域：玩家使用角色、当前进阶等级、生命值、金币数量、药水栏位、遗物。</p>
+<p>(2)中部区域：当前位置、爬塔层数、该层BOSS。</p>
+<p>(3)右侧区域：地图按钮、牌库按钮。</p>
+<p>在设计上，玩家可以随时查看自己的进度与最终目标。</p>
+<p><a id="战场区表现细节"></a></p>
+<h4 id="战场区表现细节">战场区表现细节
+</h4><p>战场区是战斗画面的视觉核心，呈现出以下基础信息：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>信息类别</th>
+          <th>具体内容</th>
+          <th>呈现方式</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>敌方信息</td>
+          <td>敌人模型、敌人名称、血量条、意图图标（攻击/防御/增益）、状态图标（力量/虚弱/易伤等）、护盾值</td>
+          <td>血量条在敌人模型下方，意图在模型上，状态以图标形式排列</td>
+      </tr>
+      <tr>
+          <td>我方信息</td>
+          <td>角色模型、血量条、护盾值（格挡层数）、状态图标（增益/减益）</td>
+          <td>血量条在角色模型下方，护盾值以蓝色数字或条状显示，状态图标以图标形式排列</td>
+      </tr>
+      <tr>
+          <td>动态反馈</td>
+          <td>伤害数字弹出、攻击轨迹特效、受击抖动、格挡破碎动画、状态添加特效、回合切换提示</td>
+          <td>全屏或局部动画序列</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>在设计上，游戏中存在以下动态反馈的细节：</p>
+<ul>
+<li>(1)攻击与受击反馈：角色攻击或受到伤害时，显示伤害数值，并播放屏幕抖动、播放打击特效，并向攻击对象进行一小段位移，增强动态感；</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%94%BB%E5%87%BB%E6%95%B0%E5%80%BC%E6%98%BE%E7%A4%BA.jpg"
+	width="1000"
+	height="562"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%94%BB%E5%87%BB%E6%95%B0%E5%80%BC%E6%98%BE%E7%A4%BA_hu5657894811991033779.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%94%BB%E5%87%BB%E6%95%B0%E5%80%BC%E6%98%BE%E7%A4%BA_hu11862200660054678839.jpg 1024w"
+	loading="lazy"
+	
+		alt="攻击数值显示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<ul>
+<li>(2)意图可视化与威胁分级：敌人造成不同伤害区间，攻击图标做出区分，并在特定的重击回合配合背景音乐，营造紧张氛围；</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E4%BC%A4%E5%AE%B3%E5%9B%BE%E6%A0%87.png"
+	width="916"
+	height="629"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E4%BC%A4%E5%AE%B3%E5%9B%BE%E6%A0%87_hu1873053427289497405.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E4%BC%A4%E5%AE%B3%E5%9B%BE%E6%A0%87_hu2178111317654224444.png 1024w"
+	loading="lazy"
+	
+		alt="伤害图标"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="349px"
+	
+></p>
+<ul>
+<li>(3)状态与护盾：角色添加状态或格挡时，显示对应特效，并在下方的角色状态栏处添加状态图标。以格挡为例，当敌人伤害数值≥格挡数值时，格挡图标播放破碎动画；</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%B7%BB%E5%8A%A0%E9%98%B2%E5%BE%A1%E7%8A%B6%E6%80%81.png"
+	width="655"
+	height="524"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%B7%BB%E5%8A%A0%E9%98%B2%E5%BE%A1%E7%8A%B6%E6%80%81_hu584148081909626435.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%B7%BB%E5%8A%A0%E9%98%B2%E5%BE%A1%E7%8A%B6%E6%80%81_hu5242411427483438616.png 1024w"
+	loading="lazy"
+	
+		alt="添加防御状态"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="125"
+		data-flex-basis="300px"
+	
+></p>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%A0%BC%E6%8C%A1%E6%9D%A1%E7%A0%B4%E7%A2%8E.png"
+	width="684"
+	height="650"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%A0%BC%E6%8C%A1%E6%9D%A1%E7%A0%B4%E7%A2%8E_hu386713850524540598.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%A0%BC%E6%8C%A1%E6%9D%A1%E7%A0%B4%E7%A2%8E_hu6968718254050963346.png 1024w"
+	loading="lazy"
+	
+		alt="格挡条破碎"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="105"
+		data-flex-basis="252px"
+	
+></p>
+<ul>
+<li>(4)回合边界：角色结束当前回合后，屏幕中央显示文字“敌方回合”。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%95%8C%E6%96%B9%E5%9B%9E%E5%90%88%E5%AD%97%E5%B9%95.jpg"
+	width="1000"
+	height="562"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%95%8C%E6%96%B9%E5%9B%9E%E5%90%88%E5%AD%97%E5%B9%95_hu9323219781367999914.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%88%98%E5%9C%BA%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%95%8C%E6%96%B9%E5%9B%9E%E5%90%88%E5%AD%97%E5%B9%95_hu3805139125064454727.jpg 1024w"
+	loading="lazy"
+	
+		alt="敌方回合字幕"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<p><a id="卡牌区表现细节"></a></p>
+<h4 id="卡牌区表现细节">卡牌区表现细节
+</h4><p>卡牌区包括能量值、手牌、抽牌堆数量、弃牌堆数量、消耗牌堆数量。卡牌是玩家战斗的手段，玩家需要关注已抽取牌与未抽取牌以及每回合能打出哪些卡牌，获得哪些效果。</p>
+<p>在设计上，游戏中存在以下细节：</p>
+<ul>
+<li>(1)抽取卡牌及打出卡牌都伴有拖尾特效；</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%8B%96%E5%B0%BE%E7%89%B9%E6%95%88.jpg"
+	width="1000"
+	height="276"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%8B%96%E5%B0%BE%E7%89%B9%E6%95%88_hu978468679229121066.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%8B%96%E5%B0%BE%E7%89%B9%E6%95%88_hu1307618606007587114.jpg 1024w"
+	loading="lazy"
+	
+		alt="拖尾特效"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="362"
+		data-flex-basis="869px"
+	
+></p>
+<ul>
+<li>
+<p>(2)回合开始，能量值恢复，并进行抽牌，卡牌由抽牌堆逐一添加至手牌区，模拟现实的发牌效果；若抽牌堆中卡牌数量＜抽取至手牌中数量，将弃牌堆洗为抽牌堆，再从抽牌堆中抽取对应数量手牌；</p>
+</li>
+<li>
+<p>(3)鼠标悬停至卡牌上时，卡牌突出放大，并显示特殊词条的信息；</p>
+</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E5%8D%A1%E7%89%8C%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA.jpg"
+	width="1000"
+	height="562"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E5%8D%A1%E7%89%8C%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA_hu5284840117285895529.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E5%8D%A1%E7%89%8C%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA_hu13984753452641757920.jpg 1024w"
+	loading="lazy"
+	
+		alt="卡牌信息提示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<ul>
+<li>(4)可使用能量值≥卡牌所需能量值时，卡牌边缘显示蓝色高光，表示可用；可使用能量值＜卡牌所需能量值时，耗费字体颜色变为红色，并且当玩家拖动此卡牌时，战场区将进行文字提醒能量值不足；</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E5%8D%A1%E7%89%8C%E8%83%BD%E9%87%8F%E5%80%BC.jpg"
+	width="1200"
+	height="675"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E5%8D%A1%E7%89%8C%E8%83%BD%E9%87%8F%E5%80%BC_hu17708520983814207549.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E5%8D%A1%E7%89%8C%E8%83%BD%E9%87%8F%E5%80%BC_hu16461197452972328544.jpg 1024w"
+	loading="lazy"
+	
+		alt="卡牌能量值"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<ul>
+<li>(5)使用卡牌时，需要选择对象的卡牌用箭头指向可选择对象，无需选择目标的卡牌拖放至战斗区来释放；</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%94%BB%E5%87%BB%E9%80%89%E6%8B%A9%E5%AF%B9%E8%B1%A1.jpg"
+	width="1000"
+	height="562"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%94%BB%E5%87%BB%E9%80%89%E6%8B%A9%E5%AF%B9%E8%B1%A1_hu8116744373056894704.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E6%94%BB%E5%87%BB%E9%80%89%E6%8B%A9%E5%AF%B9%E8%B1%A1_hu11087606722993739211.jpg 1024w"
+	loading="lazy"
+	
+		alt="攻击选择对象"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="427px"
+	
+></p>
+<ul>
+<li>(6)使用卡牌时，能量图标对应闪动，当能量值不足以释放任一一张卡牌或手牌中无卡牌时， “回合结束” 按钮显示蓝色高光，提示玩家结束当前回合。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E7%BB%93%E6%9D%9F%E5%9B%9E%E5%90%88%E6%8F%90%E7%A4%BA.jpg"
+	width="1000"
+	height="141"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E7%BB%93%E6%9D%9F%E5%9B%9E%E5%90%88%E6%8F%90%E7%A4%BA_hu1689245489258530607.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E5%8C%BA%E7%BB%86%E8%8A%82.%E7%BB%93%E6%9D%9F%E5%9B%9E%E5%90%88%E6%8F%90%E7%A4%BA_hu17384796709543955703.jpg 1024w"
+	loading="lazy"
+	
+		alt="结束回合提示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="709"
+		data-flex-basis="1702px"
+	
+></p>
+<ul>
+<li>(7)非保留在手牌特性的卡牌在回合结束时进入弃牌堆。</li>
+</ul>
+<p><a id="总结"></a></p>
+<h4 id="总结">总结
+</h4><p>作为2D卡牌游戏，平面画面媒介不具备3D游戏给玩家天然带来的立体世界的熟悉感沉浸感优势，但游戏通过贯穿全流程的大量动画设计及高可读性的信息视觉编码，给玩家营造动态感，增强玩家代入感和沉浸感，并在多处展现游戏的细节设计，如视觉上的特效细节、不同伤害计算展现的颜色不同等等，通过动画与颜色的差异性丰富游戏表现力。</p>
+<p><a id="（五）战斗机制"></a></p>
+<h3 id="五战斗机制">（五）战斗机制
+</h3><p><a id="回合制"></a></p>
+<h4 id="回合制">回合制
+</h4><p>回合制区别于即时制，在回合制框架下，一场战斗被切分为若干离散的回合每个回合内部严格遵循“玩家回合→敌方回合”的固定序列交替进行。玩家在己方回合中拥有完整的操作权，随后进入敌方回合，敌人根据其预设AI执行行动，玩家无法在此期间进行任何干预。双方轮流执行，直至一方生命值归零。</p>
+<p>回合制的设计节奏更缓慢，玩家有充足时间进行思考，对应了游戏策略性，玩家需要深思熟虑进行规划；且回合制类的战斗机制操作更简单，不要求玩家有快速反应时间。</p>
+<p><a id="玩家方"></a></p>
+<h4 id="玩家方">玩家方
+</h4><p>(1)<strong>抽牌机制</strong></p>
+<p>进入到玩家回合时，从抽牌堆中抽出卡牌加入至手牌，打出的手牌进入到弃牌堆，未打出的手牌在回合结束时进入到弃牌堆；当抽牌堆中卡牌数量＜抽取至手牌中数量，将弃牌堆洗为抽牌堆，再从抽牌堆中抽取对应数量手牌；抽取手牌的顺序随机，且玩家无法看到抽取顺序。</p>
+<p>由于无法保证特定关键牌在特定回合上手，玩家必须考虑过牌手段、精简牌库等手段来提升关键牌的实际上手率，随机性的设计使得玩家需要对卡组有一定的了解，并选择最优策略。</p>
+<p>(2)<strong>洗牌机制</strong></p>
+<p>当抽牌堆中卡牌数量＜抽取至手牌中数量，进行一轮洗牌，将弃牌堆中的卡牌以随机顺序放回抽牌堆，玩家的下一轮抽牌顺序随机。</p>
+<p>玩家能够实时看到抽牌堆与弃牌堆的剩余数量，可以预判在哪一回合将触发洗牌，玩家将有意识地调整出牌顺序优化洗牌节奏。</p>
+<p>(3)<strong>能量机制</strong></p>
+<p>初始能量值上限设计为3点，每回合恢复至能量值上限（部分遗物与卡牌效果可提升上限）；每张卡牌都有需要的能量值才能打出，玩家出牌数量受到能量限制，玩家需要对每回合行动进行策略性抉择。</p>
+<p>(4)<strong>血量机制</strong></p>
+<p>血量是战斗的结束规则，当玩家或敌人其中一方血量＜0时，战斗结束；玩家的血量并不会在每场战斗自行恢复，仅在特定地点、特定道具才能进行恢复，血量同样作为游戏策略的一部分，在血量恢复困难的前提下，玩家需要规划如何在血量耗尽前完成49层爬塔。</p>
+<p><a id="敌人方"></a></p>
+<h4 id="敌人方">敌人方
+</h4><p>(1)<strong>意图机制</strong></p>
+<p>进入到玩家回合时，在战斗区处，敌人的头顶会显示一个意图图标，预告进入到该敌人回合时的敌人的下一次动作，包括攻击、格挡、特殊状态，结合回合制的设计，玩家可以根据敌人的下一次行动来决定当前回合的出牌策略，减少玩家博弈的部分。</p>
+<p>(2)<strong>状态机</strong></p>
+<p>敌人的具体行为逻辑由状态机进行管理，每个敌人的攻击模式被预设为一组有序的攻击序列，以表格形式存储，系统根据当前回合数索引对应的行动指令，驱动敌人执行相应操作。</p>
+<p>状态机的设计优势在于可调性与可控性。制作者可以通过调整序列参数、行动数值、触发器条件来精确控制敌人的难度曲线与战斗节奏。状态机的规则化也保证了战斗的公平性，敌人的行为循确定的规则，玩家可以通过经验积累预判敌人行动模式，从而在更高难度下仍能保持策略规划的可操作性。</p>
+<p><a id="（六）怪物设计"></a></p>
+<h3 id="六怪物设计">（六）怪物设计
+</h3><p><a id="概述"></a></p>
+<h4 id="概述">概述
+</h4><p>怪物设计分为三个类别，普通敌人、精英、BOSS。随着玩家在本层进行战斗的次数，逐渐增强怪物难度，并在每层地图的最终都必须面对BOSS。这样的设计让玩家能够循序渐进的成长，并且有较为鲜明的目标。</p>
+<p>敌人的设计通常可分为几个方面</p>
+<p>(1)<strong>敌人血量</strong></p>
+<p>i.普通敌人：血量较低，允许快速解决。</p>
+<p>ii.精英敌人：血量中等偏高，需要持续输出。</p>
+<p>iii.BOSS：血量极高，要求玩家具备完整的攻防体系。</p>
+<p>(2)<strong>敌人数量</strong></p>
+<p>i.单敌人：单个普通敌人通常出现在每层地图的前几场战斗，玩家只需要考虑单体攻击与防御，给玩家适应的时间。</p>
+<p>ii.多敌人：多个敌人通常出现在每层地图的后几场战斗，以及一些特定的精英敌人和关卡BOSS，玩家需要应对多种攻击模式，更考验玩家策略性。</p>
+<p>(3)<strong>攻击机制</strong></p>
+<p>i.成长型：敌人随着回合数增加而不断提升攻击力或获得新的能力，迫使玩家尽快结束战斗。</p>
+<p>ii.控制型：通过施加负面状态（虚弱、脆弱、眩晕）或限制玩家行动来干扰玩家的策略执行。</p>
+<p>iii.高护盾：敌人拥有高额格挡或减伤机制。</p>
+<p>iv.特殊形态：敌人在特定血量或回合数触发形态切换，改变攻击模式与强度。</p>
+<p><a id="普通敌人"></a></p>
+<h4 id="普通敌人">普通敌人
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>层数</th>
+          <th>敌人</th>
+          <th>血量</th>
+          <th>核心机制</th>
+          <th>设计目标</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>第1层</td>
+          <td>缩小甲虫（Shrinker Beetle）</td>
+          <td>38~40</td>
+          <td>施加缩小效果伤害降低</td>
+          <td>攻击压制</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>毛绒伏地虫（Fuzzy Wurm Crawler）</td>
+          <td>57~59</td>
+          <td>力量增强</td>
+          <td>成长压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>小啃兽（Nibbit）</td>
+          <td>41~47</td>
+          <td>施加缩小效果伤害降低</td>
+          <td>攻击压制</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>树枝史莱姆群（Twig Slime）</td>
+          <td>（11+12+32）~（12+13+33）</td>
+          <td>塞牌</td>
+          <td>构筑克制</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>噬尸蛞蝓群（Corpse Slug）</td>
+          <td>（25+27）~（27+29）</td>
+          <td>死亡时同伴眩晕+力量增强</td>
+          <td>成长压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>海洋混混（Seapunk）</td>
+          <td>44~49</td>
+          <td>护甲</td>
+          <td>成长压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>淤泥旋螺（Sludge Spinner）</td>
+          <td>37~41</td>
+          <td>力量增强</td>
+          <td>成长压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>蟾蜍蝌蚪群（Toadpole）</td>
+          <td>（22+25）~（23+26）</td>
+          <td>反伤</td>
+          <td>协同压制</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>地道虫（Tunneler）</td>
+          <td>87~92</td>
+          <td>高护甲</td>
+          <td>攻击压制</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>偷窃草蜢（Thieving Hopper）</td>
+          <td>79~84</td>
+          <td>偷取卡牌+逃跑</td>
+          <td>资源干扰+回合限制</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>盛碗虫群（Bowlbug）</td>
+          <td>（45+21）~（48+23）</td>
+          <td>若破防持续攻击+虚弱</td>
+          <td>防御压制</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>外骨骼虫群（Exoskeleton）</td>
+          <td>（23+25+27）~（25+27+29）</td>
+          <td>限伤</td>
+          <td>攻击压制</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>咬人卷轴（Scroll of Biting）</td>
+          <td>（30+31+32）~（37+38+39）</td>
+          <td>破防时扣除血上限</td>
+          <td>防御压力</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>活体盾&amp;高塔炮手（Living Shield &amp; Turret Operator）</td>
+          <td>（55+41）~（65+51）</td>
+          <td>支援单位</td>
+          <td>协同压制</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>虔诚雕刻师（Devoted Sculptor）</td>
+          <td>162~172</td>
+          <td>力量增强</td>
+          <td>成长压力</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="精英敌人"></a></p>
+<h4 id="精英敌人">精英敌人
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>层数</th>
+          <th>敌人</th>
+          <th>血量</th>
+          <th>核心机制</th>
+          <th>设计目标</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>第1层</td>
+          <td>旧日雕像（Bygone Effigy）</td>
+          <td>127~132</td>
+          <td>持续高伤害攻击</td>
+          <td>数值压迫</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>多尼斯异鸟（Byrdonis）</td>
+          <td>81~90</td>
+          <td>持续成长</td>
+          <td>节奏压迫</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>异蛙寄生虫&amp;扭动虫（Phrog Parasite &amp; Wriggler）</td>
+          <td>（61+17+18+19+20）~（68+19+20+21+22）</td>
+          <td>召唤小怪</td>
+          <td>场面压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>花园幽灵鳗（Phantasmal Gardener）</td>
+          <td>（26+27+28+30）~（27+28+29+32）</td>
+          <td>协同</td>
+          <td>场面压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>鬼祟珊瑚群（Skulking Colony）</td>
+          <td>75~80</td>
+          <td>限伤</td>
+          <td>行为约束</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>骇鳗（Terror Eel）</td>
+          <td>140~150</td>
+          <td>半血爆发</td>
+          <td>阶段压力</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>残杀千足虫（Decimillipede）</td>
+          <td>（40+42+44）~（48+50+52）</td>
+          <td>治疗</td>
+          <td>协同压力</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>蜂群术士（Entomancer）</td>
+          <td>145~165</td>
+          <td>受击时塞眩晕牌</td>
+          <td>资源污染</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>感染棱柱（Infested Prism）</td>
+          <td>200~215</td>
+          <td>控制+输出</td>
+          <td>构筑克制</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>灵魂枢纽（Soul Nexus）</td>
+          <td>234~254</td>
+          <td>高伤害+Debuff</td>
+          <td>持续压制</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>机甲骑士（Mecha Knight）</td>
+          <td>300~320</td>
+          <td>高伤害+塞牌</td>
+          <td>构筑克制</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>连枷骑士&amp;幽灵骑士&amp;魔法骑士（Flail Knight &amp; Spectral Knight &amp; Magi Knight）</td>
+          <td>（101+93+82）~（108+97+89）</td>
+          <td>输出+控制+Debuff</td>
+          <td>资源干扰</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="关卡BOSS"></a></p>
+<h4 id="关卡boss">关卡BOSS
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>层数</th>
+          <th>敌人</th>
+          <th>血量</th>
+          <th>核心机制</th>
+          <th>设计目标</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>第1层</td>
+          <td>乐加维林族母（Lagavulin Matriarch）</td>
+          <td>222~233</td>
+          <td>降低属性</td>
+          <td>节奏压迫</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>灵魂异鱼（Soul Fysh）</td>
+          <td>211~221</td>
+          <td>塞入负面牌&amp;无敌回合</td>
+          <td>双重惩罚</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>瀑布巨兽（Waterfall Giant）</td>
+          <td>240~250</td>
+          <td>死亡时爆炸</td>
+          <td>阶段压力</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>同族神官&amp;同族信徒（Kin Priest &amp; Kin Follower）</td>
+          <td>（190+58+59）~（199+62+63）</td>
+          <td>加强防御队友</td>
+          <td>协同压制</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>墨影幻灵（Vantom）</td>
+          <td>173~183</td>
+          <td>无敌形态&amp;成长</td>
+          <td>节奏压迫</td>
+      </tr>
+      <tr>
+          <td>第1层</td>
+          <td>仪式兽（Ceremonial Beast）</td>
+          <td>252~262</td>
+          <td>半血爆发&amp;限制出牌数</td>
+          <td>阶段压力</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>知识恶魔（Knowledge Demon）</td>
+          <td>379~399</td>
+          <td>增伤/限制出牌数</td>
+          <td>行为约束</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>碾碎爪&amp;火箭（Crusher &amp; Rocket）</td>
+          <td>（209+199）~（219+209）</td>
+          <td>双Boss协同&amp;夹击暴击</td>
+          <td>行为约束</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>无厌沙虫（The Insatiable）</td>
+          <td>321~341</td>
+          <td>回合限制</td>
+          <td>时间压力</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>永世沙漏（Aeonglass）</td>
+          <td>512~535</td>
+          <td>出牌惩罚</td>
+          <td>构筑克制</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>女王&amp;火炬头聚合体（Knowledge Demon &amp; Torch Head Amalgam）</td>
+          <td>（400+199）~（419+211）</td>
+          <td>限制出牌&amp;形态切换</td>
+          <td>行为约束</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>实验体（Test Subject）</td>
+          <td>（100+200+300）~（111+212+313）</td>
+          <td>形态切换</td>
+          <td>阶段压力</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>在这里，浅析游戏中第一层的BOSS设计：</p>
+<p>(1)乐加维林族母</p>
+<p>i.状态机：<img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E4%B9%90%E5%8A%A0%E7%BB%B4%E6%9E%97%E6%97%8F%E6%AF%8D.png"
+	width="1200"
+	height="726"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E4%B9%90%E5%8A%A0%E7%BB%B4%E6%9E%97%E6%97%8F%E6%AF%8D_hu12266737993451953306.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E4%B9%90%E5%8A%A0%E7%BB%B4%E6%9E%97%E6%97%8F%E6%AF%8D_hu18153615803127075677.png 1024w"
+	loading="lazy"
+	
+		alt="敌人状态机.乐加维林族母"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="165"
+		data-flex-basis="396px"
+	
+></p>
+<p>ii.敌人特色：初始12层护盾（逐回合衰减） + 沉睡3回合 + 持续减益</p>
+<p>iii.设计分析：沉睡3回合的特性这一设计为玩家提供了宝贵的3回合启动操作的时间；而初始12层护盾的存在，意味着如果玩家过早打醒它，将面对高额护盾；如果等待过久，BOSS将周期性偷取玩家的力量与敏捷，扣减玩家的攻击伤害和格挡层数，且此减益可叠加，逼迫玩家尽快结束战斗，否则将面临攻击刮痧、格挡不足的绝境。</p>
+<p>(2)灵魂异鱼</p>
+<p>i.状态机：<img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E7%81%B5%E9%AD%82%E5%BC%82%E9%B1%BC.png"
+	width="1200"
+	height="599"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E7%81%B5%E9%AD%82%E5%BC%82%E9%B1%BC_hu3353866582751227994.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E7%81%B5%E9%AD%82%E5%BC%82%E9%B1%BC_hu10680817154149153459.png 1024w"
+	loading="lazy"
+	
+		alt="敌人状态机.灵魂异鱼"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="200"
+		data-flex-basis="480px"
+	
+></p>
+<p>ii.敌人特色：真伤状态卡污染玩家牌库 + 无实体大幅减伤状态</p>
+<p>iii.设计分析：此BOSS给玩家牌组中塞入的“呼唤”状态卡需要消耗1点能量值进行使用，若回合结束时此卡在手牌中未使用，将会无视护盾失去6点生命随着回合数增加，玩家牌堆中的负面状态牌将越来越多，牌组将受到污染，而无法抽取到自己所需要的卡牌；另一方面，BOSS进入到无实体状态后，此回合所有伤害降低为1，高伤单次攻击卡牌被克制。</p>
+<p>(3)瀑布巨兽</p>
+<p>i.状态机：<img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E7%80%91%E5%B8%83%E5%B7%A8%E5%85%BD.png"
+	width="1200"
+	height="1026"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E7%80%91%E5%B8%83%E5%B7%A8%E5%85%BD_hu730361688060492502.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E7%80%91%E5%B8%83%E5%B7%A8%E5%85%BD_hu7766708958179194101.png 1024w"
+	loading="lazy"
+	
+		alt="敌人状态机.瀑布巨兽"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="116"
+		data-flex-basis="280px"
+	
+></p>
+<p>ii.敌人特色：额外爆炸伤害值 + 回血机制</p>
+<p>iii.设计分析：此BOSS在战斗中持续积累蒸汽值（爆炸值），层数越高，死亡自爆的伤害越大，意味着玩家除了要面对BOSS本身的血量外，还要面对随着回合数增加而累计的额外伤害。BOSS的招式中，虚弱（减伤25%）和自我治疗也将延长战斗时长，进一步推高蒸汽值。</p>
+<p>(4)同族小队</p>
+<p>i.状态机：<img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E5%90%8C%E6%97%8F%E5%B0%8F%E9%98%9F.png"
+	width="1600"
+	height="500"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E5%90%8C%E6%97%8F%E5%B0%8F%E9%98%9F_hu3877963957838120275.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E5%90%8C%E6%97%8F%E5%B0%8F%E9%98%9F_hu10822264648014456339.png 1024w"
+	loading="lazy"
+	
+		alt="敌人状态机.同族小队"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="320"
+		data-flex-basis="768px"
+	
+></p>
+<p>ii.敌人特色：多单位协同。领导者神官携带2个信徒爪牙敌人，统称为同族小队，三者的攻击模式独立，互不产生影响，但领导者状态影响爪牙状态，当神官血量小于等于0时，爪牙会在领导者死亡时放弃战斗。</p>
+<p>iii.设计分析：领导者神官持续给玩家施加脆弱（减甲25%）和虚弱（减伤25%）负面效果，并自身叠加力量提高伤害，而爪牙则交替叠加力量并进行攻击。玩家需要进行抉择，先杀神官还是先清爪牙。</p>
+<p>(5)墨影幻灵</p>
+<p>i.状态机：<img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E5%A2%A8%E5%BD%B1%E5%B9%BB%E7%81%B5.png"
+	width="1200"
+	height="499"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E5%A2%A8%E5%BD%B1%E5%B9%BB%E7%81%B5_hu7326376179300267378.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E5%A2%A8%E5%BD%B1%E5%B9%BB%E7%81%B5_hu1439285204709409868.png 1024w"
+	loading="lazy"
+	
+		alt="敌人状态机.墨影幻灵"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="240"
+		data-flex-basis="577px"
+	
+></p>
+<p>ii.敌人特色：固定携带8层大幅减伤状态“滑溜”，在此状态下任何攻击和生命减少效果都将仅造成1点伤害，每次受到伤害时减少1层此状态。</p>
+<p>iii.设计分析：前8次攻击都只会对BOSS造成1点伤害，单次高伤爆发流派受到克制。</p>
+<p>(6)仪式兽</p>
+<p>i.状态机：<img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E4%BB%AA%E5%BC%8F%E5%85%BD.png"
+	width="1200"
+	height="826"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E4%BB%AA%E5%BC%8F%E5%85%BD_hu7764778297455305159.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E6%88%98%E6%96%97%E7%B3%BB%E7%BB%9F.%E6%95%8C%E4%BA%BA%E7%8A%B6%E6%80%81%E6%9C%BA.%E4%BB%AA%E5%BC%8F%E5%85%BD_hu4406182500939967210.png 1024w"
+	loading="lazy"
+	
+		alt="敌人状态机.仪式兽"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="348px"
+	
+></p>
+<p>ii.敌人特色：阈值触发型。一阶段中BOSS持续叠加力量并冲锋打出高伤害，当血量降至阈值以下时，留给玩家一回合缓冲时间，进入到二阶段后，BOSS每隔一回合给玩家施加眩晕状态，此状态下玩家只能使用一张卡牌。</p>
+<p>iii.设计分析：一阶段考验玩家的控血能力，二阶段考验玩家的单卡质量。</p>
+<p><a id="三、卡牌系统"></a></p>
+<h2 id="三卡牌系统">三、卡牌系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位-1">（一）系统定位
+</h3><p>卡牌是游戏中玩家战斗的手段，游戏中的攻击、防御、资源运转、状态管理均通过打出手牌实现，卡牌系统位于“玩家决策→战斗执行”这一过程的中间层，构建了游戏的核心玩法。</p>
+<p>1.<strong>战斗操作载体</strong>：所有战斗指令均为可视化的卡牌对象，有效提升交互直观性。</p>
+<p>2.<strong>策略构建手段</strong>：结合游戏中五名角色的独立专属卡池，玩家通过选择和组合不同卡牌，能够逐步构建出具有特定战术方向与联动体系的个性化牌组。</p>
+<p>3.<strong>随机性端口</strong>：游戏的随机性同样包括卡牌获取方面，战斗获胜后的卡牌奖励、商店的卡牌商品、事件中的卡牌获取/转化，随机性因素频繁，玩家无法预测本局游戏中能够获取的卡牌，玩家需要用策略性战术来应对随机性。</p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的-1">（二）设计目的
+</h3><p>1.<strong>多样化卡牌设计</strong>：费用约束、抽牌数约束、卡牌状态等设计，从整体到具体，玩家都需要一一进行考量，例如，高费用卡牌效果强大，但打出机会稀缺，需要玩家承担“卡手”风险；手牌上限为10，默认每回合抽牌数为5，若卡牌过多会降低关键牌的上手率；部分强力卡牌自带负面效果，玩家需要权衡即时收益与长期代价；能力牌打出后成为被动不再进入卡组，简化后续牌组循环；保留牌可跨回合保存，但同时占用手牌空间：消耗类卡牌使用后进入消耗牌堆，无法再通过洗牌加入手牌。</p>
+<p>2.<strong>角色专属卡与共通卡</strong>：每名角色拥有独立的专属卡池，专属卡牌确保了角色之间的玩法差异性与辨识度，使五名角色在游玩体验上有显著区别。与此同时，游戏中存在无色牌，一类任何角色均可获取的通用卡牌。无色牌在功能上通常填补了角色核心机制的空白，玩家能够更为灵活地构筑卡组。</p>
+<p>3.<strong>卡牌协同联动</strong>：单张卡牌的价值有限，卡牌之间通过机制联动能够产生协同效应，不仅存在数值叠加关系，更存在机制触发关系、资源转化关系和条件依赖关系。玩家策略深度之一即考虑如何运用手中卡牌来最大化触发协同效果，并识别当前牌组中已经形成的协同，向特定方向构筑自己的卡组</p>
+<p>4.<strong>获取卡牌的随机性</strong>：每一场战斗获胜后，玩家都会获得卡牌奖励，候选牌的生成具有随机性，但游戏通过划分角色卡池确保卡牌与角色机制契合、划分卡牌稀有度并检索玩家当前卡组调整玩家持有稀有卡牌概率等手段，在随机性下仍能够体现玩家策略，玩家需要对现状进行评估来策略性地选择卡牌。</p>
+<p><a id="（三）卡面设计"></a></p>
+<h3 id="三卡面设计">（三）卡面设计
+</h3><p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%8D%A1%E7%89%8C%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E9%9D%A2%E8%AE%BE%E8%AE%A1.png"
+	width="330"
+	height="352"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%8D%A1%E7%89%8C%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E9%9D%A2%E8%AE%BE%E8%AE%A1_hu4434520055033814944.png 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%8D%A1%E7%89%8C%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E9%9D%A2%E8%AE%BE%E8%AE%A1_hu2539202011843104127.png 1024w"
+	loading="lazy"
+	
+		alt="卡面设计"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="225px"
+	
+></p>
+<p>一张完整的《杀戮尖塔2（Slay the Spire 2）》卡牌包含七个关键信息：卡牌费用、卡牌名称、卡牌稀有度、卡牌插画、卡牌类型、卡牌描述、卡池归属。</p>
+<p>1.<strong>费用</strong>：位于卡面左上角，以数字显示，代表打出此牌需要消耗的能量值。费用数值越高，该牌在能量资源上的投入成本越大，对战局影响力越大、越能一次性解决复杂局面的卡牌，通常费用也越高，玩家需要承担“打出后剩余能量不足、无法进行其它操作”或“当前剩余能量不足以支撑打出此卡牌，卡牌持续占据卡组空间”的机会成本。</p>
+<p>2.<strong>卡牌名</strong>：卡牌名称体现了角色特点和故事背景，让玩家能够更沉浸其中。且卡牌名称通过简短的词汇传达了卡牌的核心意象，例如旋风斩、孤注一掷，帮助玩家快速建立对卡牌功能的初步预期。</p>
+<p>3.<strong>稀有度</strong>：稀有度以卡牌名称上方的彩色飘带进行标识，根据颜色白、蓝、金共分为三个等级，视觉上直观。往往稀有度高的卡效益更大，是围绕某一核心机制构建的核心卡。</p>
+<p>4.<strong>插图</strong>：插图占据了牌面上半部的主要视觉空间，是卡牌辨识度的第一来源，不同类别的卡牌在插画色调上有显著差异，减轻了玩家在阅读文字上的负担。例如攻击牌以红色暖色调为主，画面多呈现武器、斩击动作等元素，技能牌以蓝色冷色调为主，画面多呈现姿态、护盾等元素，玩家几乎能够瞬间完成对卡牌大类别的本能判断。</p>
+<p>5.<strong>卡牌类型</strong>：在《杀戮尖塔2（Slay the Spire 2）》中包含了五类卡牌，攻击，技能，能力，状态，诅咒。攻击牌为玩家造成伤害的主要来源。通常直接对敌人造成伤害，部分攻击牌附带额外效果（如施加易伤、触发力量加成等）。技能牌包括防御（获得格挡）、运转（抽牌、加费）、回复等一切“非直接伤害”的主动效果。能力牌在第一次打出后会被消耗，打出后提供全局持续效果。状态牌为一种临时负面牌，通常由敌人效果产生，占据手牌位置污染牌库，仅在本场战斗中生效，战斗结束后自动从牌组中移除。诅咒牌为一种永久性负面牌，一旦被加入牌组，将持续存在于后续所有战斗中，直到玩家通过特定手段（商店删除、事件转化）将其移除。</p>
+<p>6.<strong>卡牌描述</strong>：位于牌面中下部，以文本描述卡牌被打出时的具体效果。</p>
+<p>7.<strong>卡池归属</strong>：通过卡牌边框颜色进行区分，每一个角色均有一代表色，铁甲战士（红）、静默猎手（绿）、故障机器人（蓝）、亡灵契约师（紫）、储君（金），而除此之外还有无色牌（白色边框），为所有角色通用的跨职业卡牌。负面效果牌中诅咒牌设计为黑色边框，视觉上传递危险信号，诅咒牌不归属于任何角色卡池，在变化卡牌时，变换操作仅在相同颜色的卡池内进行，诅咒牌不会被变换为其它类型的牌，反之亦然。</p>
+<p><a id="（四）卡组设计"></a></p>
+<h3 id="四卡组设计">（四）卡组设计
+</h3><p><a id="概述"></a></p>
+<h4 id="概述-1">概述
+</h4><p>《杀戮尖塔2（Slay the Spire 2）》的核心体验，是玩家从初始的基础卡组出发，通过战斗奖励、商店购买、事件转化等多种途径，最终构建出一套成品卡组的过程，而卡组强度分为攻击、防御、运转三个维度，在战斗中对卡组强度进行验证。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>维度</th>
+          <th>定义</th>
+          <th>衡量指标</th>
+          <th>不足时的表现</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>攻击</td>
+          <td>牌组造成伤害的效率与上限</td>
+          <td>每回合平均输出、爆发峰值、AOE能力</td>
+          <td>战斗拖长、血量被耗尽</td>
+      </tr>
+      <tr>
+          <td>防御</td>
+          <td>牌组抵御伤害与生存的能力</td>
+          <td>每回合平均格挡获取、减伤手段</td>
+          <td>难以承受精英/Boss的重击</td>
+      </tr>
+      <tr>
+          <td>运转</td>
+          <td>牌组循环与资源生成的效率</td>
+          <td>抽牌速度、能量获取、牌组精简程度</td>
+          <td>关键牌无法上手、费用不足</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>以上可以看出“卡牌配合的叠加效果＞稀有单卡”的设计理念，一张单独看数值平平的卡牌，如果恰好契合了当前卡组的核心机制，实际的输出效果可能远高于一张面板更高但缺乏协同的卡牌，例如多段攻击类卡牌配合力量属性提升。</p>
+<p>除攻击、防御、运转卡牌外，游戏中还存在敌人施放自身状态、玩家状态的BUFF设计，如虚弱、易伤、状态牌、诅咒牌等等，这些设计考量是基于游戏的可玩性与丰富度进行的，在游戏过程中，玩家必须要面对各种突发状况，这也是游戏机制中策略性的乐趣所在。</p>
+<p>此外，卡组设计还需考虑了遗物系统，遗物作为玩家在爬塔过程中获取的永久性增益道具，有时能放大特定卡组的优势或弥补特定卡组的短板。例如，铁甲战士的部分输出与运转机制需要以失去生命值为代价，而遗物“律动残余”的效果是“每回合失去的生命值不会超过20点”，这不仅减轻了玩家在受到敌人重击时的生存压力，还为自伤流卡组提供了无限输出的理论空间。</p>
+<p><a id="类型设计"></a></p>
+<h4 id="类型设计">类型设计
+</h4><p>《杀戮尖塔2（Slay the Spire 2）》将所有卡牌划分为五大类型，每种类型在功能定位均存在显著差异。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>类型</th>
+          <th>功能定位</th>
+          <th>打出效果</th>
+          <th>回合结束后</th>
+          <th>设计目的</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>攻击</td>
+          <td>造成直接伤害</td>
+          <td>对敌方目标造成伤害数值</td>
+          <td>进入弃牌堆</td>
+          <td>提供主要的输出手段</td>
+      </tr>
+      <tr>
+          <td>技能</td>
+          <td>非直接伤害效果</td>
+          <td>格挡、抽牌、加费、施加状态等</td>
+          <td>进入弃牌堆</td>
+          <td>提供防御、运转与功能支持</td>
+      </tr>
+      <tr>
+          <td>能力</td>
+          <td>增益（全局）</td>
+          <td>提供持续整场战斗的被动效果</td>
+          <td>消耗离场，不进入弃牌堆</td>
+          <td>流派成型的标志</td>
+      </tr>
+      <tr>
+          <td>状态</td>
+          <td>负面干扰（单局）</td>
+          <td>通常为负面或无效效果，部分不可打出</td>
+          <td>自动移除，不进入下一场战斗</td>
+          <td>增加局内的资源管理压力</td>
+      </tr>
+      <tr>
+          <td>诅咒</td>
+          <td>负面干扰（全局）</td>
+          <td>通常为负面或无效效果，大部分不可打出</td>
+          <td>保留在牌组中，持续影响后续战斗</td>
+          <td>高风险选择的代价，驱动玩家权衡风险收益</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="流派设计"></a></p>
+<h4 id="流派设计">流派设计
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>角色</th>
+          <th>初始遗物</th>
+          <th>特色机制</th>
+          <th>攻防逻辑</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>铁甲战士</td>
+          <td>战斗结束时恢复6点生命</td>
+          <td>力量&amp;卡牌消耗&amp;自伤&amp;防战</td>
+          <td>攻击端：力量流为核心输出路径，多段攻击卡牌在力量加成下获得倍数级收益；防御端：防战流依托&quot;壁垒&quot;实现格挡值跨回合保留，并通过&quot;全身撞击&quot;将防御转化为伤害输出；运转端：消耗卡牌精简卡组or自伤启动</td>
+      </tr>
+      <tr>
+          <td>静默猎手</td>
+          <td>每场战斗开始时额外抽取2张牌</td>
+          <td>抽弃牌&amp;叠毒&amp;小刀</td>
+          <td>攻击端：中毒流的叠层机制&amp;小刀流作为辅助输出；防御端：虚弱施加&amp;高过牌；运转端：通过主动弃牌换取抽牌与费用</td>
+      </tr>
+      <tr>
+          <td>亡灵契约师</td>
+          <td>回合开始时召唤1</td>
+          <td>召唤&amp;灾厄&amp;灵魂抽牌</td>
+          <td>攻击端：灾厄；防御端：召唤物；运转端：灵魂牌</td>
+      </tr>
+      <tr>
+          <td>储君</td>
+          <td>每场战斗开始时获得3星</td>
+          <td>双资源能量机制&amp;铸剑</td>
+          <td>攻击端：双资源机制&amp;铸剑；防御端：双资源机制&amp;铸剑；运转端：星能与能量转换</td>
+      </tr>
+      <tr>
+          <td>故障机器人</td>
+          <td>每场战斗开始时生成1个闪电球</td>
+          <td>充能球&amp;物理机</td>
+          <td>攻击端：闪电球提供稳定持续伤害，黑暗球作为爆发储备可累计高额单次伤害，多重释放等卡牌爆发输出；防御端：冰霜球；运转端：等离子球</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="连携设计"></a></p>
+<h4 id="连携设计">连携设计
+</h4><p>连携是指两张或多张卡牌在特定条件下相互作用时，其组合效果大于各自效果的简单加和。这种连携不仅存在于同角色卡牌之间，也存在于跨角色无色牌与专属牌之间，更存在于卡牌与遗物之间。
+在流派框架下，游戏鼓励玩家运用想象力去发现任意两张或多张卡牌之间的潜在连携，而非仅仅沿着开发者预设的流派路线前进。这种涌现式的策略设计，让玩家即便长时间游玩仍能发现新内容，延长了游戏寿命。</p>
+<p><a id="数值框架"></a></p>
+<h4 id="数值框架">数值框架
+</h4><p>《杀戮尖塔2（Slay the Spire 2）》的数值设计在加法和乘法上体现，实现数值成长曲线前期平滑可控，后期爆发高输出。</p>
+<p>加法体系是游戏中最基础的数值叠加方式，例如，力量每+1，所有攻击牌的伤害+1；敏捷每+1，所有技能牌的格挡值+1。加法体系确保了数值成长的可预测性与门槛友好性，玩家能够快速算出每一单位的收益变化。</p>
+<p>乘法体系补齐了加法体系中难以实现数值非线性增长的需求，乘法机制体现在多段攻击、倍率卡、遗物增益中。</p>
+<p><a id="四、关卡系统"></a></p>
+<h2 id="四关卡系统">四、关卡系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位-2">（一）系统定位
+</h3><p>关卡系统是《杀戮尖塔2（Slay the Spire 2）》中连接战斗系统与卡牌系统的桥梁，也起到控制玩家单局游戏节奏流程的作用。一局完整游戏切分为三个难度递进的层级，每一层均由随机生成的树状路径地图构成，玩家在地图节点间移动，遭遇战斗、事件、商店、宝箱与休息点，在挑战与成长之间持续做出策略性的路径选择。</p>
+<p>与线性关卡设计不同，《杀戮尖塔2》的关卡系统采用了非线性路径选择 + 随机生成的机制：每次开始新游戏时，系统都会生成一张新的地图，所有房间的位置、类型与连接关系均随机排布，确保了每一局游戏的路线规划都独一无二。</p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的-2">（二）设计目的
+</h3><p>1.<strong>固定流程框架</strong>：</p>
+<p>游戏设置三层结构，每一层拥有独立的主题、怪物池与难度基准，控制游戏难度与游玩节奏，划分了玩家的成长阶段。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>章节</th>
+          <th>层数范围</th>
+          <th>难度特征</th>
+          <th>玩家状态预期</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>第1层</td>
+          <td>1～17层</td>
+          <td>基础敌人为主，节奏较缓</td>
+          <td>发育期：玩家在此阶段完善初始牌组，建立初步的流派方向</td>
+      </tr>
+      <tr>
+          <td>第2层</td>
+          <td>18～33层</td>
+          <td>敌人机制复杂度提升，精英密度增加</td>
+          <td>成长期：玩家的卡组骨架基本确定</td>
+      </tr>
+      <tr>
+          <td>第3层</td>
+          <td>34～49层</td>
+          <td>高难度敌人</td>
+          <td>巩固与检验期：牌组已基本成型，考验玩家实战输出结果</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>并且，游戏中做出了“进阶”的延伸设计，随着玩家每一次胜利，将逐级解锁10个难度等级，进阶系统为已经掌握了游戏基础机制的玩家提供了持续的挑战性重复游玩性，使游戏在首次通关后仍拥有数十乃至上百小时的策略精进空间。进阶的设计上，是从资源获取（金币削减、药水栏位缩减）、牌组构建（稀有卡概率降低、移除服务涨价、初始诅咒）、敌人强度（敌人血量与伤害提升、双Boss战）多个维度施压，而非单一的提高敌人血量拉长无意义战斗时长。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>进阶数</th>
+          <th>效果</th>
+          <th>设计意图</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>精英敌人出现更加频繁，地图上精英数量从5增加到8</td>
+          <td>资源获取机会提升，风险提升</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>远古之民只会回复已损失生命值的80%</td>
+          <td>削弱续航，并加强了前期压力</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>敌人和宝箱掉落的金币减少25%</td>
+          <td>压缩经济空间，增加商店决策的难度</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>游戏开始时药水栏位减少1</td>
+          <td>削减资源持有，降低容错率</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>游戏开始时获得1张诅咒牌</td>
+          <td>加强牌组构筑难度</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>商人的卡牌移除服务价格提升</td>
+          <td>提高牌组精简成本，玩家需要更谨慎地选择卡牌</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>稀有和已升级卡牌出现概率降低</td>
+          <td>削弱构筑上限，玩家难以轻松地构筑出强力卡组</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>所有敌人变得更难杀死（血量提升）</td>
+          <td>延长战斗回合数，增加资源消耗压力</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>所有敌人变得更加致命（伤害提升）</td>
+          <td>提高玩家防御端需求，压缩容错空间</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>第3阶段最后与两个Boss战斗</td>
+          <td>检验牌组的完整强度</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>2.<strong>随机性与流程节奏控制</strong>：</p>
+<p>关卡系统中的随机性体现在地图拓扑的随机生成、房间类型的随机排布、事件内容的随机触发，这样的设计确保了玩家即便选择同一角色和进阶等级，每局游戏的体验均不相同，保持玩家的新鲜感和挑战感。
+随机性下仍有策略性的设计，游戏通过固定节点规则例如Boss战前必为火堆，以及房间类型的密度分配，调整玩家在战斗与恢复之间的节奏，让玩家的游玩体验更平缓。</p>
+<p>3.<strong>游戏元素载体</strong>：</p>
+<p>游戏的所有元素均在关卡系统中体现，敌人位于敌人房间中，事件位于特殊房间中，卡牌和遗物的获取需要通过战斗或进入到商店房间中购买，关卡系统将所有元素统合并作为入口向玩家展示。</p>
+<p><a id="（三）关卡画面"></a></p>
+<h3 id="三关卡画面">（三）关卡画面
+</h3><p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E8%B7%AF%E7%BA%BF%E5%9C%B0%E5%9B%BE.jpg"
+	width="800"
+	height="1451"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E8%B7%AF%E7%BA%BF%E5%9C%B0%E5%9B%BE_hu17028421469130328592.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E8%B7%AF%E7%BA%BF%E5%9C%B0%E5%9B%BE_hu15891599321568339262.jpg 1024w"
+	loading="lazy"
+	
+		alt="路线地图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="55"
+		data-flex-basis="132px"
+	
+></p>
+<p>关卡地图是玩家在进行路径规划的核心交互界面，为自下而上的树状结构，模拟爬塔向上行动的过程，界面中主要包含以下关键信息：</p>
+<p>1.<strong>基础信息</strong>：已走过的房间数与本局游玩时间。位于界面顶部的辅助信息区域，帮助玩家判断当前层的进度，玩家可以看到本层Boss信息，进而提前调整策略和资源储备。</p>
+<p>2.房间图标的<strong>视觉设计</strong>：</p>
+<p>(1)已走过的房间：用墨水圈图标框选，便于玩家追溯自己走过的路线。</p>
+<p>(2)当前可前往的房间：与当前所在房间有直接路径相连的下一层节点，保持高饱和度显示，并有放大闪动特效，清晰展示玩家可以选择的全部路径。</p>
+<p>(3)不可前往的房间：不在当前可达路径上的房间，饱和度被压低，避免对玩家的视觉干扰。</p>
+<p>3.<strong>路线连接线</strong>：玩家能够直观判断从当前位置能够到达哪些房间。</p>
+<p><a id="（四）房间种类"></a></p>
+<h3 id="四房间种类">（四）房间种类
+</h3><p>《杀戮尖塔2（Slay the Spire 2）》中包含了7种房间，根据功能可分为以下3类：</p>
+<p><a id="战斗类房间"></a></p>
+<h4 id="战斗类房间">战斗类房间
+</h4><p>(1)普通敌人</p>
+<p>i.功能：战斗胜利后必定获得卡牌奖励（高概率普通卡、中等概率罕见卡、低概率稀有卡）与金币，概率获得药水。</p>
+<p>ii.设计目的：普通战斗是玩家获取卡牌与金币最主要的稳定来源，也是验证当前卡组强度的基础场景。</p>
+<p>(2)精英敌人</p>
+<p>i.功能：精英的难度显著高于普通敌人，但战斗胜利后必定获得遗物。</p>
+<p>ii.设计目的：挑战精英意味着承受更高的战损风险，但如果战胜，综合收益远高于普通战斗。</p>
+<p>(3)Boss房间</p>
+<p>i.功能：每层的终点房间，玩家必须与该层的Boss战斗。胜利后必定获得高稀有度卡牌三选一 + 大量金币，概率获得药水，同时解锁进入下一层的通道。</p>
+<p>ii.设计目的：Boss战是每层对卡组强度的阶段性检验。且不同的Boss存在不同机制，需要玩家针对性地构筑卡组或是准备应对手段。</p>
+<p><a id="安全类房间"></a></p>
+<h4 id="安全类房间">安全类房间
+</h4><p>(4)火堆/休息处</p>
+<p>i.功能：玩家在火堆处可从以下选项中选择一项执行：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>休息：恢复当前最大生命值的30%。</p>
+<p>锻造：升级一张卡牌。</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>ii.隐藏选项（通过特定遗物解锁）：获得某些遗物后，会在火堆处增加额外功能，如“壶铃”获得永久力量增长（最多3次），“铲子”允许挖掘获得遗物，“切肉刀”允许删除2张牌并永久增加9点最大生命值。</p>
+<p>iii.设计目的：玩家战斗途中调整和强化的手段之一，玩家需要根据当前的血量状况、牌组强度以及前方路线敌人，决定优先短期生存（回血）还是长期成长（升级卡牌）。而Boss战前必定出现火堆的设计，确保了玩家在进入Boss战前拥有至少一次调整状态的机会。</p>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E5%AE%89%E5%85%A8%E7%B1%BB%E6%88%BF%E9%97%B4.%E7%81%AB%E5%A0%86.jpg"
+	width="1200"
+	height="675"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E5%AE%89%E5%85%A8%E7%B1%BB%E6%88%BF%E9%97%B4.%E7%81%AB%E5%A0%86_hu3366391007925261609.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E5%AE%89%E5%85%A8%E7%B1%BB%E6%88%BF%E9%97%B4.%E7%81%AB%E5%A0%86_hu11492549653685998475.jpg 1024w"
+	loading="lazy"
+	
+		alt="火堆"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p>(5)商店</p>
+<p>i.功能：玩家可以花费金币在商店中进行交易。商店的商品列表包括：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>5张角色专属卡牌：2张攻击牌、2张技能牌、1张能力牌。其中1张以五折出售。</p>
+<p>2张无色卡牌：1张罕见品质、1张稀有品质。</p>
+<p>3件遗物：其中至少1件为商店遗物，即仅会在商店中出现的特殊遗物品类。</p>
+<p>3瓶药水。</p>
+<p>卡牌移除服务：从玩家牌组中永久删除1张卡牌，初始价格为75金币，每次使用后涨价25金币。每个商店仅可购买1次移除服务。</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>ii.设计目的：商店的设计，玩家能够主动调整构筑方向。商店给了更充裕的选择，与战斗的随机奖励中三选一的被动获取不同，商店的商品品类固定，玩家能够按需购买，补齐卡组短板。而商店的卡牌移除服务则是牌组精简的固定渠道。</p>
+<p><img src="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E5%AE%89%E5%85%A8%E7%B1%BB%E6%88%BF%E9%97%B4.%E5%95%86%E5%BA%97.jpg"
+	width="1200"
+	height="675"
+	srcset="/p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E5%AE%89%E5%85%A8%E7%B1%BB%E6%88%BF%E9%97%B4.%E5%95%86%E5%BA%97_hu11908705129385032305.jpg 480w, /p/programming-gamedevelop-y1-slay-the-spire-2/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E5%9C%B0%E7%89%A2%E8%82%89%E9%B8%BD%E5%8D%A1%E7%89%8C.%E6%9D%80%E6%88%AE%E5%B0%96%E5%A1%942.%E5%85%B3%E5%8D%A1%E7%B3%BB%E7%BB%9F.%E5%AE%89%E5%85%A8%E7%B1%BB%E6%88%BF%E9%97%B4.%E5%95%86%E5%BA%97_hu3321897283154599388.jpg 1024w"
+	loading="lazy"
+	
+		alt="商店"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p>(6)宝箱</p>
+<p>i.功能：固定获得1件遗物，概率获得额外金币。</p>
+<p>ii.设计目的：宝箱是遗物获取的稳定来源，每张地图中中央位置必定有一个宝箱，不仅是对玩家的奖励，也对关卡结构划分上下部分起到分割作用。</p>
+<p><a id="随机类房间"></a></p>
+<h4 id="随机类房间">随机类房间
+</h4><p>(7)未知房间</p>
+<p>i.功能：进入后触发随机事件，可能遭遇以下情形之一：战斗事件、特殊叙事事件（提供遗物/卡牌/金币/诅咒等选择）、宝箱、商店。</p>
+<p>ii.设计目的：在所有房间中，未知房间的不确定最强，玩家可能获取强力卡牌和遗物，也可能失去生命获得诅咒，增强了每局游戏的变数。</p>
+<p><a id="（五）房间分布"></a></p>
+<h3 id="五房间分布">（五）房间分布
+</h3><p>在每一层随机生成的地图中，房间数量都基本遵循以下比例：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>类型</th>
+          <th>占比</th>
+          <th>典型数量（以一层约16个房间计）</th>
+          <th>功能定位</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>战斗类（普通 + 精英 + Boss）</td>
+          <td>~50%</td>
+          <td>8个</td>
+          <td>挑战与卡牌获取</td>
+      </tr>
+      <tr>
+          <td>安全类（火堆 + 商店 + 宝箱）</td>
+          <td>~30%</td>
+          <td>5个</td>
+          <td>恢复、成长、构筑调整</td>
+      </tr>
+      <tr>
+          <td>随机类（未知房间）</td>
+          <td>~20%</td>
+          <td>3个</td>
+          <td>不确定性与变数</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>设计目的：</p>
+<p>1.以战斗为游玩核心：战斗房间在所有房间中占比最高，促进玩家牌组更新，并确保玩家有充足的卡牌获取机会。</p>
+<p>2.安全房间保证生存与成长：近三分之一的占比确保玩家在约两次战斗之间都能进行一次资源恢复和构筑调整。</p>
+<p>3.未知性的风险博弈：问号房间是不确定的房间，玩家可能在其中获得巨大收益，也可能面对高战损的结局，而问号房间占比不过高也不过低，不至于让玩家无法进行策略规划，也不至于让游戏流程过于固定而重复可玩性不足。</p>
+<p><a id="（六）房间设计"></a></p>
+<h3 id="六房间设计">（六）房间设计
+</h3><p><a id="硬性规则"></a></p>
+<h4 id="硬性规则">硬性规则
+</h4><p>(1)Boss战前必定为火堆：每层的最后一个非Boss节点必定是火堆休息处。保证玩家在进入Boss战前拥有最后一次调整状态的机会。</p>
+<p>(2)每一层的前5步不会出现精英房间：预留给玩家调整时间，用更轻松应对的普通敌人激励玩家游玩。</p>
+<p>(3)第9步固定为宝箱房间：每层第9个房间（中央）固定为宝箱。这一规则将地图分割为“上半段”与“下半段”两个结构单元。</p>
+<p>(4)除敌人和未知房间外，其它类型房间不会连续出现：连续两个精英房间的难度过高，玩家几乎无法在两次精英战中保持足够的状态；连续两个火堆或宝箱会导致玩家在短时间内获得过多的恢复或遗物，后续战斗房间的挑战性会削弱；连续两个商店则意义有限，玩家在进入第二个商店时往往已消耗完金币，无法再支持商店购买服务。</p>
+<p><a id="房间分布的数学期望分析"></a></p>
+<h4 id="房间分布的数学期望分析">房间分布的数学期望分析
+</h4><p>(1)普通战斗：约占总房间数的35%～40%，是卡牌与金币的最主要来源；</p>
+<p>(2)精英战斗：约占总数的10%～15%，是遗物的核心来源；</p>
+<p>(3)火堆：约占总数的10%～12%，提供生命恢复与卡牌升级；</p>
+<p>(4)商店：约占总数的8%～10%，提供定向构筑调整；</p>
+<p>(5)宝箱：约占总数的6%～8%，提供稳定的遗物获取；</p>
+<p>(6)未知房间：约占总数的18%～22%，提供不确定性与策略变数。</p>
+<p>这一分布保证了游戏的节奏设计，调整玩家注意力到最佳水平，战斗（挑战）与安全（成长）的交替频率约等于1:1，不至于连续高强度战斗带来强烈挫败感，也不会因经历连续安全房间而无聊对游戏失去兴趣。</p>
+<p><a id="五、总结"></a></p>
+<h2 id="五总结">五、总结
+</h2><p>通过对《杀戮尖塔2》战斗、卡牌、关卡、角色与经济系统的逐层拆解，可以看到一个好的游戏设计有以下特点：</p>
+<p>视觉效果替代文本，减轻玩家的文本阅读压力，通过高亮、颜色、动画与图标，玩家可一目了然获取信息。包括敌人的意图可视化、角色卡牌的颜色标识如红色代表攻击，蓝色代表防御、卡牌边缘的蓝色高光表示费用可以打出该卡牌，费用字体变暗则表示能量不足。</p>
+<p>交互细节能够给予玩家沉浸感，例如游戏中格挡条的破碎动画、发牌时的拖尾特效、能量不足时的红色提示、悬停卡牌的放大展开。</p>
+<p>关卡的发散与收束，让玩家在关键决策点拥有确定的信息，在细节层面保留随机变数。发散的区间是随机生成的路线，玩家拥有路径选择权，玩家可以策略性地决定路线，保证玩家的探索欲以重复体验游戏；收束是控制游戏进程和游玩节奏，例如游戏固定分为三层，每层玩家都需要面对Boss，而在Boss战前必定有战前火堆供玩家调整。</p>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a>
+        
+            <a href="/tags/%E6%B8%B8%E6%88%8F%E7%AD%96%E5%88%92%E6%A1%88/">游戏策划案</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-y2-mhxcz/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小游戏开发 | 策划案-系统模块拆解 | 休闲二合模拟经营-梦幻消除战</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-c3-unity-rubys-adventure/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：Rubys Adventure</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了33篇文章 · 
+		总计227.16k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,4155 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="策划案-系统模块拆解：休闲二合模拟经营-梦幻消除战">
+<title>小小小游戏开发 | 策划案-系统模块拆解 | 休闲二合模拟经营-梦幻消除战</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-gamedevelop-y2-mhxcz/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小游戏开发 | 策划案-系统模块拆解 | 休闲二合模拟经营-梦幻消除战">
+<meta property='og:description' content="策划案-系统模块拆解：休闲二合模拟经营-梦幻消除战">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-gamedevelop-y2-mhxcz/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='游戏开发' /><meta property='article:tag' content='游戏策划案' /><meta property='article:published_time' content='2026-09-10T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-09-10T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小游戏开发 | 策划案-系统模块拆解 | 休闲二合模拟经营-梦幻消除战">
+<meta name="twitter:description" content="策划案-系统模块拆解：休闲二合模拟经营-梦幻消除战">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一游戏概述">一、游戏概述</a>
+      <ol>
+        <li><a href="#一核心玩法">（一）核心玩法</a></li>
+        <li><a href="#二游戏题材">（二）游戏题材</a></li>
+        <li><a href="#三美术风格">（三）美术风格</a></li>
+        <li><a href="#四游戏亮点">（四）游戏亮点</a></li>
+        <li><a href="#五玩家行为核心体验">（五）玩家行为核心体验</a></li>
+      </ol>
+    </li>
+    <li><a href="#二ui与交互系统">二、UI与交互系统</a>
+      <ol>
+        <li><a href="#一系统定位">（一）系统定位</a></li>
+        <li><a href="#二设计目的">（二）设计目的</a></li>
+        <li><a href="#三整体ui框架">（三）整体UI框架</a></li>
+        <li><a href="#四新手引导">（四）新手引导</a></li>
+        <li><a href="#五交互反馈">（五）交互反馈</a></li>
+      </ol>
+    </li>
+    <li><a href="#三养成系统">三、养成系统</a>
+      <ol>
+        <li><a href="#一系统定位-1">（一）系统定位</a></li>
+        <li><a href="#二设计目的-1">（二）设计目的</a></li>
+        <li><a href="#三棋盘资源">（三）棋盘资源</a>
+          <ol>
+            <li><a href="#棋盘">棋盘</a></li>
+            <li><a href="#棋子">棋子</a></li>
+            <li><a href="#仓库">仓库</a></li>
+          </ol>
+        </li>
+        <li><a href="#四经济资源">（四）经济资源</a>
+          <ol>
+            <li><a href="#体力">体力</a></li>
+            <li><a href="#铜钱">铜钱</a></li>
+            <li><a href="#宝石">宝石</a></li>
+          </ol>
+        </li>
+        <li><a href="#五订单模块">（五）订单模块</a>
+          <ol>
+            <li><a href="#概述">概述</a></li>
+            <li><a href="#订单激励">订单激励</a></li>
+          </ol>
+        </li>
+        <li><a href="#六等级与主线">（六）等级与主线</a></li>
+        <li><a href="#七收集成就">（七）收集成就</a>
+          <ol>
+            <li><a href="#自定义装饰">自定义装饰</a></li>
+            <li><a href="#情缘互动">情缘互动</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#四活动运营系统">四、活动运营系统</a>
+      <ol>
+        <li><a href="#一系统定位-2">（一）系统定位</a></li>
+        <li><a href="#二设计目的-2">（二）设计目的</a></li>
+        <li><a href="#三活动锁机制">（三）活动锁机制</a></li>
+        <li><a href="#四固定活动">（四）固定活动</a>
+          <ol>
+            <li><a href="#活动分布">活动分布</a></li>
+            <li><a href="#每日签到">每日签到</a></li>
+            <li><a href="#每日游戏圈活跃">每日游戏圈活跃</a></li>
+            <li><a href="#每周任务">每周任务</a></li>
+            <li><a href="#月度主题任务">月度主题任务</a></li>
+          </ol>
+        </li>
+        <li><a href="#五临时活动">（五）临时活动</a>
+          <ol>
+            <li><a href="#活动分布-1">活动分布</a></li>
+            <li><a href="#体力消耗型">体力消耗型</a></li>
+            <li><a href="#金币收集型">金币收集型</a></li>
+            <li><a href="#订单累计型">订单累计型</a></li>
+            <li><a href="#特殊订单型">特殊订单型</a></li>
+            <li><a href="#综合激励型">综合激励型</a></li>
+          </ol>
+        </li>
+        <li><a href="#六常驻活动">（六）常驻活动</a>
+          <ol>
+            <li><a href="#活动分布-2">活动分布</a></li>
+            <li><a href="#副棋盘活动">副棋盘活动</a></li>
+            <li><a href="#装饰地块活动">装饰地块活动</a></li>
+            <li><a href="#ip联动集卡活动">ip联动集卡活动</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#五付费系统">五、付费系统</a>
+      <ol>
+        <li><a href="#一系统定位-3">（一）系统定位</a></li>
+        <li><a href="#二设计目的-3">（二）设计目的</a></li>
+        <li><a href="#三体力付费">（三）体力付费</a></li>
+        <li><a href="#四棋子付费">（四）棋子付费</a></li>
+        <li><a href="#五商城付费">（五）商城付费</a></li>
+        <li><a href="#六礼包系统">（六）礼包系统</a>
+          <ol>
+            <li><a href="#兑换码系统">兑换码系统</a></li>
+            <li><a href="#等级礼包">等级礼包</a></li>
+            <li><a href="#新人礼包">新人礼包</a></li>
+            <li><a href="#体力礼包">体力礼包</a></li>
+            <li><a href="#卡牌礼包">卡牌礼包</a></li>
+            <li><a href="#买赠型礼包">买赠型礼包</a></li>
+            <li><a href="#连购型礼包">连购型礼包</a></li>
+            <li><a href="#抽奖型礼包">抽奖型礼包</a></li>
+          </ol>
+        </li>
+        <li><a href="#七活动vip通道">（七）活动vip通道</a></li>
+        <li><a href="#八广告系统">（八）广告系统</a></li>
+      </ol>
+    </li>
+    <li><a href="#六总结">六、总结</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/gamedevelop/" >
+                Gamedevelop
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-gamedevelop-y2-mhxcz/">小小小游戏开发 | 策划案-系统模块拆解 | 休闲二合模拟经营-梦幻消除战</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            策划案-系统模块拆解：休闲二合模拟经营-梦幻消除战
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-09-10</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 29714 字
+                    阅读时长: 60 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#%e4%b8%80%e3%80%81%e6%b8%b8%e6%88%8f%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        一、游戏概述
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e6%a0%b8%e5%bf%83%e7%8e%a9%e6%b3%95"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）核心玩法
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e6%b8%b8%e6%88%8f%e9%a2%98%e6%9d%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）游戏题材
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e7%be%8e%e6%9c%af%e9%a3%8e%e6%a0%bc"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）美术风格
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e6%b8%b8%e6%88%8f%e4%ba%ae%e7%82%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）游戏亮点
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e7%8e%a9%e5%ae%b6%e8%a1%8c%e4%b8%ba%e6%a0%b8%e5%bf%83%e4%bd%93%e9%aa%8c"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）玩家行为核心体验
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%e4%ba%8c%e3%80%81UI%e4%b8%8e%e4%ba%a4%e4%ba%92%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        二、UI与交互系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e6%95%b4%e4%bd%93UI%e6%a1%86%e6%9e%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）整体UI框架
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e6%96%b0%e6%89%8b%e5%bc%95%e5%af%bc"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）新手引导
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e4%ba%a4%e4%ba%92%e5%8f%8d%e9%a6%88"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）交互反馈
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%e4%b8%89%e3%80%81%e5%85%bb%e6%88%90%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        三、养成系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e6%a3%8b%e7%9b%98%e8%b5%84%e6%ba%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）棋盘资源
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%a3%8b%e7%9b%98"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        棋盘
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%a3%8b%e5%ad%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        棋子
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e4%bb%93%e5%ba%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        仓库
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e7%bb%8f%e6%b5%8e%e8%b5%84%e6%ba%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）经济资源
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e4%bd%93%e5%8a%9b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        体力
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e9%93%9c%e9%92%b1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        铜钱
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%ae%9d%e7%9f%b3"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        宝石
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e8%ae%a2%e5%8d%95%e6%a8%a1%e5%9d%97"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）订单模块
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        概述
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e8%ae%a2%e5%8d%95%e6%bf%80%e5%8a%b1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        订单激励
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e5%85%ad%ef%bc%89%e7%ad%89%e7%ba%a7%e4%b8%8e%e4%b8%bb%e7%ba%bf"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （六）等级与主线
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%83%ef%bc%89%e6%94%b6%e9%9b%86%e6%88%90%e5%b0%b1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （七）收集成就
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a3%85%e9%a5%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        自定义装饰
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%83%85%e7%bc%98%e4%ba%92%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        情缘互动
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a class="link" href="#%e5%9b%9b%e3%80%81%e6%b4%bb%e5%8a%a8%e8%bf%90%e8%90%a5%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        四、活动运营系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e6%b4%bb%e5%8a%a8%e9%94%81%e6%9c%ba%e5%88%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）活动锁机制
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e5%9b%ba%e5%ae%9a%e6%b4%bb%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）固定活动
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%b4%bb%e5%8a%a8%e5%88%86%e5%b8%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        活动分布
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%af%8f%e6%97%a5%e7%ad%be%e5%88%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        每日签到
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%af%8f%e6%97%a5%e6%b8%b8%e6%88%8f%e5%9c%88%e6%b4%bb%e8%b7%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        每日游戏圈活跃
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%af%8f%e5%91%a8%e4%bb%bb%e5%8a%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        每周任务
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%9c%88%e5%ba%a6%e4%b8%bb%e9%a2%98%e4%bb%bb%e5%8a%a1"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        月度主题任务
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e4%b8%b4%e6%97%b6%e6%b4%bb%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）临时活动
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%b4%bb%e5%8a%a8%e5%88%86%e5%b8%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        活动分布
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e4%bd%93%e5%8a%9b%e6%b6%88%e8%80%97%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        体力消耗型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e9%87%91%e5%b8%81%e6%94%b6%e9%9b%86%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        金币收集型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e8%ae%a2%e5%8d%95%e7%b4%af%e8%ae%a1%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        订单累计型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%89%b9%e6%ae%8a%e8%ae%a2%e5%8d%95%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        特殊订单型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%bb%bc%e5%90%88%e6%bf%80%e5%8a%b1%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        综合激励型
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e5%85%ad%ef%bc%89%e5%b8%b8%e9%a9%bb%e6%b4%bb%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （六）常驻活动
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e6%b4%bb%e5%8a%a8%e5%88%86%e5%b8%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        活动分布
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%89%af%e6%a3%8b%e7%9b%98%e6%b4%bb%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        副棋盘活动
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e8%a3%85%e9%a5%b0%e5%9c%b0%e5%9d%97%e6%b4%bb%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        装饰地块活动
+        
+    </span>
+</a></li>
+<li><a class="link" href="#ip%e8%81%94%e5%8a%a8%e9%9b%86%e5%8d%a1%e6%b4%bb%e5%8a%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        ip联动集卡活动
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a class="link" href="#%e4%ba%94%e3%80%81%e4%bb%98%e8%b4%b9%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        五、付费系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%ef%bc%88%e4%b8%80%ef%bc%89%e7%b3%bb%e7%bb%9f%e5%ae%9a%e4%bd%8d"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （一）系统定位
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%8c%ef%bc%89%e8%ae%be%e8%ae%a1%e7%9b%ae%e7%9a%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （二）设计目的
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%89%ef%bc%89%e4%bd%93%e5%8a%9b%e4%bb%98%e8%b4%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （三）体力付费
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%9b%9b%ef%bc%89%e6%a3%8b%e5%ad%90%e4%bb%98%e8%b4%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （四）棋子付费
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e4%ba%94%ef%bc%89%e5%95%86%e5%9f%8e%e4%bb%98%e8%b4%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （五）商城付费
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%85%ad%ef%bc%89%e7%a4%bc%e5%8c%85%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （六）礼包系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%e5%85%91%e6%8d%a2%e7%a0%81%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        兑换码系统
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e7%ad%89%e7%ba%a7%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        等级礼包
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%96%b0%e4%ba%ba%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        新人礼包
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e4%bd%93%e5%8a%9b%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        体力礼包
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e5%8d%a1%e7%89%8c%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        卡牌礼包
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e4%b9%b0%e8%b5%a0%e5%9e%8b%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        买赠型礼包
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e8%bf%9e%e8%b4%ad%e5%9e%8b%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        连购型礼包
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%e6%8a%bd%e5%a5%96%e5%9e%8b%e7%a4%bc%e5%8c%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        抽奖型礼包
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%ef%bc%88%e4%b8%83%ef%bc%89%e6%b4%bb%e5%8a%a8vip%e9%80%9a%e9%81%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （七）活动vip通道
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%ef%bc%88%e5%85%ab%ef%bc%89%e5%b9%bf%e5%91%8a%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        （八）广告系统
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%e5%85%ad%e3%80%81%e6%80%bb%e7%bb%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        六、总结
+        
+    </span>
+</a></li>
+</ol>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84.png"
+	width="2035"
+	height="6865"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84_hu11256714870799742061.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84_hu5215785095301649513.png 1024w"
+	loading="lazy"
+	
+		alt="系统结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="29"
+		data-flex-basis="71px"
+	
+></p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E5%85%B3%E7%B3%BB%E5%9B%BE.jpg"
+	width="1600"
+	height="860"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E5%85%B3%E7%B3%BB%E5%9B%BE_hu10137303444529916674.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%B3%BB%E7%BB%9F%E5%85%B3%E7%B3%BB%E5%9B%BE_hu1162774509648971399.jpg 1024w"
+	loading="lazy"
+	
+		alt="系统关系图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="446px"
+	
+></p>
+<p><a id="一、游戏概述"></a></p>
+<h2 id="一游戏概述">一、游戏概述
+</h2><p><a id="（一）核心玩法"></a></p>
+<h3 id="一核心玩法">（一）核心玩法
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>简要</th>
+          <th>内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>游戏名称</td>
+          <td>梦幻消除战</td>
+      </tr>
+      <tr>
+          <td>游戏类型</td>
+          <td>休闲二合模拟经营放置类手游</td>
+      </tr>
+      <tr>
+          <td>语言</td>
+          <td>简体中文</td>
+      </tr>
+      <tr>
+          <td>游戏大小</td>
+          <td>无需下载</td>
+      </tr>
+      <tr>
+          <td>适龄分级</td>
+          <td>8+（休闲益智无社交系统）</td>
+      </tr>
+      <tr>
+          <td>开发商</td>
+          <td>上海番糖网络科技有限公司</td>
+      </tr>
+      <tr>
+          <td>发行商</td>
+          <td>上海晨路信息科技股份有限公司</td>
+      </tr>
+      <tr>
+          <td>发行日期</td>
+          <td>2025年10月13日</td>
+      </tr>
+      <tr>
+          <td>版本</td>
+          <td>1.6.60</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>《梦幻消除战》是一款融合二合合成消除与茶楼模拟经营的休闲手游。玩家在一个固定大小的棋盘上，遵循<strong>二合机制</strong>，即两个相同物品拖拽叠放，合成为更高级物品，得到所需物品。</p>
+<p>玩家合成所得的物品可用于提交顾客订单，获取铜钱资源，铜钱用于解锁主线故事剧情。随着剧情的推进，玩家将获得经验值，进而推动茶楼建筑的修复与升级，并逐步解锁新的场景。</p>
+<p><a id="（二）游戏题材"></a></p>
+<h3 id="二游戏题材">（二）游戏题材
+</h3><p>游戏以剧情叙事为核心，选取了当下热门的<strong>重生逆袭+经商</strong>题材。玩家将扮演一位中国古代的商贾之女、茶楼掌柜秋婉，在经历背叛、家破人亡之后获得重生契机，扭转前世悲惨命运，并挖掘出背后的真相。</p>
+<p>玩家通过合成物品、交付订单来经营茶楼，逐步解锁区域建筑、家具、服装与伙伴情缘故事，并一步步揭开家族灭门的真相。</p>
+<p>游戏的<strong>核心受众为18-35岁女性玩家</strong>：重生逆袭题材提供了情绪宣泄出口与沉浸式代入感；茶楼经营模式带来了创造与掌控的满足；情缘邂逅要素提供了陪伴与幻想空间。游戏整体操作简单、轻量化，多方位契合玩家的审美偏好与情感需求。</p>
+<p><a id="（三）美术风格"></a></p>
+<h3 id="三美术风格">（三）美术风格
+</h3><p>游戏选用了2D古风美术，融合卡通风格，画面以清新明亮为基调。米白、淡金、黛青、朱砂红为游戏的主色调，营造出宋代茶坊的闲适氛围及中国古风的典雅质感，有效吸引对中式古典感兴趣的玩家群体。</p>
+<p><strong>场景美术</strong>方面，主场景中，随茶楼等级逐步解锁区域，从最初的一间简陋小铺，逐步扩展为前堂、后厨、雅间、庭院、回廊等多区域空间，为玩家带来持续的期待感和成长感。棋盘场景中，游戏运用了大量动画特效，强化玩家每一次操作的正反馈，例如棋子合成时的光圈效果、合成后物品放大动效、点击充能类母棋时上方弹出的充能文字提示等，为玩家带来直观而解压的体验。</p>
+<p><strong>角色美术</strong>方面，分为两种不同表现形式：大场景中的<strong>二头身卡通小人</strong>与剧情对话中<strong>精细插画的动态立绘</strong>。Q版形象能够营造轻松的游戏氛围，而细节更丰富的立绘则承载了叙事的情感重量。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC.%E4%B8%BB%E7%95%8C%E9%9D%A2.jpg"
+	width="1000"
+	height="1071"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC.%E4%B8%BB%E7%95%8C%E9%9D%A2_hu298736378585891372.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E7%BE%8E%E6%9C%AF%E9%A3%8E%E6%A0%BC.%E4%B8%BB%E7%95%8C%E9%9D%A2_hu7946700870228903476.jpg 1024w"
+	loading="lazy"
+	
+		alt="主界面"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="224px"
+	
+></p>
+<p><a id="（四）游戏亮点"></a></p>
+<h3 id="四游戏亮点">（四）游戏亮点
+</h3><p>1.<strong>低门槛深策略</strong>：玩家进入游戏后30s内即可完成第一次合成操作，无需额外文字说明，便能理解“两个相同物品拖拽叠放即可合成为更高级物品”这一最核心的游戏规则。而玩家的棋盘空间固定且有限，随着母棋类型增多、合成链不断延长、玩家需要逐步考虑资源空间规划，保持玩家的休闲体验的同时，又带来了策略深度。</p>
+<p>2.<strong>多方位感觉反馈</strong>：游戏在听觉、视觉与触觉上均设计了反馈机制，物品合成时的音效、动画、轻微震动，以及可视化进度与新区域解锁。即便核心玩法是重复性的合成操作，玩家仍能从中获得持续的解压感与愉悦感。此外，玩家在过程中还可收集家具、卡牌与成就，自由装扮专属茶楼，获得明确的努力方向与巨大的成就感、满足感。</p>
+<p>3.<strong>活动体系丰富完整</strong>：游戏在日、周、月时间维度上均设置了不同类型的活动运营，并保持一定频率的轮换，使玩家始终有新鲜内容可参与，维持长线活跃度与留存意愿。</p>
+<p>4.<strong>强叙事性</strong>：剧情是吸引玩家点进游戏的最初动力，而真正进入游戏后，游戏采用倒叙手法，抛出叙事悬念，“时间倒流”的重生题材让玩家在建设经营的过程中，获得更强的代入感与情感共鸣，最终实现吸引玩家加大投入时间。</p>
+<p><a id="（五）玩家行为核心体验"></a></p>
+<h3 id="五玩家行为核心体验">（五）玩家行为核心体验
+</h3><p>在《梦幻消除战》中，最底层的核心循环发生在<strong>棋盘</strong>上：</p>
+<p>玩家点击母棋消耗体力或是等待自动充能型母棋冷却时间归零，就能生成一个基础物品，手动拖拽两个相同的物品叠放将会获得更高级物品，不断重复这一操作，直到合成出订单所需的目标高阶物品。</p>
+<p>而模拟经营层面，循环的核心发生在<strong>订单</strong>部分：</p>
+<p>玩家完成订单交付物品，将获得铜钱资源，铜钱连接了解锁主线剧情、修复建筑、购买好感度物品、完成活动等多个维度，随着玩家的成长，玩家将获得新的母棋、合成目标，回归棋盘上的合成操作。</p>
+<p>更长线的循环来自于玩家的<strong>成长</strong>，包括：</p>
+<p>不断扩张的茶楼建筑区域，而永远都还有新的区域等待玩家探索；等待玩家挖掘的主线剧情中的故事真相；玩家需要进行决策如何在有限空间的棋盘上放置哪些棋子，哪些订单应当舍弃。</p>
+<p>这些层面环环相扣，玩家能够知道自己的每一次点击都有明确的目的，每一步操作都有可见的回馈，玩家注意力持续投入游戏中，玩家不断地进行判断，形成自己的布局，最终在游戏中找到意义感，对游戏产生较高粘性。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E6%A0%B8%E5%BF%83%E4%BD%93%E9%AA%8C.%E7%8E%A9%E5%AE%B6%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B%E5%9B%BE.png"
+	width="450"
+	height="311"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E6%A0%B8%E5%BF%83%E4%BD%93%E9%AA%8C.%E7%8E%A9%E5%AE%B6%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B%E5%9B%BE_hu6922992795936208878.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B8%B8%E6%88%8F%E6%A6%82%E8%BF%B0.%E6%A0%B8%E5%BF%83%E4%BD%93%E9%AA%8C.%E7%8E%A9%E5%AE%B6%E4%BD%93%E9%AA%8C%E6%B5%81%E7%A8%8B%E5%9B%BE_hu1448681652144468319.png 1024w"
+	loading="lazy"
+	
+		alt="玩家体验流程图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="144"
+		data-flex-basis="347px"
+	
+></p>
+<p><a id="二、UI与交互系统"></a></p>
+<h2 id="二ui与交互系统">二、UI与交互系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位">（一）系统定位
+</h3><p>UI与交互系统是《梦幻消除战》中各个模块系统的<strong>入口</strong>，承担了信息传达、操作引导与情感反馈三大功能，涉及玩家最直观的游戏体验。</p>
+<p>UI与交互系统包含整体UI框架、新手引导及交互反馈三个部分，三者形成循环：</p>
+<p>清晰的UI框架决定了界面的布局逻辑与功能分区，为玩家提供清晰的认知；新手引导帮助玩家快速理解核心玩法，同时配合交互反馈，给玩家解压与爽快体验；每一次点击、拖拽、合成与交付都给予玩家多维正反馈，让玩家对UI框架产生认同与依赖，愿意持续留在游戏中。</p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的">（二）设计目的
+</h3><p>1.<strong>降低学习成本</strong>：界面采用三区布局，顶部的信息区集中展示玩家现有资源，中部的场景区呈现茶楼的成长状态，底部的功能入口用图标代替文字，可视化设计能够在尽量少依赖文字说明的前提下，通过界面布局与视觉引导让不常玩游戏的玩家、非硬核玩家也能快速上手游戏。</p>
+<p>2.<strong>成长可视化</strong>：数值成长具象化为等级进度条、不断扩展的茶楼场景、陆续出现的新功能入口，玩家不需要查看任何数据面板，就能感知到自己在游戏中又更强了一点。</p>
+<p>3.<strong>强化操作正反馈</strong>：游戏将简单的二合操作每个细节都进行了多维感官处理，合成特效、震动反馈、幸运字幕，对玩家来说都是一个惊喜的奖励事件，使玩家在重复性操作中依然能持续获得愉悦感。</p>
+<p>4.<strong>控制内容投放节奏</strong>：UI系统通过等级解锁机制控制各功能入口的显示时机，新手阶段主界面简洁明了，仅展示核心操作入口，随着等级提升，活动图标、任务系统、情缘系统逐步投放，既能给新玩家充分的适应时间，也能为老玩家带来长期的新鲜感与期待感。</p>
+<p><a id="（三）整体UI框架"></a></p>
+<h3 id="三整体ui框架">（三）整体UI框架
+</h3><p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%95%B4%E4%BD%93UI%E6%A1%86%E6%9E%B6.%E6%95%B4%E4%BD%93%E7%95%8C%E9%9D%A2.jpg"
+	width="1000"
+	height="931"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%95%B4%E4%BD%93UI%E6%A1%86%E6%9E%B6.%E6%95%B4%E4%BD%93%E7%95%8C%E9%9D%A2_hu13999152055091842775.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%95%B4%E4%BD%93UI%E6%A1%86%E6%9E%B6.%E6%95%B4%E4%BD%93%E7%95%8C%E9%9D%A2_hu9339555352482061913.jpg 1024w"
+	loading="lazy"
+	
+		alt="整体界面"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="107"
+		data-flex-basis="257px"
+	
+></p>
+<p>1.<strong>顶部信息区</strong>：位于屏幕最上方，展示玩家的核心资源与成长状态，包括<strong>茶楼等级</strong>、<strong>体力值</strong>、<strong>铜钱数量</strong>、<strong>宝石数量</strong>。右上角则设有菜单入口，点击后可进行音乐设置、订阅管理，以及收取官方发送的活动奖励补发、系统公告相关邮件、进行兑换码奖励等操作。</p>
+<p>2.<strong>中部场景区</strong>：占据屏幕最大的视觉空间，展示茶楼建筑<strong>建设</strong>状态以及<strong>主线剧情</strong>推进入口，两侧用于挂载<strong>活动入口</strong>。玩家能够实时查看已解锁区域并预览未解锁区域，强化玩家成就感同时提供明确的目标。且玩家可通过长按建筑进行选择替换茶楼风格，玩家拥有一定的选择权与自主权。活动列表每个入口配以活动倒计时，给玩家紧迫感。</p>
+<p>3.<strong>底部功能入口区</strong>：</p>
+<p>底部功能区以横向分布，包括：</p>
+<p>(1)<strong>剧情入口</strong>：当玩家积攒到能够开启下一节剧情的铜钱时，按钮右上方出现红色感叹号，提示玩家点击推进故事。</p>
+<p>(2)<strong>合成入口</strong>：点击后进入合成棋盘界面，棋盘界面分为上下两大部分，上方为顾客订单区和活动展示区，下方为棋盘，可进行二合操作。</p>
+<p>(3)其它功能入口：<strong>情缘系统</strong>、<strong>自宅装扮</strong>等入口，横向分布在底部，以相应图标呈现，减轻玩家文字阅读负担。</p>
+<p><a id="（四）新手引导"></a></p>
+<h3 id="四新手引导">（四）新手引导
+</h3><p>《梦幻消除战》的新手引导可分为<strong>三个阶段</strong>：</p>
+<p>第一阶段：<strong>合成玩法教学</strong></p>
+<p>玩家进入游戏后，游戏通过简短文字和动画引导玩家在10s内完成第一次固定合成操作，并获得首笔铜钱奖励。完成基础教学后，游戏指引玩家回到主场景界面，使用铜钱推进主线剧情，过渡到第二阶段。</p>
+<p>第二阶段：<strong>剧情背景引入</strong></p>
+<p>游戏选用倒叙手法的重生题材，帮助玩家快速了解故事背景，剧情开场即设下悬念，吸引玩家继续推进剧情，并在这个阶段玩家将知晓游戏规则：想要继续解锁剧情，玩家就需要进行合成、完成订单、收集铜钱。</p>
+<p>第三阶段：<strong>经营玩法详细引入</strong></p>
+<p>在这一阶段，游戏逐步展示完整生态：</p>
+<p>i.茶楼等级系统：随着剧情解锁，玩家获得经验值与升级奖励，这些奖励作用于棋盘上的棋子，帮助玩家更快地获得铜钱资源。</p>
+<p>ii.装修玩法：玩家在解锁剧情途中将逐步解锁新区域，并可自主选择茶楼风格，满足个性化需求。</p>
+<p>iii.活动玩法：随着等级的提升，玩家将解锁更丰富的活动玩法、日活打卡激励、情缘好感系统等要素，这些系统共同推动玩家回到棋盘页面进行合成、完成订单、收集铜钱，形成玩法上的循环。</p>
+<p>在新手引导阶段（6级之前），经验值曲线如下：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>茶楼等级</th>
+          <th>所需经验值</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>45</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>60</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>75</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>75</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>90</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>可以看到，玩家只需收集总计<strong>375经验值</strong>，消耗金币推进<strong>375÷15=25次剧情</strong>，即可接触到完整的活动体系。这样的设计尽量保证了玩家在进入玩家的<strong>第一天</strong>即可新手期毕业，体验到完整的游戏生态。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC.jpg"
+	width="1200"
+	height="858"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC_hu13209068812800367814.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%96%B0%E6%89%8B%E5%BC%95%E5%AF%BC_hu13047875672567266502.jpg 1024w"
+	loading="lazy"
+	
+		alt="新手引导"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="139"
+		data-flex-basis="335px"
+	
+></p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%95%B4%E4%BD%93UI%E6%A1%86%E6%9E%B6.%E5%86%85%E5%AE%B9%E6%8A%95%E6%94%BE.jpg"
+	width="1600"
+	height="688"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%95%B4%E4%BD%93UI%E6%A1%86%E6%9E%B6.%E5%86%85%E5%AE%B9%E6%8A%95%E6%94%BE_hu1105507418351177662.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E6%95%B4%E4%BD%93UI%E6%A1%86%E6%9E%B6.%E5%86%85%E5%AE%B9%E6%8A%95%E6%94%BE_hu925998910872728506.jpg 1024w"
+	loading="lazy"
+	
+		alt="内容投放"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="558px"
+	
+></p>
+<p><a id="（五）交互反馈"></a></p>
+<h3 id="五交互反馈">（五）交互反馈
+</h3><p>1.<strong>基本操作</strong>：</p>
+<ul>
+<li>母棋标识：母棋的右下角将带有<strong>体力图标</strong>，区分了母棋和产物的基础上，也提示玩家，母棋需要消耗体力才可使用。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E6%AF%8D%E6%A3%8B%E6%A0%87%E8%AF%86.png"
+	width="250"
+	height="241"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E6%AF%8D%E6%A3%8B%E6%A0%87%E8%AF%86_hu11129209235855160531.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E6%AF%8D%E6%A3%8B%E6%A0%87%E8%AF%86_hu6831557438580204170.png 1024w"
+	loading="lazy"
+	
+		alt="母棋能量标识"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="103"
+		data-flex-basis="248px"
+	
+></p>
+<ul>
+<li>物品选中：物品被选中时，四角将出现<strong>框选图标</strong>，提示玩家此物品已选中。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E7%89%A9%E5%93%81%E9%80%89%E4%B8%AD.png"
+	width="250"
+	height="255"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E7%89%A9%E5%93%81%E9%80%89%E4%B8%AD_hu7439857226406889345.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E7%89%A9%E5%93%81%E9%80%89%E4%B8%AD_hu9814233341695934468.png 1024w"
+	loading="lazy"
+	
+		alt="物品选中"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="98"
+		data-flex-basis="235px"
+	
+></p>
+<ul>
+<li>拖拽与吸附：当玩家拖拽一个物品靠近另一个相同物品时，目标物品周边将有光圈亮起，松手后物品自动吸附，给玩家直观视觉效果。而不满足合成条件的两个物品，如果拖动到对应位置，则会交换位置。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E5%90%B8%E9%99%84%E5%85%89%E5%9C%88%E7%89%B9%E6%95%88.png"
+	width="250"
+	height="235"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E5%90%B8%E9%99%84%E5%85%89%E5%9C%88%E7%89%B9%E6%95%88_hu1384043259026259905.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E5%90%B8%E9%99%84%E5%85%89%E5%9C%88%E7%89%B9%E6%95%88_hu4731892383299955361.png 1024w"
+	loading="lazy"
+	
+		alt="吸附光圈特效"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="106"
+		data-flex-basis="255px"
+	
+></p>
+<ul>
+<li>
+<p>合成瞬间：物品成功合成时，触发缩放动画与粒子特效，新合成的物品周边伴有星星特效，给玩家正反馈效果。</p>
+</li>
+<li>
+<p>幸运物品：越高等级的母棋有更高概率生成高等级物品，当生成高等级物品时，将触发礼包特效并伴以“幸运”字幕。</p>
+</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E5%B9%B8%E8%BF%90%E7%89%A9%E5%93%81.png"
+	width="250"
+	height="288"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E5%B9%B8%E8%BF%90%E7%89%A9%E5%93%81_hu3343672250148135072.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E5%B9%B8%E8%BF%90%E7%89%A9%E5%93%81_hu16834125226952483765.png 1024w"
+	loading="lazy"
+	
+		alt="幸运物品"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="86"
+		data-flex-basis="208px"
+	
+></p>
+<p>2.<strong>订单完成与交付</strong>：</p>
+<ul>
+<li>订单完成提示：订单当合成物品符合订单要求时，物品右下角出现<strong>对勾标记</strong>；当物品完全符合订单要求时，对应物品背景变红，并且订单部分对应位置显示“完成”按钮，角色表情变化，视觉上提示玩家已有订单满足条件，可提交。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E8%AE%A2%E5%8D%95%E5%AE%8C%E6%88%90%E6%8F%90%E7%A4%BA.jpg"
+	width="500"
+	height="1093"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E8%AE%A2%E5%8D%95%E5%AE%8C%E6%88%90%E6%8F%90%E7%A4%BA_hu2179379396359910037.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E8%AE%A2%E5%8D%95%E5%AE%8C%E6%88%90%E6%8F%90%E7%A4%BA_hu3574601782361714715.jpg 1024w"
+	loading="lazy"
+	
+		alt="订单完成提示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<ul>
+<li>订单交付：交付订单后，符合条件的物品被吸附到对应订单位置，订单栏向下一段位移并淡化消失，铜钱数量及活动物品播放动画跳动增加，右侧未完成交付的订单左移补位。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E8%AE%A2%E5%8D%95%E4%BA%A4%E4%BB%98.jpg"
+	width="500"
+	height="1090"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E8%AE%A2%E5%8D%95%E4%BA%A4%E4%BB%98_hu15146744638988824180.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BA%92%E5%8F%8D%E9%A6%88.%E8%AE%A2%E5%8D%95%E4%BA%A4%E4%BB%98_hu14405909008314136878.jpg 1024w"
+	loading="lazy"
+	
+		alt="订单交付"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="110px"
+	
+></p>
+<p>3.<strong>等级提升</strong>：</p>
+<ul>
+<li>当玩家通过解锁剧情获得足够经验值后，触发等级提升事件，并伴以全屏庆祝特效、等级奖励宝箱弹出、新功能/区域解锁提示，给玩家足够的视觉反馈效果。</li>
+</ul>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BB%98%E5%8F%8D%E9%A6%88.%E7%AD%89%E7%BA%A7%E6%8F%90%E5%8D%87.jpg"
+	width="800"
+	height="855"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BB%98%E5%8F%8D%E9%A6%88.%E7%AD%89%E7%BA%A7%E6%8F%90%E5%8D%87_hu9468057541451415526.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.UI%E4%B8%8E%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F.%E4%BA%A4%E4%BB%98%E5%8F%8D%E9%A6%88.%E7%AD%89%E7%BA%A7%E6%8F%90%E5%8D%87_hu13153830942578431731.jpg 1024w"
+	loading="lazy"
+	
+		alt="等级提升"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="224px"
+	
+></p>
+<p><a id="三、养成系统"></a></p>
+<h2 id="三养成系统">三、养成系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位-1">（一）系统定位
+</h3><p>养成系统是《梦幻消除战》中支撑玩家长线成长的核心底层系统，<strong>贯穿合成、经营、剧情三大玩法模块</strong>，囊括棋盘空间资源、二合玩法、经济资源、等级成长、要素收集。通过茶楼等级的成长体系，断解锁新功能、新区域与新内容。在养成的过程中，除数值成长、规模扩大带给玩家的爽感外，更包括了游戏意义，每一次合成消耗的体力、每一份交付的订单，玩家的每一次点击都有意义。</p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的-1">（二）设计目的
+</h3><p>1.<strong>反馈机制</strong>：为玩家提供阶段性正反馈，并提供清晰的成长路线。</p>
+<p>“将两个物品合成为一个更高等级的物品”游戏机制本身重复性高，且不具备太多的衍生玩法，玩家在重复性工作中容易感到倦怠，而养成系统将行为赋予意义，玩家的合成物品交付订单操作指向的是等级提升、区域解锁、要素收集等多个目的明确的事件，玩家的操作行为与成长结果绑定。</p>
+<p>2.<strong>剧情锁机制</strong>：通过等级解锁游戏功能内容，控制投放节奏。</p>
+<p>游戏将主线剧情以章为单位划分，每章固定11节，每节剧情推进需要消耗一定数量的铜钱。这样的设计控制了玩家获得新内容的节奏，防止玩家在短期内消耗完所有可玩内容，也给予玩家充分的缓冲时间，在每个新功能解锁前熟悉当前已有的玩法，避免信息过载。</p>
+<p>3.<strong>个性化机制</strong>：通过茶楼装扮、角色装扮的收集与升级，满足玩家的收集欲与个性化表达需求。</p>
+<p>随着剧情解锁，玩家可在游戏提供的上百款唐宋风格家具与装饰中进行选择搭配，搭建出属于自己风格的经营建筑。</p>
+<p>4.<strong>沉没成本心理</strong>：持续驱动玩家参与日活与留存。</p>
+<p>游戏以强叙事驱动，然而养成系统玩家能够直观看到茶楼从一间简陋小铺逐步拓张为带有后厨、庭院、雅间的大型建筑，玩家开启的区域越多，建筑越繁华，放弃的心理门槛就越高。配合休闲玩法和每日签到、限时活动等运营手段的激励，玩家将逐渐养成“只是点进去玩两分钟”的习惯，不断投入到游戏内容中。</p>
+<p><a id="（三）棋盘资源"></a></p>
+<h3 id="三棋盘资源">（三）棋盘资源
+</h3><p><a id="棋盘"></a></p>
+<h4 id="棋盘">棋盘
+</h4><p>游戏中的主棋盘为9行×7列（9R×7C）的固定大小网格，每种棋子均只占据1格位置。在实际游戏中，玩家通常需要同时处理3-5条不同的合成链，9×7=63格的空间基本能够容纳多种合成链并行推进，又不会因棋盘太大而造成视觉上的干扰。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E6%A3%8B%E7%9B%98.png"
+	width="1000"
+	height="904"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E6%A3%8B%E7%9B%98_hu2381311747601514023.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E6%A3%8B%E7%9B%98_hu13470258957579807409.png 1024w"
+	loading="lazy"
+	
+		alt="棋盘"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="110"
+		data-flex-basis="265px"
+	
+></p>
+<p><a id="棋子"></a></p>
+<h4 id="棋子">棋子
+</h4><p>1.<strong>母棋</strong></p>
+<p>(1)描述：母棋是游戏合成系统中的核心产出单位，也是棋盘玩法的基础。</p>
+<p>(2)特点：</p>
+<p>i.母棋等级培养：母棋可进行升级培养，培养过程同样符合二合玩法，两个低等级母棋可合成更高一级的母棋，高等级的母棋有更高概率产出高等级子棋和副产品产出概率。</p>
+<p>ii.母棋类型：母棋分为两种类型，主动生成型和自动充能型。</p>
+<p><strong>主动生成型</strong>母棋需要玩家主动点击操作才能生成，具有短CD特点，是游戏中大多母棋类型，保证玩家在有体力时随时有操作可做，保持参与感。</p>
+<p><strong>自动充能型</strong>母棋随时间自动充能，到时间后自动生成产物子棋。若以母棋为圆心，周围8格已被其它棋子占满，生成的子棋尚未被完全取走，则无法生成新的子棋，母棋不会进入下一轮冷却和充能。自动充能型母棋节省玩家体力资源的同时，要求玩家规划母棋周围的空间，此外，此机制制造等待预期，培养玩家到点就进入游戏拿取收获的习惯。</p>
+<p>(3)获取途径：商城、升级奖励宝箱、活动奖励。</p>
+<p>(4)类型：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>母棋</th>
+          <th>最高等级</th>
+          <th>类型</th>
+          <th>主产品</th>
+          <th>副产品</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>食篓</td>
+          <td>11级</td>
+          <td>食物</td>
+          <td>糕点（最高15级）</td>
+          <td>水果（最高7级）</td>
+      </tr>
+      <tr>
+          <td>茶壶</td>
+          <td>11级</td>
+          <td>饮品</td>
+          <td>茶水（最高15级）</td>
+          <td>甜品（最高7级）</td>
+      </tr>
+      <tr>
+          <td>纺车</td>
+          <td>11级</td>
+          <td>布料</td>
+          <td>布匹（最高5级）</td>
+          <td>背包（最高10级）</td>
+      </tr>
+      <tr>
+          <td>妆奁</td>
+          <td>11级</td>
+          <td>装饰</td>
+          <td>饰品（最高15级）</td>
+          <td>玉石（最高7级）</td>
+      </tr>
+      <tr>
+          <td>手作盒</td>
+          <td>11级</td>
+          <td>灯笼</td>
+          <td>灯笼（最高12级）</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>鸡舍</td>
+          <td>10级</td>
+          <td>食品</td>
+          <td>鸡蛋（最高7级）</td>
+          <td>/</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E6%A3%8B%E5%AD%90.jpg"
+	width="1000"
+	height="1085"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E6%A3%8B%E5%AD%90_hu9651103977144047859.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E6%A3%8B%E5%AD%90_hu1993316872279897595.jpg 1024w"
+	loading="lazy"
+	
+		alt="棋子产物"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="92"
+		data-flex-basis="221px"
+	
+></p>
+<p>2.<strong>子棋</strong></p>
+<p>(1)描述：子棋由母棋产生，子棋分为主产品和副产品两种。</p>
+<p>(2)特点：</p>
+<p>i.<strong>随机要素</strong>：二合机制本身数据透明，玩家理论上可以精确算出合成某个订单物品所需消耗的体力值，游戏引进的副产品要素则具有概率性，每次点击母棋，有一定概率生成的是副产品，而不是像主产品一定生成，随机性能够给玩家带来不可预测性，使玩法更复杂。</p>
+<p>ii.<strong>合成链设计</strong>：同一合成链内，低阶物品图案趋于简洁，高阶物品图案更丰富细致，且具有等级更高的物品大小更大的特点。这让视觉区隔尽可能明显，不会跨类混淆。</p>
+<p>iii.<strong>冰冻棋子</strong>：在订单中出现了10级及10级以上物品需求时（若手搓基本需要耗费2^9以上体力），游戏机制上设计了冰冻棋子来给玩家行为助力，冰冻棋子可与普通棋子合成为高一等级的棋子，大幅减少玩家体力消耗量。其判定规则为，当需求订单中有10级以上物品，棋盘中没有比需求物品低1级或是同级物品，当天早上8点之后消费了宝石购买体力，当前体力50以下，与上次触发冰冻棋子间隔8小时以上，则可触发冰冻棋子。游戏通过这样的固定机制，也促使玩家关注游戏机制触发冰冻棋子，提高日活与留存。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E5%86%B0%E5%86%BB%E6%A3%8B%E5%AD%90.jpg"
+	width="500"
+	height="1092"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E5%86%B0%E5%86%BB%E6%A3%8B%E5%AD%90_hu14077287475709528428.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E5%86%B0%E5%86%BB%E6%A3%8B%E5%AD%90_hu14163996398154786248.jpg 1024w"
+	loading="lazy"
+	
+		alt="冰冻棋子"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<p>(3)获取途径：母棋、商城、物品宝箱、活动奖励。</p>
+<p><a id="仓库"></a></p>
+<h4 id="仓库">仓库
+</h4><p>(1)描述：仓库是棋盘以外的物品存放空间，分为可<strong>主动操作的临时仓库</strong>和<strong>被动开启的溢出暂存仓库</strong>，临时仓库可用于存储暂时不需要的棋子和物品，溢出暂存仓库在棋盘已满时收到活动任务奖励时开启。</p>
+<p>(2)特点：</p>
+<p>i.<strong>容错设计</strong>：仓库容许玩家暂存一些棋子和物品，方便玩家更轻松地管理棋盘，给予了玩家一定的容错空间，以维持合成链的顺利运转。而仓库格数增多，玩家的存储压力能够得到缓解，但始终无法达到无限囤货的程度，玩家始终需要进行“当下应当交付什么订单”的抉择，确保游戏策略深度。</p>
+<p>ii.<strong>付费拓展窗口</strong>：仓库格数受到严格限制，初始值默认为5，玩家想要给仓库扩容，只能通过消耗宝石（每扩容一格需要更多宝石）或参与邀请好友活动，在扩容设计上，玩家可以选择付费，也可以选择邀请好友的社交行为逐步解锁，两者都需要投入一定的成本，能够为游戏的长线运营带来付费或拉新价值。</p>
+<p>(3)获取途径：仓库功能随玩家等级解锁。</p>
+<p>(4)类型：</p>
+<p>游戏中仓库分为两种类型：</p>
+<p>i.临时仓库：临时仓库位于棋盘页面左下角，仓库格数有限，玩家可以通过消耗宝石资源和参与邀请好友活动，逐步解锁仓库格数，除此之外，无法通过其它方式给临时仓库扩容。</p>
+<p>ii.溢出暂存仓库：当棋盘已满时，通过特殊订单、奖励任务获得的奖励将临时存放在界面上半部分的<strong>一个单独格子</strong>中。此格子只能提取、无法存入，玩家在清理出棋盘空间后，可逐个将暂存物品释放到棋盘上。保证玩家不会因棋盘满溢而丢失物品道具奖励的同时，也避免了玩家利用暂存仓库大量囤货，以规避棋盘空间管理的策略挑战。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E4%BB%93%E5%BA%93.jpg"
+	width="1000"
+	height="1060"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E4%BB%93%E5%BA%93_hu14352175153882003964.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E7%9B%98%E8%B5%84%E6%BA%90.%E4%BB%93%E5%BA%93_hu727309119751976660.jpg 1024w"
+	loading="lazy"
+	
+		alt="仓库"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="94"
+		data-flex-basis="226px"
+	
+></p>
+<p><a id="（四）经济资源"></a></p>
+<h3 id="四经济资源">（四）经济资源
+</h3><p><a id="体力"></a></p>
+<h4 id="体力">体力
+</h4><p>(1)描述：体力是限制玩家合成次数的资源，玩家每次点击母棋生成棋子都需要耗费体力值才能够完成。玩家默认的体力值上限为100。游戏中有体力瓶棋子的存在，可长期存储，使用时才转化为玩家持有的体力值，具备合成功能，最高5级。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>资源名称</th>
+          <th>等级</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>褐色体力葫</td>
+          <td>1</td>
+          <td>使用后获得2点体力</td>
+      </tr>
+      <tr>
+          <td>碧绿体力葫</td>
+          <td>2</td>
+          <td>使用后获得6点体力</td>
+      </tr>
+      <tr>
+          <td>靛蓝体力葫</td>
+          <td>3</td>
+          <td>使用后获得15点体力</td>
+      </tr>
+      <tr>
+          <td>丹曦体力葫</td>
+          <td>4</td>
+          <td>使用后获得40点体力</td>
+      </tr>
+      <tr>
+          <td>赤霞体力葫</td>
+          <td>5</td>
+          <td>使用后获得100点体力</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E4%BD%93%E5%8A%9B%E8%91%AB%E6%A3%8B%E5%AD%90.jpg"
+	width="250"
+	height="255"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E4%BD%93%E5%8A%9B%E8%91%AB%E6%A3%8B%E5%AD%90_hu1282440503761888310.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E4%BD%93%E5%8A%9B%E8%91%AB%E6%A3%8B%E5%AD%90_hu1314495426474264732.jpg 1024w"
+	loading="lazy"
+	
+		alt="体力葫"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="98"
+		data-flex-basis="235px"
+	
+></p>
+<p>(2)特点：</p>
+<p>i.<strong>控制内容节奏</strong>：玩家每日能获得的体力数量一定程度上来说有限，控制玩家的养成节奏。</p>
+<p>ii.<strong>内购途径</strong>：想要获得更多体力的玩家也可以通过宝石资源来购买体力，进行更多的合成操作。</p>
+<p>iii.<strong>倍率解压</strong>：随着玩家等级上升至15级，可解锁倍率功能，生产棋子的基础消耗体力数增多，但生产的棋子等级也会额外提高，玩家不用在从初始1级的低等级物品一级级合成，而是可以体验到更快合成出高等级物品的爽感。这样的设计在给予玩家解压途径外，也促使玩家不断提升等级解锁游戏内容，以获得更完善的功能。</p>
+<p>(3)获取途径：</p>
+<p>i.<strong>自然恢复</strong>：每2分钟回复1点体力，若体力超过100（含100），则暂停恢复。从0回满所有体力值大约需要200 分钟（3小时20分钟），推动玩家短时高频上线，每次登录只做一点事，保证玩家舒适度，在休息一段时间后回到游戏能够看到体力恢复，给玩家正面的心理预期，即便等待也不是一种浪费。</p>
+<p>ii.<strong>商店每日免费宝箱</strong>：玩家每天早上8点后可在商店免费领取一个钱袋道具，道具可概率生成不同等级的体力瓶。</p>
+<p>iii.<strong>体力炉道具</strong>：玩家玩家每天早上8点后可在商店花费10宝石购买一个钱袋道具，道具可概率生成不同等级的体力瓶。</p>
+<p>iv.<strong>宝石购买</strong>：玩家可在体力界面消耗红宝石直接购买体力，每次购买体力需要的宝石数量都会在原有基础上×2，基数从10开始。</p>
+<p>v.<strong>观看广告</strong>：玩家可在体力界面观看广告获取体力，每日至多5次。</p>
+<p>vi.<strong>活动奖励</strong>：各类限时活动与签到奖励。</p>
+<p><a id="铜钱"></a></p>
+<h4 id="铜钱">铜钱
+</h4><p>(1)描述：游戏中的流通货币，完成订单是获得铜钱的主要方式。游戏中有铜钱棋子的存在，具备合成功能，最高5级。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>资源名称</th>
+          <th>等级</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>些许铜钱</td>
+          <td>1</td>
+          <td>使用后获得2枚铜钱</td>
+      </tr>
+      <tr>
+          <td>少许铜钱</td>
+          <td>2</td>
+          <td>使用后获得6枚铜钱</td>
+      </tr>
+      <tr>
+          <td>三五铜钱</td>
+          <td>3</td>
+          <td>使用后获得14枚铜钱</td>
+      </tr>
+      <tr>
+          <td>一贯铜钱</td>
+          <td>4</td>
+          <td>使用后获得30枚铜钱</td>
+      </tr>
+      <tr>
+          <td>斗量铜钱</td>
+          <td>5</td>
+          <td>使用后获得65枚铜钱</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E9%93%9C%E9%92%B1%E6%A3%8B%E5%AD%90.jpg"
+	width="250"
+	height="257"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E9%93%9C%E9%92%B1%E6%A3%8B%E5%AD%90_hu1481020071620827713.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E9%93%9C%E9%92%B1%E6%A3%8B%E5%AD%90_hu13661754819236132724.jpg 1024w"
+	loading="lazy"
+	
+		alt="铜钱"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="97"
+		data-flex-basis="233px"
+	
+></p>
+<p>(2)特点：</p>
+<p>i.<strong>控制内容节奏</strong>：铜钱既是推进主线剧情的唯一资源道具，同样也限制玩家解锁主线剧情的节奏，每一章剧情的解锁都需要消耗特定数量的铜钱，铜钱数量决定了玩家当天能够推进多少故事，推动玩家回到经营环节去赚取铜钱。</p>
+<p>ii.<strong>连接好感度系统</strong>：玩家每天可消耗铜钱资源购买礼品，赠送可攻略Npc获取好感度。</p>
+<p>(3)获取途径：</p>
+<p>i.<strong>交付订单</strong>：交付订单即可获得对应的铜钱资源。</p>
+<p>ii.<strong>合成奖励</strong>：合成物品时，有一定概率产生铜钱棋子，铜钱棋子可进行合成。</p>
+<p>iii.<strong>升级奖励</strong>：等级提升时，将获得宝箱奖励，宝箱中有一定概率概率生成不同等级的铜钱棋子。</p>
+<p>iv.<strong>商店每日免费宝箱</strong>：玩家每天早上8点后可在商店免费领取一个钱袋道具，道具可概率生成不同等级的铜钱棋子。通过下表可以看到，游戏鼓励玩家将每日获取的钱袋道具积攒以合成更高级的钱袋道具获得更好的奖励：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>资源名称</th>
+          <th>宝箱内容</th>
+          <th>获取途径</th>
+          <th>产生棋子数</th>
+          <th>产生棋子1</th>
+          <th>概率</th>
+          <th>产生棋子2</th>
+          <th>概率</th>
+          <th>产生棋子3</th>
+          <th>概率</th>
+          <th>产生棋子4</th>
+          <th>概率</th>
+          <th>产生棋子5</th>
+          <th>概率</th>
+          <th>产生棋子6</th>
+          <th>概率</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>子钱袋</td>
+          <td>铜币+体力</td>
+          <td>每日商城免费领取子钱袋</td>
+          <td>5</td>
+          <td>些许铜钱</td>
+          <td>40%</td>
+          <td>褐色体力葫</td>
+          <td>60%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>百文袋</td>
+          <td>铜币+体力</td>
+          <td>每日商城免费领取2子钱袋合成获得</td>
+          <td>11</td>
+          <td>些许铜钱</td>
+          <td>36.3%</td>
+          <td>褐色体力葫</td>
+          <td>45.7%</td>
+          <td>少许铜钱</td>
+          <td>9%</td>
+          <td>碧绿体力葫</td>
+          <td>9%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>万贯袋</td>
+          <td>铜币+体力</td>
+          <td>每日商城免费领取4子钱袋合成获得</td>
+          <td>23</td>
+          <td>些许铜钱</td>
+          <td>34.9%</td>
+          <td>褐色体力葫</td>
+          <td>34.8%</td>
+          <td>少许铜钱</td>
+          <td>13%</td>
+          <td>碧绿体力葫</td>
+          <td>8.7%</td>
+          <td>三五铜钱</td>
+          <td>4.3%</td>
+          <td>靛蓝体力葫</td>
+          <td>4.3%</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>v.<strong>聚财童子道具</strong>：玩家玩家每天早上8点后可在商店花费25宝石购买一个聚财童子道具，道具可概率生成不同等级的铜钱棋子。</p>
+<p>vi.<strong>活动奖励</strong>：各类限时活动与签到奖励。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>资源名称</th>
+          <th>宝箱内容</th>
+          <th>获取途径</th>
+          <th>产生棋子数</th>
+          <th>产生棋子1</th>
+          <th>概率</th>
+          <th>产生棋子2</th>
+          <th>概率</th>
+          <th>产生棋子3</th>
+          <th>概率</th>
+          <th>产生棋子4</th>
+          <th>概率</th>
+          <th>产生棋子5</th>
+          <th>概率</th>
+          <th>产生棋子6</th>
+          <th>概率</th>
+          <th>产生棋子7</th>
+          <th>概率</th>
+          <th>产生棋子8</th>
+          <th>概率</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>丝竹匣</td>
+          <td>铜币+体力</td>
+          <td>活动获取</td>
+          <td>6</td>
+          <td>些许铜钱</td>
+          <td>50%</td>
+          <td>褐色体力葫</td>
+          <td>50%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>错金匣</td>
+          <td>铜币+体力+宝石</td>
+          <td>活动获取，由2丝竹匣合成获得</td>
+          <td>10</td>
+          <td>些许铜钱</td>
+          <td>30%</td>
+          <td>褐色体力葫</td>
+          <td>20%</td>
+          <td>少许铜钱</td>
+          <td>10%</td>
+          <td>碧绿体力葫</td>
+          <td>20%</td>
+          <td>一颗红宝石</td>
+          <td>10%</td>
+          <td>少许红宝石</td>
+          <td>10%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>檀木宝匣</td>
+          <td>铜币+体力+宝石</td>
+          <td>活动获取，由4丝竹匣合成获得</td>
+          <td>15</td>
+          <td>些许铜钱</td>
+          <td>20%</td>
+          <td>褐色体力葫</td>
+          <td>19.9%</td>
+          <td>少许铜钱</td>
+          <td>13.3%</td>
+          <td>碧绿体力葫</td>
+          <td>20%</td>
+          <td>三五铜钱</td>
+          <td>6.7%</td>
+          <td>靛蓝体力葫</td>
+          <td>6.7%</td>
+          <td>少许红宝石</td>
+          <td>6.7%</td>
+          <td>一堆红宝石</td>
+          <td>6.7%</td>
+      </tr>
+      <tr>
+          <td>木制宝匣</td>
+          <td>铜币+体力</td>
+          <td>活动获取，最高等级1</td>
+          <td>6</td>
+          <td>些许铜钱</td>
+          <td>37.5%</td>
+          <td>褐色体力葫</td>
+          <td>37.5%</td>
+          <td>少许铜钱</td>
+          <td>12.5%</td>
+          <td>碧绿体力葫</td>
+          <td>12.5%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="宝石"></a></p>
+<h4 id="宝石">宝石
+</h4><p>(1)描述：宝石是游戏中的特殊货币，本质上用于绕过游戏中的各种限制，能够直接购买仓库格子、购买体力、加速母棋冷却时间等。游戏中有宝石棋子的存在，具备合成功能，最高4级。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>资源名称</th>
+          <th>等级</th>
+          <th>描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>一颗红宝石</td>
+          <td>1</td>
+          <td>使用后获得1颗红宝石</td>
+      </tr>
+      <tr>
+          <td>少许红宝石</td>
+          <td>2</td>
+          <td>使用后获得3颗红宝石</td>
+      </tr>
+      <tr>
+          <td>一堆红宝石</td>
+          <td>3</td>
+          <td>使用后获得7颗红宝石</td>
+      </tr>
+      <tr>
+          <td>斗量红宝石</td>
+          <td>4</td>
+          <td>使用后获得15颗红宝石</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E5%AE%9D%E7%9F%B3%E6%A3%8B%E5%AD%90.jpg"
+	width="250"
+	height="256"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E5%AE%9D%E7%9F%B3%E6%A3%8B%E5%AD%90_hu1019436708713927073.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E7%BB%8F%E6%B5%8E%E8%B5%84%E6%BA%90.%E5%AE%9D%E7%9F%B3%E6%A3%8B%E5%AD%90_hu14171779313457275454.jpg 1024w"
+	loading="lazy"
+	
+		alt="宝石"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="97"
+		data-flex-basis="234px"
+	
+></p>
+<p>(2)特点：</p>
+<p>i.<strong>付费途径</strong>：宝石是游戏付费变现的载体，它为玩家提供了捷径与特权体验，而对于0氪玩家而言，通过游戏内产出获取的少量宝石更像一张体验卡，让免费玩家尝到甜头，短暂体验付费的感觉，在体验结束后促使其在真正需要的时候进行充值。</p>
+<p>ii.<strong>连接好感度系统</strong>：玩家每天可消耗宝石资源购买礼品，赠送可攻略Npc获取好感度。</p>
+<p>(3)获取途径：</p>
+<p>i.<strong>商城充值或购买礼包</strong>。</p>
+<p>ii.<strong>升级奖励</strong>：等级提升时，将获得宝箱奖励，宝箱中有一定概率概率生成不同等级的宝石棋子。</p>
+<p>ii.<strong>活动奖励</strong>：各类限时活动与签到奖励。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>资源名称</th>
+          <th>宝箱内容</th>
+          <th>获取途径</th>
+          <th>产生棋子数</th>
+          <th>产生棋子1</th>
+          <th>概率</th>
+          <th>产生棋子2</th>
+          <th>概率</th>
+          <th>产生棋子3</th>
+          <th>概率</th>
+          <th>产生棋子4</th>
+          <th>概率</th>
+          <th>产生棋子5</th>
+          <th>概率</th>
+          <th>产生棋子6</th>
+          <th>概率</th>
+          <th>产生棋子7</th>
+          <th>概率</th>
+          <th>产生棋子8</th>
+          <th>概率</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>丝竹匣</td>
+          <td>铜币+体力</td>
+          <td>活动获取</td>
+          <td>6</td>
+          <td>些许铜钱</td>
+          <td>50%</td>
+          <td>褐色体力葫</td>
+          <td>50%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>错金匣</td>
+          <td>铜币+体力+宝石</td>
+          <td>活动获取，由2丝竹匣合成获得</td>
+          <td>10</td>
+          <td>些许铜钱</td>
+          <td>30%</td>
+          <td>褐色体力葫</td>
+          <td>20%</td>
+          <td>少许铜钱</td>
+          <td>10%</td>
+          <td>碧绿体力葫</td>
+          <td>20%</td>
+          <td>一颗红宝石</td>
+          <td>10%</td>
+          <td>少许红宝石</td>
+          <td>10%</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>檀木宝匣</td>
+          <td>铜币+体力+宝石</td>
+          <td>活动获取，由4丝竹匣合成获得</td>
+          <td>15</td>
+          <td>些许铜钱</td>
+          <td>20%</td>
+          <td>褐色体力葫</td>
+          <td>19.9%</td>
+          <td>少许铜钱</td>
+          <td>13.3%</td>
+          <td>碧绿体力葫</td>
+          <td>20%</td>
+          <td>三五铜钱</td>
+          <td>6.7%</td>
+          <td>靛蓝体力葫</td>
+          <td>6.7%</td>
+          <td>少许红宝石</td>
+          <td>6.7%</td>
+          <td>一堆红宝石</td>
+          <td>6.7%</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="（五）订单模块"></a></p>
+<h3 id="五订单模块">（五）订单模块
+</h3><p><a id="概述"></a></p>
+<h4 id="概述">概述
+</h4><p>(1)描述：订单交付界面位于棋盘界面上半部分，以横向列表形式排列，界面最多同时容纳8名顾客的订单，每份订单展示信息包括所需物品的图标、完成订单后可获得的铜钱数量、其它活动奖励物品的图标及数量。</p>
+<p>(2)特点：</p>
+<p>i.<strong>所需物品数量固定</strong>：每个订单中所需的物品数量至多为1，且不会重复。玩家无需考虑准备多少数量的额外数学计算问题，只需要合成出1份该物品即可提交。这样的机制降低了玩家的认知负担与操作复杂度，设计上来说更为直观。</p>
+<p>ii.<strong>无尽订单时间数量</strong>：游戏没有明确的关卡界限，订单需求无时间限制，且提交完一轮订单后系统会实时生成新的订单。此机制消除了玩家卡关的可能性，玩家不会因为当前关卡太难而无法继续游戏，玩家可以根据自身的合成效率与资源管理能力决定要交多少订单。</p>
+<p>iii.<strong>难度动态调整</strong>：顾客订单中所需物品的等级会根据玩家茶楼等级动态调整，确保挑战性始终与玩家能力相匹配。</p>
+<p>iv.<strong>多模块联动</strong>：8个订单构成中，6个为产出铜钱的常规订单，1个为产出好感度物品的特殊订单，1个为回收12级以上或顶级高级物品的隐藏订单（如顶级荷叶蒸鸡，当玩家棋盘中有2个对应物品时才触发）。此外，所有类型订单都链接于活动模块，符合条件的订单可获得猫头标志及活动物品奖励如卡牌包、副棋盘道具。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97.%E8%AE%A2%E5%8D%95%E4%BA%A4%E4%BB%98.png"
+	width="500"
+	height="1016"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97.%E8%AE%A2%E5%8D%95%E4%BA%A4%E4%BB%98_hu17118622074314355251.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97.%E8%AE%A2%E5%8D%95%E4%BA%A4%E4%BB%98_hu17502594572923938660.png 1024w"
+	loading="lazy"
+	
+		alt="订单交付"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="49"
+		data-flex-basis="118px"
+	
+></p>
+<p><a id="订单激励"></a></p>
+<h4 id="订单激励">订单激励
+</h4><p>(1)描述：游戏在基础订单系统之上叠加了多层激励子机制，保持玩家持续完成订单的动力，并引导玩家根据激励机制按照一定顺序完成订单，从而获得更丰厚的奖励。</p>
+<p>(2)特点：</p>
+<p>i.<strong>行为引导</strong>：玩家在知晓“完成订单才能获得铜钱资源”的基础上，增添策略性，促使玩家思考“先做哪一单更划算”“怎么利用激励叠加获取最大收益”，从而在重复性操作中产生策略乐趣。</p>
+<p>ii<strong>阶段性解锁</strong>：猫头收集从游戏早期即可参与，锦鲤活动在体力消耗达到一定数值后触发，灶神活动则需达到35级才解锁。新手不会因激励太繁杂而手忙脚乱，老手则有明确目标“我需要尽快升至多少级才能开启该激励”。</p>
+<p>iii.<strong>复合收益</strong>：多个激励系统可在同一时间段内并行触发。</p>
+<p>(3)类型：</p>
+<p>i.<strong>猫头收集激励</strong>：通过提交特定订单，玩家可以收集<strong>猫头</strong>。每个订单根据所需物品的等级给予1-2个猫头不等，每收集12个猫头后完成一轮任务，玩家可获得接下来订单所需物品的部分奖励，帮助玩家更快地完成当前卡住的订单，平滑游戏体验曲线。</p>
+<p>ii.<strong>锦鲤活动激励</strong>：当天（早上8点起）累计消耗约500体力后触发，触发后，玩家在一段时间内消耗体力生成物品均可获得所生产物品等级的分数，分数达到一定目标时，获得接下来订单所需物品的部分奖励。锦鲤分为三个阶段，分数要求逐级提升。</p>
+<p>iii.<strong>灶神活动激励</strong>：35级解锁，赚取到600铜钱后，将触发灶神模式效果，14小时为一个周期。每提交一个订单，可获得接下来订单所需物品的部分奖励，而赚取到的铜钱达到1400、2400档位时，获得的奖励更好。玩家达到35级后，游戏需求物品等级普遍变高，玩家体力不足的挫败感显著增强，此机制降低玩家完成订单难度，鼓励玩家提交更多订单，赚取更多铜钱，获得更多奖励，反哺到继续提交更多订单，形成正向循环。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97.%E8%AE%A2%E5%8D%95%E6%BF%80%E5%8A%B1.jpg"
+	width="1200"
+	height="861"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97.%E8%AE%A2%E5%8D%95%E6%BF%80%E5%8A%B1_hu4228532220565431540.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97.%E8%AE%A2%E5%8D%95%E6%BF%80%E5%8A%B1_hu5445038810573105227.jpg 1024w"
+	loading="lazy"
+	
+		alt="订单激励"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="139"
+		data-flex-basis="334px"
+	
+></p>
+<p><a id="（六）等级与主线"></a></p>
+<h3 id="六等级与主线">（六）等级与主线
+</h3><p>1.描述：茶楼等级是合成产出的消耗与转化的指标，也是游戏内容解锁的标志。玩家通过完成订单积累铜钱，铜钱达到指定数量后可解锁下一节剧情。游戏中将主线剧情以章为单位划分，每章固定11节，每节剧情过后玩家获得15点经验值。经验值累积至当前等级所需经验时，茶楼等级提升。</p>
+<p>2.设计目的：</p>
+<p>i.<strong>长线经营</strong>：有一定数量的玩家进入游戏的最初动力并非合成经营，而是为了观赏主线剧情。有趣、有悬念、有陪伴感的剧情故事带有情感温度，玩家自然而然就想知道“故事真相是什么”，剧情牵引玩家回到经营系统赚取铜钱资源，以开启更多剧情。</p>
+<p>ii.<strong>单一路径</strong>：茶楼等级的提升只有通过铜钱推进主线剧情获取经验值这一条路径，玩家不会被过多要素干扰，目的始终明确。</p>
+<p>iii.<strong>升级激励</strong>：玩家每提升一级，可获得等级宝箱奖励，包含母棋、体力、铜钱、宝石等养成资源，满足玩家养成需求，激励玩家继续游戏。</p>
+<p>iv.<strong>节奏可控</strong>：前期升级速度较快，约1天左右玩家即可升至10级，且激励福利多，新手玩家拥有密集的正反馈，建立玩家游戏习惯；中期开始，玩家正式进入经营系统，升级速度逐渐放缓，此时，主线剧情的推进需要消耗更多铜钱，订单所需物品的等级也逐步提升，合成链变长，体力消耗增大，引导玩家将更多精力投入到活动参与、情缘养成、自宅装扮等支线系统中，维持玩家的日常活跃。</p>
+<p><a id="（七）收集成就"></a></p>
+<h3 id="七收集成就">（七）收集成就
+</h3><p><a id="自定义装饰"></a></p>
+<h4 id="自定义装饰">自定义装饰
+</h4><p>(1)描述：随着剧情推进，玩家可以在剧情中途修复茶楼的各个区域，每修复一处区域，玩家可从三个选项中选择自己喜欢的建筑物品风格。</p>
+<p>(2)特点：</p>
+<p>i.<strong>绑定主线</strong>：装饰的解锁与主线剧情保持同步，装饰系统融合在叙事进程中，以视觉化呈现，玩家能够更加明确地感知到自己的努力有了成果，茶楼从破败走向繁华，对应着主角从落魄低谷走向逆袭崛起。</p>
+<p>ii.<strong>自由度</strong>：每一处区域的修复都伴随三选一的风格选择，在玩家手中，茶楼的最终样貌并非千篇一律，不同玩家的茶楼可以呈现出截然不同的气质。</p>
+<p>iii.<strong>试错空间</strong>：风格选择并非永久锁定，玩家后续可自由更换，给予玩家反复尝试的权利。</p>
+<p>(3)设计目的：满足收集型玩家的收集癖及创造型玩家的表达欲，服务于玩家的审美需求与自我表达。玩家可以将自己精心布置的茶楼发布于社交网络圈子中，为游戏带来口碑扩散与流量热度。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%94%B6%E9%9B%86%E6%88%90%E5%B0%B1.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A3%85%E9%A5%B0.jpg"
+	width="500"
+	height="1092"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%94%B6%E9%9B%86%E6%88%90%E5%B0%B1.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A3%85%E9%A5%B0_hu14493149173971815132.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%94%B6%E9%9B%86%E6%88%90%E5%B0%B1.%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A3%85%E9%A5%B0_hu9745961522341118694.jpg 1024w"
+	loading="lazy"
+	
+		alt="自定义装饰"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<p><a id="情缘互动"></a></p>
+<h4 id="情缘互动">情缘互动
+</h4><p>(1)描述：茶楼等级升至14级后，开启Npc好感度系统，情缘互动属于主线剧情外的支线叙事，用以补充重要角色的背景设定、展开非核心场景故事的后续，为玩家提供持续的陪伴感。玩家可以在角色好感页面给相应角色进行送礼互动，增长角色好感度。好感度提升后，解锁角色支线叙事，并阶段性获取物品道具奖励。游戏现开放了5位角色的好感系统，覆盖不同身份与性格定位。</p>
+<p>(2)特点：</p>
+<p>i.<strong>礼物系统</strong>：玩家可通过完成特殊订单或是在好感页面的礼品商店购买礼物，赠与好感Npc。不同NPC对礼物的偏好各不相同，驱使玩家有针对性地赠送NPC更倾向的礼品：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>角色</th>
+          <th>好感物品1（手掌）</th>
+          <th>好感物品2（玉佩）</th>
+          <th>好感物品3（棋盒）</th>
+          <th>好感物品4（糕点）</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>萧守礼</td>
+          <td>15</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>清露</td>
+          <td>12</td>
+          <td>10</td>
+          <td>10</td>
+          <td>12</td>
+      </tr>
+      <tr>
+          <td>甘棠</td>
+          <td>15</td>
+          <td>10</td>
+          <td>10</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>穆远</td>
+          <td>12</td>
+          <td>12</td>
+          <td>10</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>时容与</td>
+          <td>12</td>
+          <td>10</td>
+          <td>12</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>杨钰环</td>
+          <td>12</td>
+          <td>10</td>
+          <td>10</td>
+          <td>12</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>ii.<strong>好感分级</strong>：每个角色均设有30个好感度等级，每个等级要求一定数量的好感值，好感值达标时，可以获取对应道具、体力、剧情奖励。好感需求呈递增趋势，完成一个角色的全部好感内容约需600~700个礼品，属于长线的追求目标，保证玩家不能短期内刷满所有角色好感内容。</p>
+<p>(3)设计目的：满足女性向玩家的情感需求与收集欲，将主线的事业线与好感系统中的感情线做一定程度的分离，但二者又为一个整体，玩家想要获取更多角色信息，就需要进入到好感系统赚取Npc的好感度解锁剧情故事；同时，好感度系统使游戏的角色扮演性质更强，沉浸式叙事体验更深。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%94%B6%E9%9B%86%E6%88%90%E5%B0%B1.%E6%83%85%E7%BC%98%E4%BA%92%E5%8A%A8.jpg"
+	width="1200"
+	height="856"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%94%B6%E9%9B%86%E6%88%90%E5%B0%B1.%E6%83%85%E7%BC%98%E4%BA%92%E5%8A%A8_hu753048977246989619.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E5%85%BB%E6%88%90%E7%B3%BB%E7%BB%9F.%E6%94%B6%E9%9B%86%E6%88%90%E5%B0%B1.%E6%83%85%E7%BC%98%E4%BA%92%E5%8A%A8_hu10863649400292320462.jpg 1024w"
+	loading="lazy"
+	
+		alt="情缘互动"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="140"
+		data-flex-basis="336px"
+	
+></p>
+<p><a id="四、活动运营系统"></a></p>
+<h2 id="四活动运营系统">四、活动运营系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位-2">（一）系统定位
+</h3><p>活动运营系统承担着维持玩家活跃度和粘性、提供额外资源产出、投放限定内容与促进付费转化等重要职能。它位于<strong>养成系统与付费系统的交汇处</strong>，活动带来的奖励能减轻经营养成的难度，而活动中又提供了付费选择，限时礼包、高级通行证将活动奖励分层，付费玩家能够在活动中获得更好的体验，并在经营养成系统中逐步养成付费习惯。</p>
+<p>《梦幻消除战》中，大致将活动类型分作了三大模块：</p>
+<p>1.<strong>固定活动</strong>：签到类活动，通过每天上线、在社群活跃即可获得部分奖励，门槛最低，所有玩家都能参与。此外还包括达到一定等级后固定解锁的长期永久生效的激励类型活动，如猫头收集、灶神激励，为玩家提供稳定的日常收益。</p>
+<p>2.<strong>临时活动</strong>：每周轮换的活动，<strong>以周为周期</strong>，保证玩家每天都有事情可做、有激励奖励可拿。活动内容的丰富性确保了玩家在主线推进缓慢的中后期阶段仍能保持新鲜感和参与动力。</p>
+<p>3.<strong>常驻活动</strong>：副棋盘 + 装饰地块 + IP联动集卡活动，常<strong>以月为周期</strong>，一定程度上承载限定内容投放与品牌曝光职能</p>
+<p>活动的入口设计：</p>
+<p>活动入口挂载在主界面两侧及棋盘界面上方部分，用明亮色块配以图像，每个活动均显示倒计时，玩家可以方便看到活动持续时间，并因倒计时的存在而产生紧迫感。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E6%B4%BB%E5%8A%A8%E5%85%A5%E5%8F%A3.png"
+	width="1000"
+	height="996"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E6%B4%BB%E5%8A%A8%E5%85%A5%E5%8F%A3_hu8000736749808132059.png 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E6%B4%BB%E5%8A%A8%E5%85%A5%E5%8F%A3_hu868296073718619581.png 1024w"
+	loading="lazy"
+	
+		alt="活动入口"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="100"
+		data-flex-basis="240px"
+	
+></p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的-2">（二）设计目的
+</h3><p>1.<strong>新鲜感</strong>：在主线内容之外提供持续的新鲜内容，延长游戏生命周期。一个故事终会完结，而活动系统的存在，则保证玩家在主线推进缓慢的后期阶段仍有上线的动力。每一期新活动都拥有相近但又侧重点不同的玩法规则，并拥有不同的奖励池，在核心玩法不变的前提下仍能够创造出差异化的体验。</p>
+<p>2.<strong>紧迫感</strong>：每一期活动都配有倒计时显示和即将开始提示，明确告诉玩家“活动即将结束”“活动即将开始”，这种时间压力将转化为玩家的登录动力，玩家将更加留心活动的开启和结束时间，选择每日登录查看、更好地完成活动、争取更好的排名。长此以往，玩家容易养成固定的每日登录习惯，粘性自然提高。</p>
+<p>3.<strong>优越感</strong>：同一期活动中，免费玩家可在活动中获取基础档位奖励，而氪金玩家则可以得到额外奖励，同一活动、多档收益的差异化设计既能保障零氪玩家的参与感，又为付费玩家提供了更爽快的游戏体验。</p>
+<p>4.<strong>品牌效应</strong>：《梦幻消除战》已先后与《梦华录》、非遗苏绣、非遗木偶戏进行联动合作，联动活动将外部IP的文化元素融合进游戏中的元素，例如百戏图收集、主题装扮，既为老玩家提供了新鲜感与收集目标，也通过IP的粉丝效应为游戏带来了新增用户。</p>
+<p><a id="（三）活动锁机制"></a></p>
+<h3 id="三活动锁机制">（三）活动锁机制
+</h3><p>一些关键的功能解锁节点如下：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>茶楼等级</th>
+          <th>解锁内容</th>
+          <th>设计目的</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>20级以前</td>
+          <td>每次玩家提升等级，即可获得一个“结缘礼”新手礼包，礼包内包含体力、铜钱、宝石等经营养成资源</td>
+          <td>帮助玩家度过激励偏少的新手期，并给玩家期待感</td>
+      </tr>
+      <tr>
+          <td>3级</td>
+          <td>解锁商店功能</td>
+          <td>开启内购付费渠道</td>
+      </tr>
+      <tr>
+          <td>4级</td>
+          <td>解锁信件功能</td>
+          <td>为后续引入好友圈功能做铺垫</td>
+      </tr>
+      <tr>
+          <td>4级</td>
+          <td>开启“猫猫头”订单</td>
+          <td>玩家正式进入合成经营部分</td>
+      </tr>
+      <tr>
+          <td>5级</td>
+          <td>开始出现付费等级礼包</td>
+          <td>玩家升级到此等级表明玩家有留存意愿，给予折扣，加强付费转化</td>
+      </tr>
+      <tr>
+          <td>5级</td>
+          <td>开启集卡活动</td>
+          <td>提供长线收集目标，加深留存意愿</td>
+      </tr>
+      <tr>
+          <td>6级</td>
+          <td>开启限时活动</td>
+          <td>限时奖励驱动玩家每日登录与集中参与</td>
+      </tr>
+      <tr>
+          <td>6级</td>
+          <td>解锁每周任务</td>
+          <td>提供周期性目标</td>
+      </tr>
+      <tr>
+          <td>7级</td>
+          <td>开启装饰地块活动</td>
+          <td>提供视觉化成长</td>
+      </tr>
+      <tr>
+          <td>8级</td>
+          <td>开启副棋盘活动</td>
+          <td>提供限时奖励，并重新激活二合玩法的爽感</td>
+      </tr>
+      <tr>
+          <td>8级</td>
+          <td>解锁月度主题任务</td>
+          <td>提升长期留存并创造周期性付费场景</td>
+      </tr>
+      <tr>
+          <td>9级</td>
+          <td>开启每日游戏圈活跃任务</td>
+          <td>促进形成社交传播</td>
+      </tr>
+      <tr>
+          <td>11级</td>
+          <td>解锁订阅功能</td>
+          <td>增加游戏入口，驱动玩家每日登录</td>
+      </tr>
+      <tr>
+          <td>14级</td>
+          <td>开启好感度系统</td>
+          <td>深化角色扮演体验，提供陪伴感</td>
+      </tr>
+      <tr>
+          <td>15级</td>
+          <td>解锁合成2倍速率功能</td>
+          <td>加速游戏进程，优化中高等级玩家的操作效率</td>
+      </tr>
+      <tr>
+          <td>30级</td>
+          <td>必定出现11级订单物品，奖励4星卡牌包</td>
+          <td>维持高等级玩家的挑战性，并予以激励</td>
+      </tr>
+      <tr>
+          <td>33级</td>
+          <td>自宅装修系统解锁</td>
+          <td>满足玩家自定义需求</td>
+      </tr>
+      <tr>
+          <td>35级</td>
+          <td>灶神活动解锁</td>
+          <td>降低高等级的订单卡关挫败感，激励玩家交付订单获取铜钱激活功能</td>
+      </tr>
+      <tr>
+          <td>40级</td>
+          <td>解锁合成4倍速率功能</td>
+          <td>加速游戏进程，优化高等级玩家的操作效率</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>活动与玩家等级深度绑定，促使玩家提升等级。玩家升级至5级后，各类限时活动正式开启，确保玩家能够专心度过新手适应期，在新手期结束后再接触到完整的活动生态。且15级之前，每提升1-2级就有一个新的系统或活动解锁，投放节奏密集而有序，玩家不仅有“新功能即将解锁”的期待感，也不会一次性接收太多信息而措手不及。</p>
+<p><a id="（四）固定活动"></a></p>
+<h3 id="四固定活动">（四）固定活动
+</h3><p><a id="活动分布"></a></p>
+<h4 id="活动分布">活动分布
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>活动名称</th>
+          <th>周期特征</th>
+          <th>持续时长</th>
+          <th>关键节点</th>
+          <th>奖励内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>每日签到</td>
+          <td>每日早8点起</td>
+          <td>30次/轮</td>
+          <td>累计8天/15天/22天/30天</td>
+          <td>体力 + 宝石 +道具</td>
+      </tr>
+      <tr>
+          <td>每日游戏圈活跃</td>
+          <td>每日早8点起</td>
+          <td>长期</td>
+          <td>/</td>
+          <td>体力</td>
+      </tr>
+      <tr>
+          <td>每周任务</td>
+          <td>每日早8点起</td>
+          <td>7天/轮</td>
+          <td>周5/7</td>
+          <td>体力 + 铜钱 + 宝石 +道具 + 卡牌包</td>
+      </tr>
+      <tr>
+          <td>月度主题任务</td>
+          <td>每日早8点起</td>
+          <td>约30天/轮</td>
+          <td>付费月卡制度 + 45级档位付费开启无尽模式</td>
+          <td>体力 + 铜钱 + 宝石 +道具 + 卡牌包</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="每日签到"></a></p>
+<h4 id="每日签到">每日签到
+</h4><p>(1)描述：每日早8点后，玩家可进入主界面左侧的“桌面签到”图标入口领取当天签到奖励，签到次数计入<strong>累计签到</strong>次数，最高累计30次，当累计签到次数达到8天、15天、22天、30天四个节点时，玩家可获得额外体力、宝石、道具奖励。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E6%97%A5%E7%AD%BE%E5%88%B0.jpg"
+	width="500"
+	height="762"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E6%97%A5%E7%AD%BE%E5%88%B0_hu3939770413845468296.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E6%97%A5%E7%AD%BE%E5%88%B0_hu10332175045570423734.jpg 1024w"
+	loading="lazy"
+	
+		alt="每日签到"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="65"
+		data-flex-basis="157px"
+	
+></p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：每日签到的入口放置在主界面左侧，并配以文字描述“桌面签到”，视觉上一眼即可看见，清晰明了。</p>
+<p>ii.<strong>即时反馈</strong>：玩家只需要每天保持登录即可领奖，无需额外操作。零门槛，即时性，领取奖励全程不超过3秒，玩家完成此任务无负担，保证用户日活，建立每日登录习惯。</p>
+<p>iii.<strong>断签无惩罚</strong>：每一次签到都能够领取奖励，即便断签，也不影响当天的奖励领取，且累计签到规则只计总次数，无连续签到要求，拥有充分的容错空间。玩家即便中断几天，回来时依然可以继续累积进度，减少玩家因断签而可能产生的挫败感、“既然断了就不想再签了”的弃游心理。</p>
+<p>(3)设计目的：作为日活跃任务，激励玩家每日上线登录，建立行为习惯。配以累计签到次数的设计，玩家能够直观感受越签到、奖励越好，玩家投入越多，则越难以放弃。加上分阶段式的奖励投放节奏，减轻玩家的等待感，确保玩家在整个月内都能有持续的签到动力。</p>
+<p><a id="每日游戏圈活跃"></a></p>
+<h4 id="每日游戏圈活跃">每日游戏圈活跃
+</h4><p>(1)描述：每日早8点后，玩家可进入主界面左侧的“免费好礼”图标入口，跳转至游戏圈完成对应社区互动行为，如发布新主题、点赞、评论，完成指定行为后返回任务界面，即可领取体力奖励。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：每日游戏圈活跃入口放置在主界面左侧，并配以文字描述“免费好礼”，免费二字对玩家具有一定吸引力，减少玩家对做任务的抗拒，将其转化为一次“免费奖励领取”；且入口与“桌面签到”入口相邻，玩家在固定时段统一完成任务的行为更流畅。</p>
+<p>ii.<strong>轻量化</strong>：操作门槛低，玩家不会产生额外的操作负担，顺手就能做，更易养成玩家习惯。</p>
+<p>iii.<strong>传播性</strong>：将玩家的社区互动行为与游戏内收益挂钩，玩家在获取体力资源的同时，也为游戏圈贡献了内容与互动。可能一开始只是完成任务，但玩家习惯培养完成后，玩家想要讨论游戏时自然会想到游戏圈，在游戏圈中进行互动，长此以往，游戏圈的内容生态便能逐渐活跃繁荣。</p>
+<p>(3)设计目的：游戏圈链接了游戏内外两大场景，从玩家层面，游戏圈活跃是体力来源之一，也是玩家们讨论与攻略分享的广场；从游戏运营层面，游戏圈是官方运营的主要阵地，官方主要在游戏圈中发布相关活动讯息及福利，养成玩家不时登入游戏圈的习惯，引导玩家经常访问游戏圈，最终实现提高活动宣传效率和社区内容生态。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E6%97%A5%E6%B8%B8%E6%88%8F%E5%9C%88%E6%B4%BB%E8%B7%83.jpg"
+	width="500"
+	height="804"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E6%97%A5%E6%B8%B8%E6%88%8F%E5%9C%88%E6%B4%BB%E8%B7%83_hu9422089182881238859.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E6%97%A5%E6%B8%B8%E6%88%8F%E5%9C%88%E6%B4%BB%E8%B7%83_hu7253244231690407598.jpg 1024w"
+	loading="lazy"
+	
+		alt="每日游戏圈活跃"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="62"
+		data-flex-basis="149px"
+	
+></p>
+<p><a id="每周任务"></a></p>
+<h4 id="每周任务">每周任务
+</h4><p>(1)描述：玩家进入主棋盘页面后，点击任务图标即可查看本周任务列表。玩家各种行为可获取一定的活跃度奖励，活跃度分数到达100/250/585/825/1055档位时可获取对应档位的额外奖励。当玩家连续3周活跃度分数均达到1055及以上时，可额外获取一次大奖。</p>
+<p>每周任务分布与活跃度贡献表示例：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>周1内容</th>
+          <th>周2内容</th>
+          <th>周3内容</th>
+          <th>周4内容</th>
+          <th>周5内容</th>
+          <th>周6内容</th>
+          <th>周7内容</th>
+          <th>激励总计</th>
+          <th>活跃度占比（总1135）</th>
+          <th>设计目的</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>任务类型1</td>
+          <td>登录1天(+10)</td>
+          <td>登录2天(+10)</td>
+          <td>登录3天(+10)</td>
+          <td>登录4天(+20)</td>
+          <td>登录5天(+20)</td>
+          <td>登录6天(+20)</td>
+          <td>登录7天(+30)</td>
+          <td>120</td>
+          <td>11%</td>
+          <td>日活类型</td>
+      </tr>
+      <tr>
+          <td>任务类型2</td>
+          <td>/</td>
+          <td>累计交付25个订单(+15)</td>
+          <td>/</td>
+          <td>/</td>
+          <td>累计交付80个订单(+20)</td>
+          <td>/</td>
+          <td>累计交付110个订单(+45)</td>
+          <td>80</td>
+          <td>7%</td>
+          <td>一般订单任务</td>
+      </tr>
+      <tr>
+          <td>任务类型3</td>
+          <td>累计交付15个指定订单(+20)</td>
+          <td>/</td>
+          <td>累计交付65个指定订单(+20)</td>
+          <td>/</td>
+          <td>累计交付95个指定订单(+40)</td>
+          <td>/</td>
+          <td>累计交付120个指定订单(+60)</td>
+          <td>140</td>
+          <td>12%</td>
+          <td>指定订单任务</td>
+      </tr>
+      <tr>
+          <td>任务类型4</td>
+          <td>/</td>
+          <td>累计获取55张卡牌(+20)</td>
+          <td>/</td>
+          <td>累计获取110张卡牌(+40)</td>
+          <td>累计获取140张卡牌(+40)</td>
+          <td>累计获取170张卡牌(+40)</td>
+          <td>累计获取195张卡牌(+60)</td>
+          <td>200</td>
+          <td>18%</td>
+          <td>一般卡牌收集</td>
+      </tr>
+      <tr>
+          <td>任务类型5</td>
+          <td>获得4张4星卡牌(+25)</td>
+          <td>/</td>
+          <td>获得2张5星卡牌(+60)</td>
+          <td>/</td>
+          <td>/</td>
+          <td>获得10张4星卡牌(+40)</td>
+          <td>/</td>
+          <td>125</td>
+          <td>11%</td>
+          <td>高级卡牌收集</td>
+      </tr>
+      <tr>
+          <td>任务类型6</td>
+          <td>累计合成480次(+10)</td>
+          <td>/</td>
+          <td>/</td>
+          <td>累计合成1600次(+20)</td>
+          <td>/</td>
+          <td>累计合成2400次(+40)</td>
+          <td>/</td>
+          <td>70</td>
+          <td>6%</td>
+          <td>行为激励</td>
+      </tr>
+      <tr>
+          <td>任务类型7</td>
+          <td>/</td>
+          <td>累计使用20个宝石(+30)</td>
+          <td>进行1次游戏内充值付费(+80)</td>
+          <td>累计使用50个宝石(+50)</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>160</td>
+          <td>14%</td>
+          <td>付费激励</td>
+      </tr>
+      <tr>
+          <td>任务类型8</td>
+          <td>/</td>
+          <td>/</td>
+          <td>累计获取4800铜钱(+20)</td>
+          <td>/</td>
+          <td>累计获取8000铜钱(+40)</td>
+          <td>累计获取10000铜钱(+40)</td>
+          <td>累计获取12000铜钱(+60)</td>
+          <td>160</td>
+          <td>14%</td>
+          <td>收集货币物激励</td>
+      </tr>
+      <tr>
+          <td>任务类型9</td>
+          <td>使用副棋盘25x个道具(+20)</td>
+          <td>使用副棋盘50x个道具(+20)</td>
+          <td>/</td>
+          <td>使用副棋盘100x个道具(+40)</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>80</td>
+          <td>7%</td>
+          <td>活动参与激励</td>
+      </tr>
+      <tr>
+          <td>激励总计</td>
+          <td>85</td>
+          <td>95</td>
+          <td>190</td>
+          <td>170</td>
+          <td>160</td>
+          <td>180</td>
+          <td>255</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>从任务分布可以看出，订单+卡牌+合成这三类任务合计贡献了约75%的活跃度。意味着一个玩家即便不参与副棋盘活动、不进行付费，只要坚持完成每日订单、保持合成频率、顺手收集卡牌，就能累积到825活跃度（第五档），获得绝大部分核心奖励。1055活跃度的满档则主要面向“全勤+深度参与”的重度玩家。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：每周任务图标设计在主棋盘页面内，玩家只有点进主棋盘页面时才能看见。每周任务与棋盘页面绑定，默认玩家要玩游戏、要进行合成经营操作，才会看到每周任务。</p>
+<p>ii.<strong>前紧后松</strong>：周一至周二的任务量较轻，周三至周五任务量增大，周六至周日则属于收尾与冲刺阶段。排期上来说，每周任务适配了不同玩家群体的活跃时间，对工作日时间有限的上班族更友好，也为周末有更多时间的玩家提供了深度参与的空间。并且，玩家无法在周初就迅速累积到高档位奖励，至少需要等到周5、周7后半周才能获取到高档位大额奖励，与任务分布相符。</p>
+<p>iii.<strong>双重奖励</strong>：每周任务的奖励结构分为单周奖励与连续三周大奖两层。单周奖励是玩家的周内目标，而连续三周完成周任务获得额外大奖，将玩家的单周活跃行为延长至3周，促进玩家形成习惯。此外，当上一周完成3周1055活跃度周任务后，下一周（第4周）能够额外获得一个大奖计数，玩家从3周连续完成周任务要求降为2周，减轻玩家连周的心理压力，并利用玩家沉没成本心理，促使玩家继续完成周任务。</p>
+<p>iv.<strong>行为引导</strong>：每日任务列表覆盖了合成、订单交付、卡牌收集、活动参与、内购付费等多个维度，玩家行动路径更清晰，玩家知道自己能够做什么，并且做什么能够得到奖励。</p>
+<p>(3)设计目的：给玩家每天明确目标，指引玩家“今天该做什么”；将玩家行为量化，玩家只需查看活跃度进度条即可了解自己的周内投入程度，与下一个档位奖励距离还有多远；目标覆盖核心体验循环的每个部分，每个操作都是玩家本来就会做的事情，每周任务则将游戏行为统一纳入激励框架。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E5%91%A8%E4%BB%BB%E5%8A%A1.jpg"
+	width="1000"
+	height="1030"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E5%91%A8%E4%BB%BB%E5%8A%A1_hu17727632112166333443.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%AF%8F%E5%91%A8%E4%BB%BB%E5%8A%A1_hu2946927232366928402.jpg 1024w"
+	loading="lazy"
+	
+		alt="每周任务"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="97"
+		data-flex-basis="233px"
+	
+></p>
+<p><a id="月度主题任务"></a></p>
+<h4 id="月度主题任务">月度主题任务
+</h4><p>(1)描述：通行证式活动，玩家通过日常的订单交付/铜钱积累获取活动积分，积分达到指定数值可解锁下一档位的奖励。奖励共分为45个档位，每档均设有对应的资源奖励，当玩家达到45档位后，玩家可选择付费开通“雅客通行证”（vip）解锁每一档位的进阶奖励，也可以选择付费开通“贵宾通行证”（svip）在解锁更好奖励的基础上，解锁无尽档位模式，冲击更高档位的稀有奖励池。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：月度主题任务的入口同时挂载在主界面与主棋盘页面两处。主界面入口位于活动列表区域，与其他活动入口并列，便于玩家在登录时第一时间看到；主棋盘页面入口则位于界面上方活动展示区，玩家在合成、交付订单时即可随时查看积分进度。</p>
+<p>ii.<strong>差异化月卡</strong>：免费玩家可获取前45档位的基础奖励，零氪玩家也能有参与感，而付费玩家则可以解锁更好的奖励，甚至继续冲击无尽模式的高价值奖励池</p>
+<p>iii.<strong>日常行为绑定</strong>：月度主题任务内容与玩家的日常行为挂钩，订单交付/铜钱积累都属于玩家正常游玩中的一部分，月度主题任务则用积分再度激励玩家的游戏行为。</p>
+<p>(3)设计目的：在常规活跃任务之上增加激励，给玩家进行任何游戏行为都有反馈激励的积累感，维持玩家长线留存；45档的奖励梯度确保玩家在整个月内都有持续目标，而完成了45档位后，设置了周期性付费点，玩家可以选择付费来拉长任务内容，对有倾向选择付费的玩家来说，通过vip和svip的奖励对比，会使玩家更倾向于购买“没贵多少，但奖励更丰厚”的svip月卡。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%9C%88%E5%BA%A6%E4%B8%BB%E9%A2%98%E4%BB%BB%E5%8A%A1.jpg"
+	width="1000"
+	height="1074"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%9C%88%E5%BA%A6%E4%B8%BB%E9%A2%98%E4%BB%BB%E5%8A%A1_hu7583356953895787759.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%9B%BA%E5%AE%9A%E6%B4%BB%E5%8A%A8.%E6%9C%88%E5%BA%A6%E4%B8%BB%E9%A2%98%E4%BB%BB%E5%8A%A1_hu14215967689567478533.jpg 1024w"
+	loading="lazy"
+	
+		alt="月度主题任务"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="223px"
+	
+></p>
+<p><a id="（五）临时活动"></a></p>
+<h3 id="五临时活动">（五）临时活动
+</h3><p><a id="活动分布"></a></p>
+<h4 id="活动分布-1">活动分布
+</h4><p>临时活动以周为单位滚动轮换，通常在特定时间点开启，持续数小时至数天不等，排期密集，活动形式保持新鲜内容。</p>
+<p>每周临时活动分布表：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>活动名称</th>
+          <th>周期特征</th>
+          <th>持续时长</th>
+          <th>奖励内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>猫咪叠罗汉</td>
+          <td>周一 早8点</td>
+          <td>30min/轮，最长150min</td>
+          <td>5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>小霸王驾到</td>
+          <td>周一/周二/周四 早10点</td>
+          <td>限时1.5小时</td>
+          <td>三选一自选（250体力/随机生成订单需求道具物品/5星卡牌包）</td>
+      </tr>
+      <tr>
+          <td>积分排行榜</td>
+          <td>周二/周六 早10点</td>
+          <td>2天</td>
+          <td>排行榜前三名获得体力物品奖励</td>
+      </tr>
+      <tr>
+          <td>蒲公英弹弹乐</td>
+          <td>周四 早10点</td>
+          <td>24小时</td>
+          <td>难度三选一（3星卡牌包/4星卡牌包/5星卡牌包）</td>
+      </tr>
+      <tr>
+          <td>逸尘逐风/璇玑妙算</td>
+          <td>周四 18点/19点</td>
+          <td>24小时</td>
+          <td>阶段性奖励体力、道具</td>
+      </tr>
+      <tr>
+          <td>盛世大富商/茶楼大赛/玉琢的挑战</td>
+          <td>周五 18点</td>
+          <td>72小时</td>
+          <td>阶段性奖励体力、道具、5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>织布大赛</td>
+          <td>周五 早10点</td>
+          <td>24小时</td>
+          <td>阶段性奖励体力、道具、5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>云端寻宝</td>
+          <td>周三/周六 早8点/10点</td>
+          <td>24小时</td>
+          <td>阶段性奖励体力、4星卡牌包、5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>绣球争芳宴</td>
+          <td>周六 早10点</td>
+          <td>24小时</td>
+          <td>阶段性奖励体力、4星卡牌包、5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>十二转运盘</td>
+          <td>周日 10点</td>
+          <td>6天</td>
+          <td>大量体力 + 卡牌包 + 道具</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>活动时间的<strong>日分布规律</strong>：活动的开启时间集中在早上10点和下午18点两个时段，与玩家生活节奏同步，符合大众的上下班通勤时间和工作休息间隙。</p>
+<p>活动时间的<strong>周分布规律</strong>：周一至周五分布密集，持续时间普遍较短，操作负担相对较轻，不需要玩家投入大量时间；周五至周末存在一个多阶段的大型活动覆盖整个周末时段，需要玩家长线深度参与；周内活动还常发生在活动结束前夜，：为尚未完成任务的玩家提供最后一次冲刺补充机会。</p>
+<p><a id="体力消耗型"></a></p>
+<h4 id="体力消耗型">体力消耗型
+</h4><p>(1)类型：</p>
+<p>i.积分<strong>排行榜</strong>：玩家通过消耗体力生成棋子获得积分，积分计入排名，活动期间，玩家将同时与数名玩家竞赛，系统根据积分高低进行实时排名，活动结束后，排行榜前3名可获得体力、道具等奖励。积分计算规则为：基础消耗1体力=1积分，即每次点击母棋消耗体力生成基础棋子，即获得对应体力消耗的积分，当生成幸运高级棋子时，获得积分按该棋子等级对应积分计算。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>非常规</strong>：活动积分引入了幸运棋子这一随机变量。出现幸运棋子时，单次1-4体力值能够获得远超1-4积分的分数，活动机制上拥有惊喜感。</p>
+<p>ii.<strong>幸运概率</strong>：幸运棋子的出现概率及幸运棋子等级与母棋等级相关联，母棋等级越高，触发幸运棋子的概率越大，幸运棋子的等级也越高。鼓励玩家升级更高级的母棋，进行长线养成。</p>
+<p>iii.<strong>竞争性</strong>：玩家的目标从获得更多积分转变成“我需要多少积分才能超越对手”，尤其在活动末期，玩家为了冲击排名可能会集中消耗体力，导致排名变化，促使玩家频繁关注排行榜。</p>
+<p>(3)设计目的：排行榜的设计给了玩家目标和刺激性，排行榜竞争与幸运棋子概率均带有一定随机性，在这场限时挑战中，玩家需要兼顾自身体力消耗情况与对手进度，为原本重复性的合成操作带来竞技性爽感。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E4%BD%93%E5%8A%9B%E6%B6%88%E8%80%97%E5%9E%8B.jpg"
+	width="500"
+	height="1093"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E4%BD%93%E5%8A%9B%E6%B6%88%E8%80%97%E5%9E%8B_hu13761722903847487067.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E4%BD%93%E5%8A%9B%E6%B6%88%E8%80%97%E5%9E%8B_hu9098879406264143049.jpg 1024w"
+	loading="lazy"
+	
+		alt="体力消耗型"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<p><a id="金币收集型"></a></p>
+<h4 id="金币收集型">金币收集型
+</h4><p>(1)类型：</p>
+<p>i.逸尘逐风/璇玑妙算：玩家通过收集一定金额的铜钱完成活动的8个档次目标，获取卡牌包、体力、道具奖励。档次目标分别为200/400/600/800/1000/1250/1550/1900，每达到一个档位即可领取对应奖励，越靠后的档位奖励价值越高。</p>
+<p>ii.蒲公英弹弹乐：玩家可选择三种难度中的一种参与活动，活动期间，玩家将同时与数名玩家竞赛，玩家通过提交订单获得活动道具，先达到活动道具数量要求的前10%~30%视为本关挑战胜利，可进入下一关，完成全部关卡可获得大量体力、卡牌包、道具奖励。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>档次</th>
+          <th>目标积分</th>
+          <th>通关名额</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>120</td>
+          <td>100</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>150</td>
+          <td>70</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>190</td>
+          <td>50</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>230</td>
+          <td>50</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>250</td>
+          <td>50</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>300</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>350</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>400</td>
+          <td>20</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>450</td>
+          <td>10</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>500</td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>iii.盛世大富商/茶楼大赛：活动期间，玩家与4名其它玩家竞赛，玩家通过收集一定金额的铜钱挑战活动的12个档次目标，获取卡牌包、体力、道具奖励。12个档次中每4个档次进行一次额外奖励。档次目标具体为：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>档次</th>
+          <th>目标铜钱</th>
+          <th>奖励类型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>250金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>300金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>400金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>500金币</td>
+          <td><strong>大型奖励</strong></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>500金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>500金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>650金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>650金币</td>
+          <td><strong>大型奖励</strong></td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>650金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>800金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>800金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td>1000金币</td>
+          <td><strong>最终奖励：5星卡牌包</strong></td>
+      </tr>
+  </tbody>
+</table></div>
+<p>iv.玉琢的挑战：玩家通过收集一定金额的铜钱完成活动的10+1个档位目标，获取卡牌包、体力、道具奖励。每个档位达成时都将获得奖励。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>档次</th>
+          <th>目标铜钱</th>
+          <th>奖励类型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>60金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>150金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>200金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>400金币</td>
+          <td><strong>大量奖励</strong></td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>200金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>350金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>600金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>350金币</td>
+          <td><strong>大量奖励</strong></td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>750金币</td>
+          <td>阶段性奖励</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>1000金币</td>
+          <td><strong>大量奖励</strong></td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>3000金币</td>
+          <td><strong>大量奖励 + 5星卡牌包</strong></td>
+      </tr>
+  </tbody>
+</table></div>
+<p>(2)设计特点：</p>
+<p>i.<strong>阶段性</strong>：活动将一个大目标拆分为多个递进式的小目标，玩家每完成其中一步即可领取对应奖励，降低了长线目标给玩家带来的疲惫感和中途放弃的概率。</p>
+<p>ii.<strong>节奏可控</strong>：玩家每完成一个阶段的活动都能停下来，这个期间允许玩家修整等待体力恢复、合成订单所需物品，也给了玩家现实层面的喘息时间，游戏活动不会对玩家的日常生活造成压迫感，玩家可以根据自己的行程来调整游戏时间。</p>
+<p>iii.<strong>玩家行程匹配</strong>：这类活动经常安排在一周的后半段，以及每周五一定会有一个完整覆盖周末的大型活动，周末是玩家在线时长最长、游戏行为最密集的时段，能够最大化玩家的参与度与完成率，玩家有充足的时间在周末的碎片化时段中逐步推进活动进度。</p>
+<p>(3)设计目的：利用周末高在线时段，集中推进玩家的铜钱消耗与产出，铜钱能够推进主线剧情发展，与玩家的养成进度绑定，玩家对于活动的投入最终会转化为更快的养成进度，能够提升玩家的满足感和留存意愿。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E9%87%91%E5%B8%81%E6%94%B6%E9%9B%86%E5%9E%8B.jpg"
+	width="1000"
+	height="2126"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E9%87%91%E5%B8%81%E6%94%B6%E9%9B%86%E5%9E%8B_hu3240317911947484393.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E9%87%91%E5%B8%81%E6%94%B6%E9%9B%86%E5%9E%8B_hu1774411079844553437.jpg 1024w"
+	loading="lazy"
+	
+		alt="金币收集型"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="47"
+		data-flex-basis="112px"
+	
+></p>
+<p><a id="订单累计型"></a></p>
+<h4 id="订单累计型">订单累计型
+</h4><p>(1)类型：</p>
+<p>i.织布大赛：活动期间，连续交付订单与合成高级物品均可积攒积分，玩家将与2-4名其它玩家进行竞速，先完成积分要求的前1-3名玩家可以获得奖励点，奖励点可换取奖励池中的奖励。玩家连续进行比赛可以提高所获奖励点的倍率，倍率分别为 ×1 ×2 ×4 ×10，若玩家连胜失败，倍率将下降。</p>
+<p>竞赛目标积分与奖励：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>阶段</th>
+          <th>目标积分</th>
+          <th>奖励点</th>
+          <th>倍率</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>70目标积分</td>
+          <td>50奖励</td>
+          <td>初始×1</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>120目标积分</td>
+          <td>75奖励</td>
+          <td>×倍率</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>150目标积分</td>
+          <td>100奖励</td>
+          <td>×倍率</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>300目标积分</td>
+          <td>150奖励</td>
+          <td>×倍率</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>300目标积分</td>
+          <td>150奖励</td>
+          <td>×倍率</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>奖励池档位推进顺序为：30积分&ndash;&gt;100积分&ndash;&gt;150积分&ndash;&gt;350积分&ndash;&gt;1000积分&ndash;&gt;50积分&ndash;&gt;120积分&ndash;&gt;200积分&ndash;&gt;300积分&ndash;&gt;1500积分&ndash;&gt;120积分&ndash;&gt;200积分&ndash;&gt;300积分&ndash;&gt;1500积分&ndash;&gt;120积分&ndash;&gt;200积分&ndash;&gt;300积分&ndash;&gt;1500积分&ndash;&gt;200积分&ndash;&gt;300积分&ndash;&gt;1500积分（最终大奖5星卡牌包）</p>
+<p>ii.云端寻宝：玩家通过交付订单、合成高级物品、购买棋子均可积攒积分，积分可换取奖励池中的奖励。活动为无竞争型，玩家仅需完成个人积分目标即可获取奖励。</p>
+<p>奖励池档位推进顺序为：50积分&ndash;&gt;80积分&ndash;&gt;120积分&ndash;&gt;150积分&ndash;&gt;240积分&ndash;&gt;360积分（4星卡牌包）&ndash;&gt;540积分（4星卡牌包）&ndash;&gt;600积分&ndash;&gt;780积分（5星卡牌包）&ndash;&gt;1000积分（5星卡牌包）</p>
+<p>iii.绣球争芳宴：活动期间，连续交付订单与合成高级物品均可积攒积分，玩家将与1名玩家进行竞速，先完成积分要求获得本轮胜利，活动共8轮。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>档次</th>
+          <th>目标积分</th>
+          <th>奖励类型</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>120目标积分</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>150目标积分</td>
+          <td>道具奖励</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>180目标积分</td>
+          <td>道具奖励</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>200目标积分</td>
+          <td>道具奖励</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>250目标积分</td>
+          <td><strong>4星卡牌包</strong></td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>300目标积分</td>
+          <td>道具奖励</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>400目标积分</td>
+          <td>道具奖励</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>400目标积分</td>
+          <td><strong>5星卡牌包</strong></td>
+      </tr>
+  </tbody>
+</table></div>
+<p>(2)设计特点：</p>
+<p>i.<strong>倍率机制</strong>：连续获胜可以提升奖励点倍率，使活动参与带有一定策略性，玩家需要在每一轮比赛中都保持高效，才能维持高倍率收益。</p>
+<p>ii.<strong>多重积分路径</strong>：活动分数的累计包括交付订单与合成物品，玩家行为得到激励的范围更广，并且玩家也可以在“快速交付低阶订单”和“合成高阶物品囤货”之间选择，优化自己的合成策略。</p>
+<p>(3)设计目的：通过多人竞争与倍率机制，激发玩家的胜负欲与持续参与动力，延长玩家的留存时间。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E8%AE%A2%E5%8D%95%E7%B4%AF%E8%AE%A1%E5%9E%8B.jpg"
+	width="1000"
+	height="2128"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E8%AE%A2%E5%8D%95%E7%B4%AF%E8%AE%A1%E5%9E%8B_hu9442040354557804318.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E8%AE%A2%E5%8D%95%E7%B4%AF%E8%AE%A1%E5%9E%8B_hu5611315483449277603.jpg 1024w"
+	loading="lazy"
+	
+		alt="订单累计型"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="46"
+		data-flex-basis="112px"
+	
+></p>
+<p><a id="特殊订单型"></a></p>
+<h4 id="特殊订单型">特殊订单型
+</h4><p>(1)类型：</p>
+<p>i.猫咪叠罗汉：玩家进入游戏棋盘页面时，出现5个连续特殊订单，难度从易到难。<strong>每个订单30分钟倒计时</strong>，每完成1个订单后，倒计时重置为30分钟。第5级任务中必有一个10级物品需求，全部完成后，最终大奖为1张5星卡牌包。</p>
+<p>ii.小霸王驾到：玩家进入游戏棋盘页面时，出现1个特殊订单，奖励内容可三选一自选（250体力/随机生成订单需求道具物品/5星卡牌包），玩家需在<strong>1.5小时内</strong>完成该订单。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>紧迫性</strong>：这类活动的时长都较短，玩家必须在规定时间内集中精力完成订单，要求玩家一定的专注程度与精力投入。</p>
+<p>ii.<strong>个性化奖励</strong>：玩家可根据自身需求选择更想要的奖励，一个活动就能服务不同需求的玩家。</p>
+<p>(3)设计目的：时间短、奖励丰富，刺激玩家集中参与，提升玩家日活及特定时段的在线时长。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E7%89%B9%E6%AE%8A%E8%AE%A2%E5%8D%95%E5%9E%8B.jpg"
+	width="1000"
+	height="1014"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E7%89%B9%E6%AE%8A%E8%AE%A2%E5%8D%95%E5%9E%8B_hu4649878893465687702.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E7%89%B9%E6%AE%8A%E8%AE%A2%E5%8D%95%E5%9E%8B_hu6178799037009659959.jpg 1024w"
+	loading="lazy"
+	
+		alt="特殊订单型"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="98"
+		data-flex-basis="236px"
+	
+></p>
+<p><a id="综合激励型"></a></p>
+<h4 id="综合激励型">综合激励型
+</h4><p>(1)类型：</p>
+<p>i.十二转运盘：玩家通过收集指定订单的猫头数量以及收集卡牌换取抽奖次数，奖励分为5轮，抽取到本轮大奖后进入下一轮。猫头需求数量从6开始，每次递增2-4个；收集卡牌数量从14张开始，每次递增4-6张。</p>
+<p>各轮大奖为：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>轮次</th>
+          <th>大奖内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>第1轮</td>
+          <td>200体力 / 4星卡牌包</td>
+      </tr>
+      <tr>
+          <td>第2轮</td>
+          <td>250体力 / 4星卡牌包</td>
+      </tr>
+      <tr>
+          <td>第3轮</td>
+          <td>350体力 / 5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>第4轮</td>
+          <td>500体力 / 5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>第5轮</td>
+          <td>650体力 / 无相卡牌（可自选任一卡牌）</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>(2)设计特点：</p>
+<p>i.<strong>综合性</strong>：活动进度与订单交付、卡牌收集相关联，完成其中一个维度的进度，即可获得抽奖次数。但玩家想要获得足够的抽奖次数，就需要在两个维度上都均衡发展。</p>
+<p>ii.<strong>随机性</strong>：转盘抽奖机制带有不确定性，为活动提供运气成分的额外惊喜，玩家可能早早抽中大奖进入下一轮，也可能多次抽到普通奖励后才触发大奖，抽奖类型玩法符合大众喜好，玩家将抱有一定期待，提升玩家的活动参与意愿。</p>
+<p>iii.<strong>递进性</strong>：活动分为5轮，每轮大奖价值递增，最终轮大奖为无相卡牌，对玩家有足够的吸引力，而多轮次的设计也为活动提供了长线目标，使玩家在活动持续的6天时间内能够始终保持吸引力。</p>
+<p>(3)设计目的：该类活动是作为交付订单与收集卡牌的附加激励，也是对玩家交付订单与收集卡牌能力的综合考察，玩家日常就会做的订单交付与卡牌收集行为，转化为抽奖机会与额外奖励，而玩家想要获得活动大奖，又要反过来在交付订单与收集卡牌环节投入更多精力，从而玩家的游戏行动形成自然良性循环。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E7%BB%BC%E5%90%88%E6%BF%80%E5%8A%B1%E5%9E%8B.jpg"
+	width="1000"
+	height="1073"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E7%BB%BC%E5%90%88%E6%BF%80%E5%8A%B1%E5%9E%8B_hu2121194865483797571.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E4%B8%B4%E6%97%B6%E6%B4%BB%E5%8A%A8.%E7%BB%BC%E5%90%88%E6%BF%80%E5%8A%B1%E5%9E%8B_hu16896655756368698244.jpg 1024w"
+	loading="lazy"
+	
+		alt="综合激励型"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="223px"
+	
+></p>
+<p><a id="（六）常驻活动"></a></p>
+<h3 id="六常驻活动">（六）常驻活动
+</h3><p><a id="活动分布"></a></p>
+<h4 id="活动分布-2">活动分布
+</h4><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>活动名称</th>
+          <th>周期特征</th>
+          <th>持续时长</th>
+          <th>奖励内容</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>副棋盘活动</td>
+          <td>/</td>
+          <td>7天</td>
+          <td>3-5星卡牌包</td>
+      </tr>
+      <tr>
+          <td>装饰地块活动</td>
+          <td>/</td>
+          <td>17天</td>
+          <td>装饰物 + 体力 + 卡牌包 + 道具</td>
+      </tr>
+      <tr>
+          <td>ip联动集卡活动</td>
+          <td>/</td>
+          <td>40天</td>
+          <td>体力 + 宝石 + 道具 + 实体物</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><a id="副棋盘活动"></a></p>
+<h4 id="副棋盘活动">副棋盘活动
+</h4><p>(1)描述：活动期间，玩家通过提交订单获取副棋盘专属道具，在独立于主棋盘的全新棋盘上进行合成，逐步解锁高阶物品并<strong>点亮全图鉴</strong>获取奖励。根据图鉴的逐步解锁与合成次数的累计，玩家可获得阶段性的副棋盘专属道具激励奖励。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>独立合成链</strong>：副棋盘完全独立于主棋盘，其物品体系、图标风格与合成路径均为活动专属设计，不与主棋盘的任何合成链重叠。但副棋盘底层机制依然遵循二合规则，玩家在熟悉操作的前提下能有一定新鲜体验。</p>
+<p>ii.<strong>阶段性激励</strong>：活动中每解锁图鉴的一部分或是达到一定累计次数，就能获得一定数量的副棋盘专属道具，减轻玩家的副棋盘合成压力，与此同时，副棋盘上还存在着许多合成助力棋子，虽然副棋盘的合成链经常有12级左右，但实际上玩家不需要真的收集2^11及以上个数的副棋盘专属道具。</p>
+<p>iii.<strong>付费转化途径</strong>：副棋盘活动的推进需要专属道具，这些道具的获取途径有限，几乎仅有提交订单可大量获得，其它途径的获取量极其有限。游戏提供了付费购买活动通行证渠道，为那些差一点就能拿到最终大奖的玩家提供解决方案与付费途径，已经为活动投入大量精力的玩家购买意愿强，并且这类付费并非强制付费，而是一种主动选择的助力。</p>
+<p>(3)设计目的：二合作为游戏核心机制，随着订单需求物品等级越来越高，单次订单的体力消耗越来越大，合成任务越来越难推进。随着游戏时间推进，玩家获得的激励必然不足，玩家的爽快感会降低，副棋盘则提供了一个能够从零开始体验二合又不会干扰主线场景的独立新场景。独立的棋盘、全新的合成链、较低的起始门槛，副棋盘能够重新激活二合的爽快感，让玩家重新感受到其中乐趣。而副棋盘作为活动本身，又为主场景的养成经营环节带来体力、卡牌包、道具资源，并带来周期性付费转化场景。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.%E5%89%AF%E6%A3%8B%E7%9B%98%E6%B4%BB%E5%8A%A8.jpg"
+	width="1000"
+	height="2333"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.%E5%89%AF%E6%A3%8B%E7%9B%98%E6%B4%BB%E5%8A%A8_hu2509383097619411789.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.%E5%89%AF%E6%A3%8B%E7%9B%98%E6%B4%BB%E5%8A%A8_hu16648142193734458456.jpg 1024w"
+	loading="lazy"
+	
+		alt="副棋盘活动"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="42"
+		data-flex-basis="102px"
+	
+></p>
+<p><a id="装饰地块活动"></a></p>
+<h4 id="装饰地块活动">装饰地块活动
+</h4><p>(1)描述：</p>
+<p>玩家通过交付订单、参与相关活动获取活动积分，积分到达一定数额后可兑换<strong>装饰物</strong>和道具、卡牌包、体力等奖励。</p>
+<p>积分通常分为9阶段，1-7阶段中，每完成一阶段后，除获得该阶段的活动奖励外，还可得到部分积分返还，用于加速后续阶段推进；完成7个阶段任务即可获得当期所有装饰物。8-9阶段为挑战阶段，无装饰物兑换，但可以兑换大量体力、高级卡牌包、各种稀有道具，为玩家提供最后冲刺目标。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>美学设计</strong>：装饰地块活动的激励点不仅仅是其它活动类型的道具体力奖励，还包括独特的地块、建筑、装饰，玩家可见，可直观看到自己的茶楼庭院景观越发繁华，满足玩家的创造、收集欲。装饰物通常与月度主题或IP联动绑定，带有一定的绝版特性，玩家参与动力更强。</p>
+<p>ii.<strong>多重奖励</strong>：独特地块、建筑、装饰奖励为主，道具、卡牌包、体力奖励为辅，既能满足玩家的养成经营需求，也能获得可摆放展示的新建筑内容。</p>
+<p>iii.<strong>阶段分层</strong>：1-7阶段每完成一阶段返还部分积分，减少玩家继续推进的压力，即便是休闲类玩家也能相对轻松完成建筑物收集。而8-9阶段作为挑战层，奖励重心转向养成资源获取，覆盖已集齐装饰的高活跃深度游玩玩家。</p>
+<p>(3)设计目的：一来，装饰地块活动满足了收集型玩家的收集癖及创造型玩家的表达欲，为游戏口碑流量热度打下基础，二来，装饰地块活动包含大量养成资源奖励，与核心的养成经营模块始终连接紧密。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.%E8%A3%85%E9%A5%B0%E5%9C%B0%E5%9D%97%E6%B4%BB%E5%8A%A8.jpg"
+	width="1000"
+	height="3173"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.%E8%A3%85%E9%A5%B0%E5%9C%B0%E5%9D%97%E6%B4%BB%E5%8A%A8_hu196060707317692694.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.%E8%A3%85%E9%A5%B0%E5%9C%B0%E5%9D%97%E6%B4%BB%E5%8A%A8_hu6894106348872129074.jpg 1024w"
+	loading="lazy"
+	
+		alt="装饰地块活动"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="31"
+		data-flex-basis="75px"
+	
+></p>
+<p><a id="ip联动集卡活动"></a></p>
+<h4 id="ip联动集卡活动">ip联动集卡活动
+</h4><p>(1)描述：</p>
+<p>i.基本规则</p>
+<p>IP联动集卡活动以季度为单位运作，每期活动中，玩家可以收集到本季度专属的100+张特色卡牌，卡牌分为15组，每组卡牌中含有9张碎片。玩家需要收集齐一组中的所有9张碎片，方可组合完整的该组卡牌，获得对应的卡组奖励。每集齐一套卡牌后，获取对应奖励（大量体力+道具/宝石），集齐所有15套卡牌获取额外大量体力、大量宝石与稀有道具奖励。</p>
+<p>ii.卡牌说明</p>
+<p>卡牌分为1星-5星五个等级，高级卡牌（3星及以上）拥有特殊的霞光类卡牌碎片，带有特殊视觉特效，霞光类卡牌首次获取时获得少量体力奖励。</p>
+<p>当玩家获得重复卡牌时，卡牌不会被浪费，卡牌牌面的星数将等比换算为<strong>戏符点</strong>，可积分累计在戏符匣中再次兑换卡牌。</p>
+<p>iii.保底规则</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>卡牌星级</th>
+          <th>保底触发条件</th>
+          <th>保底效果</th>
+          <th>理论最大卡包需求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>5星</td>
+          <td>获得重复的5星牌时</td>
+          <td>下一张5星牌必为全新</td>
+          <td>24个</td>
+      </tr>
+      <tr>
+          <td>4星</td>
+          <td>连续获得4张重复的4星牌</td>
+          <td>下一张4星牌必为全新</td>
+          <td>100个</td>
+      </tr>
+      <tr>
+          <td>3星</td>
+          <td>连续获得6张重复的3星牌</td>
+          <td>下一张3星牌必为全新</td>
+          <td>170个</td>
+      </tr>
+      <tr>
+          <td>2星</td>
+          <td>连续获得7张重复的2星牌</td>
+          <td>下一张2星牌必为全新</td>
+          <td>240个</td>
+      </tr>
+      <tr>
+          <td>1星</td>
+          <td>连续获得9张重复的1星牌</td>
+          <td>下一张1星牌必为全新</td>
+          <td>370个</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>5星卡牌只需1次重复即可触发保底，而1星卡牌需要连续9次重复才能触发。从设计上来说，高星卡牌的获取成本远高于低星卡牌，低星卡牌获取频繁，保底门槛相应提高，以平衡整体收集节奏。</p>
+<p>iv.卡包类型与概率</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>卡包名称</th>
+          <th>总牌数</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1星百戏锦囊</td>
+          <td>2</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>100%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>1星百戏大锦囊</td>
+          <td>4</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>100%1星普通</td>
+          <td>100%1星普通</td>
+          <td>100%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>2星百戏锦囊</td>
+          <td>3</td>
+          <td>100%2星普通</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>100%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>2星百戏大锦囊</td>
+          <td>5</td>
+          <td>100%2星普通</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>100%1星普通</td>
+          <td>100%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>3星百戏锦囊</td>
+          <td>3</td>
+          <td>93.3%3星普通，6.7%3星霞光</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>100%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>3星百戏大锦囊</td>
+          <td>5</td>
+          <td>93.3%3星普通，6.7%3星霞光</td>
+          <td>55%2星普通，45%1星普通</td>
+          <td>55%2星普通，45%1星普通</td>
+          <td>100%1星普通</td>
+          <td>100%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>4星百戏锦囊</td>
+          <td>4</td>
+          <td>92.3%4星普通，7.7%4星霞光</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>4星百戏大锦囊</td>
+          <td>6</td>
+          <td>92.3%4星普通，7.7%4星霞光</td>
+          <td>25%3星普通，15%2星普通，60%1星普通</td>
+          <td>25%3星普通，15%2星普通，60%1星普通</td>
+          <td>25%3星普通，15%2星普通，60%1星普通</td>
+          <td>100%2星普通</td>
+          <td>100%2星普通</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>5星百戏锦囊</td>
+          <td>4</td>
+          <td>83.3%5星普通，16.7%5星霞光</td>
+          <td>100%4星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>5星百戏大锦囊</td>
+          <td>6</td>
+          <td>83.3%5星普通，16.7%5星霞光</td>
+          <td>100%4星普通</td>
+          <td>100%3星普通</td>
+          <td>100%2星普通</td>
+          <td>15%4星普通，20%3星普通，30%2星普通，35%1星普通</td>
+          <td>15%4星普通，20%3星普通，30%2星普通，35%1星普通</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>5星百戏超大锦囊</td>
+          <td>7</td>
+          <td>100%5星普通</td>
+          <td>100%4星普通</td>
+          <td>100%3星普通</td>
+          <td>100%2星普通</td>
+          <td>100%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+      </tr>
+      <tr>
+          <td>3星霞光锦囊</td>
+          <td>3</td>
+          <td>100%3星霞光</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>25%2星普通，75%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>4星霞光锦囊</td>
+          <td>4</td>
+          <td>100%4星霞光</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>13%3星普通，39%2星普通，48%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+      <tr>
+          <td>5星霞光锦囊</td>
+          <td>4</td>
+          <td>100%5星霞光</td>
+          <td>6%4星普通，18%3星普通，35%2星普通，41%1星普通</td>
+          <td>6%4星普通，18%3星普通，35%2星普通，41%1星普通</td>
+          <td>6%4星普通，18%3星普通，35%2星普通，41%1星普通</td>
+          <td>/</td>
+          <td>/</td>
+          <td>/</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>(2)设计特点：</p>
+<p>i.<strong>收集性</strong>：集卡活动属于长线目标，周期长，奖励丰厚，且卡组可重复收集，玩家不存在无事可做的空闲期。</p>
+<p>ii.<strong>阶段性</strong>：每收集一组卡牌（9张碎片）即可获得奖励，提供明确进度条和阶段奖励，玩家在每完成一组时都能获得正反馈，给玩家继续推进的动力。</p>
+<p>iii.<strong>回收机制</strong>：当玩家抽取到重复卡牌时，卡牌将转换成点数回收，玩家虽然没有抽到新卡，但抽到的重复卡牌仍能发挥用处。</p>
+<p>iv.<strong>品牌传播</strong>：往期活动中，游戏与《梦华录》、非遗苏绣、非遗木偶戏等IP合作，包含内容植入，每一期联动百戏图都围绕IP的核心文化元素设计卡牌内容，带有文化体验要素，又融合进可收集的游戏内容，能够达到拓展品牌影响力的效果。</p>
+<p>(3)设计目的：养成经营角度，将玩家分散的完成订单、消耗体力、参与活动等行为纳入集卡这一个目标；游戏运营角度，集卡活动与IP品牌联动，能够建立起品牌认知与品牌辨识度。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.ip%E8%81%94%E5%8A%A8%E9%9B%86%E5%8D%A1%E6%B4%BB%E5%8A%A8.jpg"
+	width="1000"
+	height="1070"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.ip%E8%81%94%E5%8A%A8%E9%9B%86%E5%8D%A1%E6%B4%BB%E5%8A%A8_hu12239227345159226528.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E6%B4%BB%E5%8A%A8%E8%BF%90%E8%90%A5%E7%B3%BB%E7%BB%9F.%E5%B8%B8%E9%A9%BB%E6%B4%BB%E5%8A%A8.ip%E8%81%94%E5%8A%A8%E9%9B%86%E5%8D%A1%E6%B4%BB%E5%8A%A8_hu3625048467186138613.jpg 1024w"
+	loading="lazy"
+	
+		alt="ip联动集卡活动"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="224px"
+	
+></p>
+<p><a id="五、付费系统"></a></p>
+<h2 id="五付费系统">五、付费系统
+</h2><p><a id="（一）系统定位"></a></p>
+<h3 id="一系统定位-3">（一）系统定位
+</h3><p>付费系统是《梦幻消除战》的商业化核心，采用<strong>免费下载+App内购买</strong>的变现模式，内购定位为休闲游戏的道具付费模式，核心付费点包括：体力回复、道具购买、仓库扩容、冷却加速。付费点整体偏轻度，与拼数值类游戏的重度付费设计有所区别。</p>
+<p>由于游戏是一款碎片化休闲游戏，玩家群体研究商城礼包的意愿和能力均弱于中重度游戏玩家，且付费主动性较差。针对这一用户特征，游戏采用强视觉引导+场景触发策略，将各类商业化包装礼包直接放在首页展示，并在玩家游戏进程中的恰当时刻，以”海报“形式弹出，降低玩家的发现成本与决策门槛。</p>
+<p><a id="（二）设计目的"></a></p>
+<h3 id="二设计目的-3">（二）设计目的
+</h3><p>1.<strong>紧抓痛点</strong>：消费点设置在升级瞬间、体力耗尽时、活动倒计时等多个关键节点，玩家均处于情绪高点或痛点中，且此类礼包多为小额消费，为3-18元不等，玩家易冲动消费，付费转化率更高。</p>
+<p>2.<strong>差异化消费</strong>：玩家可以选择不同档位的礼包，为不同付费能力的玩家提供差异化的付费选择。</p>
+<p>3.<strong>广告替代路径</strong>：配合看广告机制，为零氪玩家提供替代性的资源获取路径，零氪玩家通过观看广告、完成每日任务等方式依旧可以获取免费资源，付费玩家则通过金钱跳过等待时间获得更好的游戏体验。</p>
+<p><a id="（三）体力付费"></a></p>
+<h3 id="三体力付费">（三）体力付费
+</h3><p>(1)描述：玩家可随时点击体力界面上的“+”按钮，实时花费宝石购买体力。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：体力礼包的入口嵌入在体力界面，本身玩家点击按钮时就代表玩家想要获取体力，在玩家极度缺乏体力时，此礼包付费转化率自然提高。</p>
+<p>ii.<strong>价格梯度</strong>：购买体力花费的宝石随着购买次数递增，每日前几次兑换的价格较低，后续兑换的价格逐步上升，玩家进行价格对比后会倾向性地选择每天都购买至少一次低价体力，而不是在某一天多次购买体力，养成玩家的日常付费习惯。</p>
+<p>(3)设计目的：在玩家体力耗尽时提供即时解决方案。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E4%BD%93%E5%8A%9B%E4%BB%98%E8%B4%B9.jpg"
+	width="500"
+	height="1093"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E4%BD%93%E5%8A%9B%E4%BB%98%E8%B4%B9_hu14993533015487085078.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E4%BD%93%E5%8A%9B%E4%BB%98%E8%B4%B9_hu3466616197845315834.jpg 1024w"
+	loading="lazy"
+	
+		alt="体力付费"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<p><a id="（四）棋子付费"></a></p>
+<h3 id="四棋子付费">（四）棋子付费
+</h3><p>(1)描述：在合成物品时，棋盘上有概率产生气泡棋子，玩家可以花费宝石购买该棋子。其中，2-5级低级物品每日拥有5次看广告获取机会，而高级物品只能花费宝石获取。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：棋子付费的发生场景在玩家合成过程中，所产生的气泡棋子大概率会是玩家需要的棋子类型，玩家可以点击气泡棋子实时查看购买选项，玩家购买意愿会更强。</p>
+<p>ii.<strong>概率性</strong>：气泡棋子的出现本身具有概率性，需要玩家多次合成才可能出现气泡棋子，为合成过程增添了惊喜感，降低玩家意识到气泡棋子本质也是商品付费点后的抵触心理。</p>
+<p>ii.<strong>获取差异化</strong>：低级物品提供看广告免费获取的路径，保障了零氪玩家的游玩体验，而高级物品的获取只能花费宝石购买，服务于付费玩家，提供“花钱省时间”的便利。</p>
+<p>(3)设计目的：加速玩家的合成过程，为玩家提供一定的便利和设置付费点。棋子付费并非强制，属于玩家的可选项，且气泡棋子常出现在玩家需要的时刻，付费转化率更高。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E5%AD%90%E4%BB%98%E8%B4%B9.jpg"
+	width="1000"
+	height="1071"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E5%AD%90%E4%BB%98%E8%B4%B9_hu8237113095425733547.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E6%A3%8B%E5%AD%90%E4%BB%98%E8%B4%B9_hu15187115659718856251.jpg 1024w"
+	loading="lazy"
+	
+		alt="棋子付费"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="224px"
+	
+></p>
+<p><a id="（五）商城付费"></a></p>
+<h3 id="五商城付费">（五）商城付费
+</h3><p>(1)描述：最基础的付费场景，当玩家将等级升至3级时，系统对玩家进行商城引导，商城分为<strong>宝石充值</strong>与<strong>道具购买</strong>两部分，商店刷新时间固定为早8点，玩家也可以使用宝石手动刷新商店内的道具。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：商城入口位于顶部信息区最右侧，3级时触发引导，此时玩家已经完成了初步的合成教学，对游戏资源体系已有基本认知。</p>
+<p>ii.<strong>价格锚点</strong>：宝石作为游戏的虚拟货币，玩家需要感知其价值，而商城给出了基础定价。商城的基础定价给出的宝石价值平均低于各类限时礼包，直购宝石的高价位让各类礼包显得“性价比更高”，从而提升礼包的付费转化率。</p>
+<p>(3)设计目的：提供基础的付费入口，并作为价格锚点促进礼包转化。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E5%95%86%E5%9F%8E%E4%BB%98%E8%B4%B9.jpg"
+	width="1000"
+	height="855"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E5%95%86%E5%9F%8E%E4%BB%98%E8%B4%B9_hu23985520736379062.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E5%95%86%E5%9F%8E%E4%BB%98%E8%B4%B9_hu1580327233957912014.jpg 1024w"
+	loading="lazy"
+	
+		alt="商城付费"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="116"
+		data-flex-basis="280px"
+	
+></p>
+<p><a id="（六）礼包系统"></a></p>
+<h3 id="六礼包系统">（六）礼包系统
+</h3><p><a id="兑换码系统"></a></p>
+<h4 id="兑换码系统">兑换码系统
+</h4><p>(1)描述：游戏提供了一批永久可领取的兑换码，内含大量免费资源，除此之外，每周五定期发放一批当前活动的兑换码，拥有长线活力。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：兑换码入口位于主界面顶部信息区右上角的菜单内，属于二级入口，表明兑换码相对来说属于辅助激励。</p>
+<p>ii.<strong>社交功能</strong>：兑换码的获取通常需要玩家关注游戏圈，查看官方公告，要求玩家主动关注官方渠道，从游戏运营角度，能够提升游戏圈的关注度与活跃度。</p>
+<p>iii.<strong>品牌传播</strong>：运营兑换码大多为中文宣传标语，”茶楼雅座“，”梦华联动送好礼“等宣传语，与游戏正在进行的主题活动、IP联动、节日节点深度绑定，增加了游戏的媒体曝光度与社群讨论度。</p>
+<p>(3)设计目的：通过兑换码能够快速获得初始资源，降低新玩家的上手难度；建立玩家对游戏的好感与信任，培养后续付费意愿；每周五定期发放的兑换码能够保持玩家的长线关注与社区活跃。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%85%91%E6%8D%A2%E7%A0%81.jpg"
+	width="500"
+	height="1111"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%85%91%E6%8D%A2%E7%A0%81_hu10759582130574829024.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%85%91%E6%8D%A2%E7%A0%81_hu9252025026639545449.jpg 1024w"
+	loading="lazy"
+	
+		alt="兑换码"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="108px"
+	
+></p>
+<p><a id="等级礼包"></a></p>
+<h4 id="等级礼包">等级礼包
+</h4><p>(1)描述：等级提升时触发的限时礼包，从5级开始弹出。礼包价格通常为3元，内含体力、铜钱、宝石、道具等养成资源。礼包设有24小时倒计时，若在倒计时结束前未购买，该礼包即过期。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：等级礼包以弹窗形式出现在玩家升级后的主界面中央，且定价不高，玩家刚完成一轮升级通常情绪积极，对于限时特惠接受程度更高。</p>
+<p>ii.<strong>等级阶段</strong>：5级作为礼包触发的起点，这个等级的玩家对游戏有了基本认知，有留存意愿，并能意识到养成资源的稀缺，有一定付费意愿。</p>
+<p>(3)设计目的：利用升级的成就感促进付费转化，且金额小，玩家付费意愿会更强；24小时过期的限时设计制造出紧迫感，玩家决策会更不理性。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E7%AD%89%E7%BA%A7%E7%A4%BC%E5%8C%85.jpg"
+	width="500"
+	height="1094"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E7%AD%89%E7%BA%A7%E7%A4%BC%E5%8C%85_hu3537339983694879086.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E7%AD%89%E7%BA%A7%E7%A4%BC%E5%8C%85_hu1836293064560423919.jpg 1024w"
+	loading="lazy"
+	
+		alt="等级礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<p><a id="新人礼包"></a></p>
+<h4 id="新人礼包">新人礼包
+</h4><p>(1)描述：在20级以前，游戏将不时弹出新人礼包，新人礼包是针对新玩家设计的专属福利。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>触发时机</strong>：新人礼包出现在玩家升级时，配以“只此一次千万别错过”文案，强调礼包的稀缺性。</p>
+<p>ii.<strong>获取途径</strong>：新人礼包仅在20级以前出现，过期不再出现，老玩家无法回头购买。驱动新玩家在早期做出付费决策。</p>
+<p>(3)设计目的：通过高性价比的福利组合，将新玩家尽早转化为付费用户，培养用户付费习惯。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%96%B0%E4%BA%BA%E7%A4%BC%E5%8C%85.jpg"
+	width="500"
+	height="1092"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%96%B0%E4%BA%BA%E7%A4%BC%E5%8C%85_hu2804167063156156780.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%96%B0%E4%BA%BA%E7%A4%BC%E5%8C%85_hu4382119818219914003.jpg 1024w"
+	loading="lazy"
+	
+		alt="新人礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="109px"
+	
+></p>
+<p><a id="体力礼包"></a></p>
+<h4 id="体力礼包">体力礼包
+</h4><p>(1)描述：当玩家点击体力购买界面，不进行体力购买操作进行返回时，系统会弹出一个限时体力礼包，内含体力及宝石，价格低于常规直接购买。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>触发时机</strong>：在玩家有体力需求时触发，心理上处于考虑购买的状态，但并未购买，弹窗礼包给予一个更优惠选项，促使玩家购买。</p>
+<p>ii.<strong>限时紧迫</strong>：礼包带有倒计时，过期消失，促进玩家立即购买。</p>
+<p>(3)设计目的：挽留需要补充体力的玩家，给出更优惠的限时礼包。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E4%BD%93%E5%8A%9B%E7%A4%BC%E5%8C%85.jpg"
+	width="500"
+	height="840"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E4%BD%93%E5%8A%9B%E7%A4%BC%E5%8C%85_hu1309894847084326085.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E4%BD%93%E5%8A%9B%E7%A4%BC%E5%8C%85_hu8614566525436681087.jpg 1024w"
+	loading="lazy"
+	
+		alt="体力礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="59"
+		data-flex-basis="142px"
+	
+></p>
+<p><a id="卡牌礼包"></a></p>
+<h4 id="卡牌礼包">卡牌礼包
+</h4><p>(1)描述：集卡活动即将结束前出现，系统会弹出限时卡牌礼包，玩家购买后，可从尚未获得的3张卡牌中任选一张。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>触发时机</strong>：卡牌礼包的触发时机为集卡活动结束前的最后阶段，利用玩家的沉没成本心理和完成任务需求驱动力，为已收集了大半进度但尚未完成收集任务的玩家提供一次补缺机会，对该群体具有极强的吸引力。</p>
+<p>ii.<strong>自选机制</strong>：玩家可从从未获得的3张牌中任选一张，填补收集进度中的缺口，玩家能感到购买礼包一定有实际价值，更有掌控感。</p>
+<p>(3)设计目的：定位于那些在活动周期内已投入大量时间收集、但仍差少数卡牌未能集齐的玩家，提高活动完成率与玩家满意度，并提升玩家对下一期集卡活动的参与意愿与付费意愿。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E7%A4%BC%E5%8C%85.jpg"
+	width="500"
+	height="1111"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E7%A4%BC%E5%8C%85_hu10674658402688114644.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%8D%A1%E7%89%8C%E7%A4%BC%E5%8C%85_hu15602800672535549898.jpg 1024w"
+	loading="lazy"
+	
+		alt="卡牌礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="108px"
+	
+></p>
+<p><a id="买赠型礼包"></a></p>
+<h4 id="买赠型礼包">买赠型礼包
+</h4><p>(1)描述：买赠型礼包不直接全部写出玩家付费后能获得的所有道具，而是陆续或分块展示，给玩家更值得的感受，形式包括“买一组赠一组”“买一个后获得剩下免费礼物”等。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：礼包挂载在主界面两侧，以图标形式呈现。主界面是玩家点进游戏后的必经场景，挂载于此能够保证礼包获得充足的曝光量。</p>
+<p>ii.<strong>渐进式展示</strong>：礼包内容逐块展示，而非一次性全部呈现。玩家在付费过程会有“赚到了”的正向感受，提升付费满意度与复购意愿。</p>
+<p>(3)设计目的：通过“赠品”的心理效应提升付费转化率。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E4%B9%B0%E8%B5%A0%E5%9E%8B%E7%A4%BC%E5%8C%85.jpg"
+	width="1000"
+	height="1071"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E4%B9%B0%E8%B5%A0%E5%9E%8B%E7%A4%BC%E5%8C%85_hu5924045798237658028.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E4%B9%B0%E8%B5%A0%E5%9E%8B%E7%A4%BC%E5%8C%85_hu13504934458691504766.jpg 1024w"
+	loading="lazy"
+	
+		alt="买赠型礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="224px"
+	
+></p>
+<p><a id="连购型礼包"></a></p>
+<h4 id="连购型礼包">连购型礼包
+</h4><p>(1)描述：连购型礼包由一个包含多个小礼包的组合礼包构成。玩家可依次购买其中的小礼包，每购买一个小礼包即可获得对应的资源奖励，当玩家购买完所有小礼包后，还可额外获得一份大型奖励。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：礼包挂载在主界面两侧，以图标形式呈现。主界面是玩家点进游戏后的必经场景，挂载于此能够保证礼包获得充足的曝光量。礼包页面展示购买进度，已经买了部分小礼包的玩家看到进度显示后，会产生强烈的完成所有进度拿大奖的冲动。</p>
+<p>ii.<strong>连购激励</strong>：将一次大型付费拆分为多次小额付费，在每个付费点给予付费激励，在完成所有付费后进行一次大型激励，作为坚持完成全部购买的终极回报。</p>
+<p>(3)设计目的：鼓励玩家连续购买，提升单用户的付费频次与付费总额。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E8%BF%9E%E8%B4%AD%E5%9E%8B%E7%A4%BC%E5%8C%85.jpg"
+	width="500"
+	height="1111"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E8%BF%9E%E8%B4%AD%E5%9E%8B%E7%A4%BC%E5%8C%85_hu168531713664111668.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E8%BF%9E%E8%B4%AD%E5%9E%8B%E7%A4%BC%E5%8C%85_hu5959482898562049187.jpg 1024w"
+	loading="lazy"
+	
+		alt="连购型礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="108px"
+	
+></p>
+<p><a id="抽奖型礼包"></a></p>
+<h4 id="抽奖型礼包">抽奖型礼包
+</h4><p>(1)描述：玩家购买的是抽取机会，玩家的每一次购买，可能刚好回本，也可能一次就抽中大奖。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：礼包挂载在主界面两侧，以图标形式呈现。主界面是玩家点进游戏后的必经场景，挂载于此能够保证礼包获得充足的曝光量。</p>
+<p>ii.<strong>随机性</strong>：玩家购买后获得的是抽取机会，可能开出不同价值的奖励，玩家带有一定赌博心理，更愿意尝试付费。</p>
+<p>(3)设计目的：针对人类的以小博大本能，刺激玩家的购买冲动。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%8A%BD%E5%A5%96%E5%9E%8B%E7%A4%BC%E5%8C%85.jpg"
+	width="500"
+	height="1111"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%8A%BD%E5%A5%96%E5%9E%8B%E7%A4%BC%E5%8C%85_hu3055797065941274298.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%8A%BD%E5%A5%96%E5%9E%8B%E7%A4%BC%E5%8C%85_hu18335980956726759162.jpg 1024w"
+	loading="lazy"
+	
+		alt="抽奖型礼包"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="108px"
+	
+></p>
+<p><a id="（七）活动vip通道"></a></p>
+<h3 id="七活动vip通道">（七）活动vip通道
+</h3><p>(1)描述：在游戏的主要活动中均设置了VIP通道，付费玩家可以解锁额外的奖励档位、更高的效率加成。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：活动VIP通道的入口嵌入在活动界面内，玩家在参与活动时即可看到，vip活动与活动系统绑定，对参与活动的活跃玩家吸引力更强。</p>
+<p>ii.<strong>可选性</strong>：免费玩家可获取基础档位奖励，付费玩家则可解锁额外奖励。玩家能够自主选择，拥有掌控感。</p>
+<p>(3)设计目的：为付费玩家提供差异化的活动体验，并作为周期性付费场景。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%B4%BB%E5%8A%A8vip%E9%80%9A%E9%81%93.jpg"
+	width="1000"
+	height="1075"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%B4%BB%E5%8A%A8vip%E9%80%9A%E9%81%93_hu6964298035399959825.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E6%B4%BB%E5%8A%A8vip%E9%80%9A%E9%81%93_hu1977485381928739605.jpg 1024w"
+	loading="lazy"
+	
+		alt="活动vip通道"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="223px"
+	
+></p>
+<p><a id="（八）广告系统"></a></p>
+<h3 id="八广告系统">（八）广告系统
+</h3><p>(1)描述：玩家每日可以通过观看30秒左右的视频广告获取体力、棋子资源。</p>
+<p>(2)设计特点：</p>
+<p>i.<strong>入口设计</strong>：广告入口出现在玩家需要体力或是棋子时，无需玩家额外进行决策。</p>
+<p>ii.<strong>次数限制</strong>：广告观看设有每日次数限制，收益固定，防止玩家通过无限刷广告获取过量资源。</p>
+<p>(3)设计目的：保障零氪玩家的游玩体验，广告提供了用时间换资源的路径，确保零氪玩家不会因资源匮乏而流失；对于游戏发行方而言，广告收入是内购收入之外的第二收入来源。</p>
+<p><img src="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F.jpg"
+	width="1000"
+	height="1046"
+	srcset="/p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F_hu3441284723057905476.jpg 480w, /p/programming-gamedevelop-y2-mhxcz/2026__%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1.%E7%B3%BB%E7%BB%9F%E6%8B%86%E8%A7%A3__%E4%BC%91%E9%97%B2%E4%BA%8C%E5%90%88%E6%A8%A1%E6%8B%9F%E7%BB%8F%E8%90%A5.%E6%A2%A6%E5%B9%BB%E6%B6%88%E9%99%A4%E6%88%98.%E4%BB%98%E8%B4%B9%E7%B3%BB%E7%BB%9F.%E7%A4%BC%E5%8C%85%E7%B3%BB%E7%BB%9F.%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F_hu9524986243580772373.jpg 1024w"
+	loading="lazy"
+	
+		alt="广告系统"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="95"
+		data-flex-basis="229px"
+	
+></p>
+<p><a id="六、总结"></a></p>
+<h2 id="六总结">六、总结
+</h2><p>《梦幻消除战》底层核心玩法是二合机制 + 养成经营 + 主线叙事，养成经营、活动运营、付费激励三者环环相扣：养成经营构成玩家日常游戏的基本节奏；活动运营在养成经营行为之上叠加多层激励；付费激励给了愿意付费的玩家更流畅、更丰厚的体验，同时通过广告系统保障零氪玩家的生存空间。</p>
+<p>其长线活力建立在活动与付费之上，大量的活动和付费点保证了游戏商业化节奏，并给玩家带来持续的内容新鲜度。</p>
+<p>游戏未来的挑战在于如何在深度与休闲之间持续找到最优解，随着版本迭代，新活动密度、新系统引入，都将加深游戏规则复杂度，也加深了玩家面对接连不断活动的疲惫感，制作方需要持续权衡游戏的加法与减法。</p>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a>
+        
+            <a href="/tags/%E6%B8%B8%E6%88%8F%E7%AD%96%E5%88%92%E6%A1%88/">游戏策划案</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-y1-slay-the-spire-2/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小游戏开发 | 策划案-系统模块拆解 | 地牢肉鸽卡牌-杀戮尖塔2</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-c3-unity-rubys-adventure/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：Rubys Adventure</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了33篇文章 · 
+		总计227.16k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>
