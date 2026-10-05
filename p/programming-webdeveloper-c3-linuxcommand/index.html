@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Linux：常用命令">
+<title>小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Linux：常用命令</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-c3-linuxcommand/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Linux：常用命令">
+<meta property='og:description' content="Linux：常用命令">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-c3-linuxcommand/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2026-05-03T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-03T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Linux：常用命令">
+<meta name="twitter:description" content="Linux：常用命令">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1概述">1.概述</a></li>
+    <li><a href="#2开关机">2.开关机</a></li>
+    <li><a href="#3磁盘管理">3.磁盘管理</a>
+      <ol>
+        <li><a href="#1概念">(1)概念</a></li>
+        <li><a href="#2特点">(2)特点</a></li>
+        <li><a href="#3磁盘挂载">(3)磁盘挂载</a></li>
+      </ol>
+    </li>
+    <li><a href="#4目录管理">4.目录管理</a></li>
+    <li><a href="#5文件基本属性">5.文件基本属性</a>
+      <ol>
+        <li><a href="#1查看内容">(1)查看内容</a></li>
+        <li><a href="#2linux中的链接概念">(2)Linux中的“链接”概念</a></li>
+      </ol>
+    </li>
+    <li><a href="#6文本编辑vim">6.文本编辑Vim</a>
+      <ol>
+        <li><a href="#1概念-1">(1)概念</a></li>
+        <li><a href="#2工作模式">(2)工作模式</a></li>
+        <li><a href="#3按键说明">(3)按键说明</a></li>
+      </ol>
+    </li>
+    <li><a href="#7权限系统">7.权限系统</a>
+      <ol>
+        <li><a href="#1用户管理">(1)用户管理</a>
+          <ol>
+            <li><a href="#1概念-2">1）概念</a></li>
+            <li><a href="#2增">2）增</a></li>
+            <li><a href="#3删">3）删</a></li>
+            <li><a href="#4改">4）改</a></li>
+            <li><a href="#5切换用户">5）切换用户</a></li>
+            <li><a href="#6账号管理">6）账号管理</a></li>
+          </ol>
+        </li>
+        <li><a href="#2用户组管理">(2)用户组管理</a>
+          <ol>
+            <li><a href="#1概念-3">1）概念</a></li>
+            <li><a href="#2增-1">2）增</a></li>
+            <li><a href="#3删-1">3）删</a></li>
+            <li><a href="#4改-1">4）改</a></li>
+          </ol>
+        </li>
+        <li><a href="#3文件权限">(3)文件权限</a>
+          <ol>
+            <li><a href="#1属">1）属</a></li>
+            <li><a href="#2修改属">2）修改属</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#8进程管理">8.进程管理</a>
+      <ol>
+        <li><a href="#1概念-4">(1)概念</a></li>
+        <li><a href="#2查看进程">(2)查看进程</a></li>
+      </ol>
+    </li>
+    <li><a href="#9压缩归档">9.压缩归档</a>
+      <ol>
+        <li><a href="#1zip文件压缩">(1)zip文件压缩</a></li>
+        <li><a href="#2zip文件解压缩">(2)zip文件解压缩</a></li>
+        <li><a href="#3tar文件压缩与解压缩">(3)tar文件压缩与解压缩</a></li>
+      </ol>
+    </li>
+    <li><a href="#10安装应用">10.安装应用</a>
+      <ol>
+        <li><a href="#1rpm离线安装">(1)RPM离线安装</a></li>
+        <li><a href="#2yum在线安装">(2)Yum在线安装</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/webdeveloper/" >
+                Webdeveloper
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-c3-linuxcommand/">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Linux：常用命令</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Linux：常用命令
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-05-03</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 6749 字
+                    阅读时长: 14 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.概述
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e5%bc%80%e5%85%b3%e6%9c%ba"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.开关机
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e7%a3%81%e7%9b%98%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.磁盘管理
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)概念
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29%e7%89%b9%e7%82%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)特点
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29%e7%a3%81%e7%9b%98%e6%8c%82%e8%bd%bd"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)磁盘挂载
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#4.%e7%9b%ae%e5%bd%95%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.目录管理
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e6%96%87%e4%bb%b6%e5%9f%ba%e6%9c%ac%e5%b1%9e%e6%80%a7"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.文件基本属性
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e6%9f%a5%e7%9c%8b%e5%86%85%e5%ae%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)查看内容
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29Linux%e4%b8%ad%e7%9a%84%e2%80%9c%e9%93%be%e6%8e%a5%e2%80%9d%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)Linux中的“链接”概念
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#6.%e6%96%87%e6%9c%ac%e7%bc%96%e8%be%91Vim"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.文本编辑Vim
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)概念
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29%e5%b7%a5%e4%bd%9c%e6%a8%a1%e5%bc%8f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)工作模式
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29%e6%8c%89%e9%94%ae%e8%af%b4%e6%98%8e"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)按键说明
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#7.%e6%9d%83%e9%99%90%e7%b3%bb%e7%bb%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.权限系统
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)用户管理
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#1%ef%bc%89%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1）概念
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2%ef%bc%89%e5%a2%9e"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2）增
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3%ef%bc%89%e5%88%a0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3）删
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4%ef%bc%89%e6%94%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4）改
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5%ef%bc%89%e5%88%87%e6%8d%a2%e7%94%a8%e6%88%b7"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5）切换用户
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6%ef%bc%89%e8%b4%a6%e5%8f%b7%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6）账号管理
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%282%29%e7%94%a8%e6%88%b7%e7%bb%84%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)用户组管理
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#1%ef%bc%89%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1）概念
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2%ef%bc%89%e5%a2%9e"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2）增
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3%ef%bc%89%e5%88%a0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3）删
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4%ef%bc%89%e6%94%b9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4）改
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#%283%29%e6%96%87%e4%bb%b6%e6%9d%83%e9%99%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)文件权限
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#1%ef%bc%89%e5%b1%9e"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1）属
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2%ef%bc%89%e4%bf%ae%e6%94%b9%e5%b1%9e"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2）修改属
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a class="link" href="#8.%e8%bf%9b%e7%a8%8b%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        8.进程管理
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)概念
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29%e6%9f%a5%e7%9c%8b%e8%bf%9b%e7%a8%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)查看进程
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#9.%e5%8e%8b%e7%bc%a9%e5%bd%92%e6%a1%a3"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        9.压缩归档
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29zip%e6%96%87%e4%bb%b6%e5%8e%8b%e7%bc%a9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)zip文件压缩
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29zip%e6%96%87%e4%bb%b6%e8%a7%a3%e5%8e%8b%e7%bc%a9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)zip文件解压缩
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29tar%e6%96%87%e4%bb%b6%e5%8e%8b%e7%bc%a9%e4%b8%8e%e8%a7%a3%e5%8e%8b%e7%bc%a9"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)tar文件压缩与解压缩
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#10.%e5%ae%89%e8%a3%85%e5%ba%94%e7%94%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        10.安装应用
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29RPM%e7%a6%bb%e7%ba%bf%e5%ae%89%e8%a3%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)RPM离线安装
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29Yum%e5%9c%a8%e7%ba%bf%e5%ae%89%e8%a3%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)Yum在线安装
+        
+    </span>
+</a></li>
+</ol>
+</li>
+</ol>
+<p><a id="1.概述"></a></p>
+<h2 id="1概述">1.概述
+</h2><ul>
+<li>(1)“程序”在Windows叫做&quot;服务&quot;（service），在Linux叫做&quot;守护进程&quot;（daemon）。</li>
+<li>(2)使用Linux系统，在实际工作中，都会选用命令行来执行操作，而不选用图形化界面，在VMware上，我们可以使用快捷键<code>Ctrl+ALT+f2</code>切换至命令行交互界面，也可以使用VMware中带有的“终端”系统工具模拟器使用命令行。</li>
+<li>(3)命令语法：<code>命令 [[-短选项参数]/[--长选项参数]] 其它</code>。</li>
+<li>(4)操作系统提供了命令对应的手册，命令：<code>man [有疑问的命令]</code>（Manual）；非系统命令也可以使用命令本身提供的帮助信息命令：<code>[有疑问的命令] --h</code>或<code>[有疑问的命令] --help</code>。</li>
+<li>(5)可使用快捷键<code>Ctrl+C</code>中断任何命令。</li>
+</ul>
+<p><a id="2.开关机"></a></p>
+<h2 id="2开关机">2.开关机
+</h2><ul>
+<li>(1)Linux开机后将进入到用户登录界面，不同的用户拥有不同的权限，最高权限账户为 root。</li>
+<li>(2)Linux大多是在云服务器上部署，很少会需要关机。关机指令为<code>shutdown</code>。
+<ul>
+<li>防止数据的丢失，在关机前执行数据同步指令<code>sync</code>。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sync <span class="c1"># 将数据由内存同步到硬盘中</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown <span class="c1"># 关机</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown –h <span class="m">10</span> <span class="c1"># 这个命令告诉大家，计算机将在10分钟后关机</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown –h now <span class="c1"># 立马关机</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown –h 20:25 <span class="c1"># 系统会在今天20:25关机</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown –h +10 <span class="c1"># 十分钟后关机</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown –r now <span class="c1"># 系统立马重启</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">shutdown –r +10 <span class="c1"># 系统十分钟后重启</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">reboot <span class="c1"># 重启，等同于 shutdown –r now</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">halt <span class="c1"># 关闭系统，等同于shutdown –h now 和 poweroff</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="3.磁盘管理"></a></p>
+<h2 id="3磁盘管理">3.磁盘管理
+</h2><p><a id="(1)概念"></a></p>
+<h3 id="1概念">(1)概念
+</h3><ul>
+<li>1)命令语法：<code>df [-参数] [目录或文件名]</code>
+<ul>
+<li>功能：列出文件系统的整体磁盘使用量。</li>
+<li>参数- <code>h</code>：以GBytes，MBytes，KBytes等格式显示已用、可用容量（如不使用，默认单位Byte）。</li>
+</ul>
+</li>
+<li>2)命令语法：<code>du [-参数] 文件或目录名称</code>
+<ul>
+<li>功能：检查磁盘空间使用量。</li>
+<li>参数- <code>h</code>：以GBytes，MBytes，KBytes等格式显示已用、可用容量（如不使用，默认单位Byte）。</li>
+</ul>
+</li>
+</ul>
+<p><a id="(2)特点"></a></p>
+<h3 id="2特点">(2)特点
+</h3><ul>
+<li>系统初期，使用量最大的是用户目录，因为很多文件和程序都在这里面。</li>
+</ul>
+<p><a id="(3)磁盘挂载"></a></p>
+<h3 id="3磁盘挂载">(3)磁盘挂载
+</h3><ul>
+<li>Linux 没有提供设备管理器，使用软驱、光驱、磁盘、打印机等外部设备都需要用户使用命令进行手动挂载。</li>
+<li>挂载命令语法：<code>mount [-参数] 外部设备位置 挂载点位置</code>。</li>
+<li>卸载命令语法：<code>umount [-参数] 挂载点位置</code>。</li>
+<li>参数- <code>f</code>（force）：不会出现警告信息，强制移动。</li>
+</ul>
+<p><a id="4.目录管理"></a></p>
+<h2 id="4目录管理">4.目录管理
+</h2><ul>
+<li>1)绝对路径与相对路径：
+<ul>
+<li>绝对路径，由根目录 / 写起，例如：<code>/usr/share/doc</code></li>
+<li>相对路径，相对于当前，<code>./</code>为当前目录，<code>..</code>为上一级，<code>../..</code>表示上上一级目录，以此类推。<code>cd</code>命令发起返回目录，<code>cd ..</code>为返回上一级目录。例如由 <code>/usr/share/doc</code> 要到 <code>/usr/share/man</code> 底下时，可以看出需要返回上一级，这时可以由命令：<code>cd ../man</code>完成。</li>
+<li>Windows以磁盘符开头，Linux中以<code>/</code>开头，因此看到<code>/</code>开头的路径可判断为绝对路径，例如<code>/home/retreatafter</code>。</li>
+</ul>
+</li>
+<li>2)列出目录 <code>ls</code>（list）
+<ul>
+<li>命令语法：<code>ls [-参数] [目录或文件名称]</code>。</li>
+<li>参数- <code>a</code>（all）：查看全部的文件，包括隐藏文件（开头为 . 的文件）。</li>
+<li>参数- <code>l</code>（long）：列出所有的文件包含文件的属性和权限，不包括隐藏文件。</li>
+<li>命令可以组合使用，命令- <code>al</code>相当于命令<code>a</code> + 命令<code>l</code>。</li>
+</ul>
+</li>
+<li>3)切换目录 <code>cd</code>（Change Directory）
+<ul>
+<li>命令语法：<code>cd [相对路径或绝对路径]</code>。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 切换到用户目录下</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@retreatafter /<span class="o">]</span><span class="c1"># cd home  </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 回到上一级</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@retreatafter b<span class="o">]</span><span class="c1"># cd ..</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 回到根目录</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@retreatafter b<span class="o">]</span><span class="c1"># cd /</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 回到当前的用户目录，即 /root</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>root@retreatafter b<span class="o">]</span><span class="c1"># cd ~</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>4)显示当前用户所在的目录 <code>pwd</code>（Print Working Directory）</li>
+<li>5)创建一个新的目录（文件夹） <code>mkdir</code>（Make Directory）
+<ul>
+<li>命令语法：<code>mkdir [-参数] 目录名称</code>。</li>
+<li>单纯的<code>rmdir</code>命令仅能创建一个空目录。</li>
+<li>参数- <code>p</code>（parent）：创建多层目录。将指定的目录（文件夹）及其上一级目录一并显示，类似于递归，例如<code>mkdir test1/test2/test3/test4</code>就可以直接创建文件夹1~4，其中文件夹4的上一级是文件夹3，文件夹3的上一级是文件夹4，文件夹2的上一级是文件夹1。如果不加入- <code>p</code>参数，则无法直接创建多层目录。</li>
+</ul>
+</li>
+<li>6)删除一个空的目录（文件夹） <code>rmdir</code>（Remove Directory）
+<ul>
+<li>命令语法：<code>rmdir [-参数] 目录名称</code>。</li>
+<li>单纯的<code>rmdir</code>命令仅能删除空目录，如果目录（文件夹）内存在文件，需要删除文件，再删除清空的目录，或使用递归删除目录参数- <code>p</code>。</li>
+<li>参数- <code>p</code>（parent）：删除多层目录。</li>
+</ul>
+</li>
+<li>7)复制文件或目录 <code>cp</code>（Copy）
+<ul>
+<li>命令语法：<code>cp 来源档(source) 目标档(destination)</code>。</li>
+<li>参数- <code>r</code>（roll）：递归复制目录。</li>
+<li>如果文件重复，将出现覆盖询问，y(yes)确认，n(no)拒绝。</li>
+</ul>
+</li>
+<li>8)移除文件或目录 <code>rm</code>（Remove）
+<ul>
+<li>命令语法：<code>rm [-参数] 文件或目录</code>。</li>
+<li>参数- <code>f</code>（force）：忽略不存在的文件，不会出现警告信息，相当于<strong>强制删除</strong>。</li>
+<li>参数- <code>r</code>（roll）：递归删除目录。</li>
+<li>参数- <code>i</code>（）：互动模式，在删除前会询问使用者。</li>
+<li>删库：<code>rm -rf /</code>，将删除系统中所有文件。</li>
+</ul>
+</li>
+<li>9)移动文件或目录及重命名<code>mv</code>（Move）
+<ul>
+<li>命令语法：<code>mv 来源档(source) 目标档(destination)</code>。</li>
+<li>参数- <code>f</code>（force）：不会出现警告信息，强制移动。</li>
+<li>参数- <code>u</code>（）：只替换已经更新过的文件。</li>
+</ul>
+</li>
+</ul>
+<p><a id="5.文件基本属性"></a></p>
+<h2 id="5文件基本属性">5.文件基本属性
+</h2><p><a id="(1)查看内容"></a></p>
+<h3 id="1查看内容">(1)查看内容
+</h3><ul>
+<li>1)由第一行开始显示文件内容<code>cat</code>
+<ul>
+<li>使用示例：<code>cat /etc/sysconfig/network-scripts/ifcfg-eth0</code></li>
+<li>参数- <code>n</code>（number）：控制显示内容的行数。</li>
+</ul>
+</li>
+<li>2)由最后一行开始显示文件内容<code>tac</code></li>
+<li>3)显示行号<code>nl</code>
+<ul>
+<li>命令语法：<code>nl [-参数] 文件</code>。</li>
+</ul>
+</li>
+<li>4)一页一页翻动<code>more</code>
+<ul>
+<li>命令语法：<code>more [-参数] 文件</code>。</li>
+<li>参数- <code>f</code> ：实时显示出档名以及目前显示的行数。</li>
+</ul>
+</li>
+<li>5)一页一页翻动且允许向前翻动<code>less</code>
+<ul>
+<li>命令语法：<code>less [-参数] 文件</code>。</li>
+<li>出现“END”后需要按“q”退出。</li>
+</ul>
+</li>
+<li>6)仅显示文件前面几行<code>head</code>
+<ul>
+<li>命令语法：<code>head [-n number] 文件</code>。</li>
+<li>参数- <code>n</code>（number）：控制显示内容的行数。</li>
+<li>使用示例：<code>head -n 20 /etc/csh.login</code>，其中20表示显示20行。</li>
+</ul>
+</li>
+<li>7)仅显示文件最后几行<code>tail</code>
+<ul>
+<li>命令语法：<code>tail [-n number] 文件</code>。</li>
+<li>参数- <code>n</code>（number）：控制显示内容的行数。</li>
+<li>参数- <code>f</code> ：实时显示最新追加的内容，监控文件变化</li>
+</ul>
+</li>
+</ul>
+<p><a id="(2)Linux中的“链接”概念"></a></p>
+<h3 id="2linux中的链接概念">(2)Linux中的“链接”概念
+</h3><ul>
+<li>1)硬链接
+<ul>
+<li>多个文件名指向同一个文件，例如B 是 A 的硬链接，则A 和 B 对文件系统来说是完全平等的，删除其中任何一个都不会影响另外一个的访问。</li>
+<li>使用示例：<code>ln f1 f2</code>，即创建文件f1的一个硬链接文件f2。</li>
+</ul>
+</li>
+<li>2)软链接/符号链接
+<ul>
+<li>类似于Windows中的“快捷方式”，例如B 是 A 的软链接，则删除B后，A虽然存在，但指向的是一个无效的链接。</li>
+<li>使用示例：<code>ln -s f1 f2</code>，即创建文件f1的一个软链接文件f2。</li>
+</ul>
+</li>
+</ul>
+<p><a id="6.文本编辑Vim"></a></p>
+<h2 id="6文本编辑vim">6.文本编辑Vim
+</h2><p><a id="(1)概念"></a></p>
+<h3 id="1概念-1">(1)概念
+</h3><ul>
+<li>1)编辑器的核心行为即：查看内容，编辑内容，保存内容。在命令行界面下，最常用的文本编辑是Vi/Vim，其中Vi是 Linux操作系统中最通用的文本编辑器，Vim编辑器是Vi的增强版，相较于Vi，提供了代码高亮等功能，两者用法上完全兼容。几乎所有的Linux发行版都已经预装了Vi编辑器。</li>
+<li>2)基础语法：<code>vim 文件名</code>。需要注意的是，如果这个文件存在，会继续修改这个文件，如果（此路径下）不存在这个文件，将新建新文件。</li>
+<li>3)Vim编辑器有不同的工作模式，在不同模式下，可执行不同的操作。</li>
+</ul>
+<p><a id="(2)工作模式"></a></p>
+<h3 id="2工作模式">(2)工作模式
+</h3><ul>
+<li>1)命令模式Command Mode
+<ul>
+<li>启动Vim后默认进入到命令模式。</li>
+<li>功能：此状态下键盘动作会被Vim识别为命令，而非输入字符。例如此时按下“i”，并不会输入一个字符，而是会执行命令<code>i</code>。</li>
+<li>常用命令：<code>i</code>或<code>a</code>或<code>o</code>切换到输入模式，<code>:</code>或<code>/</code>切换到底线命令模式。</li>
+</ul>
+</li>
+<li>2)输入模式Insert Mode
+<ul>
+<li>功能：编辑文件。键盘动作代表输入文本或代码。</li>
+<li>常用按键：
+<ul>
+<li>模式切换：
+<ul>
+<li>Insert：切换光标为输入/替换模式，光标将变成竖线/下划线。</li>
+<li>ESC：退出输入模式，切换到命令模式。</li>
+</ul>
+</li>
+<li>基本操作：
+<ul>
+<li>字符按键以及Shift组合：输入字符</li>
+<li>ENTER：回车键，换行。</li>
+<li>上下左右方向键：在文本中移动光标。</li>
+<li>Page Up/Page Down：上/下翻页</li>
+</ul>
+</li>
+<li>光标操作：
+<ul>
+<li>HOME/END或<code>shift+6(^)</code>/<code>shift+4($)</code>：移动光标到行首/行尾。</li>
+<li><code>shift+g</code>/<code>gg</code>：移动光标到页首/页尾。</li>
+</ul>
+</li>
+<li>复制粘贴：
+<ul>
+<li><code>yy</code>：复制光标当前行。</li>
+<li><code>yw</code>：复制光标当前词。</li>
+<li><code>p</code>：粘贴。</li>
+</ul>
+</li>
+<li>删除：
+<ul>
+<li>BACK SPACE：删除光标前一个字符。</li>
+<li>DEL：删除键，删除光标后一个字符</li>
+<li><code>dd</code>：删除光标当前行。</li>
+<li><code>d n d</code>：删除当前光标所处行及其以下共n行。</li>
+<li><code>x</code>：删除当前光标处的一个字符。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3)底线命令模式（Last line mode）
+<ul>
+<li>功能：命令模式只有一些最基本的命令，因此仍要依靠底线命令行模式输入更多命令。</li>
+<li>如果当前正处于输入模式，需要<code>ESC</code>退出输入模式。</li>
+<li>常用命令：<code>q</code>退出程序（quit），<code>w</code>保存文件（write）。</li>
+</ul>
+</li>
+</ul>
+<p><a id="(3)按键说明"></a></p>
+<h3 id="3按键说明">(3)按键说明
+</h3><ul>
+<li>Vim的按键对应的功能有很多，有需要的时候再查询即可。</li>
+</ul>
+<p><a id="7.权限系统"></a></p>
+<h2 id="7权限系统">7.权限系统
+</h2><p><a id="(1)用户管理"></a></p>
+<h3 id="1用户管理">(1)用户管理
+</h3><p><a id="1）概念"></a></p>
+<h4 id="1概念-2">1）概念
+</h4><ul>
+<li>任何一个要使用系统资源的用户，都必须首先向<strong>系统管理员</strong>申请一个账号，然后以这个账号的身份进入系统。</li>
+<li>每个用户账号都拥有一个唯一的用户名和各自的口令。</li>
+</ul>
+<p><a id="2）增"></a></p>
+<h4 id="2增">2）增
+</h4><ul>
+<li>Linux中一切皆文件，添加用户的本质是往某一个文件中写入用户的信息。</li>
+<li>添加用户命令语法：<code>useradd -参数 用户名</code>。</li>
+<li>参数- <code>m</code>（）：自动创建这个用户的主目录 例如添加用户retreatafter，则会自动创建retreatafter文件夹用于放该目录文件，位置默认/home/retreatafter。</li>
+<li>参数- <code>G</code>（group）：分配用户的组。</li>
+</ul>
+<p><a id="3）删"></a></p>
+<h4 id="3删">3）删
+</h4><ul>
+<li>删除用户命令语法：<code>userdel -参数 用户名</code>。</li>
+<li>参数- <code>r</code>（）：将用户主目录一并删除。</li>
+</ul>
+<p><a id="4）改"></a></p>
+<h4 id="4改">4）改
+</h4><ul>
+<li>功能：修改用户有关属性，如用户号、主目录、用户组、登录Shell等。</li>
+<li>删除用户命令语法：<code>usermod [-参数] 用户名</code>。（Modified）</li>
+</ul>
+<p><a id="5）切换用户"></a></p>
+<h4 id="5切换用户">5）切换用户
+</h4><ul>
+<li>切换用户命令语法：<code>su 用户名</code>。</li>
+<li><code>#</code>表示超级用户（root）。</li>
+<li><code>$</code>表示普通用户。</li>
+</ul>
+<p><a id="6）账号管理"></a></p>
+<h4 id="6账号管理">6）账号管理
+</h4><ul>
+<li>一般来说仅超级用户root账号能够有创建账号权限。</li>
+<li>设置密码命令语法：<code>passwd [-参数] 用户名</code>。</li>
+<li>参数- <code>l</code>（lock）：锁定口令，即禁用账号。</li>
+</ul>
+<p><a id="(2)用户组管理"></a></p>
+<h3 id="2用户组管理">(2)用户组管理
+</h3><p><a id="1）概念"></a></p>
+<h4 id="1概念-3">1）概念
+</h4><ul>
+<li>组的增加、删除和修改实际上就是对/etc/group文件的更新。</li>
+</ul>
+<p><a id="2）增"></a></p>
+<h4 id="2增-1">2）增
+</h4><ul>
+<li>命令语法：<code>groupadd 用户组名</code>。</li>
+<li>参数-<code>g</code>（groupID）：用于指定用户组id。</li>
+<li>使用实例：<code>groupadd -g 77 groupa</code>，进入到/etc/group可以看到组goupa的id是77。</li>
+</ul>
+<p><a id="3）删"></a></p>
+<h4 id="3删-1">3）删
+</h4><ul>
+<li>命令语法：<code>groupdel 用户组名</code>。</li>
+</ul>
+<p><a id="4）改"></a></p>
+<h4 id="4改-1">4）改
+</h4><ul>
+<li>功能：修改用户组的权限、信息、名称等。</li>
+<li>命令语法：<code>groupmod [-参数] 用户组</code>。</li>
+<li>参数- <code>g</code>（groupID）：指定新的id。使用示例 <code>groupmod -g 新id 用户组</code>。</li>
+<li>参数- <code>n</code>（name）：修改用户组名字。使用示例 <code>groupmod -n 新名称 旧名称</code>。</li>
+</ul>
+<p><a id="(3)文件权限"></a></p>
+<h3 id="3文件权限">(3)文件权限
+</h3><p><a id="1）属"></a></p>
+<h4 id="1属">1）属
+</h4><ul>
+<li>Linux中，可以使用<code>ll</code>或者<code>ls –l</code>命令来显示一个文件的属性以及文件所属的用户和组。</li>
+<li>文件均用10个字符表示。
+<ul>
+<li><img src="/p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7.png"
+	width="666"
+	height="287"
+	srcset="/p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7_hu17226225704426858958.png 480w, /p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7_hu15478259655148759418.png 1024w"
+	loading="lazy"
+	
+		alt="文件属性"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="556px"
+	
+></li>
+<li>第一个字符（第0位）代表这个文件是目录、文件或链接文件等等，如果为“d”，表示这是目录；为“l”，表示为链接文档。</li>
+<li>接下来的9个字符每3个字符为一组，且均为“rwx”三个参数的固定组合。其中，&ldquo;r&quot;代表可读(read)、&ldquo;w&quot;代表可写(write)、&ldquo;x&quot;代表可执行(execute)，如果没有相应权限的，用减号“-”表示。</li>
+<li>第一组（2-4）（第1-3位）字符表示属主权限，该文件的所有者的权限，相当于ROOT账户权限；第二组（5-7）（第4-6位）字符表示属组权限，所有者的同组用户的权限，在Linux系统中，用户是按组分类的，一个用户属于一个或多个组；第三组（8-10）（第7-9位）字符表示其它用户权限。三组权限对一个用户而言，结果取并集。</li>
+</ul>
+</li>
+<li><img src="/p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.%E5%85%B6%E5%AE%83%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7.png"
+	width="987"
+	height="132"
+	srcset="/p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.%E5%85%B6%E5%AE%83%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7_hu6348606209554264665.png 480w, /p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90.%E5%85%B6%E5%AE%83%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7_hu561251903434005233.png 1024w"
+	loading="lazy"
+	
+		alt="其它文件属性"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="747"
+		data-flex-basis="1794px"
+	
+></li>
+</ul>
+<p><a id="2）修改属"></a></p>
+<h4 id="2修改属">2）修改属
+</h4><ul>
+<li>1)更改文件属组<code>chgrp</code>（Change Group）
+<ul>
+<li>命令语法：<code>chgrp [-R] 属组名 文件名</code></li>
+<li>参数- <code>R</code>（）：递归更改文件属组。</li>
+</ul>
+</li>
+<li>2)更改文件属主/更改文件属组<code>chown</code>（Change Own）
+<ul>
+<li>命令语法：<code>chown [–R] 属主名 文件名</code></li>
+</ul>
+</li>
+<li>3)更改文件9个属性<code>chmod</code>（Change Mode）
+<ul>
+<li>Linux文件属性有两种设置方法，一种是通过数字，一种是通过符号。数字来代表各个权限，r:4 w:2 x:1，例如770就表示rwxrwx&mdash;。</li>
+<li>示例：<code>chmod 770 filename</code></li>
+</ul>
+</li>
+</ul>
+<p><a id="8.进程管理"></a></p>
+<h2 id="8进程管理">8.进程管理
+</h2><p><a id="(1)概念"></a></p>
+<h3 id="1概念-4">(1)概念
+</h3><ul>
+<li>和Windows系统一样，Linux的每一个进程也都拥有进程号（PID）。且每一个进程之上有一个家长进程。
+<ul>
+<li><strong>USER</strong>：启动该进程的用户。</li>
+<li><strong>PID</strong>：进程ID。</li>
+<li><strong>%CPU</strong>：该进程占用CPU资源的百分比。</li>
+<li><strong>%MEM</strong>：该进程占用物理内存的百分比。</li>
+<li><strong>COMMAND</strong>：产生此进程的命令名。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">示例
+</span></span><span class="line"><span class="cl">USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+</span></span><span class="line"><span class="cl">root          <span class="m">1</span>  0.0  0.1 <span class="m">193964</span>  <span class="m">7048</span> ?        Ss   08:56   0:01 /usr/lib/systemd/systemd
+</span></span><span class="line"><span class="cl">root          <span class="m">2</span>  0.0  0.0      <span class="m">0</span>     <span class="m">0</span> ?        S    08:56   0:00 <span class="o">[</span>kthreadd<span class="o">]</span>
+</span></span><span class="line"><span class="cl">root          <span class="m">4</span>  0.0  0.0      <span class="m">0</span>     <span class="m">0</span> ?        S&lt;   08:56   0:00 <span class="o">[</span>kworker/0:0H<span class="o">]</span>
+</span></span><span class="line"><span class="cl">root          <span class="m">5</span>  0.0  0.0      <span class="m">0</span>     <span class="m">0</span> ?        S    08:56   0:00 <span class="o">[</span>kworker/u256:0<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>进程的存在方式有两类：前台进程和后台进程，前台进程一旦关闭服务后进程则停止，一般来说，基本的程序都是前台运行的，服务都是后台运行的。</li>
+</ul>
+<p><a id="(2)查看进程"></a></p>
+<h3 id="2查看进程">(2)查看进程
+</h3><ul>
+<li>1)查看当前系统中正在执行的各种进程的信息。
+<ul>
+<li>命令语法：<code>ps [-参数]</code>。（Process Status）</li>
+<li>参数- <code>a</code>：显示当前终端所有的前台进程信息。</li>
+<li>参数- <code>u</code>：以用户友好的方式打印进程信息。</li>
+<li>参数- <code>x</code>：显示后台运行进程的参数。</li>
+<li>通常连用- <code>aux</code>参数查看所有进程，且运用管道符<code>|</code>和命令<code>grep</code>（查找文件中符合条件的字符串）实现查看<strong>特定</strong>进程，命令语法：<code>ps -aux|grep 字符串</code>。使用示例：<code>ps -aux|grep mysql</code>，即可查看mysql相关进程。</li>
+</ul>
+</li>
+<li>2)查看进程的家长进程PPID。
+<ul>
+<li>命令语法：<code>pstree [-参数]</code>。</li>
+<li>参数- <code>p</code>：显示家长进程号PPID。</li>
+<li>参数- <code>u</code>：显示用户组。</li>
+<li><img src="/p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%A8%8B%E6%A0%91.png"
+	width="527"
+	height="133"
+	srcset="/p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%A8%8B%E6%A0%91_hu15089142416426182681.png 480w, /p/programming-webdeveloper-c3-linuxcommand/2025__%E5%90%8E%E7%AB%AF.Java__Linux.%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86.%E8%BF%9B%E7%A8%8B%E6%A0%91_hu17780248833948531098.png 1024w"
+	loading="lazy"
+	
+		alt="进程树"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="396"
+		data-flex-basis="950px"
+	
+></li>
+</ul>
+</li>
+<li>3)结束进程/杀掉进程
+<ul>
+<li>一般来说很少会需要手动结束进程，通常是运行代码出现死循环等问题时才会需要手动结束进程。</li>
+<li>命令语法：<code>kill -9 进程号</code>。</li>
+</ul>
+</li>
+</ul>
+<p><a id="9.压缩归档"></a></p>
+<h2 id="9压缩归档">9.压缩归档
+</h2><p><a id="(1)zip文件压缩"></a></p>
+<h3 id="1zip文件压缩">(1)zip文件压缩
+</h3><ul>
+<li>命令语法：<code>zip [-参数] XXX.zip 文件或路径</code></li>
+<li>参数-<code>r</code>（recursive）：压缩整个目录。</li>
+</ul>
+<p><a id="(2)zip文件解压缩"></a></p>
+<h3 id="2zip文件解压缩">(2)zip文件解压缩
+</h3><ul>
+<li>命令语法：<code>unzip [-参数] XXX.zip</code></li>
+<li>参数-<code>d</code>（directory）：指定解压后文件的存放目录。</li>
+</ul>
+<p><a id="(3)tar文件压缩与解压缩"></a></p>
+<h3 id="3tar文件压缩与解压缩">(3)tar文件压缩与解压缩
+</h3><ul>
+<li>压缩打包命令语法：<code>tar [-参数] -c -f 包名 文件1 文件2 文件3 ...</code></li>
+<li>解压缩命令语法：<code>tar [-参数] -x -f 包名 -C 指定目录</code></li>
+<li>参数-<code>c</code>（create）：打包。</li>
+<li>参数-<code>x</code>（extract）：解包。</li>
+<li>参数-<code>z</code>（gzip）：打包的同时进行压缩（解包的时候进行解压）。</li>
+<li>参数-<code>v</code>（verbose）：打包或解包时显示正在处理的文件信息。</li>
+<li>参数-<code>f</code>（file）：指定打包后的文件名后者要解包的文件名。</li>
+<li>参数-<code>C</code>：解包到指定目录。</li>
+</ul>
+<p><a id="10.安装应用"></a></p>
+<h2 id="10安装应用">10.安装应用
+</h2><p><a id="(1)RPM离线安装"></a></p>
+<h3 id="1rpm离线安装">(1)RPM离线安装
+</h3><ul>
+<li>1)RPM（RedHat Package Manager）是RedHat软件包管理工具，在基于 RedHat 的 Linux 发行版中广泛使用。软件包以<code>.rpm</code>结尾，类似于Windows系统中的<code>exe</code>文件。</li>
+<li>2)安装软件包命令语法：<code>rpm [-参数] 软件包路径</code>
+<ul>
+<li>参数-<code>i</code>（install）：安装。</li>
+<li>参数-<code>v</code>（verbose）：显示详细信息。</li>
+<li>参数-<code>h</code>（hash）：进度条。</li>
+</ul>
+</li>
+<li>3)查看软件包命令语法：<code>rpm [-参数]</code>
+<ul>
+<li>参数-<code>q</code>（query）：查询模式。</li>
+<li>参数-<code>a</code>（all）：查看所有。</li>
+</ul>
+</li>
+<li>4)卸载软件包命令语法：<code>rpm -e 软件包名</code></li>
+</ul>
+<p><a id="(2)Yum在线安装"></a></p>
+<h3 id="2yum在线安装">(2)Yum在线安装
+</h3><ul>
+<li>1)YUM（Yellowdog Updater Modified）是一个Linux软件包管理器。基于RPM包管理，能够从指定的服务器自动下载RPM包并且安装，并且可以<strong>自动处理依赖关系</strong>，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装，该功能类似在JAVA中使用Maven工具从远程仓库中下载依赖一样,可以自动处理依赖关系。</li>
+<li>2)安装软件包命令语法：<code>yum [-参数] install 软件包名</code>
+<ul>
+<li>参数-<code>y</code>（yes）：对所有提问都回答“yes”。</li>
+<li>在线安装时，还需要配置对应的远程仓库。</li>
+</ul>
+</li>
+<li>3)卸载软件包命令语法：<code>yum remove 软件包名</code></li>
+</ul>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d2-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d1-opensourceprojectanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：开源项目分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c9-knife4j/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Knife4j</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c8-redisdatatypes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：数据类型</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c7-rediscommands/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了146篇文章 · 
+		总计539.62k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

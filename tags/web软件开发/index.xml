@@ -107,138 +107,11 @@
 </description>
         </item>
         <item>
-        <title>小小小编程 | Web软件开发 | 实战篇：JAVASE | 初学：Java开发环境</title>
-        <link>https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/</link>
-        <pubDate>Sat, 03 Jan 2026 17:07:07 +0800</pubDate>
+        <title>小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Knife4j</title>
+        <link>https://retreatafter.github.io/p/programming-webdeveloper-c9-knife4j/</link>
+        <pubDate>Sat, 09 May 2026 17:07:07 +0800</pubDate>
         
-        <guid>https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/</guid>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;本节目录&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#1.%e7%8e%af%e5%a2%83&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        1.环境
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2.%e5%ae%89%e8%a3%85&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        2.安装
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#3.%e5%8d%b8%e8%bd%bd&#34;  &gt;
-    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
-        3.卸载
-        
-    &lt;/span&gt;
-&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a id=&#34;1.环境&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;1环境&#34;&gt;1.环境
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;(1)想要在一台主机上使用Java，由于Java语言的性质，就需要有能够编译运行Java文件的程序，故需要我们下载JDK（早期需要下载JDK和JRE，但后来JDK已集成了JRE，就无需重复下载）。&lt;/li&gt;
-&lt;li&gt;(2)JDK(Java Development Kit)：开发者工具包。包含JVM、核心类库、其它开发工具，包含了JRE。
-&lt;ul&gt;
-&lt;li&gt;JRE(Java Runtime Environment)：运行环境，包含JVM、核心类库、部分开发工具（无编译工具、调试工具）。如果只需要运行已经编写好的代码，而不需要编写代码，就可以只下载JRE包。&lt;/li&gt;
-&lt;li&gt;JVM(Java Virtual Machine)：JAVA虚拟机。虚拟机会模拟CPU去运行Java代码。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;(3)Java语言不是直接运行在操作系统里面，而是运行在虚拟机JVM中的。Java语言的跨平台是通过虚拟机JVM实现的，因此，不同的操作系统只需安装不同的虚拟机就能实现Java语言的运行。这种Java文件编译的结果在任意配置了Java环境的主机上都能运行，实现了一次编译，到处运行。
-&lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%AE%9E%E7%8E%B0.png&#34;
-	width=&#34;2166&#34;
-	height=&#34;689&#34;
-	srcset=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%AE%9E%E7%8E%B0_hu16981607223252938212.png 480w, https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%AE%9E%E7%8E%B0_hu13721800815341175676.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;跨平台实现&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;314&#34;
-		data-flex-basis=&#34;754px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a id=&#34;2.安装&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2安装&#34;&gt;2.安装
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;(1)版本并非越新越好，有很多企业相比追逐最新技术更看重稳定，因此常用的版本为JDK8和JDK17。&lt;/li&gt;
-&lt;li&gt;(2)官网：https://www.oracle.com/java/technologies/downloads/#java8&lt;/li&gt;
-&lt;li&gt;(3)下载JDK（可以下载多个JDK包，但使用时注意指定。本次选择了JDK8和JDK17两个JDK包），建议将JDK放在专门的文件夹里方便后续管理。&lt;/li&gt;
-&lt;li&gt;(4)环境配置（这样才能让系统能够在任何目录下找到Java并执行特定的命令，今后我们会多次看到各个工具的环境配置），控制面板→系统和安全→系统→高级系统设置→环境变量→在系统变量中：
-&lt;ul&gt;
-&lt;li&gt;新建，配置JAVA_HOME，变量名为&lt;code&gt;JAVA_HOME&lt;/code&gt;，不要更改，很多工具会默认去查找这个名字，如果这里自行修改后期调试会耗费时间，变量值即JDK包文件夹的路径，复制粘贴过去，例如本次的变量值为&lt;code&gt;C:\programs\jdk\jdk1.8.0_351&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;新增，配置Path，Path变量里有系统已经写好的许多路径，我们在此基础上再增加。因为我们这里下载了2个JDK包，可以多做一个操作为它们进行区分，在上一步中我们为两个JDK包新建两个变量，分别为&lt;code&gt;JAVA_HOME_8&lt;/code&gt;和&lt;code&gt;JAVA_HOME_17&lt;/code&gt;，再新建变量&lt;code&gt;JAVA_HOME&lt;/code&gt;，&lt;code&gt;JAVA_HOME&lt;/code&gt;的变量值使用引用符号%，例如，接下来我们需要使用JDK17，那么变量值填写&lt;code&gt;%JAVA_HOME_17%&lt;/code&gt;，如果我需要用JDK8，那么找到&lt;code&gt;JAVA_HOME&lt;/code&gt;变量，将变量值改为&lt;code&gt;%JAVA_HOME_8%&lt;/code&gt;。也就是说，以后需要切换版本的时候，我们修改&lt;code&gt;JAVA_HOME&lt;/code&gt;这个变量里引用的JDK包变量名即可。&lt;/li&gt;
-&lt;li&gt;双击编辑Path，增添引用路径&lt;code&gt;%JAVA_HOME%\bin&lt;/code&gt;和&lt;code&gt;%JAVA_HOME%\jre\bin&lt;/code&gt;。如果在下一步的验证中无法找到Java，可能是操作系统版本更新对路径的要求发生了变化，总之可尝试将&lt;code&gt;%JAVA_HOME%\bin&lt;/code&gt;路径修改为&lt;code&gt;%JAVA_HOME%&lt;/code&gt;并删除&lt;code&gt;%JAVA_HOME%\jre\bin&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.JAVAHOME.png&#34;
-	width=&#34;1148&#34;
-	height=&#34;1044&#34;
-	srcset=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.JAVAHOME_hu7740521511069385488.png 480w, https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.JAVAHOME_hu3542936994764664947.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;JAVAHOME&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;109&#34;
-		data-flex-basis=&#34;263px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.Path.png&#34;
-	width=&#34;812&#34;
-	height=&#34;781&#34;
-	srcset=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.Path_hu660278061756695247.png 480w, https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.Path_hu7336944744013301869.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Path&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;103&#34;
-		data-flex-basis=&#34;249px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;(5)使用dos命令确认是否安装成功，cmd进入命令提示符，使用命令&lt;code&gt;java -version&lt;/code&gt;，如果显示版本号，说明安装成功。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a id=&#34;3.卸载&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;3卸载&#34;&gt;3.卸载
-&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;(1)找到JDK放置的文件夹，删除此文件夹，如果不记得文件夹路径，见第二步。&lt;/li&gt;
-&lt;li&gt;(2)删除环境变量，未删除文件夹的可在这一步同步进行删除环境变量操作。
-&lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.Java%E7%8E%AF%E5%A2%83.png&#34;
-	width=&#34;1590&#34;
-	height=&#34;1073&#34;
-	srcset=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.Java%E7%8E%AF%E5%A2%83_hu17900922348806005916.png 480w, https://retreatafter.github.io/p/programming-webdeveloper-b3-developmentenvironment/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.Java%E7%8E%AF%E5%A2%83_hu2617939656375120431.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Java环境&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;148&#34;
-		data-flex-basis=&#34;355px&#34;
-	
-&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;(3)使用dos命令确认是否删除成功，cmd进入命令提示符，使用命令&lt;code&gt;java -version&lt;/code&gt;，如果显示&lt;code&gt;&#39;Java&#39;不是内部或外部命令，也不是可运行的程序&lt;/code&gt;说明删除成功。（该命令本质上是查看安装的Java版本，但Java若不存在，那么也无法查看其版本）&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>小小小编程 | Web软件开发 | 实战篇：JAVASE | 先导：DoS命令</title>
-        <link>https://retreatafter.github.io/p/programming-webdeveloper-b2-dos/</link>
-        <pubDate>Fri, 02 Jan 2026 17:07:07 +0800</pubDate>
-        
-        <guid>https://retreatafter.github.io/p/programming-webdeveloper-b2-dos/</guid>
+        <guid>https://retreatafter.github.io/p/programming-webdeveloper-c9-knife4j/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;本节目录&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -249,11 +122,58 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2.%e6%ad%a5%e9%aa%a4%e5%88%86%e6%9e%90&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        2.步骤分析
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a id=&#34;1.概述&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1概述&#34;&gt;1.概述
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;(1)DoS(Disk Operating System)命令也叫磁盘操作系统，即用命令行操作管理硬盘，在Windows操作系统中，Dos是以一个后台程序的形式出现的，名为WIndows命令提示符，有多种进入方式，最常用且最方便的一种是通过快捷键Win+R打开运行窗口，输入cmd按下回车。&lt;/li&gt;
+&lt;li&gt;(1)Knife4j是一个基于开源项目&lt;code&gt;springdoc-openapi&lt;/code&gt;用于生成和展示API文档的工具，同时它还提供了在线调试的功能。
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://retreatafter.github.io/p/programming-webdeveloper-c9-knife4j/2026__%E5%90%8E%E7%AB%AF.Java__Knife4j.%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2.png&#34;
+	width=&#34;2500&#34;
+	height=&#34;1111&#34;
+	srcset=&#34;https://retreatafter.github.io/p/programming-webdeveloper-c9-knife4j/2026__%E5%90%8E%E7%AB%AF.Java__Knife4j.%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2_hu16354154543670477014.png 480w, https://retreatafter.github.io/p/programming-webdeveloper-c9-knife4j/2026__%E5%90%8E%E7%AB%AF.Java__Knife4j.%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2_hu5521209640746330216.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;管理界面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;225&#34;
+		data-flex-basis=&#34;540px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;2.步骤分析&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2步骤分析&#34;&gt;2.步骤分析
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)导入 knife4j 的maven坐标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;com.github.xiaoymin&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;knife4j-openapi3-jakarta-spring-boot-starter&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;4.3.0&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;(2)在配置类WebMvcConfiguration中加入 knife4j 相关配置，使其生效。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -271,32 +191,134 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#查看当前目录的所有文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dir
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#切换目录(change directory)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#返回上级目录&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd...
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#清屏(clear screen)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cls
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#查看电脑的ip&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipconfig
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//声明是配置类&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Configuration&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Knife4jConfiguration&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//文档基本信息&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Bean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenAPI&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;openAPI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;OpenAPI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;info&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Info&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                        &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;hello-knife4j项目API&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                        &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;1.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                        &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;hello-knife4j项目的接口文档&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//接口分组，符合/user/**的页面都由这个方法管理生成接口文档&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Bean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GroupedOpenApi&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;userAPI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GroupedOpenApi&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;builder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;用户信息管理&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pathsToMatch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/user/**&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//接口分组，符合/product/**的页面都由这个方法管理生成接口文档&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Bean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GroupedOpenApi&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;systemAPI&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GroupedOpenApi&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;builder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;().&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;group&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;产品信息管理&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;pathsToMatch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/product/**&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;(3)代码运行后，根据所指定的端口（默认是8080），进入到指定页面即可进行相关调试，以下步骤是进入到localhost:8080/doc.html。&lt;/li&gt;
+&lt;li&gt;(4)Knife4j常用注解，使文档可读性更强：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;注解&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;@Tag(name = &amp;ldquo;&amp;rdquo;)&lt;/td&gt;
+          &lt;td&gt;用在类上，例如Controller，通过属性进一步描述对类的说明&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;@Operation(summary = &amp;ldquo;&amp;rdquo;)&lt;/td&gt;
+          &lt;td&gt;用在方法上，通过属性进一步描述对类的说明&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;@Parameter(description = &amp;ldquo;&amp;rdquo;)&lt;/td&gt;
+          &lt;td&gt;用在属性上，描述属性信息&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;@Schema(description = &amp;ldquo;&amp;rdquo;)&lt;/td&gt;
+          &lt;td&gt;用在返回结果对应的实体类和对象上，描述属性信息&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//示例&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@RestController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@RequestMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/user&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Tag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;用户信息管理&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloController&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Operation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;summary&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;根据id获取用户信息&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@GetMapping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;getById&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;getUserById&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@Parameter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;用户id&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;@RequestParam&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Long&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zhangsan&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setAge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;setEmail&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zhangsan@email.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>小小小编程 | Web软件开发 | 实战篇：JAVASE | 先导：计算机初步认知</title>
-        <link>https://retreatafter.github.io/p/programming-webdeveloper-b1-computerintroduction/</link>
-        <pubDate>Thu, 01 Jan 2026 17:07:07 +0800</pubDate>
+        <title>小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：数据类型</title>
+        <link>https://retreatafter.github.io/p/programming-webdeveloper-c8-redisdatatypes/</link>
+        <pubDate>Fri, 08 May 2026 17:07:07 +0800</pubDate>
         
-        <guid>https://retreatafter.github.io/p/programming-webdeveloper-b1-computerintroduction/</guid>
+        <guid>https://retreatafter.github.io/p/programming-webdeveloper-c8-redisdatatypes/</guid>
         <description>&lt;blockquote&gt;
 &lt;p&gt;本节目录&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -307,33 +329,246 @@
         
     &lt;/span&gt;
 &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2.string%e7%b1%bb%e5%9e%8b&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        2.string类型
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#3.list&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        3.list
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#4.set&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        4.set
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#5.hash&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        5.hash
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6.zset&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        6.zset
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a id=&#34;1.概述&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1概述&#34;&gt;1.概述
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;(1)冯诺依曼体系结构概括了计算机运行的原则。
+&lt;li&gt;(1)这里所指的数据类型是指键值对中值的数据类型。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;2.string类型&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2string类型&#34;&gt;2.string类型
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)Redis中的string类型保存的是字节序列（Sequence of bytes），因此任意类型的数据，只要经过序列化之后都可以保存到Redis的string类型中，包括文本、数字甚至是一个对象。string类型常用于缓存、计数器等场景。&lt;/li&gt;
+&lt;li&gt;(2)&lt;code&gt;set&lt;/code&gt;命令用于添加string类型的键值对，语法：&lt;code&gt;SET key value [NX|XX] [EX seconds|PX milliseconds]&lt;/code&gt;。
 &lt;ul&gt;
-&lt;li&gt;&lt;img src=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b1-computerintroduction/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84.jpg&#34;
-	width=&#34;1031&#34;
-	height=&#34;656&#34;
-	srcset=&#34;https://retreatafter.github.io/p/programming-webdeveloper-b1-computerintroduction/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84_hu16229751596114843754.jpg 480w, https://retreatafter.github.io/p/programming-webdeveloper-b1-computerintroduction/2025__%E5%90%8E%E7%AB%AF.Java__JAVASE.%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84_hu12468142532693388865.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;冯诺依曼结构&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;157&#34;
-		data-flex-basis=&#34;377px&#34;
-	
-&gt;&lt;/li&gt;
+&lt;li&gt;NX：仅在key不存在时set。&lt;/li&gt;
+&lt;li&gt;XX：仅在key存在时set。&lt;/li&gt;
+&lt;li&gt;EX seconds：设置过期时间，单位为秒。&lt;/li&gt;
+&lt;li&gt;PX milliseconds：设置过期时间，单位为毫秒。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;(2)计算机存储规则
+&lt;li&gt;(3)&lt;code&gt;get&lt;/code&gt;命令用于获取某个string类型的键对应的值，语法：&lt;code&gt;GET key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;(4)&lt;code&gt;incr&lt;/code&gt;命令用于对数值做自增操作，语法：&lt;code&gt;INCR key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;(5)&lt;code&gt;decr&lt;/code&gt;命令用于对数值做自减操作，语法：&lt;code&gt;DECR key&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;3.list&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3list&#34;&gt;3.list
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)list类型可用于存储多个string类型的元素，并且所有元素按照被添加的顺序存储。list类型常用于社交应用中，可使用list缓存每个用户发布的最新的N条记录，以及用作异步消息队列。&lt;/li&gt;
+&lt;li&gt;(2)添加元素，相关命令有&lt;code&gt;lpush&lt;/code&gt;、&lt;code&gt;rpush&lt;/code&gt; 、&lt;code&gt;linsert&lt;/code&gt;：
 &lt;ul&gt;
-&lt;li&gt;Text文本：数字类型，转换成二进制后识别；字母类型和汉字类型，通过查询对应码表识别。&lt;/li&gt;
-&lt;li&gt;Image图片：通过每一个像素点中的RGB三原色来存储。&lt;/li&gt;
-&lt;li&gt;Sound声音：对声音的波形图进行采样再存储。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lpush&lt;/code&gt;用于向list左侧（头部）添加元素，语法：&lt;code&gt;lpush key element [element ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rpush&lt;/code&gt;用于向list右侧（尾部）添加元素，语法：&lt;code&gt;rpush key element [element ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linsert&lt;/code&gt;用于向list指定位置添加元素，语法：&lt;code&gt;linsert key before|after pivot element&lt;/code&gt;。pivot表示基准元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)查询元素，相关命令有&lt;code&gt;lindex&lt;/code&gt;、&lt;code&gt;lrange&lt;/code&gt;、&lt;code&gt;llen&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lindex&lt;/code&gt;用于获取指定索引位置的元素，语法：&lt;code&gt;lindex key index&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lrange&lt;/code&gt;用于获取指定范围内的元素列表，语法：&lt;code&gt;lrange key start stop&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;llen&lt;/code&gt;用于查看list长度，语法：&lt;code&gt;llen key&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)删除元素，相关命令有&lt;code&gt;lpop&lt;/code&gt;、&lt;code&gt;rpop&lt;/code&gt;、&lt;code&gt;lrem&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lpop&lt;/code&gt;用于移除并返回list左侧元素，语法：&lt;code&gt;lpop key [count]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rpop&lt;/code&gt;用于移除并返回list右侧的元素，语法：&lt;code&gt;rpop key [count]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lrem&lt;/code&gt;用于移除list中的指定元素，语法：&lt;code&gt;lrem key count element&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;若count&amp;gt;0，则从左到右删除最多count个element元素。&lt;/li&gt;
+&lt;li&gt;若count&amp;lt;0，则从右到左删除最多count（的绝对值）个element元素。&lt;/li&gt;
+&lt;li&gt;若count=0，则删除所有的element元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)修改元素：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;lset&lt;/code&gt;用于修改指定索引位置的元素，语法：&lt;code&gt;lset key index element&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;4.set&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4set&#34;&gt;4.set
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)和list类型相似，set类型也可用来存储多个string类型的元素，但与list类型不同，set中的元素是无序的，且set中不会包含相同元素。set可用于计算共同关注好友，随机抽奖系统等等。&lt;/li&gt;
+&lt;li&gt;(2)添加元素：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sadd&lt;/code&gt;用于向set中添加元素，语法：&lt;code&gt;sadd key member [member ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)查询元素，相关命令有&lt;code&gt;smembers&lt;/code&gt;、&lt;code&gt;scard&lt;/code&gt;、&lt;code&gt;srandmember&lt;/code&gt;、&lt;code&gt;sismember&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;smembers&lt;/code&gt;用于查询set中的全部元素，语法：&lt;code&gt;smembers key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scard&lt;/code&gt;用于查询set中的元素个数，语法：&lt;code&gt;scard key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;srandmember&lt;/code&gt;随机返回set中的n个元素（不删除），语法：&lt;code&gt;srandmember key [count]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sismember&lt;/code&gt;用于判断元素是否在set中，语法：&lt;code&gt;sismember key element&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)删除元素，相关命令有&lt;code&gt;srem&lt;/code&gt;、&lt;code&gt;spop&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;srem&lt;/code&gt;用于移除set中的指定元素，语法：&lt;code&gt;srem key member [member ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;spop&lt;/code&gt;用于随机移除并返回set中的n个元素，语法：&lt;code&gt;spop key [count]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)多个集合的操作，相关命令有&lt;code&gt;sinter&lt;/code&gt;、&lt;code&gt;sunion&lt;/code&gt;、&lt;code&gt;sdiff&lt;/code&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sinter&lt;/code&gt;用于计算多个集合的交集，语法：&lt;code&gt;sinter key [key ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sunion&lt;/code&gt;用于计算多个集合的并集，语法：&lt;code&gt;sunion key [key ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sdiff&lt;/code&gt;用于计算多个集合的差集，语法：&lt;code&gt;sdiff key [key ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;5.hash&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5hash&#34;&gt;5.hash
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)hash类型类似于Java语言中的&lt;code&gt;HashMap&lt;/code&gt;，可用于存储键值对，这里的键值对是指Redis存储的键值对中的&lt;strong&gt;值&lt;/strong&gt;是键值对。hash类型常用于缓存对象。&lt;/li&gt;
+&lt;li&gt;(2)添加元素，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hset&lt;/code&gt;用于向hash中增加键值对，语法：&lt;code&gt;hset key field value [field value ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)查询元素，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hget&lt;/code&gt;用于获取hash中某个键对应的值，语法：&lt;code&gt;hget key field&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hkeys&lt;/code&gt;用于返回hash中所有的键，语法：&lt;code&gt;hkeys key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hvals&lt;/code&gt;用于返回hash中所有的值，语法：&lt;code&gt;hvals key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hgetall&lt;/code&gt;用于返回hash中所有的键与值，语法：&lt;code&gt;hgetall key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hlen&lt;/code&gt;用于查询hash中的键值对个数，语法：&lt;code&gt;hlen key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexists&lt;/code&gt;用于判断hash中的某个键是否存在，语法：&lt;code&gt;hexists key field&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)删除元素，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hdel&lt;/code&gt;用于删除hash中的指定的键值对，语法：&lt;code&gt;hdel key field [field ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;6.zset&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6zset&#34;&gt;6.zset
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)zset（sorted set）被称为有序集合，同set相似，zset中也不会包含相同元素，但不同的是，zset中的元素是有序的。并且zset中的元素并非像list一样按照元素的插入顺序排序，而是按照每个元素的分数（score）排序。zset主要用于各种排行榜。&lt;/li&gt;
+&lt;li&gt;(2)添加元素，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zadd&lt;/code&gt;用于向zset中添加元素，语法：&lt;code&gt;ZADD key [NX|XX] score member&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;NX：仅当member不存在时才add。&lt;/li&gt;
+&lt;li&gt;XX：仅当member存在时才add。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zincrby&lt;/code&gt;用于增加元素的分数，语法：&lt;code&gt;zincrby key increment member&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(3)查询，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zscore&lt;/code&gt;用于查看某个元素的分数，语法：&lt;code&gt;zscore key member&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zrange&lt;/code&gt;用于查询指定区间范围的元素，语法：&lt;code&gt;zrange key start stop [byscore] [rev] [limit offset count] [withscores]&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;start/stop：用于指定查询区间，但是在不同模式下，其代表的含义也不相同。默认模式下，&lt;code&gt;start~stop&lt;/code&gt;表示的是名次区间，且该区间为闭区间。名次从0开始，且可为负数，-1表示倒数第一，-2表示倒数第二，以此类推；byscore模式下（声明了byscore参数），则&lt;code&gt;start~stop&lt;/code&gt;表示的就是分数区间，该区间默认仍为闭区间。在该模式下，可以在&lt;code&gt;start&lt;/code&gt;或&lt;code&gt;stop&lt;/code&gt;前增加&lt;code&gt;(&lt;/code&gt;来表示开区间，例如&lt;code&gt;(1 (5&lt;/code&gt;，表示的就是&lt;code&gt;(1,5)&lt;/code&gt;这个开区间。除此之外，还可以使用&lt;code&gt;-inf&lt;/code&gt;和&lt;code&gt;+inf&lt;/code&gt;表示负无穷和正无穷。&lt;/li&gt;
+&lt;li&gt;byscore：用于切换到分数模式。&lt;/li&gt;
+&lt;li&gt;rev：表示降序排序。在byscore模式下使用rev参数需要注意查询区间，start应大于stop。&lt;/li&gt;
+&lt;li&gt;limit：该选项只用于byscore模式，作用和sql语句中的limit一致&lt;/li&gt;
+&lt;li&gt;withscores：用于打印分数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)删除，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zrem&lt;/code&gt;用于删除元素，语法：&lt;code&gt;zrem key member [member ...]&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)计算，相关命令有：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zcard&lt;/code&gt;用于计算zset中的元素个数，语法：&lt;code&gt;zcard key&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zrank/zrevrank&lt;/code&gt;用于计算元素的排名，其中zrank按照score的升序排序，zrevrank则按照降序排序，语法：&lt;code&gt;zrank/zrevrank key member&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：常用命令</title>
+        <link>https://retreatafter.github.io/p/programming-webdeveloper-c7-rediscommands/</link>
+        <pubDate>Thu, 07 May 2026 17:07:07 +0800</pubDate>
+        
+        <guid>https://retreatafter.github.io/p/programming-webdeveloper-c7-rediscommands/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;本节目录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#1.%e7%ae%a1%e7%90%86%e9%94%ae&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        1.管理键
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2.%e7%ae%a1%e7%90%86%e6%95%b0%e6%8d%ae%e5%ba%93&#34;  &gt;
+    &lt;span style=&#34;display: inline-flex; align-items: center; gap: 0.5em;&#34;&gt;
+        2.管理数据库
+        
+    &lt;/span&gt;
+&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a id=&#34;1.管理键&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1管理键&#34;&gt;1.管理键
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)查看所有键，语法：&lt;code&gt;keys 通配符&lt;/code&gt;。例如&lt;code&gt;keys *&lt;/code&gt;表示查询所有的键。&lt;/li&gt;
+&lt;li&gt;(2)查看键的总数，语法：&lt;code&gt;dbsize&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;(3)判断某个键是否存在，语法：&lt;code&gt;exists 键&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;若键存在则返回1，不存在则返回0。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(4)删除键，语法：&lt;code&gt;del 键&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;返回值为删除键的个数，若删除一个不存在的键，则返回0。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(5)查询键的剩余过期时间，语法：&lt;code&gt;ttl 键&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ttl&lt;/code&gt;的含义为&lt;strong&gt;time to live&lt;/strong&gt;，用于查询一个定时键的剩余存活时间，返回值以秒为单位。若查询的键的未设置过期时间，则返回&lt;code&gt;-1&lt;/code&gt;，若查询的键不存在，则返回&lt;code&gt;-2&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a id=&#34;2.管理数据库&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2管理数据库&#34;&gt;2.管理数据库
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;(1)Redis默认有编号为0~15的16个逻辑数据库，每个数据库之间的数据是相互独立的，所有连接默认使用的都是0号数据库。&lt;/li&gt;
+&lt;li&gt;(2)切换数据库，语法：&lt;code&gt;select 要切换的数据库编号&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;(3)清空数据库，语法：&lt;code&gt;flushdb&lt;/code&gt;/&lt;code&gt;flushall&lt;/code&gt;。
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flushdb&lt;/code&gt;命令会清空当前所选用的数据库，&lt;code&gt;flushall&lt;/code&gt;命令会清空0~15号所有的数据库。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

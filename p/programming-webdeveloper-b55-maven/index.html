@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Maven">
+<title>小小小编程 | Web软件开发 | 实战篇：JavaWeb | Maven</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-b55-maven/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 实战篇：JavaWeb | Maven">
+<meta property='og:description' content="Maven">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-b55-maven/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2026-02-24T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-02-24T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 实战篇：JavaWeb | Maven">
+<meta name="twitter:description" content="Maven">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1概述">1.概述</a></li>
+    <li><a href="#2maven安装">2.Maven安装</a></li>
+    <li><a href="#3核心配置">3.核心配置</a></li>
+    <li><a href="#4maven仓库">4.Maven仓库</a></li>
+    <li><a href="#5集成开发环境idea中使用maven">5.集成开发环境IDEA中使用Maven</a></li>
+    <li><a href="#6依赖管理">6.依赖管理</a></li>
+    <li><a href="#7maven常见问题">7.Maven常见问题</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/webdeveloper/" >
+                Webdeveloper
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-b55-maven/">小小小编程 | Web软件开发 | 实战篇：JavaWeb | Maven</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Maven
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-02-24</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 2948 字
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.概述
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.Maven%e5%ae%89%e8%a3%85"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.Maven安装
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e6%a0%b8%e5%bf%83%e9%85%8d%e7%bd%ae"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.核心配置
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.Maven%e4%bb%93%e5%ba%93"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.Maven仓库
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e9%9b%86%e6%88%90%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83IDEA%e4%b8%ad%e4%bd%bf%e7%94%a8Maven"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.集成开发环境IDEA中使用Maven
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6.%e4%be%9d%e8%b5%96%e7%ae%a1%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.依赖管理
+        
+    </span>
+</a></li>
+<li><a class="link" href="#7.Maven%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.Maven常见问题
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.概述"></a></p>
+<h2 id="1概述">1.概述
+</h2><ul>
+<li>(1)概念：Maven是一款基于项目对象模型POM(Project Object Model)的概念，java项目架构管理工具。</li>
+<li>(2)作用：
+<ul>
+<li>标准化（统一）项目结构，简单来说IDEA创建的Maven项目在eclipse中也能运行。
+<ul>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E6%A0%87%E5%87%86%E5%8C%96%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png"
+	width="1760"
+	height="446"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E6%A0%87%E5%87%86%E5%8C%96%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84_hu9348681082266287393.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E6%A0%87%E5%87%86%E5%8C%96%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84_hu12554837781932664044.png 1024w"
+	loading="lazy"
+	
+		alt="标准化项目结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="394"
+		data-flex-basis="947px"
+	
+></li>
+</ul>
+</li>
+<li>标准化构建流程，Maven提供了一套简单的命令来完成标准跨平台自动化项目构建方式，简化编译、测试、打包、发布。</li>
+<li>依赖管理机制：在Java Web开发中，需要使用大量的jar包，Maven工具能做到自动导入和配置jar包，并导入该jar包所依赖的其它jar包，这样还能避免版本冲突问题。同时，我们还会看到war包，和jar包对应java应用一样，war包是针对javaweb应用的。</li>
+</ul>
+</li>
+<li>(3)核心思想：约定大于配置，需要什么jar包统一在pom.xml文件中声明导入。</li>
+</ul>
+<p><a id="1.概述"></a></p>
+<h2 id="2maven安装">2.Maven安装
+</h2><ul>
+<li>(1)官网： <a class="link" href="https://maven.apache.org/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        https://maven.apache.org/
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a>
+<ul>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E4%B8%8B%E8%BD%BD.png"
+	width="2458"
+	height="1209"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E4%B8%8B%E8%BD%BD_hu12400436444841962850.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E4%B8%8B%E8%BD%BD_hu16543901681298658732.png 1024w"
+	loading="lazy"
+	
+		alt="Maven下载"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="203"
+		data-flex-basis="487px"
+	
+></li>
+<li>.tar对应Linux系统，.zip对应windows系统。</li>
+<li>Source源码，Binary项目，下载Binary。</li>
+</ul>
+</li>
+<li>(2)配置环境变量
+<ul>
+<li>Win11系统为例：控制面板→系统和安全→系统→高级系统设置→环境变量→选择PATH，在编辑环境变量页面进行添加。</li>
+<li>首先，Maven需要在系统配置2个环境变量，一个[MAVEN_HOME]对应到你的放置Maven文件的目录例本机为E:\Code\apache-maven-3.9.11，一个[M2_HOME]对应到你的放置Maven文件目录下面的bin文件夹的路径例如本机为E:\Code\apache-maven-3.9.11\bin。</li>
+<li>其次，Path中的环境变量也需要新增，新增一个引用的地址[%MAVEN_HOME%\bin]。</li>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F.png"
+	width="743"
+	height="790"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_hu10528060841047004154.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F_hu8169554349282890421.png 1024w"
+	loading="lazy"
+	
+		alt="配置环境变量"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="94"
+		data-flex-basis="225px"
+	
+></li>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83Path%E5%8F%98%E9%87%8F.png"
+	width="357"
+	height="543"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83Path%E5%8F%98%E9%87%8F_hu9955069336132618911.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83Path%E5%8F%98%E9%87%8F_hu2699290564308938847.png 1024w"
+	loading="lazy"
+	
+		alt="配置环境Path变量"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="65"
+		data-flex-basis="157px"
+	
+></li>
+</ul>
+</li>
+<li>(3)使用dos命令确认是否删除成功，cmd进入命令提示符，使用命令<code>mvn -v</code>，如果显示<code>Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T23:06:16+08:00)</code>说明安装成功。</li>
+</ul>
+<p><a id="3.核心配置"></a></p>
+<h2 id="3核心配置">3.核心配置
+</h2><ul>
+<li>(1)找到Maven配置文件，本机为<code>E:\Code\apache-maven-3.6.2\conf</code>下settings.xml文件。</li>
+<li>(2)导入私服镜像。以阿里云镜像导入为例。
+<ul>
+<li>在<code>&lt;mirrors&gt;&lt;/mirrors&gt;</code>部分粘贴：</li>
+<li>注意，如果不加 mirrorOf 这一行，默认所有的依赖都会去阿里云仓库下载，加上后jeecg的依赖包就可以从jeecg私服下载了。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;mirror&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="nt">&lt;id&gt;</span>nexus-aliyun<span class="nt">&lt;/id&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="nt">&lt;mirrorOf&gt;</span>*,!jeecg,!jeecg-snapshots<span class="nt">&lt;/mirrorOf&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="nt">&lt;name&gt;</span>Nexus aliyun<span class="nt">&lt;/name&gt;</span>
+</span></span><span class="line"><span class="cl">		<span class="nt">&lt;url&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="nt">&lt;/url&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/mirror&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3)配置本地仓库。在放置maven的文件夹下<strong>手动创建maven-repo子文件夹</strong>，将其作为本地仓库地址（如不设置那么maven会自动生成一个文件夹，即配置文件中<code>&lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</code>这行），本机为<code>&lt;localRepository&gt;E:\Code\apache-maven-3.6.2\maven-repo&lt;/localRepository&gt;</code>。</li>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.png"
+	width="1537"
+	height="586"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6_hu6336686997232674906.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6_hu10667873030688024460.png 1024w"
+	loading="lazy"
+	
+		alt="Maven.配置文件"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="262"
+		data-flex-basis="629px"
+	
+></li>
+</ul>
+<p><a id="4.Maven仓库"></a></p>
+<h2 id="4maven仓库">4.Maven仓库
+</h2><ul>
+<li>(1)仓库：管理各自jar包的地方。分为本地仓库、中央仓库、远程仓库。依赖查找的优先度本地仓库&gt;远程仓库&gt;中央仓库。
+<ul>
+<li>本地仓库：自己计算机上的一个用来存储jar包的目录（文件夹）。</li>
+<li>中央仓库：由Maven团队维护的全球唯一的。</li>
+<li>远程仓库（私服）：一般由公司团队搭建的私有仓库。</li>
+</ul>
+</li>
+<li>(2)中央仓库地址： <a class="link" href="https://mvnrepository.com/"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        https://mvnrepository.com/
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a>
+<ul>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.Maven%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8.png"
+	width="1816"
+	height="2287"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.Maven%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8_hu16744576618364371303.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.Maven%E4%BB%93%E5%BA%93%E4%BD%BF%E7%94%A8_hu11724918627436023252.png 1024w"
+	loading="lazy"
+	
+		alt="Maven仓库使用"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="79"
+		data-flex-basis="190px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="5.集成开发环境IDEA中使用Maven"></a></p>
+<h2 id="5集成开发环境idea中使用maven">5.集成开发环境IDEA中使用Maven
+</h2><ul>
+<li>(1)在IDEA中创建MavenWeb项目，创建<strong>普通</strong>的Maven项目，并编辑坐标（Maven中的坐标是资源的唯一标识 , 通过该坐标可以唯一定位资源位置，通过坐标来定义项目或引入项目中需要的依赖，包括groupId、artifactId、version）。
+<ul>
+<li>Archetype是预置的Maven模板，选择<code>:maven-archetype-webapp</code></li>
+<li>groupId/GAV：GroupId组ID，定义项目属性哪个组，通常是域名反写，例如<code>com.retreatafter</code>；artifactId：ArtifactId项目ID，定义在当前组唯一的ID，通常与项目模块名称ProgramName一致，例如<code>order-service、goods-service</code>；version：定义当前项目版本号。</li>
+<li>directory目录，选择先前Maven配置文件，本机为E:\Code\apache-maven-3.6.2\conf下settings.xml文件。</li>
+<li>相关文件路径设置（建议在主界面进行设置，这样为全局设置而不是仅针对当前项目）：
+<ul>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png"
+	width="3014"
+	height="1085"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE_hu6514326893191193454.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE_hu1151758978537510258.png 1024w"
+	loading="lazy"
+	
+		alt="Maven.创建项目"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="277"
+		data-flex-basis="666px"
+	
+></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(2)创建后会自动导入包，等待项目初始化完毕。
+<ul>
+<li><img src="/2025__%e5%90%8e%e7%ab%af.Java__JavaWeb.Tomcat.pom%e6%96%87%e4%bb%b6.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="pom文件"
+	
+	
+></li>
+</ul>
+</li>
+<li>(3)Maven在IDEA中存在一个问题，项目自动创建完成后，Maven Home会使用IDEA默认的，因此在项目成功创建之后需要回到设置页面再确认一遍，如果又变成了IDEA默认的则手动改为我们本地下载好的。</li>
+<li>(4)标记功能，在创建的Maven项目中是无法新建Class文件的，这时就用到标记功能。
+<ul>
+<li><img src="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E6%96%87%E4%BB%B6%E5%A4%B9%E6%A0%87%E8%AE%B0%E5%8A%9F%E8%83%BD.png"
+	width="632"
+	height="1151"
+	srcset="/p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E6%96%87%E4%BB%B6%E5%A4%B9%E6%A0%87%E8%AE%B0%E5%8A%9F%E8%83%BD_hu11553045480815594745.png 480w, /p/programming-webdeveloper-b55-maven/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Maven.%E6%96%87%E4%BB%B6%E5%A4%B9%E6%A0%87%E8%AE%B0%E5%8A%9F%E8%83%BD_hu13742735908363035087.png 1024w"
+	loading="lazy"
+	
+		alt="文件夹标记功能"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="54"
+		data-flex-basis="131px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="6.依赖管理"></a></p>
+<h2 id="6依赖管理">6.依赖管理
+</h2><ul>
+<li>(1)依赖配置：一个项目中可以引入多个依赖，pom.xml是用于放所有依赖dependency的地方。步骤：
+<ul>
+<li>1)在pom.xml中编写<code>&lt;dependencies&gt;</code>标签。</li>
+<li>2)在<code>&lt;dependencies&gt;</code>标签中使用<code>&lt;dependency&gt;</code>引入坐标。</li>
+<li>3)定义坐标的 groupId、artifactId、version。</li>
+<li>4)点击右侧Maven列表的刷新按钮，引入最新加入的坐标。</li>
+</ul>
+</li>
+<li>(2)依赖传递：依赖具有传递性。
+<ul>
+<li>直接依赖：在当前项目中通过依赖配置建立的依赖关系。</li>
+<li>间接依赖：被依赖的资源如果依赖其它资源，当前项目间接依赖其它资源。</li>
+</ul>
+</li>
+<li>(3)依赖范围：在项目中导入依赖的jar包后，默认情况下，可以在任何地方使用，如果希望限制依赖的使用范围，可以通过<code>&lt;scope&gt;</code>标签设置其作用范围，取值有compile、test、provided、runtime。
+<ul>
+<li>主程序范围有效：main文件夹范围内。</li>
+<li>测试程序范围有效：test文件夹范围内。</li>
+<li>是否参与打包运行：package指令范围内。</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th><strong>scope</strong>值</th>
+          <th><strong>主程序</strong></th>
+          <th><strong>测试程序</strong></th>
+          <th><strong>打包（运行）</strong></th>
+          <th><strong>范例</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>compile（默认）</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>log4j</td>
+      </tr>
+      <tr>
+          <td>test</td>
+          <td>-</td>
+          <td>Y</td>
+          <td>-</td>
+          <td>junit</td>
+      </tr>
+      <tr>
+          <td>provided</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>-</td>
+          <td>servlet-api</td>
+      </tr>
+      <tr>
+          <td>runtime</td>
+          <td>-</td>
+          <td>Y</td>
+          <td>Y</td>
+          <td>jdbc驱动</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>(4)生命周期：Maven的生命周期描述了一次项目构建，经历哪些阶段。Maven对项目构建划分为3套相互独立的生命周期，每套生命周期包含一些阶段，同一套生命周期下阶段具有顺序，在执行后面的生命周期时，前面的生命周期都会执行：
+<ul>
+<li>clean：清理工作。核心关注其中的clean阶段。</li>
+<li>default：核心工作。如：编译、测试、打包、安装、部署等。核心关注compile、test、package、install阶段。</li>
+<li>site：生成报告、发布站点等。</li>
+</ul>
+</li>
+</ul>
+<p><a id="7.Maven常见问题"></a></p>
+<h2 id="7maven常见问题">7.Maven常见问题
+</h2><ul>
+<li>(1)写的配置文件，无法被导出或者生效的问题：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!--在pom.xml的build中配置resources，来解决资源导出失败的问题--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;build&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;resources&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;resource&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;directory&gt;</span>src/main/resources<span class="nt">&lt;/directory&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;includes&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;include&gt;</span>**/*.properties<span class="nt">&lt;/include&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;include&gt;</span>**/*.xml<span class="nt">&lt;/include&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/includes&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;filtering&gt;</span>true<span class="nt">&lt;/filtering&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/resource&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;resource&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;directory&gt;</span>src/main/java<span class="nt">&lt;/directory&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;includes&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;include&gt;</span>**/*.properties<span class="nt">&lt;/include&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;include&gt;</span>**/*.xml<span class="nt">&lt;/include&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/includes&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;filtering&gt;</span>true<span class="nt">&lt;/filtering&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/resource&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/resources&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/build&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d2-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d1-opensourceprojectanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：开源项目分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c9-knife4j/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Knife4j</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c8-redisdatatypes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：数据类型</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c7-rediscommands/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了146篇文章 · 
+		总计539.62k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

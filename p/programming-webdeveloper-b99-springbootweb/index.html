@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Web">
+<title>小小小编程 | Web软件开发 | 实战篇：SpringBoot | Web</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-b99-springbootweb/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 实战篇：SpringBoot | Web">
+<meta property='og:description' content="Web">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-b99-springbootweb/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2026-04-09T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-04-09T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 实战篇：SpringBoot | Web">
+<meta name="twitter:description" content="Web">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1概述">1.概述</a></li>
+    <li><a href="#2构建第一个web应用">2.构建第一个Web应用</a>
+      <ol>
+        <li><a href="#1步骤分析">(1)步骤分析</a></li>
+        <li><a href="#2搭建环境">(2)搭建环境</a></li>
+        <li><a href="#3业务实现">(3)业务实现</a></li>
+      </ol>
+    </li>
+    <li><a href="#3json视图">3.JSON视图</a></li>
+    <li><a href="#4视图技术thymeleaf">4.视图技术Thymeleaf</a>
+      <ol>
+        <li><a href="#1概念">(1)概念</a></li>
+        <li><a href="#2表达式">(2)表达式</a></li>
+        <li><a href="#3流程控制">(3)流程控制</a></li>
+      </ol>
+    </li>
+    <li><a href="#5mvc">5.MVC</a>
+      <ol>
+        <li><a href="#1controller">(1)Controller</a></li>
+        <li><a href="#2model">(2)Model</a></li>
+        <li><a href="#3view">(3)View</a></li>
+      </ol>
+    </li>
+    <li><a href="#6重要组件">6.重要组件</a>
+      <ol>
+        <li><a href="#1servlet">(1)servlet</a></li>
+        <li><a href="#2过滤器filter">(2)过滤器Filter</a></li>
+        <li><a href="#3监听器listener">(3)监听器Listener</a></li>
+      </ol>
+    </li>
+    <li><a href="#7文件上传">7.文件上传</a></li>
+    <li><a href="#8异常处理">8.异常处理</a></li>
+    <li><a href="#9远程访问">9.远程访问</a></li>
+    <li><a href="#10aot与jit">10.AOT与JIT</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/webdeveloper/" >
+                Webdeveloper
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-b99-springbootweb/">小小小编程 | Web软件开发 | 实战篇：SpringBoot | Web</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Web
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-04-09</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 3891 字
+                    阅读时长: 8 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e6%a6%82%e8%bf%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.概述
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e6%9e%84%e5%bb%ba%e7%ac%ac%e4%b8%80%e4%b8%aaWeb%e5%ba%94%e7%94%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.构建第一个Web应用
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e6%ad%a5%e9%aa%a4%e5%88%86%e6%9e%90"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)步骤分析
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29%e6%90%ad%e5%bb%ba%e7%8e%af%e5%a2%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)搭建环境
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29%e4%b8%9a%e5%8a%a1%e5%ae%9e%e7%8e%b0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)业务实现
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#3.JSON%e8%a7%86%e5%9b%be"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.JSON视图
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e8%a7%86%e5%9b%be%e6%8a%80%e6%9c%afThymeleaf"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.视图技术Thymeleaf
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29%e6%a6%82%e5%bf%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)概念
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29%e8%a1%a8%e8%be%be%e5%bc%8f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)表达式
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29%e6%b5%81%e7%a8%8b%e6%8e%a7%e5%88%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)流程控制
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#5.MVC"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.MVC
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29Controller"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)Controller
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29Model"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)Model
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29View"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)View
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#6.%e9%87%8d%e8%a6%81%e7%bb%84%e4%bb%b6"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.重要组件
+        
+    </span>
+</a>
+<ol>
+<li><a class="link" href="#%281%29servlet"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (1)servlet
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%282%29%e8%bf%87%e6%bb%a4%e5%99%a8Filter"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (2)过滤器Filter
+        
+    </span>
+</a></li>
+<li><a class="link" href="#%283%29%e7%9b%91%e5%90%ac%e5%99%a8Listener"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        (3)监听器Listener
+        
+    </span>
+</a></li>
+</ol>
+</li>
+<li><a class="link" href="#7.%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.文件上传
+        
+    </span>
+</a></li>
+<li><a class="link" href="#8.%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        8.异常处理
+        
+    </span>
+</a></li>
+<li><a class="link" href="#9.%e8%bf%9c%e7%a8%8b%e8%ae%bf%e9%97%ae"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        9.远程访问
+        
+    </span>
+</a></li>
+<li><a class="link" href="#10.AOT%e4%b8%8eJIT"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        10.AOT与JIT
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.概述"></a></p>
+<h2 id="1概述">1.概述
+</h2><ul>
+<li>(1)Spring Boot可以创建两种类型的Web应用：
+<ul>
+<li>基于Servlet体系的SpringWebMVC应用。</li>
+<li>使用 spring-boot-starter-webflux模块来构建响应式，非阻塞的Web应用程序。</li>
+</ul>
+</li>
+</ul>
+<p><a id="2.构建第一个Web应用"></a></p>
+<h2 id="2构建第一个web应用">2.构建第一个Web应用
+</h2><p><a id="(1)步骤分析"></a></p>
+<h3 id="1步骤分析">(1)步骤分析
+</h3><ul>
+<li>1)搭建环境。
+<ul>
+<li>创建SpringBoot的maven项目，并勾选导入依赖：spring-web依赖（其中包含了SpringMVC，Restful，Tomcat）、Thymeleaf依赖（视图技术，替代jsp）、Lombok依赖（可选）。</li>
+</ul>
+</li>
+<li>2)测试代码业务实现。
+<ul>
+<li>创建控制器类Controller。控制器类Controller使用到<code>@Controller</code>注解声明为Bean由Spring创建管理对象和<code>@RequestMapping</code>注解绑定请求地址和方法。</li>
+<li>创建发起请求的页面jsp和作为显示请求处理结果的jsp。</li>
+</ul>
+</li>
+</ul>
+<p><a id="(2)搭建环境"></a></p>
+<h3 id="2搭建环境">(2)搭建环境
+</h3><ul>
+<li>1)创建SpringBoot的maven项目，并勾选导入依赖：spring-web依赖（其中包含了SpringMVC，Restful，Tomcat）、Thymeleaf依赖（视图技术，替代jsp）、Lombok依赖（可选）。</li>
+</ul>
+<p><a id="(3)业务实现"></a></p>
+<h3 id="3业务实现">(3)业务实现
+</h3><ul>
+<li>1)创建显示请求处理结果的页面quick.html。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;margin-left: 200px&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>视图技术<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">th:text</span><span class="o">=</span><span class="s">&#34;${title}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">th:text</span><span class="o">=</span><span class="s">&#34;${time}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>2)创建控制器类Controller。实际业务中其它配置基本上项目创建时做好配置后续无需调整，后续的业务添加在这个控制器类中完成。
+<ul>
+<li>请求映射注解@RequestMapping修饰的方法，作用类似于Servlet中的doGet()和doPost()方法。</li>
+<li>形参model表示模型，最后这些数据会放在request作用域。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//定义表现层控制器bean</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Controller</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MyController</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//请求映射注解@RequestMapping，绑定请求地址和方法，表示该地址传来的请求由该方法处理</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@RequestMapping</span><span class="p">(</span><span class="s">&#34;/exam/quick&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">quick</span><span class="p">(</span><span class="n">Model</span><span class="w"> </span><span class="n">model</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//调用service层，处理请求，获取数据</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">model</span><span class="p">.</span><span class="na">addAttribute</span><span class="p">(</span><span class="s">&#34;title&#34;</span><span class="p">,</span><span class="s">&#34;web开发&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">model</span><span class="p">.</span><span class="na">addAttribute</span><span class="p">(</span><span class="s">&#34;time&#34;</span><span class="p">,</span><span class="n">LocalDateTime</span><span class="p">.</span><span class="na">now</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//指定视图页面，显示数据</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">&#34;quick&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="3.JSON视图"></a></p>
+<h2 id="3json视图">3.JSON视图
+</h2><ul>
+<li>(1)上述例子以Html文件作为视图，可以编写复杂的交互的页面，CSS美化数据。除了这种带有页面的数据，还有一种只需要数据的视图，例如手机应用app，app的数据来自服务器应用处理结果，只需要数据。主流方式是服务器返回json格式数据给手机app应用。</li>
+</ul>
+<p><a id="4.视图技术Thymeleaf"></a></p>
+<h2 id="4视图技术thymeleaf">4.视图技术Thymeleaf
+</h2><p><a id="(1)概念"></a></p>
+<h3 id="1概念">(1)概念
+</h3><ul>
+<li>1)Thymeleaf是一个<strong>表现层的模板引擎</strong>，一般被使用在Web环境中，它可以处HTML、XML、JS等文档，即可以将JSP作为JavaWeb应用的表现层，是JSP的代替技术。</li>
+</ul>
+<p><a id="(2)表达式"></a></p>
+<h3 id="2表达式">(2)表达式
+</h3><ul>
+<li>1)变量表达式，格式：<code>${...}</code>，可用于获取后台传来的数据。，例如<code>&lt;p th:text=&quot;userName&quot;&gt;zhangsan&lt;/p&gt;</code>。</li>
+<li>2)链接表达式，格式：<code>@{...}</code>，实现超链接网址，例如<code>th:href=&quot;@{/css/home.css}&quot;</code>。</li>
+</ul>
+<p><a id="(3)流程控制"></a></p>
+<h3 id="3流程控制">(3)流程控制
+</h3><ul>
+<li>1)if语句，语法：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;th:block th:if=&#34;${condition}&#34;&gt;
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">&lt;/th:block&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>2)for语句，语法：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">  &lt;tr th:each=&#34;成员遍历:${表达式}&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;td th:text=&#34;{成员}&#34;&gt;列&lt;/td&gt;
+</span></span><span class="line"><span class="cl">  &lt;/tr&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;!--示例--&gt;
+</span></span><span class="line"><span class="cl">&lt;table&gt;
+</span></span><span class="line"><span class="cl">  &lt;tr th:each=&#34;student : {students}&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;td th:text=&#34;{student.name}&#34;&gt;Student Name&lt;/td&gt;
+</span></span><span class="line"><span class="cl">    &lt;td th:text=&#34;${student.age}&#34;&gt;Student Age&lt;/td&gt;
+</span></span><span class="line"><span class="cl">  &lt;/tr&gt;
+</span></span><span class="line"><span class="cl">&lt;/table&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="5.MVC"></a></p>
+<h2 id="5mvc">5.MVC
+</h2><p><a id="(1)Controller"></a></p>
+<h3 id="1controller">(1)Controller
+</h3><ul>
+<li>1)常用注解：<code>@RestController</code>及<code>@Controller</code>。
+<ul>
+<li><code>@RestController</code>包含了<code>@ResponseBody</code>注解和<code>@Controller</code>注解，使用<code>@RestController</code>注解后当前控制器中所有方法都会默认加入<code>@ResponseBody</code>注解的功能，即此时方法返回值为数据，可以通过HttpServletResponse对象输出给浏览器。</li>
+</ul>
+</li>
+<li>2)Controller功能：接收请求，响应数据，具体来说，Controller类中的方法，<strong>方法上的注解</strong><code>@RequestMapping(value=&quot;请求的url地址&quot; method=请求方式)</code>/<code>@GetMapping</code>/<code>@PostMapping</code>/<code>@PutMapping</code>/<code>@DeleteMapping</code>代表了来自该地址的请求由该方法进行处理，并且注解可以进一步描述是什么类型的请求如区分get/post/put/delete请求；方法的<strong>形参</strong>接收请求中的参数；方法的<strong>返回值</strong>表示应答结果，结果可以包括数据和视图。
+<ul>
+<li>url地址除了唯一匹配外，允许使用以下格式：
+<ul>
+<li>使用<code>?</code>表示单个字符，例如<code>@GetMapping(&quot;file/t?st.html&quot;)</code>；</li>
+<li>使用<code>*</code>表示0个或多个字符，例如<code>@GetMapping(&quot;/images/*.gif&quot;)</code>；</li>
+<li>使用<code>**</code>表示所有，多个路径或是多个字符，例如<code>@GetMapping(&quot;/pic/**&quot;)</code>；</li>
+<li>使用路径变量<code>{*变量名称}</code>，例如<code>@GetMapping(&quot;/order/{*id}&quot;)</code>；</li>
+<li>使用正则表达式。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3)请求参数验证：
+<ul>
+<li>除了基础的手工验证外，还可以使用JavaBeanValidation：JSR-303是JAVAEE6中的一项子规范，是在运行时进行数据验证的规范，为JavaBean验证定义了相应的元数据模型和API。<strong>hibernate-validator</strong>是它的实现。</li>
+<li>使用步骤：添加<code>spring-boot-starter-validation</code>依赖，选择需要的注解即可实现验证。</li>
+</ul>
+</li>
+</ul>
+<p><a id="(2)Model"></a></p>
+<h3 id="2model">(2)Model
+</h3><ul>
+<li>1)后台要从控制层直接返回前端所需的数据，这时就会用到Model。ModelAndView里的任意值，以及json格式的字符串等都是Model。</li>
+</ul>
+<p><a id="(3)View"></a></p>
+<h3 id="3view">(3)View
+</h3><ul>
+<li>1)返回值类型：
+<ul>
+<li>页面视图：返回值为String直接return指定视图页面，或是返回值为ModelAndView，包含数据和视图。</li>
+<li>JSON数据视图：返回值为自定义对象。
+<ul>
+<li>复杂JSON，即一个类中存在多个引用类型或集合类型。</li>
+</ul>
+</li>
+<li>ResponseEntity应答实体：包含了数据和自定义的HttpStatus Code。</li>
+<li>Map：默认将key和value转换为json字符串。</li>
+</ul>
+</li>
+</ul>
+<p><a id="6.重要组件"></a></p>
+<h2 id="6重要组件">6.重要组件
+</h2><p><a id="(1)servlet"></a></p>
+<h3 id="1servlet">(1)servlet
+</h3><ul>
+<li>1)注解<code>@Webservlet</code>可以声明servlet的相关属性，作用等同于web.xml文件中servlet的相关标签。配合扫描注解<code>@ServletComponentScan</code>一同使用。</li>
+</ul>
+<p><a id="(2)过滤器Filter"></a></p>
+<h3 id="2过滤器filter">(2)过滤器Filter
+</h3><ul>
+<li>1)常用注解：<code>@WebFilter</code>。配合扫描注解<code>@ServletComponentScan</code>一同使用。</li>
+</ul>
+<p><a id="(3)监听器Listener"></a></p>
+<h3 id="3监听器listener">(3)监听器Listener
+</h3><ul>
+<li>1)常用注解：<code>@WebListener</code>。配合扫描注解<code>@ServletComponentScan</code>一同使用。</li>
+</ul>
+<p><a id="7.文件上传"></a></p>
+<h2 id="7文件上传">7.文件上传
+</h2><ul>
+<li>(1)SpringBoot提供了封装好的处理上传文件的接口MultipartResolver。</li>
+<li>(2)使用步骤：
+<ul>
+<li>创建上传文件的页面（必须）及结果显示页面（可选）。</li>
+<li>接收上传文件的控制器类。若需要上传多个文件，接收参数时使用数组<code>MultiPartFile[] files</code>。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;!--</span><span class="n">上传文件页面upload</span><span class="p">.</span><span class="na">html</span><span class="o">--&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;!</span><span class="n">DOCTYPE</span><span class="w"> </span><span class="n">html</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;</span><span class="n">html</span><span class="w"> </span><span class="n">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">meta</span><span class="w"> </span><span class="n">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Title</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;</span><span class="n">div</span><span class="w"> </span><span class="n">style</span><span class="o">=</span><span class="s">&#34;margin-left: 200px&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">&lt;</span><span class="n">h3</span><span class="o">&gt;</span><span class="n">上传文件</span><span class="o">&lt;/</span><span class="n">h3</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">				</span><span class="o">&lt;</span><span class="n">form</span><span class="w"> </span><span class="n">action</span><span class="o">=</span><span class="s">&#34;uploadFile&#34;</span><span class="w"> </span><span class="n">enctype</span><span class="o">=</span><span class="s">&#34;mutipart/form-data&#34;</span><span class="w"> </span><span class="n">method</span><span class="o">=</span><span class="s">&#34;post&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">						</span><span class="n">选择文件</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">input</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s">&#34;upfile&#34;</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">/&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">						</span><span class="o">&lt;</span><span class="n">input</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="w"> </span><span class="n">value</span><span class="o">=</span><span class="s">&#34;上传&#34;</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">				</span><span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//控制器类</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nd">@Restcontroller</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">UploadFilecontroller</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">//上传文件</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@PostMapping</span><span class="p">(</span><span class="s">&#34;/uploadFile&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">uploadFile</span><span class="p">(</span><span class="nd">@RequestParam</span><span class="p">(</span><span class="s">&#34;upfile&#34;</span><span class="p">)</span><span class="w"> </span><span class="n">MultipartFile</span><span class="w"> </span><span class="n">multipartFile</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;开始处理上传文件&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="n">info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">try</span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">//判断上传了文件</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="n">multipartFile</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">info</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&#34;上传文件的参数名称&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">multipartFile</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">info</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&#34;内容类型&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">multipartFile</span><span class="p">.</span><span class="na">getContentType</span><span class="p">());</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">var</span><span class="w"> </span><span class="n">ext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;unknown&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">var</span><span class="w"> </span><span class="n">filename</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">multipartFile</span><span class="p">.</span><span class="na">getOriginalFilename</span><span class="p">();</span><span class="w"> </span><span class="c1">//原始文件名称</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">if</span><span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&#34;.&#34;</span><span class="p">)</span><span class="o">&gt;</span><span class="n">0</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">ext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">filename</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">&#34;.&#34;</span><span class="p">)</span><span class="o">+</span><span class="n">1</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="c1">//生成服务器使用的文件名称</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">var</span><span class="w"> </span><span class="n">newFileName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UUID</span><span class="p">.</span><span class="na">randomUUID</span><span class="p">().</span><span class="na">toString</span><span class="p">()</span><span class="o">+</span><span class="n">ext</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="kd">var</span><span class="w"> </span><span class="n">path</span><span class="o">=</span><span class="s">&#34;D://upload&#34;</span><span class="p">;</span><span class="w"> </span><span class="c1">//存储服务器的文件</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="c1">//把文件保存到path目录</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">multipartFile</span><span class="p">.</span><span class="na">transferTo</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="n">path</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">info</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="s">&#34;文件名称&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">newFileName</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="p">}</span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c1">//重定向到index页面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="s">&#34;redirect:/index.html&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="8.异常处理"></a></p>
+<h2 id="8异常处理">8.异常处理
+</h2><ul>
+<li>(1)在Controller处理请求过程中发生了异常时，DispatcherServlet会将异常处理委托给异常处理器（处理异常的类）。实现HandlerExceptionResolver接口的都是异常处理类。</li>
+<li>(2)常用注解：<code>@ExceptionHandler</code>、<code>@ControllerAdvice</code>、<code>@RestControllerAdvice</code></li>
+</ul>
+<p><a id="9.远程访问"></a></p>
+<h2 id="9远程访问">9.远程访问
+</h2><ul>
+<li>(1)远程访问是一个应用能够访问其他应用的功能。</li>
+<li>(2)注解<code>@HttpExchange</code>。</li>
+<li>(3)响应式异步WebClient。</li>
+</ul>
+<p><a id="10.AOT与JIT"></a></p>
+<h2 id="10aot与jit">10.AOT与JIT
+</h2><ul>
+<li>(1)AOT：预编译，提前编译，静态的。提供应用启动时间，SpringBoot3增加了对AOT的支持。</li>
+<li>(2)JIT：实时编译，动态的。提供应用程序执行的性能。</li>
+<li>(3)Native Image原生镜像（本机镜像）：将java程序编译为可独立执行的文件的技术。</li>
+</ul>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d2-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d1-opensourceprojectanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：开源项目分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c9-knife4j/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Knife4j</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c8-redisdatatypes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：数据类型</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c7-rediscommands/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了146篇文章 · 
+		总计539.62k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

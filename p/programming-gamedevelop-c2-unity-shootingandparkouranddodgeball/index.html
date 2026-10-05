@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="入门项目：综合微型案例">
+<title>小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：综合微型案例</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：综合微型案例">
+<meta property='og:description' content="入门项目：综合微型案例">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='游戏开发' /><meta property='article:tag' content='编程学习' /><meta property='article:tag' content='Unity' /><meta property='article:published_time' content='2026-05-23T17:17:07&#43;08:00'/><meta property='article:modified_time' content='2026-05-23T17:17:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：综合微型案例">
+<meta name="twitter:description" content="入门项目：综合微型案例">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1资源导入">1.资源导入</a></li>
+    <li><a href="#2案例一射击">2.案例一射击</a></li>
+    <li><a href="#3案例二跑酷">3.案例二跑酷</a></li>
+    <li><a href="#4案例三躲避球">4.案例三躲避球</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/gamedevelop/" >
+                Gamedevelop
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/">小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：综合微型案例</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            入门项目：综合微型案例
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-05-23</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 2570 字
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e8%b5%84%e6%ba%90%e5%af%bc%e5%85%a5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.资源导入
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.%e6%a1%88%e4%be%8b%e4%b8%80%e5%b0%84%e5%87%bb"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.案例一射击
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e6%a1%88%e4%be%8b%e4%ba%8c%e8%b7%91%e9%85%b7"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.案例二跑酷
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e6%a1%88%e4%be%8b%e4%b8%89%e8%ba%b2%e9%81%bf%e7%90%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.案例三躲避球
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.资源导入"></a></p>
+<h2 id="1资源导入">1.资源导入
+</h2><ul>
+<li>(1)这里所说的资源大多为美术资源，若导入的是完整资料，通常还包括了代码、音效等。</li>
+<li>(2)在线导入Unity资源
+<ul>
+<li>1)编辑器中“窗口Window-资源商店AssetStore”位置跳转至资源网址。</li>
+<li>2)直接进入<a class="link" href="https://assetstore.unity.com"   target="_blank" rel="noopener" >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        Unity资源商店
+        
+            <svg width=".7em" height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+                <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z" fill="currentColor" />
+            </svg>
+        
+    </span>
+</a></li>
+<li><img src="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E8%B5%84%E6%BA%90%E5%95%86%E5%BA%97%E5%AF%BC%E5%85%A5.png"
+	width="2095"
+	height="1145"
+	srcset="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E8%B5%84%E6%BA%90%E5%95%86%E5%BA%97%E5%AF%BC%E5%85%A5_hu1212439970060233598.png 480w, /p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E8%B5%84%E6%BA%90%E5%95%86%E5%BA%97%E5%AF%BC%E5%85%A5_hu7652876362196155407.png 1024w"
+	loading="lazy"
+	
+		alt="资源导入"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="182"
+		data-flex-basis="439px"
+	
+></li>
+<li>3)回到编辑器，这时可以在&quot;窗口Window-包管理器MyAssets&quot;种看到所拥有的所有包资源，进行下载。</li>
+<li><img src="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD.png"
+	width="2013"
+	height="1200"
+	srcset="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD_hu510278135189095646.png 480w, /p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD_hu4709588411322488439.png 1024w"
+	loading="lazy"
+	
+		alt="资源下载"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></li>
+<li>4)下载完成后可以看到导入的包资源的具体内容，一步步确认即可。</li>
+</ul>
+</li>
+<li>(3)导入本地Unity资源
+<ul>
+<li>1)直接将[.unitypackage]包拖拽至Assets位置。</li>
+</ul>
+</li>
+<li>(4)细节
+<ul>
+<li>项目导入的资源中如果已经包括了光源的，记得将默认自带的光源删除，否则会产生过曝等问题。光源调整位于窗口Window-渲染Rendering-光源Lighting下的环境照明源EnvironmentLightingSource。本次将其按需修改，从天空盒改为源为自定义颜色。</li>
+<li><img src="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E5%85%89%E6%BA%90%E8%B0%83%E6%95%B4.png"
+	width="1816"
+	height="1080"
+	srcset="/p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E5%85%89%E6%BA%90%E8%B0%83%E6%95%B4_hu642031457822525265.png 480w, /p/programming-gamedevelop-c2-unity-shootingandparkouranddodgeball/2025__%E5%BC%95%E6%93%8E.Unity__%E5%85%A5%E9%97%A8%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B.%E5%85%89%E6%BA%90%E8%B0%83%E6%95%B4_hu14008321541844599415.png 1024w"
+	loading="lazy"
+	
+		alt="光源调整"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="168"
+		data-flex-basis="403px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="2.案例一射击"></a></p>
+<h2 id="2案例一射击">2.案例一射击
+</h2><ul>
+<li>(1)发射子弹。可以通过使用预制体（默认禁用）来多次创建，当满足条件时生成该预制体，并后续进行销毁，包括子弹不和物体发生交互后的销毁和发生交互后的销毁。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="c1">// 实现用对应按键发射子弹</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Shoot</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">GameObject</span> <span class="n">projectilePrefab</span><span class="p">;</span> <span class="c1">//声明游戏物体</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当按下Space键时执行循环中的操作，GetKeyDown()方法是检测一次，GetKey()方法是持续检测</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">GetKeyDown</span><span class="p">(</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">Space</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Instantiate</span><span class="p">(</span><span class="n">projectilePrefab</span><span class="p">,</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">,</span> <span class="n">projectilePrefab</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="c1">// 实现子弹的自行销毁</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Destroy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">float</span> <span class="n">topBound</span> <span class="p">=</span> <span class="m">20</span><span class="p">;</span> <span class="c1">//上边界</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">float</span> <span class="n">lowerBound</span> <span class="p">=</span> <span class="p">-</span><span class="m">20</span><span class="p">;</span> <span class="c1">//下边界</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 当按下Space键时执行循环中的操作，GetKeyDown()方法是检测一次，GetKey()方法是只要按键不抬起就持续触发检测</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span> <span class="p">&gt;</span> <span class="n">topBound</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Destroy</span><span class="p">(</span><span class="n">gameObject</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span> <span class="p">&lt;</span> <span class="n">lowerBound</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Destroy</span><span class="p">(</span><span class="n">gameObject</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="c1">// 实现子弹触碰到敌人后双方都销毁</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">AnimalController</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="k">void</span> <span class="n">OnTriggerEnter</span><span class="p">(</span><span class="n">Collider</span> <span class="n">other</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">CompareTag</span><span class="p">(</span><span class="s">&#34;Food&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Destroy</span><span class="p">(</span><span class="n">gameObject</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Destroy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>(2)敌人随机生成。使用到数组，用数组来接收不同种类的敌人。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">aiEnemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="n">GameObject</span><span class="p">[]</span> <span class="n">animalPrefabs</span><span class="p">;</span> <span class="c1">//2.数组用于存放不同动物，具体的存放哪些可以在Unity界面进行拖动选择</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">xRange</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span> <span class="c1">//3.范围</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">InvokeRepeating</span><span class="p">(</span><span class="s">&#34;SpawnRandomAnimal&#34;</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">);</span> <span class="c1">//InvokeRepeating()方法可以反复调用某个事件，参数分别是：字符String的方法名，首次调用的延迟时间（例如这里的2即游戏开始后2秒开始首次调用此方法），后续调用的间隔时间，也可以将参数抽取为一个可以调整的公共变量</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="k">void</span> <span class="n">SpawnRandomAnimal</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="kt">int</span> <span class="n">animalIndex</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="n">animalPrefabs</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span> <span class="c1">//4.动物的种类，并进行随机抽取</span>
+</span></span><span class="line"><span class="cl">				<span class="kt">float</span> <span class="n">randomX</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(-</span><span class="n">xRange</span><span class="p">,</span><span class="n">xRange</span><span class="p">);</span> <span class="c1">//5.动物位置，并进行随机生成</span>
+</span></span><span class="line"><span class="cl">				<span class="n">Instantiate</span><span class="p">(</span><span class="n">animalPrefabs</span><span class="p">[</span><span class="n">animalIndex</span><span class="p">],</span><span class="n">newVector3</span><span class="p">(</span><span class="n">randomX</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">20</span><span class="p">),</span><span class="n">animalPrefabs</span><span class="p">[</span><span class="n">animalIndex</span><span class="p">].</span><span class="n">transform</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span> <span class="c1">//1.生成物体的函数Instantiate，参数分别是：生成的物体，生成范围，旋转角度</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="3.案例二跑酷"></a></p>
+<h2 id="3案例二跑酷">3.案例二跑酷
+</h2><ul>
+<li>(1)实现原理：游戏角色不动，实现背景的循环滚动和障碍物的随机生成。</li>
+<li>(2)角色跳跃。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">PlayerController</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">jumpForce</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">gravityModifer</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="n">Rigidbody</span> <span class="n">rgd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="kt">bool</span> <span class="n">isGround</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">//判断角色是否在地面，限制其在空中的多段跳</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">rgd</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;();</span> <span class="c1">//获取Rigidbody组件</span>
+</span></span><span class="line"><span class="cl">				<span class="n">Physics</span><span class="p">.</span><span class="n">gravity</span> <span class="p">*=</span> <span class="n">gravityModifer</span><span class="p">;</span> <span class="c1">//调整重力加速度</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">GetKeyDown</span><span class="p">(</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">Space</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">isGround</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="n">rgd</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="n">Vector3</span><span class="p">.</span><span class="n">up</span> <span class="p">*</span> <span class="n">jumpForce</span><span class="p">,</span> <span class="n">ForceMode</span><span class="p">.</span><span class="n">Impulse</span><span class="p">);</span> <span class="c1">// ForceMode.Impulse是施加力的模式，此处为瞬时施加的冲击力，用来模拟跳跃时的情况</span>
+</span></span><span class="line"><span class="cl">						<span class="n">isGround</span><span class="p">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">//跳跃时是肯定不在地面上的</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="k">void</span> <span class="n">OnCollisionEnter</span><span class="p">(</span><span class="n">Collision</span> <span class="n">collision</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">isGround</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">//一次简单的碰撞检测，来证明物体在地面上</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3)障碍物生成。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="c1">// 实现用对应按键发射子弹</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">SpawnManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="n">GameObject</span> <span class="n">obstaclePrefab</span><span class="p">;</span> <span class="c1">//障碍物</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">spawnDelay</span> <span class="p">=</span> <span class="m">2f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">spawnInterval</span> <span class="p">=</span><span class="m">1.5f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">InvokeRepeating</span><span class="p">(</span><span class="s">&#34;SpawnObstacle&#34;</span><span class="p">,</span><span class="n">spawnDelay</span><span class="p">,</span><span class="n">spawnInterval</span><span class="p">);</span> <span class="c1">//游戏开始时根据设定的间隔调用方法</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="k">void</span> <span class="n">SpawnObstacle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">Instantiate</span><span class="p">(</span><span class="n">obstaclePrefab</span><span class="p">,</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="m">25</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">),</span> <span class="n">obstaclePrefab</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span> <span class="c1">//生成</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(4)背景循环播放。在这里使用的方法是，首先，图片自身是左右两边完全对称的内容，设置背景图片自动向左侧移动，移动到正中心时将背景图片的位置重新设置。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">RepeatBackground</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="n">Vector3</span> <span class="n">startPosition</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="kt">float</span> <span class="n">xBound</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">start</span> <span class="n">Position</span> <span class="p">=</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">				<span class="n">xBound</span> <span class="p">=</span> <span class="n">startPosition</span><span class="p">.</span><span class="n">x</span> <span class="p">-</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">BoxCollider</span><span class="p">&gt;().</span><span class="n">size</span><span class="p">.</span><span class="n">x</span><span class="p">/</span><span class="m">2</span><span class="p">;</span> <span class="c1">//这里去获取BoxCollider组件是因为可以获得背景图片的精确坐标，也就能精确判断中心点的位置</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		    <span class="k">if</span><span class="p">(</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span> <span class="p">&lt;</span> <span class="n">xBound</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">startPosition</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="4.案例三躲避球"></a></p>
+<h2 id="4案例三躲避球">4.案例三躲避球
+</h2><ul>
+<li>(1)敌人跟随</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Controller</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="n">Rigidbody</span> <span class="n">rgd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="n">Gameobject</span> <span class="n">player</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">moveForce</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">rgd</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">				<span class="n">player</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="s">&#34;Player”); // 通过Find()方法来查找游戏物体Player，这里通过代码赋值，和在inspect界面下拖拽赋值效果一致，且更推荐代码赋值
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">Vector3</span> <span class="n">LookDirection</span> <span class="p">=</span> <span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">-</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span> <span class="c1">//确认物体追踪的方向并归一化向量，确认施加力的方向，之后再确定具体施加的力的大小</span>
+</span></span><span class="line"><span class="cl">				<span class="n">rgd</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="n">lookDirection</span> <span class="p">*</span> <span class="n">moveForce</span><span class="p">);</span> <span class="c1">//moveForce即确定具体施加的力的大小</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(2)满足奖励条件时在一定时间内弹开敌人
+<ul>
+<li>使用到协程，协程本质也是方法，可以简单视为可以暂停一段时间又恢复启动的方法。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Controller</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="c1">//部分前置代码省略</span>
+</span></span><span class="line"><span class="cl">				<span class="kd">private</span> <span class="n">GameObject</span> <span class="n">focalPoint</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">				<span class="kd">public</span> <span class="kt">bool</span> <span class="n">hasPowerup</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">//用于判断奖励条件是否开启</span>
+</span></span><span class="line"><span class="cl">				<span class="kd">public</span> <span class="kt">float</span> <span class="n">powerupStrength</span> <span class="p">=</span> <span class="m">15</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="c1">//部分前置代码省略</span>
+</span></span><span class="line"><span class="cl">				<span class="n">focalPoint</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="n">Find</span><span class="p">(</span><span class="s">&#34;FocalPoint”);
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">Vector3</span> <span class="n">LookDirection</span> <span class="p">=</span> <span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">-</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span> <span class="c1">//确认物体追踪的方向并归一化向量，确认施加力的方向，之后再确定具体施加的力的大小</span>
+</span></span><span class="line"><span class="cl">				<span class="n">rgd</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="n">lookDirection</span> <span class="p">*</span> <span class="n">moveForce</span><span class="p">);</span> <span class="c1">//moveForce即确定具体施加的力的大小</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="k">void</span> <span class="n">OnTriggerEnter</span><span class="p">(</span><span class="n">Collider</span> <span class="n">other</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">CompareTag</span><span class="p">(</span><span class="s">&#34;Powerup”))
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Destroy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">gameObject</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">						<span class="n">hasPowerup</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">						<span class="n">StartCoroutine</span><span class="p">(</span><span class="n">PowerupCountDown</span><span class="p">());</span> <span class="c1">//执行PowerupCountDown()方法，这里为固定写法</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="k">void</span> <span class="n">OnCollisionEnter</span><span class="p">(</span><span class="n">Collision</span> <span class="n">collision</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="p">(</span><span class="n">collision</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">CompareTag</span><span class="p">(</span><span class="s">&#34;Enemy”) &amp;&amp; hasPowerup)
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Rigidbody</span> <span class="n">enemyRgd</span> <span class="p">=</span> <span class="n">collision</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Vector3</span> <span class="n">enemyDirection</span> <span class="p">=</span> <span class="p">(</span><span class="n">collision</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">-</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">).</span><span class="n">normalized</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">						<span class="n">enemyRgd</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="n">enemyDirection</span> <span class="p">*</span> <span class="n">powerupStrength</span> <span class="p">,</span><span class="n">ForceMode</span><span class="p">.</span><span class="n">Impulse</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">IEnumerator</span> <span class="n">PowerupCountDown</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">yield</span> <span class="k">return</span> <span class="k">new</span> <span class="n">WaitForSeconds</span><span class="p">(</span><span class="m">7</span><span class="p">);</span> <span class="c1">//7秒后执行下述代码，除参数外，这里为固定写法</span>
+</span></span><span class="line"><span class="cl">				<span class="n">hasPowerup</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3)敌人的多波生成</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Controller</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="n">GameObject</span> <span class="n">enemyPrefab</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">float</span> <span class="n">range</span> <span class="p">=</span> <span class="m">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="kd">public</span> <span class="kt">int</span> <span class="n">spawnCount</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="n">SpawnRandomEnemy</span><span class="p">(</span><span class="n">spawnCount</span><span class="p">);</span> <span class="c1">//生成敌人</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="kd">private</span> <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="kt">int</span> <span class="n">enemyCount</span> <span class="p">=</span> <span class="n">FindObjectsByType</span><span class="p">&lt;</span><span class="n">EnemyController</span><span class="p">&gt;(</span><span class="n">FindObjectsSortMode</span><span class="p">.</span><span class="n">None</span><span class="p">).</span><span class="n">Length</span><span class="p">;</span> <span class="c1">//获取当前敌人数量，用数组储存，FindObjectsSortMode.None是查找的方式</span>
+</span></span><span class="line"><span class="cl">				<span class="c1">//注意，敌人销毁的代码已省略</span>
+</span></span><span class="line"><span class="cl">				<span class="k">if</span><span class="p">(</span><span class="n">enemyCount</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="n">spawnCount</span><span class="p">++;</span>
+</span></span><span class="line"><span class="cl">						<span class="n">SpawnRandomEnemy</span><span class="p">(</span><span class="n">spawnCount</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="c1">//敌人生成</span>
+</span></span><span class="line"><span class="cl">		<span class="k">void</span> <span class="n">SpawnRandomEnemy</span><span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">				<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span><span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">number</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">				<span class="p">{</span>
+</span></span><span class="line"><span class="cl">						<span class="kt">float</span> <span class="n">randomX</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(-</span><span class="n">range</span><span class="p">,</span><span class="n">range</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">						<span class="kt">float</span> <span class="n">randomZ</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(-</span><span class="n">range</span><span class="p">,</span><span class="n">range</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Vector3</span> <span class="n">postion</span> <span class="p">=</span> <span class="n">newVector3</span><span class="p">(</span><span class="n">randomX</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="n">randomZ</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">						<span class="n">Instantiate</span><span class="p">(</span><span class="n">enemyPrefab</span><span class="p">,</span><span class="n">postion</span><span class="p">,</span><span class="n">enemyPrefab</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+            <a href="/tags/unity/">Unity</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-c3-unity-rubys-adventure/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：Rubys Adventure</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-c1-unity-rollaball/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 实战篇：项目实战 | 入门项目：RollaBall</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-b6-unity-2d/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 通识篇：软件基础 | 基础面板：2D开发</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-b5-unity-scene/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 通识篇：软件基础 | 基础面板：游戏场景</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-gamedevelop-b4-unity-object/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Unity游戏开发 | 通识篇：软件基础 | 基础面板：游戏物体属性</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了146篇文章 · 
+		总计539.62k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

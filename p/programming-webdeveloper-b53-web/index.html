@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Web">
+<title>小小小编程 | Web软件开发 | 实战篇：JavaWeb | Web</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-b53-web/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 实战篇：JavaWeb | Web">
+<meta property='og:description' content="Web">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-b53-web/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2026-02-22T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-02-22T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 实战篇：JavaWeb | Web">
+<meta name="twitter:description" content="Web">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1静态网页与动态网页">1.静态网页与动态网页</a></li>
+    <li><a href="#2web程序开发">2.Web程序开发</a></li>
+    <li><a href="#3web发展架构">3.Web发展架构</a></li>
+    <li><a href="#4web服务器">4.Web服务器</a></li>
+    <li><a href="#5web网站发布">5.Web网站发布</a></li>
+    <li><a href="#6http协议">6.Http协议</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/webdeveloper/" >
+                Webdeveloper
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-b53-web/">小小小编程 | Web软件开发 | 实战篇：JavaWeb | Web</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Web
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-02-22</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 3659 字
+                    阅读时长: 8 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e9%9d%99%e6%80%81%e7%bd%91%e9%a1%b5%e4%b8%8e%e5%8a%a8%e6%80%81%e7%bd%91%e9%a1%b5"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.静态网页与动态网页
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.Web%e7%a8%8b%e5%ba%8f%e5%bc%80%e5%8f%91"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.Web程序开发
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.Web%e5%8f%91%e5%b1%95%e6%9e%b6%e6%9e%84"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.Web发展架构
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.Web%e6%9c%8d%e5%8a%a1%e5%99%a8"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.Web服务器
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.Web%e7%bd%91%e7%ab%99%e5%8f%91%e5%b8%83"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.Web网站发布
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6.Http%e5%8d%8f%e8%ae%ae"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.Http协议
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.静态网页与动态网页"></a></p>
+<h2 id="1静态网页与动态网页">1.静态网页与动态网页
+</h2><ul>
+<li>(1)Web(World Wide Web)，即网页，又分为静态网页和动态网页。静态网页提供给用户看的数据始终不会发生变化，常见的语言有html，css，最大的缺陷是无法和数据库交互，这样数据无法持久化，用户无法交互；动态网页提供给用户看的数据是变化的，每个用户在不同时间不同地点看到的数据都有可能是不同的，常见的语言有Servlet/JSP，ASP，PHP，它弥补了静态网页的缺点，而动态网页的缺点是一旦动态web资源出现了错误，需要重新编写后台程序重新发布。
+<ul>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.%E9%9D%99%E6%80%81Web.png"
+	width="1968"
+	height="586"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.%E9%9D%99%E6%80%81Web_hu8842270653982578630.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.%E9%9D%99%E6%80%81Web_hu5753394374062447876.png 1024w"
+	loading="lazy"
+	
+		alt="静态Web"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="335"
+		data-flex-basis="806px"
+	
+></li>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.%E5%8A%A8%E6%80%81Web.png"
+	width="1946"
+	height="1094"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.%E5%8A%A8%E6%80%81Web_hu13511608296905315869.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.%E5%8A%A8%E6%80%81Web_hu17616188124529123783.png 1024w"
+	loading="lazy"
+	
+		alt="动态Web"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></li>
+</ul>
+</li>
+<li>(2)在Java中，开发动态Web资源的技术统称为JavaWeb。（开发网站）其三大组件：Servlet、Filter、Listener。</li>
+</ul>
+<p><a id="2.Web程序开发"></a></p>
+<h2 id="2web程序开发">2.Web程序开发
+</h2><ul>
+<li>(1)可以提供浏览器访问的程序称为Web程序，其实现流程：
+<ul>
+<li>1)前端发送请求：Web程序通过浏览器访问页面，前端页面使用异步提交的方式发送请求到后端服务器。</li>
+<li>2)后端服务器采用MVC三层架构表现层、业务层、数据层的三层架构的形式进行开发：
+<ul>
+<li>表现层→业务层→数据层：页面发送的请求由表现层接收，获取用户的请求参数后将参数传递到业务层，业务层访问数据层。</li>
+<li>数据层→业务层→表现层：得到用户需要的数据后，返回数据给表现层，表现层将数据转换为json格式发送给前端页面。</li>
+</ul>
+</li>
+<li>3)前端响应：前端页面接收数据后解析数据，并组织成用户浏览的最终页面信息交给浏览器。</li>
+</ul>
+</li>
+<li>(4)web应用程序编写完毕后，若想提供给外界访问，需要一个服务器来统一管理，也就是之后会需要学习的Tomcat服务器。</li>
+<li>(5)综上所述，我们接下来要学习的技术栈如下：
+<ul>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Web%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0%E6%B5%81%E7%A8%8B.png"
+	width="2345"
+	height="1255"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Web%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0%E6%B5%81%E7%A8%8B_hu1238631186024083670.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Web%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0%E6%B5%81%E7%A8%8B_hu775646016639904187.png 1024w"
+	loading="lazy"
+	
+		alt="Web程序实现流程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="448px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="3.Web发展架构"></a></p>
+<h2 id="3web发展架构">3.Web发展架构
+</h2><ul>
+<li>(1)在未来，我们还会接触到许多概念，实际上它们都是从需求扩张发展一步步更新迭代的：
+<ul>
+<li><strong>单机架构</strong>：早期，一个网站只需要应用程序（服务器）和数据库，所用到的技术LAMP（Linux+Apache+Mysql+PHP）即可覆盖。并进行基本的应用与数据分离解决资源争抢问题，应用服务器负责处理请求、业务逻辑；数据库负责存数据、进行IO操作。</li>
+<li><strong>高并发</strong>：
+<ul>
+<li>应用集群：多台服务器处理相同业务。</li>
+<li>负载均衡：将请求均匀地分配到每台应用服务器。</li>
+<li>水平拓展：增加服务器数量。</li>
+<li>高可用：某一台服务器不可用时可以自动屏蔽流量（请求），其它服务器接手处理请求。</li>
+</ul>
+</li>
+<li><strong>分布式数据库</strong>：
+<ul>
+<li>热点读：
+<ul>
+<li>多级缓存：放置用户经常访问的热数据（数据库结果+页面+接口结果+计算结果+静态资源等等），减轻数据库压力，三层缓存包括浏览器缓存、应用服务器本地缓存、分布式缓存Redis。用户每次请求会先去缓存进行查找，三层缓存都没有才会去访问数据库。</li>
+</ul>
+</li>
+<li>请求与非热点读：
+<ul>
+<li>读写分离：主库Master负责写，从库Slave负责读，并通过数据同步以保证主从数据一致。</li>
+<li>拆库拆表：
+<ul>
+<li>垂直分库：按业务拆分数据库表。</li>
+<li>水平分库：一张大表拆分为多张小表，配合数据库中间件，对应用透明。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>访问速度与系统安全优化</strong>
+<ul>
+<li>CDN：将静态资源分布在多个节点，用户发送请求时会将距离用户最近的节点的资源响应给用户。</li>
+<li>反向代理：在用户和应用服务器之间的中间层，公网请求会先访问中间层，再转发给内网应用服务器，隐藏真实服务器，减少服务器被攻击的可能，并且支持流量清洗、权限校验。</li>
+<li>搜索引擎：倒排索引使搜索秒级响应。</li>
+<li>NoSQL数据库：存储非结构化半结构化数据，并支持高并发易扩展。</li>
+</ul>
+</li>
+<li><strong>分布式架构：</strong>
+<ul>
+<li>分布式架构：对应用服务器进行拆分，每个系统单独部署、单独发布、单独扩容。</li>
+<li>RPC远程调用：解决各个系统相互调用的问题，实现跨机器调用通讯。</li>
+<li>服务注册与发现中心：管理所有服务地址，请求地址会先进入到中心。</li>
+<li>请求队列：服务之间不用再相互等待，在需要对应消息时从请求队列中获取。</li>
+</ul>
+</li>
+<li><strong>微服务架构：</strong>
+<ul>
+<li>微服务架构：每个小服务只做一件事，能够独立开发、独立发布、独立扩容。</li>
+<li>全链路追踪：定位速度慢的服务。</li>
+<li>限流、熔断、降级：当流量过大时对系统进行保护。</li>
+<li>服务治理：统一监控服务，日志权限。</li>
+<li>Docker容器：统一微服务代码依赖、配置环境，一次打包，到处运行。</li>
+<li>k8s：容器自愈、扩缩容。</li>
+</ul>
+</li>
+<li><strong>云原生</strong>
+<ul>
+<li>云原生：将系统搬至云平台。</li>
+</ul>
+</li>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Web%E5%8F%91%E5%B1%95%E6%9E%B6%E6%9E%84.png"
+	width="2145"
+	height="1200"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Web%E5%8F%91%E5%B1%95%E6%9E%B6%E6%9E%84_hu17708574282825189695.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Web%E5%8F%91%E5%B1%95%E6%9E%B6%E6%9E%84_hu5538128735137472913.png 1024w"
+	loading="lazy"
+	
+		alt="Web发展架构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="429px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<p><a id="4.Web服务器"></a></p>
+<h2 id="4web服务器">4.Web服务器
+</h2><ul>
+<li>(1)B/S架构：浏览器和服务器。C/S架构：客户端和服务器。</li>
+<li>(2)服务器工作的本质：接收请求，返回响应。即服务器是一种被动的操作，用来处理用户的一些请求和给用户一些响应信息。</li>
+</ul>
+<p><a id="5.Web网站发布"></a></p>
+<h2 id="5web网站发布">5.Web网站发布
+</h2><ul>
+<li>(1)将写好的网站放到服务器（本流程选择Tomcat）中指定的web应用的文件夹（webapps）下，就可以进行访问了。</li>
+<li>(2)一个Web网站的骨架</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">&lt;!--网站最原始的文件结构--&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">--webapps ：Tomcat服务器的web目录
+</span></span></span><span class="line"><span class="cl"><span class="err">	-ROOT
+</span></span></span><span class="line"><span class="cl"><span class="err">	-books ：网站的目录名
+</span></span></span><span class="line"><span class="cl"><span class="err">		- WEB-INF ：核心文件夹
+</span></span></span><span class="line"><span class="cl"><span class="err">			-classes ：java程序
+</span></span></span><span class="line"><span class="cl"><span class="err">			-lib ：web应用所依赖的jar包
+</span></span></span><span class="line"><span class="cl"><span class="err">			-web.xml ：网站配置文件
+</span></span></span><span class="line"><span class="cl"><span class="err">		- index.html ：默认的首页
+</span></span></span><span class="line"><span class="cl"><span class="err">		- static ：其它文件
+</span></span></span><span class="line"><span class="cl"><span class="err">            -css
+</span></span></span><span class="line"><span class="cl"><span class="err">            	-style.css ：例子
+</span></span></span><span class="line"><span class="cl"><span class="err">            -js
+</span></span></span><span class="line"><span class="cl"><span class="err">            -img
+</span></span></span><span class="line"><span class="cl"><span class="err">		-...
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="6.Http协议"></a></p>
+<h2 id="6http协议">6.Http协议
+</h2><ul>
+<li>(1)定义：Http全称HyperText Transfer Protocol，<strong>超文本</strong>传输协议，规定了浏览器与服务器之间数据传输的规则。
+<ul>
+<li>文本是例如字符串、html……之类的格式，超文本也即不仅限于文本，例如图片、视频、定位……</li>
+<li>在浏览器「开发者工具」（F12开启）的Network页面可以看到当前请求与响应。以百度为例：
+<ul>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7.png"
+	width="2197"
+	height="482"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7_hu18172920126844064107.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7_hu5140786001191291903.png 1024w"
+	loading="lazy"
+	
+		alt="开发者工具"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="455"
+		data-flex-basis="1093px"
+	
+></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">&lt;!-- 请求 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Request URL:https://www.baidu.com/   &lt;!-- 请求行：请求地址 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Request Method:GET    &lt;!-- 请求行：get方法/post方法 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Status Code:200 OK    &lt;!-- 状态码：200 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Remote（远程） Address:14.215.177.39:443 &lt;!-- 真实地址 --&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">&lt;!-- 响应 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Cache-Control:private    &lt;!-- 缓存控制 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Connection:Keep-Alive    &lt;!-- 连接 Keep-Alive保持连接 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Content-Encoding:gzip    &lt;!-- 编码类型 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Content-Type:text/html   &lt;!-- 类型 类型为html响应 --&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-http" data-lang="http"><span class="line"><span class="cl"><span class="err">&lt;!-- 请求头/响应头 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Accept： &lt;!-- 告诉浏览器，它所支持的数据类型 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Accept-Encoding： &lt;!-- 支持哪种编码格式 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Accept-Language： &lt;!-- 告诉浏览器，它的语言环境 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Cache-Control： &lt;!-- 缓存控制 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">Connection： &lt;!-- 告诉浏览器，请求完成是断开还是保持连接 --&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">HOST： &lt;!-- 主机 --&gt;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(2)请求协议：
+<ul>
+<li>1)请求行(request line)，请求数据第一行，包括请求方式GET/POST、资源路径、协议。
+<ul>
+<li>get：请求参数在请求行中，请求能够携带的参数比较少，大小有限制，会在浏览器的URL地址栏显示数据内容，不安全，但高效。</li>
+<li>post：请求参数在请求体中，请求能够携带的参数没有限制，大小没有限制，不会在浏览器的URL地址栏显示数据内容，安全，但不高效。</li>
+</ul>
+</li>
+<li>2)请求头/消息头(header)，格式为键值对key: value，包括客户端环境信息、请求体的大小（如果有）、请求的数据格式等。
+<ul>
+<li>Host：表示请求的主机名。</li>
+<li>User-Agent：浏览器版本。</li>
+<li>Accept：表示浏览器能接收的资源类型，如文本<code>text/*</code>，图片<code>image/*</code>或者<code>*/*</code>表示所有。</li>
+<li>Accept-Language：表示浏览器偏好的语言，服务器可以据此返回不同语言的网页。</li>
+<li>Accept-Encoding：表示浏览器可以支持的压缩类型，例如gzip, deflate等。</li>
+<li>Content-Type：请求主体的数据类型。</li>
+<li>Content-Length：数据主体的大小（单位：字节）。</li>
+</ul>
+</li>
+<li>3)请求体，在请求头和请求体之间存在分隔符空行，表示请求头的结束。请求体可以包括要发送给服务器的数据，请求体并不是必须的，属于可选项。</li>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E8%AF%B7%E6%B1%82%E5%8D%8F%E8%AE%AE.png"
+	width="1311"
+	height="304"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E8%AF%B7%E6%B1%82%E5%8D%8F%E8%AE%AE_hu13350965405016396292.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E8%AF%B7%E6%B1%82%E5%8D%8F%E8%AE%AE_hu8943499103222441318.png 1024w"
+	loading="lazy"
+	
+		alt="请求协议"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="431"
+		data-flex-basis="1035px"
+	
+></li>
+</ul>
+</li>
+<li>(3)响应协议：
+<ul>
+<li>1)状态行(Status Line)，响应数据第一行，包括HTTP协议、状态码、描述状态码的状态。
+<ul>
+<li>常见状态码1xx表示<strong>响应中</strong>：临时状态码。表示请求已经接受，告诉客户端应该继续请求或者如果已经完成则忽略；</li>
+<li>2xx表示<strong>成功</strong>：表示请求已经被成功接收，处理已完成；最经典的为200状态码，表示客户端请求成功。</li>
+<li>3xx表示<strong>重定向</strong>：重定向到其它地方，让客户端再发起一个请求以完成整个处理；</li>
+<li>4xx表示<strong>客户端错误</strong>：处理发生错误，责任在客户端，如：客户端的请求一个不存在的资源，客户端未被授权，禁止访问等；最经典的为404状态码，表示请求资源不存在，或许是URL输入错误也可能是网站资源被删除。</li>
+<li>5xx表示<strong>服务器端错误</strong>：处理发生错误，责任在服务端，如：服务端抛出异常，路由出错，HTTP版本不支持等；最经典的为500状态码，表示服务器发生了不可预期的错误。</li>
+</ul>
+</li>
+<li>2)响应头(Response Headers)，格式为键值对key: value。
+<ul>
+<li>Content-Type：表示该响应内容的类型，例如text/html，image/jpeg。</li>
+<li>Content-Length：表示该响应内容的长度，单位字节数。</li>
+<li>Content-Encoding：表示该响应压缩算法，例如gzip算法。</li>
+<li>Cache-Control：指示客户端应如何缓存，例如max-age=300表示可以最多缓存300秒。</li>
+<li>Set-Cookie：告诉浏览器为当前页面所在的域设置cookie。</li>
+</ul>
+</li>
+<li>3)响应体/响应正文，在响应头和响应体之间存在分隔符空行，表示响应头的结束。响应体可以包括响应数据，响应体并不是必须的，属于可选项。</li>
+<li><img src="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E5%93%8D%E5%BA%94%E5%8D%8F%E8%AE%AE.png"
+	width="1296"
+	height="403"
+	srcset="/p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E5%93%8D%E5%BA%94%E5%8D%8F%E8%AE%AE_hu3951498927891323871.png 480w, /p/programming-webdeveloper-b53-web/2025__%E5%90%8E%E7%AB%AF.Java__JavaWeb.Web.Http%E5%8D%8F%E8%AE%AE.%E5%93%8D%E5%BA%94%E5%8D%8F%E8%AE%AE_hu1965413632026528592.png 1024w"
+	loading="lazy"
+	
+		alt="响应协议"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="321"
+		data-flex-basis="771px"
+	
+></li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d2-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d1-opensourceprojectanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：开源项目分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c9-knife4j/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Knife4j</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c8-redisdatatypes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：数据类型</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c7-rediscommands/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了146篇文章 · 
+		总计539.62k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>

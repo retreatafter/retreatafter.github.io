@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="DDL操作数据库">
+<title>小小小编程 | Web软件开发 | 实战篇：MySQL | DDL操作数据库</title>
+
+<link rel='canonical' href='https://retreatafter.github.io/p/programming-webdeveloper-b46-ddl/'>
+
+<link rel="stylesheet" href="/scss/style.min.92425e2ca57958ae79d344fda25d5f1e8dd508e1125240073a1ee178d72eeb1e.css"><meta property='og:title' content="小小小编程 | Web软件开发 | 实战篇：MySQL | DDL操作数据库">
+<meta property='og:description' content="DDL操作数据库">
+<meta property='og:url' content='https://retreatafter.github.io/p/programming-webdeveloper-b46-ddl/'>
+<meta property='og:site_name' content='与其归隐'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Web软件开发' /><meta property='article:tag' content='编程学习' /><meta property='article:published_time' content='2026-02-15T17:07:07&#43;08:00'/><meta property='article:modified_time' content='2026-02-15T17:07:07&#43;08:00'/>
+<meta name="twitter:title" content="小小小编程 | Web软件开发 | 实战篇：MySQL | DDL操作数据库">
+<meta name="twitter:description" content="DDL操作数据库">
+    <link rel="shortcut icon" href="/myfavicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3009212992867728760.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🎙️</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">与其归隐</a></h1>
+            <h2 class="site-description">这个用户竟什么也没有留下</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href=''
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+tags: [china, platform, streaming, video]
+category: Brand
+version: "2.1"
+unicode: "f6d2"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" />
+  <path d="M8 3l2 3" />
+  <path d="M16 3l-2 3" />
+  <path d="M9 13v-2" />
+  <path d="M15 11v2" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/retreatafter/'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:retreatafter@protonmail.com%22'
+                        target="_blank"
+                        title="retreatafter@protonmail.com"
+                        rel="me"
+                    >
+                        
+                        
+                            <!--
+category: Communication
+version: "2.10"
+unicode: "f93f"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10.5 19h-5.5a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v4" />
+  <path d="M3 7l9 6l2.983 -1.989l6.017 -4.011" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/index.xml'
+                        target="_blank"
+                        title="RSS"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/ourlinks/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <!--
+tags: [food, skeleton, cat, sea]
+category: Animals
+version: "1.78"
+unicode: "f287"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#000000"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.69 7.44a6.973 6.973 0 0 0 -1.69 4.56a6.97 6.97 0 0 0 1.699 4.571c1.914 -.684 3.691 -2.183 5.301 -4.565c-1.613 -2.384 -3.394 -3.883 -5.312 -4.565" />
+  <path d="M2 9.504a40.73 40.73 0 0 0 2.422 2.504a39.679 39.679 0 0 0 -2.422 2.498" />
+  <path d="M18 11v.01" />
+  <path d="M4.422 12h10.578" />
+  <path d="M7 10v4" />
+  <path d="M11 8v8" />
+</svg>
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1前情提要">1.前情提要</a></li>
+    <li><a href="#2ddl核心操作">2.DDL核心操作</a></li>
+    <li><a href="#3数据值和列类型">3.数据值和列类型</a></li>
+    <li><a href="#4约束">4.约束</a></li>
+    <li><a href="#5表结构操作create">5.表结构操作create</a></li>
+    <li><a href="#6数据表的类型">6.数据表的类型</a></li>
+    <li><a href="#7表操作alter与drop">7.表操作ALTER与DROP</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/webdeveloper/" >
+                Webdeveloper
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/programming-webdeveloper-b46-ddl/">小小小编程 | Web软件开发 | 实战篇：MySQL | DDL操作数据库</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            DDL操作数据库
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2026-02-15</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    本文共 3063 字
+                    阅读时长: 7 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    
+
+    <div class="article-details" style="padding-top: 15px;padding-bottom: 0px;">
+        <footer class="article-time">
+            <div>
+                <span title="阅读次数" id="busuanzi_container_page_pv" style="display: inline;font-size: 1.4rem;">阅读次数: <span class="article-time--reading" id="busuanzi_value_page_pv"></span>次
+                </span>
+            </div>
+        </footer>
+    </div>
+
+
+
+<section class="article-content">
+    
+    
+    <blockquote>
+<p>本节目录</p>
+</blockquote>
+<ol>
+<li><a class="link" href="#1.%e5%89%8d%e6%83%85%e6%8f%90%e8%a6%81"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        1.前情提要
+        
+    </span>
+</a></li>
+<li><a class="link" href="#2.DDL%e6%a0%b8%e5%bf%83%e6%93%8d%e4%bd%9c"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        2.DDL核心操作
+        
+    </span>
+</a></li>
+<li><a class="link" href="#3.%e6%95%b0%e6%8d%ae%e5%80%bc%e5%92%8c%e5%88%97%e7%b1%bb%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        3.数据值和列类型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#4.%e7%ba%a6%e6%9d%9f"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        4.约束
+        
+    </span>
+</a></li>
+<li><a class="link" href="#5.%e8%a1%a8%e7%bb%93%e6%9e%84%e6%93%8d%e4%bd%9ccreate"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        5.表结构操作create
+        
+    </span>
+</a></li>
+<li><a class="link" href="#6.%e6%95%b0%e6%8d%ae%e8%a1%a8%e7%9a%84%e7%b1%bb%e5%9e%8b"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        6.数据表的类型
+        
+    </span>
+</a></li>
+<li><a class="link" href="#7.%e8%a1%a8%e6%93%8d%e4%bd%9cALTER%e4%b8%8eDROP"  >
+    <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+        7.表操作ALTER与DROP
+        
+    </span>
+</a></li>
+</ol>
+<p><a id="1.前情提要"></a></p>
+<h2 id="1前情提要">1.前情提要
+</h2><ul>
+<li>(1)以下所有操作均在可视化管理MySQL数据库的软件工具SQLyog中进行。重点是查看每个行为执行后的历史记录中的SQL语句。</li>
+<li>(2)所有的数据库文件都保存在data目录下，一个文件夹对应着一个数据库，因此，数据库本质上仍然是文件的存储。</li>
+</ul>
+<p><a id="2.DDL核心操作"></a></p>
+<h2 id="2ddl核心操作">2.DDL核心操作
+</h2><ul>
+<li>(1)主要操作：查询、创建、使用、删除。
+<ul>
+<li>1)创建数据库：<code>create database [if not exists] 数据库名;</code>，其中括号表示可写可不写，创建数据库时加上<code>if not exists</code>可以在出现同名数据库时有警告提示。</li>
+<li>2)删除数据库：<code>drop database [if exists] 数据库名;</code>。</li>
+<li>3)使用/切换数据库 : <code>use 数据库名;</code>，如果表名或字段名是一个特殊字符，就需要带反引号，例如创建的school数据库下的student表中存在user列，但user其实是一个常见的特殊字符，这时要查询student表中的user列就建议用语句<code>SELECT `user` FROM student;</code></li>
+<li>4)查看数据库 :
+<ul>
+<li><code>show databases;</code>，显示所有数据库。</li>
+<li><code>select database();</code>，查询当前数据库。</li>
+</ul>
+</li>
+<li>5)schema=database。</li>
+</ul>
+</li>
+</ul>
+<p><a id="3.数据值和列类型"></a></p>
+<h2 id="3数据值和列类型">3.数据值和列类型
+</h2><ul>
+<li>(1)数值类型
+<ul>
+<li>关键字UnSigned无符号的（整数）：数值的取值范围包括有符号（存在负数）和无符号的两种，例如tinyint的有符号(SIGNED)范围为(-128，127)，无符号(UNSIGNED)范围为(0，255)。</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>整数类型</th>
+          <th>大小(byte)</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>tinyint</td>
+          <td>1</td>
+          <td>小整数值</td>
+          <td>很少使用</td>
+      </tr>
+      <tr>
+          <td>smallint</td>
+          <td>2</td>
+          <td>大整数值</td>
+          <td>很少使用</td>
+      </tr>
+      <tr>
+          <td>mediumint</td>
+          <td>3</td>
+          <td>大整数值</td>
+          <td>很少使用</td>
+      </tr>
+      <tr>
+          <td>int</td>
+          <td>4</td>
+          <td>大整数值</td>
+          <td>常用</td>
+      </tr>
+      <tr>
+          <td>bigint</td>
+          <td>8</td>
+          <td>极大整数值</td>
+          <td>很少使用</td>
+      </tr>
+  </tbody>
+</table></div>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>小数类型</th>
+          <th>大小(byte)</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>float</td>
+          <td>4</td>
+          <td>单精度浮点数值</td>
+          <td>float(5,2)：5表示整个数字长度，2 表示小数位个数</td>
+      </tr>
+      <tr>
+          <td>double</td>
+          <td>8</td>
+          <td>双精度浮点数值</td>
+          <td>double(5,2)：5表示整个数字长度，2 表示小数位个数</td>
+      </tr>
+      <tr>
+          <td>decimal</td>
+          <td></td>
+          <td>小数值</td>
+          <td>decimal(5,2)：5表示整个数字长度，2 表示小数位个数。金融计算数据中常用，能有效避免精度损失的问题</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>(2)字符串类型
+<ul>
+<li>定长与变长：char(10)无论实际数据大小都会给10字符的空间，存在浪费的问题，但性能更好；varchar(10)表示最长支持10字符，若不足10个字符，按照实际长度存储，节省空间，但性能更差。</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>字符串类型</th>
+          <th>大小</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>char</td>
+          <td>0-255 bytes</td>
+          <td>定长字符串</td>
+          <td>很少使用</td>
+      </tr>
+      <tr>
+          <td>varchar</td>
+          <td>0-65535 bytes</td>
+          <td>变长字符串</td>
+          <td>常用</td>
+      </tr>
+      <tr>
+          <td>tinyblob</td>
+          <td>0-255 bytes</td>
+          <td>不超过255个字符的二进制数据</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>tinytext</td>
+          <td>0-255 bytes</td>
+          <td>短文本字符串</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>blob</td>
+          <td>0-65 535 bytes</td>
+          <td>二进制形式的长文本数据</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>text</td>
+          <td>0-65 535 bytes</td>
+          <td>长文本数据</td>
+          <td>保存大型文本例如博客文章时常用</td>
+      </tr>
+      <tr>
+          <td>mediumblob</td>
+          <td>0-16 777 215 bytes</td>
+          <td>二进制形式的中等长度文本数据</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>mediumtext</td>
+          <td>0-16 777 215 bytes</td>
+          <td>中等长度文本数据</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>longblob</td>
+          <td>0-4 294 967 295 bytes</td>
+          <td>二进制形式的极大文本数据</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>longtext</td>
+          <td>0-4 294 967 295 bytes</td>
+          <td>极大文本数据</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>(3)日期和时间型数值类型</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>类型</th>
+          <th>大小(byte)</th>
+          <th>范围</th>
+          <th>格式</th>
+          <th>描述</th>
+          <th>备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>date</td>
+          <td>3</td>
+          <td>1000-01-01 至 9999-12-31</td>
+          <td>YYYY-MM-DD</td>
+          <td>日期值</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>time</td>
+          <td>3</td>
+          <td>-838:59:59 至 838:59:59</td>
+          <td>HH:MM:SS</td>
+          <td>时间值或持续时间</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>year</td>
+          <td>1</td>
+          <td>1901 至 2155</td>
+          <td>YYYY</td>
+          <td>年份值</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>datetime</td>
+          <td>8</td>
+          <td>1000-01-01 00:00:00 至 9999-12-31 23:59:59</td>
+          <td>YYYY-MM-DD HH:MM:SS</td>
+          <td>混合日期和时间值</td>
+          <td>常用</td>
+      </tr>
+      <tr>
+          <td>timestamp</td>
+          <td>4</td>
+          <td>1970-01-01 00:00:01 至 2038-01-19 03:14:07</td>
+          <td>YYYY-MM-DD HH:MM:SS</td>
+          <td>混合日期和时间值，时间戳</td>
+          <td>常用</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>(4)NULL空值
+<ul>
+<li>不要用NULL进行算术运算，否则得到的结果仍为NULL。</li>
+</ul>
+</li>
+</ul>
+<p><a id="4.约束"></a></p>
+<h2 id="4约束">4.约束
+</h2><ul>
+<li>(1)约束也称字段属性，约束作用于表中字段上的规则，用于限制存储在表中的数据，保证数据库中数据的正确性、有效性和完整性。
+<ul>
+<li><img src="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E5%AD%97%E6%AE%B5%E5%B1%9E%E6%80%A7.png"
+	width="1143"
+	height="237"
+	srcset="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E5%AD%97%E6%AE%B5%E5%B1%9E%E6%80%A7_hu5501518719561754084.png 480w, /p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E5%AD%97%E6%AE%B5%E5%B1%9E%E6%80%A7_hu13032971644254090592.png 1024w"
+	loading="lazy"
+	
+		alt="字段属性"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="482"
+		data-flex-basis="1157px"
+	
+></li>
+</ul>
+</li>
+<li>(2)类型：
+<ul>
+<li>非空约束：限制该字段值不能为null。关键字：<code>not null</code>。对应的有允许NULL空值。</li>
+<li>唯一约束：保证字段的所有数据都是唯一、不重复的。关键字：<code>unique</code>。经常配合关键字Auto_InCrement自增使用，即每添加一条数据 , 自动在上一个记录数上加1（这个步长数值是可以设置的）。</li>
+<li>主键约束：主键是一行数据的唯一标识，要求非空且唯一。关键字：<code>primary  key</code>。</li>
+<li>默认约束：保存数据时，如果未指定该字段值，则采用默认值。关键字：<code>default</code>。</li>
+<li>外键约束：让两张表的数据建立连接，保证数据的一致性和完整性。关键字：<code>foreign key</code>。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 创建表时指定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="err">表名</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="err">字段名</span><span class="w"> </span><span class="err">数据类型</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">	</span><span class="p">[</span><span class="k">constraint</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="err">外键名称</span><span class="p">]</span><span class="w"> </span><span class="k">foreign</span><span class="w"> </span><span class="k">key</span><span class="w"> </span><span class="p">(</span><span class="err">外键字段名</span><span class="p">)</span><span class="w"> </span><span class="k">references</span><span class="w"> </span><span class="err">主表</span><span class="w"> </span><span class="p">(</span><span class="err">字段名</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 建完表后，添加外键
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="err">表名</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="k">constraint</span><span class="w"> </span><span class="err">外键名称</span><span class="w"> </span><span class="k">foreign</span><span class="w"> </span><span class="k">key</span><span class="w"> </span><span class="p">(</span><span class="err">外键字段名</span><span class="p">)</span><span class="w"> </span><span class="k">references</span><span class="w"> </span><span class="err">主表</span><span class="p">(</span><span class="err">字段名</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(3)其它常见功能：
+<ul>
+<li>ZeroFill零填充。不足的位数将使用0进行填充，例如声明一个数据为3个长度，如果只写了5，勾选ZeroFill后会自动补充为005。</li>
+</ul>
+</li>
+</ul>
+<p><a id="5.表结构操作create"></a></p>
+<h2 id="5表结构操作create">5.表结构操作create
+</h2><ul>
+<li>(1)创建表结构及字段的基本语法：
+<ul>
+<li>中括号[]表示根据需要可写可不写。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 语法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="p">[</span><span class="k">if</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">exists</span><span class="p">]</span><span class="w"> </span><span class="o">`</span><span class="err">表名</span><span class="o">`</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="o">`</span><span class="err">字段名</span><span class="mi">1</span><span class="o">`</span><span class="w"> </span><span class="err">字段类型</span><span class="w"> </span><span class="p">[</span><span class="err">约束</span><span class="p">][</span><span class="err">索引</span><span class="p">][</span><span class="k">comment</span><span class="w"> </span><span class="err">注释</span><span class="p">],</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="o">`</span><span class="err">字段名</span><span class="mi">2</span><span class="o">`</span><span class="w"> </span><span class="err">字段类型</span><span class="w"> </span><span class="p">[</span><span class="err">约束</span><span class="p">][</span><span class="err">索引</span><span class="p">][</span><span class="k">comment</span><span class="w"> </span><span class="err">注释</span><span class="p">],</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">		</span><span class="p">......</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">   </span><span class="o">`</span><span class="err">字段名</span><span class="n">n</span><span class="o">`</span><span class="w"> </span><span class="err">字段类型</span><span class="w"> </span><span class="p">[</span><span class="err">约束</span><span class="p">][</span><span class="err">索引</span><span class="p">][</span><span class="k">comment</span><span class="w"> </span><span class="err">注释</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)[</span><span class="err">表类型</span><span class="p">][</span><span class="err">表字符集</span><span class="p">][</span><span class="k">comment</span><span class="w"> </span><span class="err">注释</span><span class="p">];</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(2)示例代码：
+<ul>
+<li><img src="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E5%88%9B%E5%BB%BA%E8%A1%A8%E7%BB%93%E6%9E%84.png"
+	width="2249"
+	height="1130"
+	srcset="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E5%88%9B%E5%BB%BA%E8%A1%A8%E7%BB%93%E6%9E%84_hu7999016053189836391.png 480w, /p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E5%88%9B%E5%BB%BA%E8%A1%A8%E7%BB%93%E6%9E%84_hu8208816782873678964.png 1024w"
+	loading="lazy"
+	
+		alt="创建表结构"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="199"
+		data-flex-basis="477px"
+	
+></li>
+<li><img src="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE.png"
+	width="2441"
+	height="920"
+	srcset="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE_hu15602167456744504484.png 480w, /p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE_hu16518212682308649264.png 1024w"
+	loading="lazy"
+	
+		alt="添加数据"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="265"
+		data-flex-basis="636px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">tb_user</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="k">primary</span><span class="w"> </span><span class="k">key</span><span class="w"> </span><span class="n">auto_increment</span><span class="w"> </span><span class="k">comment</span><span class="w"> </span><span class="s1">&#39;ID, 唯一标识&#39;</span><span class="p">,</span><span class="w">  </span><span class="c1">-- id列，int类型，主键，自增注释为&#39;ID, 唯一标识&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="n">username</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">null</span><span class="w"> </span><span class="k">unique</span><span class="w"> </span><span class="k">comment</span><span class="w"> </span><span class="s1">&#39;用户名&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">null</span><span class="w"> </span><span class="k">comment</span><span class="w"> </span><span class="s1">&#39;姓名&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">age</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="k">comment</span><span class="w"> </span><span class="s1">&#39;年龄&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">gender</span><span class="w"> </span><span class="nb">char</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="s1">&#39;匿名&#39;</span><span class="w"> </span><span class="k">comment</span><span class="w"> </span><span class="s1">&#39;性别&#39;</span><span class="w">  </span><span class="c1">-- gender列，存在默认值，默认值为匿名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span><span class="w"> </span><span class="k">comment</span><span class="w"> </span><span class="s1">&#39;用户表&#39;</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><a id="6.数据表的类型"></a></p>
+<h2 id="6数据表的类型">6.数据表的类型
+</h2><ul>
+<li>(1)引擎ENGINE，最常用InnoDB和MyISAM，InnoDB是现在比较常用的，MyISAM在以前常用，现在根据场合需要也会用到。其具体区别见下表。
+<ul>
+<li>MyISAM优点：节约空间，速度较快。</li>
+<li>InnoDB优点：安全性高，支持事务处理，多用户操作数据表。</li>
+<li>InnoDB类型数据表只有一个 [*.frm]表结构定义文件 , 以及上一级目录的[ibdata1]文件。</li>
+<li>MyISAM类型数据表对应三个文件：[* . frm] 表结构定义文件、[. MYD] 数据文件 ( data )、[. MYI] 索引文件 ( index )。</li>
+</ul>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>功能</th>
+          <th>MyISAM</th>
+          <th>InnoDB</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>事务处理</td>
+          <td>不支持</td>
+          <td>支持</td>
+      </tr>
+      <tr>
+          <td>数据行锁定</td>
+          <td>不支持</td>
+          <td>支持</td>
+      </tr>
+      <tr>
+          <td>外键约束</td>
+          <td>不支持</td>
+          <td>支持</td>
+      </tr>
+      <tr>
+          <td>全文索引</td>
+          <td>支持</td>
+          <td>不支持</td>
+      </tr>
+      <tr>
+          <td>表空间大小（内存占用）</td>
+          <td>较小</td>
+          <td>较大，约MyISAM的2倍</td>
+      </tr>
+  </tbody>
+</table></div>
+<ul>
+<li>(2)字符集编码CHARSET，如果不设置，将会是MySQL默认的字符集编码，而最大的问题是这个字符集编码不支持中文。设定CHARSET一是可以在建表时通过命令设定，二也可以通过修改MySQL数据库配置文件[my.ini]中的参数设定<code>character-set-server=utf8</code>。</li>
+</ul>
+<p><a id="7.表操作ALTER与DROP"></a></p>
+<h2 id="7表操作alter与drop">7.表操作ALTER与DROP
+</h2><ul>
+<li>(1)修改表ALTER TABLE
+<ul>
+<li>1)修改表名：<code>ALTER TABLE `旧表名` RENAME AS `新表名` </code> 或 <code>RENAME TABLE `旧表名` TO `新表名` </code></li>
+<li>2)修改字段：
+<ul>
+<li>修改约束：<code>ALTER TABLE `表名` MODIFY `字段名` 列类型[新属性]</code></li>
+<li>字段重命名：<code>ALTER TABLE `表名` CHANGE `旧字段名` `新字段名` 列属性[属性]</code></li>
+</ul>
+</li>
+<li>3)添加字段：<code>ALTER TABLE `表名` ADD `字段名` 列属性[属性]</code></li>
+<li>4)删除字段：<code>ALTER TABLE `表名` DROP COLUMN `字段名` </code></li>
+<li>5)中括号[]表示根据需要可写可不写。</li>
+<li><img src="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E8%A1%A8%E6%93%8D%E4%BD%9C.png"
+	width="2356"
+	height="1200"
+	srcset="/p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E8%A1%A8%E6%93%8D%E4%BD%9C_hu6743568777548743628.png 480w, /p/programming-webdeveloper-b46-ddl/2025__%E5%90%8E%E7%AB%AF.%E6%95%B0%E6%8D%AE%E5%BA%93__MySQL.DDL%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93.%E8%A1%A8%E6%93%8D%E4%BD%9C_hu5254074571838942367.png 1024w"
+	loading="lazy"
+	
+		alt="表操作"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="196"
+		data-flex-basis="471px"
+	
+></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">--示例代码
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">USE</span><span class="w"> </span><span class="n">school</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="o">`</span><span class="n">teacher</span><span class="o">`</span><span class="p">(</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="w"> </span><span class="nb">INT</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;教师ID&#39;</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">`</span><span class="n">name</span><span class="o">`</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;教师姓名&#39;</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">`</span><span class="n">age</span><span class="o">`</span><span class="w"> </span><span class="nb">INT</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;教师年龄&#39;</span><span class="p">,</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="n">INNOBASE</span><span class="w"> </span><span class="n">CHARSET</span><span class="o">=</span><span class="n">utf8</span><span class="w"> </span><span class="k">COLLATE</span><span class="o">=</span><span class="n">utf8_general_ci</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 修改表名 ALTER TABLE `旧表名` RENAME AS `新表名`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">teacher</span><span class="w"> </span><span class="k">RENAME</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">teacher1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 添加字段 ALTER TABLE `表名` ADD `字段名` 列属性[属性]
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">teacher1</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="nb">INT</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 修改字段
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">teacher1</span><span class="w"> </span><span class="k">MODIFY</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="w">	</span><span class="c1">-- 修改约束，从原先的INT(3)属性改为了VARCHAR(12)属性
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">teacher1</span><span class="w"> </span><span class="n">CHANGE</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="n">age1</span><span class="w"> </span><span class="nb">INT</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="w">    </span><span class="c1">-- 字段重命名
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 删除字段 ALTER TABLE `表名` DROP `字段名`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">teacher1</span><span class="w"> </span><span class="k">DROP</span><span class="w"> </span><span class="n">age1</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>(2)删除表
+<ul>
+<li>语法：<code>DROP TABLE [IF EXISTS] `表名`</code></li>
+<li>中括号[]表示根据需要可写可不写。</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/web%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">Web软件开发</a>
+        
+            <a href="/tags/%E7%BC%96%E7%A8%8B%E5%AD%A6%E4%B9%A0/">编程学习</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d2-git/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：Git</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-d1-opensourceprojectanalysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战 | 从0到1项目搭建流程：开源项目分析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c9-knife4j/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Knife4j</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c8-redisdatatypes/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：数据类型</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/programming-webdeveloper-c7-rediscommands/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">小小小编程 | Web软件开发 | 实战篇：项目实战必备技术点 | Redis：常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="retreatafter/retreatafter.github.io"
+    data-repo-id="R_kgDOSrcawQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSrcawc4C-GW_"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 与其归隐
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+	
+	<section class="totalcount">
+		
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+		发表了146篇文章 · 
+		总计539.62k字
+	</section>
+
+	<div class="article-time">
+		<span class="post-meta-item" id="busuanzi_container_site_uv" style="display: inline;">
+			<span class="site-uv" title="总访客量">
+			&nbsp;<span id="busuanzi_value_site_uv"></span>
+			</span>
+		</span>
+		<span>|</span>
+		<span class="post-meta-item" id="busuanzi_container_site_pv" style="display: inline;">
+			<span class="site-pv" title="总访问量">
+			&nbsp;<span id="busuanzi_value_site_pv"></span>
+			</span>
+		</span>
+	</div>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.a9fd3e6bb63b895769ceeb1b8dbaab5a9b679126e8364ac11ff0f7b76afce881.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+  @font-face {
+    font-family: '寒蝉正楷体';
+    src: url(https://retreatafter.github.io/font/%E5%AF%92%E8%9D%89%E6%AD%A3%E6%A5%B7%E4%BD%93.woff2) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '寒蝉正楷体';
+    --code-font-family: '寒蝉正楷体';
+  }
+</style>
+
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://retreatafter.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+    </body>
+</html>
